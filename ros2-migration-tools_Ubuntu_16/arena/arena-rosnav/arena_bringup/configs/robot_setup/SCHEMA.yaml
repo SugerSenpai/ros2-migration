@@ -1,5 +1,0 @@
-robots:
-  - model: ROBOT_MODEL
-    planner: LOCAL_PLANNER
-    agent: AGENT_NAME
-    amount: NUMBER
