@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from cob_srvs/srv/SetFloat.srv
+// generated code does not contain a copyright notice
+
+
+module cob_srvs {
+  module srv {
+    struct SetFloat_Request {
+      float data;
+    };
+    struct SetFloat_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

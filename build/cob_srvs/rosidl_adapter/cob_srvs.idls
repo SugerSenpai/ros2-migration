@@ -1,0 +1,4 @@
+/ros2-migration/build/cob_srvs/rosidl_adapter/cob_srvs:srv/Dock.idl
+/ros2-migration/build/cob_srvs/rosidl_adapter/cob_srvs:srv/SetFloat.idl
+/ros2-migration/build/cob_srvs/rosidl_adapter/cob_srvs:srv/SetInt.idl
+/ros2-migration/build/cob_srvs/rosidl_adapter/cob_srvs:srv/SetString.idl

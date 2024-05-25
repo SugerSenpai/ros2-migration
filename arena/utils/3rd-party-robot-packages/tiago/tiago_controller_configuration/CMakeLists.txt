@@ -1,22 +1,18 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 project(tiago_controller_configuration)
 
-# Add support for C++14
-if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
+find_package(ament_cmake_auto REQUIRED)
+ament_auto_find_build_dependencies()
+
+if(pal_module_cmake_FOUND)
+  pal_register_modules(
+    module/20_default_controllers.yaml
+  )
 endif()
 
-find_package(ament_cmake REQUIRED)
-set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${REQUIRED_INCLUDE_DIRS})
-include_directories(${INCLUDE_DIRS})
-set(LIBRARY_DIRS ${ament_cmake_LIBRARIES} ${REQUIRED_LIBRARIES})
-set(LIBS ${ament_cmake_LIBRARIES} ${REQUIRED_LIBRARIES})
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
-foreach(dir config launch)
-  install(DIRECTORY ${dir}/ DESTINATION share/${PROJECT_NAME}/${dir})
-endforeach(dir)
-
-ament_export_dependencies(ament_cmake)
-ament_export_include_directories(${INCLUDE_DIRS})
-
-ament_package()
+ament_auto_package(INSTALL_TO_SHARE config launch)

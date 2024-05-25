@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from cob_srvs/srv/SetInt.srv
+// generated code does not contain a copyright notice
+
+
+module cob_srvs {
+  module srv {
+    struct SetInt_Request {
+      int32 data;
+    };
+    struct SetInt_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

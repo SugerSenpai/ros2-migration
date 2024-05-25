@@ -1,0 +1,1 @@
+Invoking command in '/ros2-migration/build/cob_srvs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_srvs -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/cob_srvs

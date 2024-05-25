@@ -2,249 +2,331 @@
 Changelog for package tiago_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.3.7 (2022-08-10)
-------------------
-
-2.3.6 (2022-08-04)
-------------------
-* Merge branch 'use_usb_camera' into 'erbium-devel'
-  Update launch file and script to be able to use usb_camera instead of libuvc_camera
-  See merge request robots/tiago_robot!154
-* added usb_cam dependency
-* Update launch file and script to be able to use usb_camera instead of libuvc_camera
-* Contributors: Sai Kishor Kothakota, saikishor
-
-2.3.5 (2022-07-26)
-------------------
-
-2.3.4 (2022-07-21)
-------------------
-* Merge branch 'add_omni_tiago' into 'erbium-devel'
-  Add base_type to the missing launch files
-  See merge request robots/tiago_robot!153
-* address comment + adding mm11.launch to take into account the base_type
-* Merge the 2 .em files and create a script only for the motions
-* Add specific motions for the TIAGo omni
-* =Add base_type to the missing launch files
-* Contributors: saikishor, thomaspeyrucain, validation_1
-
-2.3.3 (2022-07-19)
-------------------
-
-2.3.2 (2022-05-17)
-------------------
-* added support for the new product ID from same vendor for endoscopic camera
-* Contributors: Sai Kishor Kothakota
-
-2.3.1 (2022-05-16)
-------------------
-* Merge branch 'new_endoscopic_camera_support' into 'erbium-devel'
-  added support for new endoscopic camera vendor
-  See merge request robots/tiago_robot!151
-* added support for new endoscopic camera vendor
-* Contributors: Sai Kishor Kothakota, saikishor
-
-2.3.0 (2022-05-03)
-------------------
-
-2.2.15 (2022-05-03)
--------------------
-* Merge branch 'no-end-effector-bugfix' into 'erbium-devel'
-  No end effector bugfix
-  See merge request robots/tiago_robot!149
-* file_suffix consistency
-* Merge branch 'no-end-effector-bugfix' of gitlab:robots/tiago_robot into no-end-effector-bugfix
-* Apply 5 suggestion(s) to 4 file(s)
-* remove redundant spaces
-* remove redundant spaces
-* end effector back to hey-5
-* prevent ft sensor to load when no arm is attached
-* update motions
-* update epck gripper
-* edit motions config
-* update motions config file
-* Update eval function, generate scripts
-* delete wrongly named hardware yaml file
-* rewrite eval function for name of config files
-* edit motions config
-* update motions config file
-* made some changes
-* Update eval function, generate scripts
-* delete wrongly named hardware yaml file
-* rewrite eval function for name of config files
-* prevent ft sensor to load when no arm is attached
-* Merge branch 'no-end-effector-bugfix' of gitlab:robots/tiago_robot into no-end-effector-bugfix
-* update motions
-* remove.orig file|
-* rebase
-* rebase
-* update epck gripper
-* edit motions config
-* update motions config file
-* Update eval function, generate scripts
-* delete wrongly named hardware yaml file
-* rewrite eval function for name of config files
-* edit motions config
-* update motions config file
-* made some changes
-* Update eval function, generate scripts
-* delete wrongly named hardware yaml file
-* rewrite eval function for name of config files
-* update epck gripper
-* edit motions config
-* update motions config file
-* made some changes
-* Update eval function, generate scripts
-* delete wrongly named hardware yaml file
-* rewrite eval function for name of config files
-* edit motions config
-* update motions config file
-* made some changes
-* Update eval function, generate scripts
-* delete wrongly named hardware yaml file
-* rewrite eval function for name of config files
-* Contributors: David ter Kuile, saikishor
-
-2.2.14 (2022-04-20)
+4.2.12 (2024-05-10)
 -------------------
 
-2.2.13 (2022-03-23)
--------------------
-* Merge branch 'fix_home_robotiq_2f_140' into 'erbium-devel'
-  Fix home position for robotiq-2f-140 + fix Reach max out of range motion + add effort_controller
-  See merge request robots/tiago_robot!148
-* Fix motions on grippers too close to joint limits + change home position for robotiq 2f 140
-* Fix home position for robotiq-2f-140 + fix Reach max out of range motion + add effort_controller
-* Contributors: saikishor, thomaspeyrucain
-
-2.2.12 (2022-03-18)
+4.2.11 (2024-05-09)
 -------------------
 
-2.2.11 (2022-03-18)
+4.2.10 (2024-05-09)
 -------------------
-* Merge branch 'add_robotiq_epick_gripper' into 'erbium-devel'
-  Add link to epick urdf
-  See merge request robots/tiago_robot!145
-* regenerate the motions after rebasing
-* Change config files to match new name and new controller + add joystick control
-* Change the name from vacuum to finger and add config file for controller
-* Add config files for robotiq-epick gripper
-* Contributors: Sai Kishor Kothakota, saikishor, thomaspeyrucain
+* Merge branch 'omm/fix/joy_device' into 'humble-devel'
+  Added proper joy device setup
+  See merge request robots/tiago_robot!283
+* Added proper joy device setup
+* Contributors: davidterkuile, oscarmartinez
 
-2.2.10 (2022-02-22)
--------------------
-* Merge branch 'fix-offer-motion' into 'erbium-devel'
-  Fix offer motion for robotiq gripper
-  See merge request robots/tiago_robot!146
-* Fix offer motion for robotiq gripper
-* Contributors: saikishor, thomaspeyrucain
-
-2.2.9 (2022-01-19)
+4.2.9 (2024-05-07)
 ------------------
-* Merge branch 'use_rsp' into 'erbium-devel'
-  Use robot_state_publisher instead of deprecated state_publisher
-  See merge request robots/tiago_robot!147
-* Use robot_state_publisher instead of deprecated state_publisher
+* Merge branch 'omm/fix/twist_mux_base_type' into 'humble-devel'
+  Passing base_type to twist_mux from the bringup properly
+  See merge request robots/tiago_robot!282
+* Passing base_type to twist_mux from the bringup properlyy
+* Merge branch 'dtk/fix/robot-state-publisher' into 'humble-devel'
+  Dtk/fix/robot state publisher
+  See merge request robots/tiago_robot!281
+* Remove robot state publisher from tiago_bringup
+* Merge branch 'omm/feat/new_joy_config' into 'humble-devel'
+  New Joy config
+  See merge request robots/tiago_robot!280
+* Fixed 1.0 default value
+* Cleaning old config files
+* Contributors: davidterkuile, oscarmartinez
+
+4.2.8 (2024-04-30)
+------------------
+* Merge branch 'omm/fix/urdf_complete_std' into 'humble-devel'
+  URDF std
+  See merge request robots/tiago_robot!278
+* Module, joy config and restored support for tiago dual
+* Omni related checks and files
+* Suggested changes
+* Launch files moved to TIAGo family standard
+* Contributors: Oscar, davidterkuile
+
+4.2.7 (2024-04-22)
+------------------
+
+4.2.6 (2024-04-16)
+------------------
+
+4.2.5 (2024-04-10)
+------------------
+
+4.2.4 (2024-03-06)
+------------------
+
+4.2.3 (2024-02-28)
+------------------
+* Rename approach_planner config to motion_planner
+* Update approach_planner configuration
+* Contributors: Noel Jimenez
+
+4.2.2 (2024-02-02)
+------------------
+* Merge branch 'feat/register-components' into 'humble-devel'
+  remove need for remapping cmd_vel topic
+  See merge request robots/tiago_robot!262
+* remove need for remapping cmd_vel topic
+* Contributors: antoniobrandi
+
+4.2.1 (2024-01-31)
+------------------
+* fix condition for no-arm
+* Contributors: Aina Irisarri
+
+4.2.0 (2024-01-31)
+------------------
+* Remove right-arm option and use tiago-arm
+* use the same functionality to create the suffix for the config files & match it with tiago_dual
+* change sufix no-end-effector to no-ee
+* update motions from last update in ROS
+* Contributors: Aina Irisarri, Noel Jimenez
+
+4.1.2 (2024-01-19)
+------------------
+* update robotiq motion files
+* Contributors: Aina Irisarri
+
+4.1.1 (2024-01-19)
+------------------
+* adding the config files needed for robotiq
+* fix prepare_grasp motion
+* Contributors: Aina Irisarri
+
+4.1.0 (2024-01-18)
+------------------
+
+4.0.28 (2023-12-22)
+-------------------
+
+4.0.27 (2023-12-18)
+-------------------
+
+4.0.26 (2023-12-14)
+-------------------
+* Update motions file argument name for play_motion2
+* Update approach_planner configurations
+* Use play_motion2 approach_planner config
+* Contributors: Noel Jimenez
+
+4.0.25 (2023-12-12)
+-------------------
+
+4.0.24 (2023-12-12)
+-------------------
+
+4.0.23 (2023-12-11)
+-------------------
+* Fix wrong placed closing bracket
+* Contributors: Noel Jimenez
+
+4.0.22 (2023-11-22)
+-------------------
+* Update cmake_minimum_required version to 3.8
+* Cleanup repository
+* Contributors: Noel Jimenez
+
+4.0.21 (2023-11-15)
+-------------------
+* Comment end-effector joystick control
+* Contributors: Noel Jimenez
+
+4.0.20 (2023-11-14)
+-------------------
+* Add website tag
+* Contributors: Noel Jimenez
+
+4.0.19 (2023-11-13)
+-------------------
+
+4.0.18 (2023-11-07)
+-------------------
+* Split bringup module
+* Use corresponding arguments for modules
+* Fix malformed .em and regenerate motions cfg
+* Remove unused sonar_to_cloud config
+* Contributors: Noel Jimenez
+
+4.0.17 (2023-10-19)
+-------------------
+
+4.0.16 (2023-09-18)
+-------------------
+* Merge branch 'add_modules' into 'humble-devel'
+  Add pal system modules
+  See merge request robots/tiago_robot!227
+* Condition on pal only dependency
+* Adding bringup module
+* Adding joystick module
 * Contributors: Jordan Palacios
 
-2.2.8 (2021-12-22)
-------------------
-
-2.2.7 (2021-11-25)
-------------------
-
-2.2.6 (2021-11-22)
-------------------
-
-2.2.5 (2021-11-19)
-------------------
-* Merge branch 'conditional_dependencies' into 'erbium-devel'
-  Conditional dependencies
-  See merge request robots/tiago_robot!140
-* change to package version 3
-* Contributors: Sai Kishor Kothakota, victor
-
-2.2.4 (2021-11-10)
-------------------
-
-2.2.3 (2021-11-10)
-------------------
-
-2.2.2 (2021-11-09)
-------------------
-
-2.2.1 (2021-11-09)
-------------------
-* Merge branch 'fix_xml_generation_error' into 'erbium-devel'
-  Fis xml generation error removing initial message
-  See merge request robots/tiago_robot!138
-* Fis xml generation error removing initial message
-* Contributors: Jordan Palacios, cescfolch
-
-2.2.0 (2021-11-03)
-------------------
-* Merge branch 'omni_base_robot' into 'erbium-devel'
-  Omni base robot
-  See merge request robots/tiago_robot!137
-* modified the .em file in order to generate the joy config files
-* Fixed copy paste error
-* Added speed limits to the joystick commands for the lateral mouvements
-* added dynamic footprint configuration for tiago with omni_base
-* preparing configuration for a tiago with omni base
-* Contributors: antoniobrandi, saikishor
-
-2.1.5 (2021-09-22)
-------------------
-* Merge branch 'offer-motion' into 'erbium-devel'
-  Open robotiq-2f-85 in offer motion
-  See merge request robots/tiago_robot!135
-* fix: open robotiq-2f-85 in offer motion
-* Contributors: victor, yueerro
-
-2.1.4 (2021-08-31)
-------------------
-
-2.1.3 (2021-08-06)
-------------------
-* Merge branch 'robotiq-impedance-issues' into 'erbium-devel'
-  fix: missing chain definition for robotiq gripper
-  See merge request robots/tiago_robot!131
-* fix: hey5 colliding with floor
-* Contributors: daniellopez, saikishor
-
-2.1.2 (2021-07-16)
-------------------
-
-2.1.1 (2021-06-01)
-------------------
-
-2.1.0 (2021-05-06)
-------------------
-* Merge branch 'robotiq_gripper' into 'erbium-devel'
-  Robotiq gripper
-  See merge request robots/tiago_robot!125
-* address MR review comments
-* run incremental action server for robotiq grippers
-* Update the motions of the robotiq grippers
-* generated tiago hardware configurations for the robotiq grippers
-* generate joy_teleop configurations
-* update the robotiq end effector naming
-* generate some config files for robotiq 85 and 140
-* Contributors: Sai Kishor Kothakota, saikishor
-
-2.0.58 (2021-04-09)
--------------------
-* Merge branch 'add-endoscopic' into 'erbium-devel'
-  add static_transform_publisher for endoscopic and its optical frame
-  See merge request robots/tiago_robot!124
-* add static_transform_publisher for endoscopic and its optical frame
-* Contributors: saikishor, yueerro
-
-2.0.57 (2021-03-19)
+4.0.15 (2023-09-04)
 -------------------
 
-2.0.56 (2021-03-01)
+4.0.14 (2023-07-20)
 -------------------
+
+4.0.13 (2023-07-11)
+-------------------
+* Remove schunk wsg option
+* Uncomment twist_mux_msgs dependency
+* Contributors: Noel Jimenez
+
+4.0.12 (2023-07-05)
+-------------------
+* Regenerate config for no-arm option
+* Fix config files generator
+* Remove pal flags dependency
+* update hey5 joystick config
+* Contributors: Noel Jimenez
+
+4.0.11 (2023-06-28)
+-------------------
+* run gripper_incrementer only when using pal-gripper
+* Contributors: Noel Jimenez
+
+4.0.10 (2023-06-14)
+-------------------
+* load the proper joy_telop config file
+* config files regeneration
+* unify file generator and get_tiago_hw_suffix method
+* Contributors: Noel Jimenez
+
+4.0.9 (2023-05-11)
+------------------
+
+4.0.8 (2023-05-11)
+------------------
+* remove dependency comment
+* disable joystick launch on bringup
+* regenerate joy_teleop cfg
+* remove schunk-wsg end effector condition for joystick cfg
+* enable multibutton joystick commands
+* add joystick commands dependencies
+* start incrementer servers for gripper, head and torso
+* use radians/s for angular velocity
+* update ROS 2 joy_teleof config and regenerate
+* restore yaml generation format
+* add joy dependency
+* update twist_mux config
+* launch joy_node
+* Contributors: Noel Jimenez
+
+4.0.7 (2023-04-28)
+------------------
+
+4.0.6 (2023-04-17)
+------------------
+* fixing the file path using no-arm
+* Contributors: jmguerreroh
+
+4.0.5 (2023-03-06)
+------------------
+
+4.0.4 (2023-03-02)
+------------------
+
+4.0.3 (2023-02-22)
+------------------
+* Merge branch 'play_motion2' into 'humble-devel'
+  Launch PlayMotion2 and update motions files
+  See merge request robots/tiago_robot!189
+* rename play_motion2 launcher
+* add exec dependency play_motion2
+* launch play_motion2
+* regenerate motions files for play_motion2
+* enable regen_em_file.py
+* Contributors: Jordan Palacios, Noel Jimenez
+
+4.0.2 (2023-02-08)
+------------------
+* Merge branch 'robot_state_publisher' into 'humble-devel'
+  Launch robot_state_publisher from tiago_bringup
+  See merge request robots/tiago_robot!185
+* robot_state_publisher from tiago_bringup
+* Contributors: Jordan Palacios, Noel Jimenez
+
+4.0.1 (2022-11-10)
+------------------
+* Merge branch 'update_license' into 'humble-devel'
+  Update license
+  See merge request robots/tiago_robot!180
+* update license
+* Contributors: Jordan Palacios, Noel Jimenez
+
+4.0.0 (2022-11-08)
+------------------
+* Merge branch 'refactor_simulation_launchers' into 'humble-devel'
+  Remove launching manipulation in tiago_bringup
+  See merge request robots/tiago_robot!177
+* rm launching manipulation
+* Merge branch 'rm_launcher' into 'humble-devel'
+  Remove tiago.launch.py and dependencies
+  See merge request robots/tiago_robot!176
+* rm tiago.launch.py and dependencies
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup package.xml files and rm duplicated launcher
+  See merge request robots/tiago_robot!174
+* update package.xml deps
+* Merge branch 'launch_move_group' into 'humble-devel'
+  Launch move group
+  See merge request robots/tiago_robot!172
+* launch moveit2
+* Merge branch 'update_copyright' into 'humble-devel'
+  update copyright and license
+  See merge request robots/tiago_robot!167
+* update copyright and license
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup
+  See merge request robots/tiago_robot!165
+* rm ros1 launchers
+* Merge branch 'refactor_ld' into 'humble-devel'
+  Refactor ld
+  See merge request robots/tiago_robot!164
+* refactor LaunchDescription population
+* Merge branch 'update_maintainers' into 'humble-devel'
+  Update maintainers
+  See merge request robots/tiago_robot!163
+* update maintainers
+* Merge branch 'linters' into 'humble-devel'
+  Linters
+  See merge request robots/tiago_robot!159
+* linters
+* Merge branch 'launch_refactor' into 'humble-devel'
+  launch files refactor
+  See merge request robots/tiago_robot!158
+* temporal fix deadman_buttons error when empty
+* Merge branch 'tiago_launcher' into 'galactic-devel'
+  Tiago launcher
+  See merge request robots/tiago_robot!150
+* tiago launcher
+* Updating format of all motions
+* Renegerating approach_planner config files
+* Renegerating motions config files
+* Removed disable_motion_planning
+  Already set in approach plannaer config
+* Not starting play_motion automatically since now requires moveit
+* Using tiago hw suffix to load the proper config files
+* Get robot_description using tiago_launch_utils
+* Load robot_description_semantic into play_motion
+* Rename some tiago hw options, add camera_model and add tests
+* Added play_motion to tiago_bringup
+* UNDO: Disabling motion planning for now
+* Removed rgdb and use launch_pal arg_utils and tiago lauch utils
+* play_motion launch.py
+* Regenerate motions (incomplete) and approach_planner config for ROS2
+* Added new parameters required for joint trajectory controllers
+  Also, enabled default controllers
+* Added some ToDo's
+* Added joy_teleop to the tiago_bringup
+  Also updated joy_teleop.yaml.em and regenerated config files
+* Added twist_mux to the tiago bringup
+  mobile_base_controller now uses the twist unstamped topic instead
+* First version of the tiago_bringup.launch.py
+* tiago_bringup is now a ROS2 package
+* Ignoring tiago_bringup and tiago_controller_configuration for now
+* Contributors: Jordan Palacios, Noel Jimenez, Noel Jimenez Garcia, Victor Lopez
 
 2.0.55 (2021-01-15)
 -------------------
