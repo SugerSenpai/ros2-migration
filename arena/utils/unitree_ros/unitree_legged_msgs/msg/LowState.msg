@@ -10,7 +10,7 @@ IMU imu
 MotorState[20] motorstate
 BmsState bms
 int16[4] footforce	
-int16[4] footforceEst	
+int16[4] footforceest	
 uint32 tick						
 uint8[40] wirelessremote 
 uint32 reserve
