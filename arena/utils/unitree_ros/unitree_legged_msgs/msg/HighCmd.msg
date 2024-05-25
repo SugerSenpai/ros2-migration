@@ -2,7 +2,7 @@ uint8[2] head
 uint8 levelFlag
 uint8 frameReserve
 
-uint32[2] SN
+uint32[2] sn
 uint32[2] version
 uint16 bandWidth
 uint8 mode 
