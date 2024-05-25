@@ -1,0 +1,1 @@
+Invoking command in '/ros2-migration/arena/build/unitree_legged_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/unitree_legged_msgs

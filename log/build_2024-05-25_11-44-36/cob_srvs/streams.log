@@ -1,0 +1,23 @@
+[0.032s] Invoking command in '/ros2-migration/build/cob_srvs': CMAKE_PREFIX_PATH=/ros2-migration/install/tiago_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /ros2-migration/build/cob_srvs -- -j8 -l8
+[0.160s] [  1%] Built target cob_srvs__cpp
+[0.186s] [ 12%] Built target cob_srvs__rosidl_generator_c
+[0.191s] [ 12%] Built target ament_cmake_python_copy_cob_srvs
+[0.213s] [ 23%] Built target cob_srvs__rosidl_typesupport_cpp
+[0.214s] [ 34%] Built target cob_srvs__rosidl_typesupport_fastrtps_c
+[0.222s] [ 45%] Built target cob_srvs__rosidl_typesupport_fastrtps_cpp
+[0.277s] [ 56%] Built target cob_srvs__rosidl_typesupport_introspection_c
+[0.286s] [ 67%] Built target cob_srvs__rosidl_typesupport_introspection_cpp
+[0.294s] [ 78%] Built target cob_srvs__rosidl_typesupport_c
+[0.341s] [ 78%] Built target cob_srvs
+[0.368s] [ 80%] Built target cob_srvs__py
+[0.389s] [ 89%] Built target cob_srvs__rosidl_generator_py
+[0.407s] [ 92%] Built target cob_srvs__rosidl_typesupport_introspection_c__pyext
+[0.409s] [ 96%] Built target cob_srvs__rosidl_typesupport_fastrtps_c__pyext
+[0.411s] [100%] Built target cob_srvs__rosidl_typesupport_c__pyext
+[0.515s] running egg_info
+[0.532s] writing cob_srvs.egg-info/PKG-INFO
+[0.532s] writing dependency_links to cob_srvs.egg-info/dependency_links.txt
+[0.533s] writing top-level names to cob_srvs.egg-info/top_level.txt
+[0.581s] reading manifest file 'cob_srvs.egg-info/SOURCES.txt'
+[0.581s] writing manifest file 'cob_srvs.egg-info/SOURCES.txt'
+[0.608s] [100%] Built target ament_cmake_python_build_cob_srvs_egg

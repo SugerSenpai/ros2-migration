@@ -1,0 +1,14 @@
+[01m[K/ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_base_controller_utils/src/spin_detector.cpp:18:10:[m[K [01;31m[Kfatal error: [m[Kcob_base_controller_utils/WheelCommands.h: No such file or directory
+   18 | #include [01;31m[K"cob_base_controller_utils/WheelCommands.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_base_controller_utils/src/stuck_detector.cpp:19:10:[m[K [01;31m[Kfatal error: [m[Kcob_base_controller_utils/WheelCommands.h: No such file or directory
+   19 | #include [01;31m[K<cob_base_controller_utils/WheelCommands.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cob_spin_detector.dir/build.make:76: CMakeFiles/cob_spin_detector.dir/src/spin_detector.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:113: CMakeFiles/cob_spin_detector.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/cob_stuck_detector.dir/build.make:76: CMakeFiles/cob_stuck_detector.dir/src/stuck_detector.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/cob_stuck_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

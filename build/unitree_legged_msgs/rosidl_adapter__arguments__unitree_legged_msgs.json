@@ -1,0 +1,16 @@
+{
+  "package_name": "unitree_legged_msgs",
+  "non_idl_tuples": [
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/MotorCmd.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/MotorState.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/BmsCmd.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/BmsState.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/Cartesian.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/IMU.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/LED.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/LowCmd.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/LowState.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/HighCmd.msg",
+    "/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/HighState.msg"
+  ]
+}

@@ -1,29 +1,34 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0"?>
 <package format="3">
   <name>tiago_bringup</name>
-  <version>2.3.7</version>
+  <version>4.2.12</version>
   <description>Launch files to upload the robot description and start the controllers</description>
-  <author email="bence.magyar@pal-robotics.com">Bence Magyar</author>
   <maintainer email="jordi.pages@pal-robotics.com">Jordi Pages</maintainer>
-  <license>BSD</license>
-  <buildtool_depend>ament_cmake</buildtool_depend>
-  <exec_depend>pmb2_bringup</exec_depend>
-  <exec_depend>tf_lookup</exec_depend>
-  <exec_depend>robot_state_publisher</exec_depend>
-  <exec_depend>tiago_controller_configuration</exec_depend>
-  <exec_depend>joy</exec_depend>
+  <maintainer email="jordan.palacios@pal-robotics.com">Jordan Palacios</maintainer>
+  <maintainer email="noel.jimenez@pal-robotics.com">Noel Jimenez</maintainer>
+  <author email="bence.magyar@pal-robotics.com">Bence Magyar</author>
+  <license>Apache License 2.0</license>
+
+  <url type="website">https://github.com/pal-robotics/tiago_simulation</url>
+
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>joy_linux</exec_depend>
   <exec_depend>joy_teleop</exec_depend>
-  <exec_depend>dynamic_footprint</exec_depend>
-  <exec_depend>head_action</exec_depend>
-  <exec_depend>tiago_moveit_config</exec_depend>
-  <exec_depend>dynamixel_cpp</exec_depend>
-  <exec_depend>openni2_launch</exec_depend>
-  <exec_depend>speed_limit_node</exec_depend>
-  <exec_depend>camera_calibration_files</exec_depend>
-  <exec_depend>libuvc_camera</exec_depend>
-  <exec_depend>usb_cam</exec_depend>
-  <exec_depend>robot_pose</exec_depend>
-  <exec_depend>custom_ee_configuration</exec_depend>
+  <exec_depend>launch_pal</exec_depend>
+  <exec_depend>play_motion2</exec_depend>
+  <exec_depend>teleop_tools_msgs</exec_depend>
+  <exec_depend>tiago_controller_configuration</exec_depend>
+  <exec_depend>tiago_description</exec_depend>
+  <exec_depend>twist_mux</exec_depend>
+  <exec_depend>twist_mux_msgs</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>

@@ -1,0 +1,1 @@
+Invoking command in '/ros2-migration/build/plan_msgs': /usr/bin/cmake /ros2-migration/arena/arena-rosnav/utils/ros/msgs/plan_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/plan_msgs

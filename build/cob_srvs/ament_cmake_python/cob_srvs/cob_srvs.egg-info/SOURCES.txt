@@ -1,0 +1,11 @@
+setup.py
+cob_srvs/__init__.py
+cob_srvs.egg-info/PKG-INFO
+cob_srvs.egg-info/SOURCES.txt
+cob_srvs.egg-info/dependency_links.txt
+cob_srvs.egg-info/top_level.txt
+cob_srvs/srv/__init__.py
+cob_srvs/srv/_dock.py
+cob_srvs/srv/_set_float.py
+cob_srvs/srv/_set_int.py
+cob_srvs/srv/_set_string.py

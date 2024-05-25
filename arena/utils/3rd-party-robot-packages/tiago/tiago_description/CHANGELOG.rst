@@ -2,232 +2,370 @@
 Changelog for package tiago_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.3.7 (2022-08-10)
-------------------
-* Merge branch 'fix_torso_collision' into 'erbium-devel'
-  Fix collision boxes for the torso
-  See merge request robots/tiago_robot!156
-* Fix collision boxes for the torso
-* Contributors: saikishor, thomaspeyrucain
-
-2.3.6 (2022-08-04)
-------------------
-
-2.3.5 (2022-07-26)
-------------------
-
-2.3.4 (2022-07-21)
-------------------
-
-2.3.3 (2022-07-19)
-------------------
-
-2.3.2 (2022-05-17)
-------------------
-
-2.3.1 (2022-05-16)
-------------------
-
-2.3.0 (2022-05-03)
-------------------
-
-2.2.15 (2022-05-03)
+4.2.12 (2024-05-10)
 -------------------
-* Merge branch 'no-end-effector-bugfix' into 'erbium-devel'
-  No end effector bugfix
-  See merge request robots/tiago_robot!149
-* Merge branch 'no-end-effector-bugfix' of gitlab:robots/tiago_robot into no-end-effector-bugfix
-* Apply 5 suggestion(s) to 4 file(s)
-* remove redundant spaces
-* remove redundant spaces
-* end effector back to hey-5
-* prevent ft sensor to load when no arm is attached
-* add epick end-effector
-* add no-ee to urdf
-* update motions config file
-* fix faulty if statement in urdf
-* Update eval function, generate scripts
-* add no-ee to urdf
-* edit motions config
-* update motions config file
-* fix faulty if statement in urdf
-* made some changes
-* Update eval function, generate scripts
-* prevent ft sensor to load when no arm is attached
-* add epick end-effector
-* add no-ee to urdf
-* update motions config file
-* fix faulty if statement in urdf
-* Update eval function, generate scripts
-* add no-ee to urdf
-* edit motions config
-* update motions config file
-* fix faulty if statement in urdf
-* made some changes
-* Update eval function, generate scripts
-* add epick end-effector
-* add no-ee to urdf
-* edit motions config
-* update motions config file
-* fix faulty if statement in urdf
-* made some changes
-* Update eval function, generate scripts
-* add no-ee to urdf
-* edit motions config
-* update motions config file
-* fix faulty if statement in urdf
-* made some changes
-* Update eval function, generate scripts
-* Contributors: David ter Kuile, saikishor
+* Merge branch 'omm/fix/desc_test_proper_arg' into 'humble-devel'
+  Changed test arm argument to arm_type
+  See merge request robots/tiago_robot!286
+* Changed test arm argument to arm_type
+* Merge branch 'omm/feat/arm_name_std' into 'humble-devel'
+  Changed arm_model to arm_type in the URDF
+  See merge request robots/tiago_robot!285
+* Changed arm_model to arm_type in the URDF
+* Contributors: davidterkuile, oscarmartinez
 
-2.2.14 (2022-04-20)
+4.2.11 (2024-05-09)
 -------------------
-* Fix materials
-* Contributors: Giang Nguyen
+* Merge branch 'omm/feat/public_sim_conditions' into 'humble-devel'
+  Publishing the odom tf depending on the is_public_sim parameter
+  See merge request robots/tiago_robot!284
+* Publishing the odom tf depending on the is_public_sim parameter
+* Contributors: davidterkuile, oscarmartinez
 
-2.2.13 (2022-03-23)
--------------------
-* Merge branch 'fix_home_robotiq_2f_140' into 'erbium-devel'
-  Fix home position for robotiq-2f-140 + fix Reach max out of range motion + add effort_controller
-  See merge request robots/tiago_robot!148
-* Add pal_robotiq_epick_description dependency on tiago_description package
-* Contributors: saikishor, thomaspeyrucain
-
-2.2.12 (2022-03-18)
--------------------
-* Added the robotiq epick to the rostests
-* Contributors: Sai Kishor Kothakota
-
-2.2.11 (2022-03-18)
--------------------
-* Merge branch 'add_robotiq_epick_gripper' into 'erbium-devel'
-  Add link to epick urdf
-  See merge request robots/tiago_robot!145
-* Match the code with the other robotiq gripper
-* add prefix parameter
-* Add link to epick urdf
-* Contributors: saikishor, thomaspeyrucain
-
-2.2.10 (2022-02-22)
+4.2.10 (2024-05-09)
 -------------------
 
-2.2.9 (2022-01-19)
+4.2.9 (2024-05-07)
+------------------
+* Merge branch 'dtk/fix/robot-state-publisher' into 'humble-devel'
+  Dtk/fix/robot state publisher
+  See merge request robots/tiago_robot!281
+* Add robot state publisher dependency to tiago description
+* Contributors: davidterkuile
+
+4.2.8 (2024-04-30)
+------------------
+* Merge branch 'omm/fix/urdf_complete_std' into 'humble-devel'
+  URDF std
+  See merge request robots/tiago_robot!278
+* Suggested changed
+* Module, joy config and restored support for tiago dual
+* Gazebo config std
+* Final mods
+* Transmissions std
+* Thermal camera std
+* FT sensor std
+* ee std
+* Arm std
+* Style fix
+* ROS2 control and include std
+* Head std
+* Torso std
+* Property/arg standarization
+* High level urdf standarization
+* Suggested changes
+* Launch files moved to TIAGo family standard
+* Contributors: Oscar, davidterkuile
+
+4.2.7 (2024-04-22)
+------------------
+* Merge branch 'sgg/feat/base_type_omni_base' into 'humble-devel'
+  Sgg/feat/base type omni base
+  See merge request robots/tiago_robot!273
+* Update new robot argument method
+  Update new robot argument
+  Update new robot argument
+  Remove blank lines
+* Launch joint_state_broadcaster depending on the base_type
+  Fix syntax
+  Remove redundant check
+  Remove redundant check
+* Disable depency for humble
+* Add omni-directional gazebo drive
+* Parameterized wheel details based on base type
+* Add omni_base_description package
+* Add base_type parameter
+* Contributors: Sergi Garcia, davidterkuile
+
+4.2.6 (2024-04-16)
 ------------------
 
-2.2.8 (2021-12-22)
+4.2.5 (2024-04-10)
 ------------------
 
-2.2.7 (2021-11-25)
+4.2.4 (2024-03-06)
 ------------------
-* Merge branch 'omnibase-gravity-fix' into 'erbium-devel'
-  changing ros_planar_move gazebo plugin with ros_force_based_move in order to preserve gravity
-  See merge request robots/tiago_robot!143
-* Moved force_based_move AFTER ros_control
-* Changed the order of the plugin in order to make the wheel rotating correctly
-* Add dependency to the hector gazebo plugin for the omni base simulation
-* Removing the needs for a duplicated gazebo.urdf file
-* Removed dependencies
-* changing ros_planar_move gazebo plugin with ros_force_based_move in order to preserve gravity
-* Contributors: antoniobrandi, saikishor
+* Fix jnt_reduction_2 for wrist transmission
+* Contributors: Noel Jimenez
 
-2.2.6 (2021-11-22)
+4.2.3 (2024-02-28)
+------------------
+* Fix no-ee suffix for no-end-effector value
+* Contributors: Noel Jimenez
+
+4.2.2 (2024-02-02)
 ------------------
 
-2.2.5 (2021-11-19)
+4.2.1 (2024-01-31)
 ------------------
-* Merge branch 'fix_arm_1_collision_mesh' into 'erbium-devel'
-  fix the arm_1_link collision mesh which is causing troubles in capsule_decomposition generation
-  See merge request robots/tiago_robot!141
-* fix the arm_1_link collision mesh which is causing troubles in capsule_decomposition generation
-* Merge branch 'conditional_dependencies' into 'erbium-devel'
-  Conditional dependencies
-  See merge request robots/tiago_robot!140
-* added PAL_DISTRO conditioning for PAL dependencies
-* change to package version 3
-* Contributors: Sai Kishor Kothakota, victor
+* fix condition for end_effector suffix in the config file names
+* Contributors: Aina Irisarri
 
-2.2.4 (2021-11-10)
+4.2.0 (2024-01-31)
+------------------
+* Remove right-arm option and use tiago-arm
+* use the same functionality to create the suffix for the config files & match it with tiago_dual
+* Contributors: Aina Irisarri, Noel Jimenez
+
+4.1.2 (2024-01-19)
 ------------------
 
-2.2.3 (2021-11-10)
+4.1.1 (2024-01-19)
 ------------------
+* epick end effector commented
+* differentiating macros for robotiq-85 & robotiq-140
+* removing epick as posible end_effector for now
+* modifying where to find the urdfs for robotiq
+* updating the necessary dependencies for robotiq
+* adding robotiq_grippers as possibles end_effectors
+* Contributors: Aina Irisarri
 
-2.2.2 (2021-11-09)
+4.1.0 (2024-01-18)
 ------------------
+* Merge branch 'ros2-tiago-dual' into 'humble-devel'
+  Ros2 tiago dual
+  See merge request robots/tiago_robot!240
+* Change test arg to tiago-arm in CMakelists
+* Rename end-effector xacro arg
+* Change arm type to tiago-arm instead of arm right
+* Add is_dual arg to arm.urdf.xacro
+* Update inertia of arm link 4 urdf
+* Contributors: David ter Kuile, davidterkuile
 
-2.2.1 (2021-11-09)
-------------------
+4.0.28 (2023-12-22)
+-------------------
+* renaming hey5 package and the xacro files into pal_hey5
+* Contributors: Aina Irisarri
 
-2.2.0 (2021-11-03)
-------------------
-* Merge branch 'omni_base_robot' into 'erbium-devel'
-  Omni base robot
-  See merge request robots/tiago_robot!137
-* preparing configuration for a tiago with omni base
-* Creating tiago with omni_base robot
-* Contributors: antoniobrandi, saikishor
+4.0.27 (2023-12-18)
+-------------------
+* Use pal_urdf_utils materials and deg_to_rad
+* Contributors: Noel Jimenez
 
-2.1.5 (2021-09-22)
-------------------
-
-2.1.4 (2021-08-31)
-------------------
-
-2.1.3 (2021-08-06)
-------------------
-
-2.1.2 (2021-07-16)
-------------------
-* Merge branch 'fix_inertia_matrices' into 'erbium-devel'
-  fix the inertia matrices of arm_tool_link and of force torque sensor
-  See merge request robots/tiago_robot!129
-* fix the inertia matrices of arm_tool_link and of force torque sensor
-* Merge branch 'update-apache-licence-2021' into 'erbium-devel'
-  Updating apache License 2021
-  See merge request robots/tiago_robot!128
-* Updating apache License
-* Contributors: Sai Kishor Kothakota, ThomasPeyrucain, saikishor, victor
-
-2.1.1 (2021-06-01)
-------------------
-* Merge branch 'parametrize-robot-description' into 'erbium-devel'
-  Parametrize robot_description param name
-  See merge request robots/tiago_robot!127
-* Parametrize robot_description param name
-* Contributors: Victor Lopez, victor
-
-2.1.0 (2021-05-06)
-------------------
-* Merge branch 'robotiq_gripper' into 'erbium-devel'
-  Robotiq gripper
-  See merge request robots/tiago_robot!125
-* add robotiq dependencies and robotiq grippers to the tests
-* update the robotiq end effector naming
-* integrate the new robotiq-85 and robotiq-140 grippers
-* Contributors: Sai Kishor Kothakota, saikishor
-
-2.0.58 (2021-04-09)
+4.0.26 (2023-12-14)
 -------------------
 
-2.0.57 (2021-03-19)
+4.0.25 (2023-12-12)
 -------------------
-* Merge branch 'custom-end-effector-dual' into 'erbium-devel'
-  Custom end effector dual
-  See merge request robots/tiago_robot!123
-* fix: logic loading custom ee urdf from tiago_robot
-* fix: load custom urdfs
-* fix: treat string as binary always entering to dual if
-* fix: duplicating right ee causing error link
-* fix: xacro negation
-* Contributors: daniellopez, victor
 
-2.0.56 (2021-03-01)
+4.0.24 (2023-12-12)
 -------------------
-* Merge branch 'fix_left_arm_tiago_dual_com' into 'erbium-devel'
-  Add reflect for 4th link CoM
-  See merge request robots/tiago_robot!122
-* Add reflect for 4th link CoM
-* Contributors: Luca Marchionni, victor
+* Bump module names
+* Contributors: Noel Jimenez
+
+4.0.23 (2023-12-11)
+-------------------
+
+4.0.22 (2023-11-22)
+-------------------
+* Update cmake_minimum_required version to 3.8
+* Cleanup repository
+* Contributors: Noel Jimenez
+
+4.0.21 (2023-11-15)
+-------------------
+
+4.0.20 (2023-11-14)
+-------------------
+* Add website tag
+* Rename description and controller modules
+* Contributors: Noel Jimenez
+
+4.0.19 (2023-11-13)
+-------------------
+* Set use_sim_time false as default
+* Contributors: Noel Jimenez
+
+4.0.18 (2023-11-07)
+-------------------
+* Split bringup module
+* Contributors: Noel Jimenez
+
+4.0.17 (2023-10-19)
+-------------------
+
+4.0.16 (2023-09-18)
+-------------------
+
+4.0.15 (2023-09-04)
+-------------------
+* Add use_sim_time argument to use it in the robot description
+* Contributors: Noel Jimenez
+
+4.0.14 (2023-07-20)
+-------------------
+* Rename FT Sensor
+* Use same condition to call ft_sensor macros
+* Add controller for the FT sensor
+* Contributors: Noel Jimenez
+
+4.0.13 (2023-07-11)
+-------------------
+* Remove schunk wsg option
+* Remove left arm option
+* Contributors: Noel Jimenez
+
+4.0.12 (2023-07-05)
+-------------------
+* Remove pal flags dependency
+* Contributors: Noel Jimenez
+
+4.0.11 (2023-06-28)
+-------------------
+* fix get_tiago_hw_suffix method to match yaml files
+* move pal-hey5 ros2_control xacro to hey5_description
+* Contributors: Noel Jimenez
+
+4.0.10 (2023-06-14)
+-------------------
+* unify file generator and get_tiago_hw_suffix method
+* Contributors: Noel Jimenez
+
+4.0.9 (2023-05-11)
+------------------
+* Add effort and veloctiy command interfaces
+* Contributors: Adria Roig
+
+4.0.8 (2023-05-11)
+------------------
+
+4.0.7 (2023-04-28)
+------------------
+
+4.0.6 (2023-04-17)
+------------------
+* rename motors to actuators
+* Contributors: Noel Jimenez
+
+4.0.5 (2023-03-06)
+------------------
+
+4.0.4 (2023-03-02)
+------------------
+
+4.0.3 (2023-02-22)
+------------------
+* Merge branch 'join_transmissions' into 'humble-devel'
+  Join transmissions in a single file
+  See merge request robots/tiago_robot!187
+* join transmissions definition in a single file
+* remove unused includes and duplicated transmissions
+* Contributors: Jordan Palacios, Noel Jimenez
+
+4.0.2 (2023-02-08)
+------------------
+* Merge branch 'transmissions' into 'humble-devel'
+  Set transmissions inside the ros2_control tag
+  See merge request robots/tiago_robot!186
+* update transmissions for arm, head and torso
+* update transmission tags for ros2
+* set transmissions inside the ros2_control tag
+* Contributors: Jordan Palacios, Noel Jimenez
+
+4.0.1 (2022-11-10)
+------------------
+
+4.0.0 (2022-11-08)
+------------------
+* Merge branch 'mv_calibration_files' into 'humble-devel'
+  Move tiago_description_calibration xacro files to tiago_description
+  See merge request robots/tiago_robot!178
+* move tiago_description_calibration xacro files to tiago_description
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup package.xml files and rm duplicated launcher
+  See merge request robots/tiago_robot!174
+* update package.xml deps
+* Merge branch 'linters' into 'humble-devel'
+  linter fix
+  See merge request robots/tiago_robot!173
+* linter fix
+* Merge branch 'refactor_hw_suffix_method' into 'humble-devel'
+  refactor get_tiago_hw_suffix to avoid using launch substitutions
+  See merge request robots/tiago_robot!171
+* refactor get_tiago_hw_suffix to avoid using launch substitutions
+* Merge branch 'adjust_friction_dumping' into 'humble-devel'
+  Adjust arm friction and dumping
+  See merge request robots/tiago_robot!170
+* adjust arm friction and dumping
+* Merge branch 'update_copyright' into 'humble-devel'
+  update copyright and license
+  See merge request robots/tiago_robot!167
+* update copyright and license
+* Merge branch 'fix_warns' into 'humble-devel'
+  fix remmaping warns
+  See merge request robots/tiago_robot!166
+* fix remmaping warns
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup
+  See merge request robots/tiago_robot!165
+* rm ros1 launchers
+* Merge branch 'refactor_ld' into 'humble-devel'
+  Refactor ld
+  See merge request robots/tiago_robot!164
+* refactor LaunchDescription population
+* Merge branch 'update_maintainers' into 'humble-devel'
+  Update maintainers
+  See merge request robots/tiago_robot!163
+* update maintainers
+* Merge branch 'fix_tests' into 'humble-devel'
+  Comment end-effectors not migrated yet for urdf tests success
+  See merge request robots/tiago_robot!161
+* comment end-effectors not migrated yet to avoid tests errors
+* Merge branch 'robot_name' into 'humble-devel'
+  Robot name
+  See merge request robots/tiago_robot!160
+* change default robot_name value
+* Merge branch 'linters' into 'humble-devel'
+  Linters
+  See merge request robots/tiago_robot!159
+* linters
+* Merge branch 'launch_refactor' into 'humble-devel'
+  launch files refactor
+  See merge request robots/tiago_robot!158
+* update arm friction and damping
+* launch files refactor
+* Merge branch 'humble_fixes' into 'humble-devel'
+  add missing materials
+  See merge request robots/tiago_robot!157
+* add missing materials
+* Merge branch 'tiago_launcher' into 'galactic-devel'
+  Tiago launcher
+  See merge request robots/tiago_robot!150
+* add use_sim arg
+* Merge branch 'add_role_to_ros2_control' into 'foxy-devel'
+  Change <type> to <plugin> and add role
+  See merge request robots/tiago_robot!136
+* Add role param to plugin urdf
+* Merge branch 'pal-hey5-ros2' into 'foxy-devel'
+  pal-hey5 launch files and config
+  See merge request robots/tiago_robot!130
+* pal-hey5 launch files and config
+* Rename some tiago hw options, add camera_model and add tests
+* Add description
+* Add missing dependency
+* Make robot_description easy to reuse
+* Move tiago_launch_utils from pmb2_description
+* Remove rgbd_sensors from tiago, as is only for courier
+* Rename xtion camera to head_front_camera
+* Migrate camera to ROS2
+* Fixes to name and topic remaps for p3d plugin
+* Use p3d gazebo plugin instead of ros_world_odometry
+* Add IMU and FT ROS2 Control sensors
+* Add IMU gazebo plugin
+* Support for pal-gripper end effector
+* Added support for arm and ft_sensor args
+* Launch file for showing the description in rviz2
+* Formatting
+* Added wrist to arm_controller
+* Added arm_controller, no wrists
+* Added head_controller
+* All joints now form part of a single ros2_control system
+* ros2_control gazebo system for torso
+* Using gazebo_ros2_control plugin
+* Remove comments to workaround https://github.com/ros2/launch_ros/issues/214
+* First version of the robot_state_publisher.launch.py
+* Migrated package.xml and CMakeLists.txt to ros2 format
+* Contributors: Jordan Palacios, Noel Jimenez, Noel Jimenez Garcia, Victor Lopez, cescfolch, victor
 
 2.0.55 (2021-01-15)
 -------------------

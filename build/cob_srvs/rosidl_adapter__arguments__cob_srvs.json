@@ -1,0 +1,9 @@
+{
+  "package_name": "cob_srvs",
+  "non_idl_tuples": [
+    "/ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_srvs:srv/Dock.srv",
+    "/ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_srvs:srv/SetFloat.srv",
+    "/ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_srvs:srv/SetInt.srv",
+    "/ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_srvs:srv/SetString.srv"
+  ]
+}

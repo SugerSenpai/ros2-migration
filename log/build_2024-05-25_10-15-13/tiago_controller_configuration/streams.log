@@ -1,0 +1,22 @@
+[0.027s] Invoking command in '/ros2-migration/build/tiago_controller_configuration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_controller_configuration -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/tiago_controller_configuration
+[0.101s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.647s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.846s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[0.846s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.847s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.847s]   CMake did not find one.
+[0.849s] 
+[0.849s]   Could not find a package configuration file provided by "catkin" with any
+[0.849s]   of the following names:
+[0.850s] 
+[0.850s]     catkinConfig.cmake
+[0.850s]     catkin-config.cmake
+[0.851s] 
+[0.851s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.851s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.851s]   provides a separate development package or SDK, be sure it has been
+[0.852s]   installed.
+[0.852s] 
+[0.852s] [0m
+[0.865s] -- Configuring incomplete, errors occurred!
+[0.865s] See also "/ros2-migration/build/tiago_controller_configuration/CMakeFiles/CMakeOutput.log".

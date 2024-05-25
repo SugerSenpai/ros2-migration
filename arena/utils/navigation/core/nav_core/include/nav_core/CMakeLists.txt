@@ -35,6 +35,6 @@ ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(std_msgs)
 ament_export_dependencies(tf2_ros)
 ament_export_dependencies(costmap_2d)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 
 ament_package()

@@ -1,0 +1,30 @@
+[0.024s] Invoking command in '/ros2-migration/build/tiago_description_calibration': /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description_calibration -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/tiago_description_calibration
+[0.090s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.250s] Error parsing '/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description_calibration/package.xml':
+[0.251s] Traceback (most recent call last):
+[0.251s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.251s]     main()
+[0.251s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.251s]     raise e
+[0.251s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.251s]     package = parse_package_string(
+[0.251s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 719, in parse_package_string
+[0.251s]     export_node = _get_optional_node(root, 'export', filename)
+[0.251s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 807, in _get_optional_node
+[0.251s]     raise InvalidPackage('The manifest must not contain more than one "%s" tags' % tagname, filename)
+[0.252s] catkin_pkg.package.InvalidPackage: Error(s) in package '/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description_calibration/package.xml':
+[0.252s] The manifest must not contain more than one "export" tags
+[0.263s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.263s]   execute_process(/usr/bin/python3
+[0.263s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.263s]   /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description_calibration/package.xml
+[0.263s]   /ros2-migration/build/tiago_description_calibration/ament_cmake_core/package.cmake)
+[0.263s]   returned error code 1
+[0.263s] Call Stack (most recent call first):
+[0.263s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.263s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[0.263s]   CMakeLists.txt:22 (ament_package)
+[0.263s] 
+[0.263s] [0m
+[0.263s] -- Configuring incomplete, errors occurred!
+[0.264s] See also "/ros2-migration/build/tiago_description_calibration/CMakeFiles/CMakeOutput.log".

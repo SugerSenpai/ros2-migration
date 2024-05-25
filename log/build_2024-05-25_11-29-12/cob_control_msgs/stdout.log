@@ -1,0 +1,17 @@
+[  2%] Built target cob_control_msgs__cpp
+[  4%] [32mBuilding C object CMakeFiles/cob_control_msgs__rosidl_generator_c.dir/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distance__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/cob_control_msgs__rosidl_generator_c.dir/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distances__functions.c.o[0m
+[  6%] Built target ament_cmake_python_copy_cob_control_msgs
+[  8%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cob_control_msgs/msg/detail/obstacle_distance__type_support.cpp.o[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/dds_fastrtps/obstacle_distance__type_support.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cob_control_msgs/msg/detail/obstacle_distances__type_support.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/dds_fastrtps/obstacle_distances__type_support.cpp.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cob_control_msgs/msg/obstacle_distance__type_support.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cob_control_msgs/msg/obstacle_distances__type_support.cpp.o[0m
+running egg_info
+writing cob_control_msgs.egg-info/PKG-INFO
+writing dependency_links to cob_control_msgs.egg-info/dependency_links.txt
+writing top-level names to cob_control_msgs.egg-info/top_level.txt
+reading manifest file 'cob_control_msgs.egg-info/SOURCES.txt'
+writing manifest file 'cob_control_msgs.egg-info/SOURCES.txt'
+[ 19%] Built target ament_cmake_python_build_cob_control_msgs_egg

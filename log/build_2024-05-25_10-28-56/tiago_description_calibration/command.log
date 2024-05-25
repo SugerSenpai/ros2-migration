@@ -1,0 +1,2 @@
+Invoking command in '/ros2-migration/build/tiago_description_calibration': /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description_calibration -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/tiago_description_calibration
+Invoked command in '/ros2-migration/build/tiago_description_calibration' returned '1': /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description_calibration -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/tiago_description_calibration

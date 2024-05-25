@@ -39,7 +39,7 @@ ament_export_dependencies(controller_interface)
 ament_export_dependencies(pluginlib)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(realtime_tools)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(unitree_legged_control ${LIBS})
 
 ament_package()

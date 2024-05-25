@@ -15,7 +15,7 @@
  */
 
 
-#include <std_srvs/Trigger.h>
+#include "std_srvs/srv/trigger.hpp"
 #include <cob_base_controller_utils/WheelCommands.h>
 #include <ros/ros.h>
 
@@ -36,7 +36,7 @@ void commandsCallback(const cob_base_controller_utils::WheelCommands::ConstPtr& 
             valid = false;
             if( (msg->header.stamp - g_last_ok[i]) >= g_timeout  && !g_stop_requested) {
                 g_stop_requested = true;
-                std_srvs::Trigger srv;
+                std_srvs::srv::Trigger srv;
                 ROS_ERROR_STREAM("Wheel " << i << " exceeded threshold for too long, stopping..");
                 g_stop_client.call(srv);
             }
@@ -76,9 +76,9 @@ int main(int argc, char* argv[])
 
     ros::Subscriber status_sub = nh.subscribe("twist_controller/wheel_commands", 10, commandsCallback);
     if(g_shutdown){
-        g_stop_client = nh.serviceClient<std_srvs::Trigger>("driver/shutdown");
+        g_stop_client = nh.serviceClient<std_srvs::srv::Trigger>("driver/shutdown");
     }else{
-        g_stop_client = nh.serviceClient<std_srvs::Trigger>("driver/halt");
+        g_stop_client = nh.serviceClient<std_srvs::srv::Trigger>("driver/halt");
     }
 
     ros::spin();

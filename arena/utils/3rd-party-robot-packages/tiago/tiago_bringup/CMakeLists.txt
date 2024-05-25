@@ -1,32 +1,25 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 project(tiago_bringup)
 
-# Add support for C++14
-if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
+find_package(ament_cmake_auto REQUIRED)
+ament_auto_find_build_dependencies()
+
+if(pal_module_cmake_FOUND)
+  pal_register_modules(
+    module/joystick.yaml
+    module/play_motion2.yaml
+    module/twist_mux.yaml
+  )
 endif()
 
-find_package(ament_cmake REQUIRED)
-find_package(catkin REQUIRED)
-find_package(REQUIRED REQUIRED)
-set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS}
-  ${REQUIRED_INCLUDE_DIRS})
-include_directories(${INCLUDE_DIRS})
-set(LIBRARY_DIRS ${ament_cmake_LIBRARIES} ${catkin_LIBRARIES}
-  ${REQUIRED_LIBRARIES})
-set(LIBS ${ament_cmake_LIBRARIES} ${catkin_LIBRARIES} ${REQUIRED_LIBRARIES})
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
+install(
+  PROGRAMS scripts/regen_em_file.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
-install(PROGRAMS scripts/end_effector_camera.sh
-  DESTINATION bin)
-
-foreach(dir config launch)
-  install(DIRECTORY ${dir}/ DESTINATION share/${PROJECT_NAME}/${dir})
-endforeach(dir)
-
-ament_export_dependencies(ament_cmake)
-ament_export_dependencies(catkin)
-ament_export_dependencies(REQUIRED)
-ament_export_include_directories(${INCLUDE_DIRS})
-
-ament_package()
+ament_auto_package(INSTALL_TO_SHARE config launch)

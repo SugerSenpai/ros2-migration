@@ -30,6 +30,6 @@ catkin_install_python(PROGRAMS scripts/auto_tools.py scripts/auto_init.py
 
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(rosidl_default_generators)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 
 ament_package()

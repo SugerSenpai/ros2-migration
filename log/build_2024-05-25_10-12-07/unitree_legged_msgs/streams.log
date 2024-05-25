@@ -1,0 +1,32 @@
+[0.029s] Invoking command in '/ros2-migration/build/unitree_legged_msgs': /usr/bin/cmake /ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/unitree_legged_msgs
+[0.913s] -- The C compiler identification is GNU 11.4.0
+[0.913s] -- The CXX compiler identification is GNU 11.4.0
+[0.913s] -- Detecting C compiler ABI info
+[0.913s] -- Detecting C compiler ABI info - done
+[0.913s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.913s] -- Detecting C compile features
+[0.914s] -- Detecting C compile features - done
+[0.914s] -- Detecting CXX compiler ABI info
+[0.914s] -- Detecting CXX compiler ABI info - done
+[0.914s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.914s] -- Detecting CXX compile features
+[0.914s] -- Detecting CXX compile features - done
+[0.927s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[0.927s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.927s]   has asked CMake to find a package configuration file provided by
+[0.927s]   "ament_cmake", but CMake did not find one.
+[0.927s] 
+[0.927s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.928s]   any of the following names:
+[0.928s] 
+[0.928s]     ament_cmakeConfig.cmake
+[0.928s]     ament_cmake-config.cmake
+[0.928s] 
+[0.928s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.928s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.929s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.929s]   has been installed.
+[0.929s] 
+[0.929s] [0m
+[0.929s] -- Configuring incomplete, errors occurred!
+[0.929s] See also "/ros2-migration/build/unitree_legged_msgs/CMakeFiles/CMakeOutput.log".

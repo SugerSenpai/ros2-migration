@@ -10,7 +10,6 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(REQUIRED REQUIRED)
 find_package(catkin REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${geometry_msgs_INCLUDE_DIRS}
@@ -34,9 +33,8 @@ rosidl_generate_interfaces(${PROJECT_NAME} "msg/CartesianPose.msg"
 
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(geometry_msgs)
-ament_export_dependencies(REQUIRED)
 ament_export_dependencies(catkin)
 ament_export_dependencies(rosidl_default_generators)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 
 ament_package()

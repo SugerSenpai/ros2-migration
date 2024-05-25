@@ -1,6 +1,0 @@
-/**:
-  ros__parameters:
-    link_list:
-    - base_link
-    - torso_lift_link
-    padding: 0.05

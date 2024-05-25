@@ -1,0 +1,2 @@
+Invoking command in '/ros2-migration/arena/build/mapping': /usr/bin/cmake /ros2-migration/arena/arena-rosnav/utils/misc/mapping -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/mapping
+Invoked command in '/ros2-migration/arena/build/mapping' returned '1': /usr/bin/cmake /ros2-migration/arena/arena-rosnav/utils/misc/mapping -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/mapping

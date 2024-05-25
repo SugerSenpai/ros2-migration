@@ -1,0 +1,78 @@
+[0.026s] Invoking command in '/ros2-migration/build/cob_control_msgs': CMAKE_PREFIX_PATH=/ros2-migration/install/tiago_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /ros2-migration/build/cob_control_msgs -- -j8 -l8
+[0.154s] [  2%] [32mBuilding C object CMakeFiles/cob_control_msgs__rosidl_generator_c.dir/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distance__functions.c.o[0m
+[0.154s] [  4%] Built target cob_control_msgs__cpp
+[0.154s] [  6%] [32mBuilding C object CMakeFiles/cob_control_msgs__rosidl_generator_c.dir/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distances__functions.c.o[0m
+[0.154s] [  8%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/dds_fastrtps/obstacle_distance__type_support.cpp.o[0m
+[0.154s] [ 10%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cob_control_msgs/msg/detail/obstacle_distance__type_support.cpp.o[0m
+[0.154s] [ 12%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/dds_fastrtps/obstacle_distances__type_support.cpp.o[0m
+[0.154s] [ 12%] Built target ament_cmake_python_copy_cob_control_msgs
+[0.154s] [ 14%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cob_control_msgs/msg/obstacle_distances__type_support.cpp.o[0m
+[0.154s] [ 17%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cob_control_msgs/msg/obstacle_distance__type_support.cpp.o[0m
+[0.155s] [ 19%] [32mBuilding CXX object CMakeFiles/cob_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cob_control_msgs/msg/detail/obstacle_distances__type_support.cpp.o[0m
+[0.172s] In file included from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distance__functions.h:19[m[K,
+[0.172s]                  from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distance__functions.c:4[m[K:
+[0.172s] [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distance__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kcob_control_msgs/msg/detail/header__struct.h: No such file or directory
+[0.172s]    22 | #include [01;31m[K"cob_control_msgs/msg/detail/header__struct.h"[m[K
+[0.172s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.173s] compilation terminated.
+[0.173s] gmake[2]: *** [CMakeFiles/cob_control_msgs__rosidl_generator_c.dir/build.make:198: CMakeFiles/cob_control_msgs__rosidl_generator_c.dir/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distance__functions.c.o] Error 1
+[0.173s] gmake[2]: *** Waiting for unfinished jobs....
+[0.173s] In file included from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distances__struct.h:22[m[K,
+[0.173s]                  from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distances__functions.h:19[m[K,
+[0.173s]                  from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distances__functions.c:4[m[K:
+[0.173s] [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distance__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Kcob_control_msgs/msg/detail/header__struct.h: No such file or directory
+[0.173s]    22 | #include [01;31m[K"cob_control_msgs/msg/detail/header__struct.h"[m[K
+[0.173s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.173s] compilation terminated.
+[0.174s] gmake[2]: *** [CMakeFiles/cob_control_msgs__rosidl_generator_c.dir/build.make:212: CMakeFiles/cob_control_msgs__rosidl_generator_c.dir/rosidl_generator_c/cob_control_msgs/msg/detail/obstacle_distances__functions.c.o] Error 1
+[0.174s] gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/cob_control_msgs__rosidl_generator_c.dir/all] Error 2
+[0.174s] gmake[1]: *** Waiting for unfinished jobs....
+[0.211s] In file included from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_cpp/cob_control_msgs/msg/detail/obstacle_distances__struct.hpp:20[m[K,
+[0.211s]                  from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_typesupport_cpp/cob_control_msgs/msg/obstacle_distances__type_support.cpp:7[m[K:
+[0.211s] [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_cpp/cob_control_msgs/msg/detail/obstacle_distance__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kcob_control_msgs/msg/detail/header__struct.hpp: No such file or directory
+[0.211s]    20 | #include [01;31m[K"cob_control_msgs/msg/detail/header__struct.hpp"[m[K
+[0.211s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.211s] compilation terminated.
+[0.219s] gmake[2]: *** [CMakeFiles/cob_control_msgs__rosidl_typesupport_cpp.dir/build.make:169: CMakeFiles/cob_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cob_control_msgs/msg/obstacle_distances__type_support.cpp.o] Error 1
+[0.219s] gmake[2]: *** Waiting for unfinished jobs....
+[0.227s] In file included from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_cpp/cob_control_msgs/msg/detail/obstacle_distances__struct.hpp:20[m[K,
+[0.228s]                  from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/obstacle_distances__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[0.229s]                  from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/dds_fastrtps/obstacle_distances__type_support.cpp:4[m[K:
+[0.230s] [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_cpp/cob_control_msgs/msg/detail/obstacle_distance__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kcob_control_msgs/msg/detail/header__struct.hpp: No such file or directory
+[0.230s]    20 | #include [01;31m[K"cob_control_msgs/msg/detail/header__struct.hpp"[m[K
+[0.231s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.231s] In file included from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/obstacle_distance__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+[0.231s]                  from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/dds_fastrtps/obstacle_distance__type_support.cpp:4[m[K:
+[0.231s] [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_cpp/cob_control_msgs/msg/detail/obstacle_distance__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kcob_control_msgs/msg/detail/header__struct.hpp: No such file or directory
+[0.231s]    20 | #include [01;31m[K"cob_control_msgs/msg/detail/header__struct.hpp"[m[K
+[0.231s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.231s] compilation terminated.
+[0.232s] gmake[2]: *** [CMakeFiles/cob_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:166: CMakeFiles/cob_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/dds_fastrtps/obstacle_distance__type_support.cpp.o] Error 1
+[0.232s] gmake[2]: *** Waiting for unfinished jobs....
+[0.234s] compilation terminated.
+[0.235s] gmake[2]: *** [CMakeFiles/cob_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:180: CMakeFiles/cob_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cob_control_msgs/msg/detail/dds_fastrtps/obstacle_distances__type_support.cpp.o] Error 1
+[0.236s] gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/cob_control_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+[0.251s] In file included from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_typesupport_cpp/cob_control_msgs/msg/obstacle_distance__type_support.cpp:7[m[K:
+[0.251s] [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_cpp/cob_control_msgs/msg/detail/obstacle_distance__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kcob_control_msgs/msg/detail/header__struct.hpp: No such file or directory
+[0.252s]    20 | #include [01;31m[K"cob_control_msgs/msg/detail/header__struct.hpp"[m[K
+[0.252s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.252s] compilation terminated.
+[0.269s] In file included from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_typesupport_introspection_cpp/cob_control_msgs/msg/detail/obstacle_distance__type_support.cpp:12[m[K:
+[0.269s] [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_cpp/cob_control_msgs/msg/detail/obstacle_distance__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kcob_control_msgs/msg/detail/header__struct.hpp: No such file or directory
+[0.269s]    20 | #include [01;31m[K"cob_control_msgs/msg/detail/header__struct.hpp"[m[K
+[0.269s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.269s] compilation terminated.
+[0.277s] gmake[2]: *** [CMakeFiles/cob_control_msgs__rosidl_typesupport_cpp.dir/build.make:155: CMakeFiles/cob_control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cob_control_msgs/msg/obstacle_distance__type_support.cpp.o] Error 1
+[0.278s] gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/cob_control_msgs__rosidl_typesupport_cpp.dir/all] Error 2
+[0.278s] gmake[2]: *** [CMakeFiles/cob_control_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:166: CMakeFiles/cob_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cob_control_msgs/msg/detail/obstacle_distance__type_support.cpp.o] Error 1
+[0.278s] gmake[2]: *** Waiting for unfinished jobs....
+[0.292s] In file included from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_cpp/cob_control_msgs/msg/detail/obstacle_distances__struct.hpp:20[m[K,
+[0.292s]                  from [01m[K/ros2-migration/build/cob_control_msgs/rosidl_typesupport_introspection_cpp/cob_control_msgs/msg/detail/obstacle_distances__type_support.cpp:12[m[K:
+[0.292s] [01m[K/ros2-migration/build/cob_control_msgs/rosidl_generator_cpp/cob_control_msgs/msg/detail/obstacle_distance__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kcob_control_msgs/msg/detail/header__struct.hpp: No such file or directory
+[0.292s]    20 | #include [01;31m[K"cob_control_msgs/msg/detail/header__struct.hpp"[m[K
+[0.293s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.293s] compilation terminated.
+[0.318s] gmake[2]: *** [CMakeFiles/cob_control_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:180: CMakeFiles/cob_control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cob_control_msgs/msg/detail/obstacle_distances__type_support.cpp.o] Error 1
+[0.318s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/cob_control_msgs__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+[0.318s] gmake: *** [Makefile:146: all] Error 2
+[0.323s] Invoked command in '/ros2-migration/build/cob_control_msgs' returned '2': CMAKE_PREFIX_PATH=/ros2-migration/install/tiago_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /ros2-migration/build/cob_control_msgs -- -j8 -l8

@@ -2,215 +2,326 @@
 Changelog for package tiago_controller_configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.3.7 (2022-08-10)
-------------------
-* Merge branch 'fix_torso_collision' into 'erbium-devel'
-  Fix collision boxes for the torso
-  See merge request robots/tiago_robot!156
-* Reorder param order for making it easier to spot
-* Remove extra joints because were changed to fixed
-* Contributors: saikishor, thomaspeyrucain
-
-2.3.6 (2022-08-04)
-------------------
-
-2.3.5 (2022-07-26)
-------------------
-* Merge branch 'omnibase_wbc' into 'erbium-devel'
-  propagate base_type to wbc
-  See merge request robots/tiago_robot!155
-* propagate base_type to wbc
-* Contributors: saikishor, thomaspeyrucain
-
-2.3.4 (2022-07-21)
-------------------
-* Merge branch 'add_omni_tiago' into 'erbium-devel'
-  Add base_type to the missing launch files
-  See merge request robots/tiago_robot!153
-* =Add base_type to the missing launch files
-* Contributors: saikishor, thomaspeyrucain
-
-2.3.3 (2022-07-19)
-------------------
-* Removed extra space in the filename
-* Contributors: antoniobrandi
-
-2.3.2 (2022-05-17)
-------------------
-
-2.3.1 (2022-05-16)
-------------------
-
-2.3.0 (2022-05-03)
-------------------
-
-2.2.15 (2022-05-03)
--------------------
-* Merge branch 'no-end-effector-bugfix' into 'erbium-devel'
-  No end effector bugfix
-  See merge request robots/tiago_robot!149
-* remove redundant spaces
-* remove redundant spaces
-* Added no end-effector to cartesian impedance controller.launch
-* made some changes
-* Update eval function, generate scripts
-* rebase
-* rebase
-* Added no end-effector to cartesian impedance controller.launch
-* made some changes
-* Update eval function, generate scripts
-* rebaed
-* Added no end-effector to cartesian impedance controller.launch
-* made some changes
-* Update eval function, generate scripts
-* Added no end-effector to cartesian impedance controller.launch
-* made some changes
-* Update eval function, generate scripts
-* Contributors: David ter Kuile, saikishor
-
-2.2.14 (2022-04-20)
+4.2.12 (2024-05-10)
 -------------------
 
-2.2.13 (2022-03-23)
--------------------
-* Merge branch 'fix_home_robotiq_2f_140' into 'erbium-devel'
-  Fix home position for robotiq-2f-140 + fix Reach max out of range motion + add effort_controller
-  See merge request robots/tiago_robot!148
-* Fix home position for robotiq-2f-140 + fix Reach max out of range motion + add effort_controller
-* Contributors: saikishor, thomaspeyrucain
-
-2.2.12 (2022-03-18)
+4.2.11 (2024-05-09)
 -------------------
 
-2.2.11 (2022-03-18)
--------------------
-* Merge branch 'add_robotiq_epick_gripper' into 'erbium-devel'
-  Add link to epick urdf
-  See merge request robots/tiago_robot!145
-* Change config files to match new name and new controller + add joystick control
-* Change the name from vacuum to finger and add config file for controller
-* Add config files for robotiq-epick gripper
-* Contributors: saikishor, thomaspeyrucain
-
-2.2.10 (2022-02-22)
+4.2.10 (2024-05-09)
 -------------------
 
-2.2.9 (2022-01-19)
+4.2.9 (2024-05-07)
 ------------------
 
-2.2.8 (2021-12-22)
+4.2.8 (2024-04-30)
 ------------------
-* Merge branch 'reduced_wbc' into 'erbium-devel'
-  Add argument to set torso to no control
-  See merge request robots/tiago_robot!144
-* Add argument to set torso to no control
-* Contributors: Adria Roig, narcismiguel
+* Merge branch 'omm/fix/urdf_complete_std' into 'humble-devel'
+  URDF std
+  See merge request robots/tiago_robot!278
+* Suggested changed
+* Module, joy config and restored support for tiago dual
+* Omni related checks and files
+* Suggested changes
+* Launch files moved to TIAGo family standard
+* Merge branch 'tpe/add_omni_controller' into 'humble-devel'
+  Add missing dependency for the omni_base controller
+  See merge request robots/tiago_robot!279
+* Add missing dependency for the omni_base controller
+* Contributors: Oscar, davidterkuile, thomas.peyrucain
 
-2.2.7 (2021-11-25)
+4.2.7 (2024-04-22)
 ------------------
+* Merge branch 'sgg/feat/base_type_omni_base' into 'humble-devel'
+  Sgg/feat/base type omni base
+  See merge request robots/tiago_robot!273
+* Fix whitespace
+* mobile_base_controller.launch.py
+  Handle is_public_sim
+* Add param to ctor
+* Add use_sim parameter
+* Refactor avoiding if to reduce code complexity
+* Update new robot argument method
+  Update new robot argument
+  Update new robot argument
+  Remove blank lines
+* Launch joint_state_broadcaster depending on the base_type
+  Fix syntax
+  Remove redundant check
+  Remove redundant check
+* Fix syntax
+* Fix quotes in comparison
+* Parameterized mobile base type
+* Hardcoded omni_base controller
+* Contributors: Sergi Garcia, davidterkuile
 
-2.2.6 (2021-11-22)
+4.2.6 (2024-04-16)
 ------------------
-* Merge branch 'fix-omnibase' into 'erbium-devel'
-  Configuration of the speed filters for the combined mouvements of the omni base
-  See merge request robots/tiago_robot!142
-* Configuration of the speed filters for the combined mouvements of the omni base
-* Contributors: antoniobrandi, saikishor
+* Merge branch 'feat/ros2-pipelines' into 'humble-devel'
+  added public sim config for mobile base controller
+  See merge request robots/tiago_robot!274
+* cosmetic
+* added public sim config for mobile base controller
+* Contributors: andreacapodacqua, antoniobrandi
 
-2.2.5 (2021-11-19)
+4.2.5 (2024-04-10)
 ------------------
-* Merge branch 'conditional_dependencies' into 'erbium-devel'
-  Conditional dependencies
-  See merge request robots/tiago_robot!140
-* added PAL_DISTRO conditioning for PAL dependencies
-* change to package version 3
-* Contributors: Sai Kishor Kothakota, victor
+* Add ros2controlcli dependency
+* Contributors: Noel Jimenez
 
-2.2.4 (2021-11-10)
-------------------
-* added cartesian_impedance_controller controller as dependency
-* Contributors: Sai Kishor Kothakota
-
-2.2.3 (2021-11-10)
-------------------
-* Merge branch 'omni_base_fix' into 'erbium-devel'
-  Reducing speed limit in order to avoid a wheel blocking
-  See merge request robots/tiago_robot!139
-* Reducing speed limit in order to avoid a wheel blocking
-* Contributors: antoniobrandi, saikishor
-
-2.2.2 (2021-11-09)
-------------------
-* Merge branch 'cartesian_impedance' into 'erbium-devel'
-  Added the cartesian impedance config and launch file
-  See merge request robots/tiago_robot!132
-* added the gains for the controller
-* Added the cartesian impedance config and launch file
-* Contributors: Sai Kishor Kothakota, saikishor
-
-2.2.1 (2021-11-09)
-------------------
-
-2.2.0 (2021-11-03)
-------------------
-* Merge branch 'omni_base_robot' into 'erbium-devel'
-  Omni base robot
-  See merge request robots/tiago_robot!137
-* added dynamic footprint configuration for tiago with omni_base
-* preparing configuration for a tiago with omni base
-* Contributors: antoniobrandi, saikishor
-
-2.1.5 (2021-09-22)
+4.2.4 (2024-03-06)
 ------------------
 
-2.1.4 (2021-08-31)
-------------------
-* Merge branch 'kangaroo_wbc' into 'erbium-devel'
-  Kangaroo wbc
-  See merge request robots/tiago_robot!134
-* Add BS parameters needed for local joint control
-* Contributors: Adria Roig, victor
-
-2.1.3 (2021-08-06)
-------------------
-* Merge branch 'robotiq-impedance-issues' into 'erbium-devel'
-  fix: missing chain definition for robotiq gripper
-  See merge request robots/tiago_robot!131
-* refact: unify condition
-* fix: missing chain definition for robotiq gripper
-* Contributors: daniellopez, saikishor
-
-2.1.2 (2021-07-16)
+4.2.3 (2024-02-28)
 ------------------
 
-2.1.1 (2021-06-01)
+4.2.2 (2024-02-02)
 ------------------
-* Merge branch 'impedance_controllers' into 'erbium-devel'
-  added impedance controller configuration
-  See merge request robots/tiago_robot!126
-* Fix the actuator name in arm_1_joint
-* fix: endless loop in joint 6
+
+4.2.1 (2024-01-31)
+------------------
+
+4.2.0 (2024-01-31)
+------------------
+* update license year
 * added impedance controller configuration
-* Contributors: Sai Kishor Kothakota, daniellopez, saikishor, victor
+* update gravity compensation controller config
+* Remove unused type parameter from controllers configuration
+* Contributors: Noel Jimenez, Sai Kishor Kothakota
 
-2.1.0 (2021-05-06)
+4.1.2 (2024-01-19)
 ------------------
-* Merge branch 'robotiq_gripper' into 'erbium-devel'
-  Robotiq gripper
-  See merge request robots/tiago_robot!125
-* add robotiq dependencies and robotiq grippers to the tests
-* added the gravity compensation configurations for robotiq grippers
-* Update the joint trajectory controller config yamls
-* Contributors: Sai Kishor Kothakota, saikishor
 
-2.0.58 (2021-04-09)
+4.1.1 (2024-01-19)
+------------------
+* adding the config files needed for robotiq
+* modifying where to find the urdfs for robotiq
+* updating the necessary dependencies for robotiq
+* Contributors: Aina Irisarri
+
+4.1.0 (2024-01-18)
+------------------
+* Merge branch 'ros2-tiago-dual' into 'humble-devel'
+  Ros2 tiago dual
+  See merge request robots/tiago_robot!240
+* Remove unused param
+* Contributors: David ter Kuile, davidterkuile
+
+4.0.28 (2023-12-22)
+-------------------
+* adding pal_hey5 as dependency
+* removing temporal exception for hey5 gripper
+* relocate the pal-hey5 configuration and launch files
+* Contributors: Aina Irisarri
+
+4.0.27 (2023-12-18)
 -------------------
 
-2.0.57 (2021-03-19)
+4.0.26 (2023-12-14)
 -------------------
 
-2.0.56 (2021-03-01)
+4.0.25 (2023-12-12)
 -------------------
+* Launch gripper from its controller_configuration package
+* Contributors: Aina Irisarri
+
+4.0.24 (2023-12-12)
+-------------------
+* Bump module names
+* Contributors: Noel Jimenez
+
+4.0.23 (2023-12-11)
+-------------------
+* Remove unused files
+* Contributors: Noel Jimenez
+
+4.0.22 (2023-11-22)
+-------------------
+* Set 'finishes: True' for default_controllers module
+* Update cmake_minimum_required version to 3.8
+* Cleanup repository
+* Contributors: Noel Jimenez
+
+4.0.21 (2023-11-15)
+-------------------
+
+4.0.20 (2023-11-14)
+-------------------
+* Add website tag
+* Rename description and controller modules
+* Contributors: Noel Jimenez
+
+4.0.19 (2023-11-13)
+-------------------
+
+4.0.18 (2023-11-07)
+-------------------
+* Split bringup module
+* Contributors: Noel Jimenez
+
+4.0.17 (2023-10-19)
+-------------------
+* Use wheels calibration if exists
+* Contributors: Noel Jimenez
+
+4.0.16 (2023-09-18)
+-------------------
+
+4.0.15 (2023-09-04)
+-------------------
+
+4.0.14 (2023-07-20)
+-------------------
+* Rename FT Sensor
+* Fix ft_sensor_controller frame_id parameter
+* Add controller for the FT sensor
+* Contributors: Noel Jimenez
+
+4.0.13 (2023-07-11)
+-------------------
+* Remove schunk wsg option
+* Launch controllers depending on robot arguments
+* Contributors: Noel Jimenez
+
+4.0.12 (2023-07-05)
+-------------------
+* Remove pal flags dependency
+* Contributors: Noel Jimenez
+
+4.0.11 (2023-06-28)
+-------------------
+* fix controllers launcher when there is no end_effector
+* Contributors: Noel Jimenez
+
+4.0.10 (2023-06-14)
+-------------------
+
+4.0.9 (2023-05-11)
+------------------
+* remove ros1 commented dependencies
+* comment controller dependency
+* flake8 fixes
+* add conditional dependency and do not launch gravity compensation controller as default
+* Spawn gravity compensation controller inactive
+* Set gravity compensation controller parameters
+* Add gravity compensation controller
+* Contributors: Adria Roig, Noel Jimenez
+
+4.0.8 (2023-05-11)
+------------------
+
+4.0.7 (2023-04-28)
+------------------
+* set sim time for gazebo controller_manager
+* Contributors: Noel Jimenez
+
+4.0.6 (2023-04-17)
+------------------
+
+4.0.5 (2023-03-06)
+------------------
+* Merge branch 'rm_use_sim_time' into 'humble-devel'
+  remove use_sim_time parameter
+  See merge request robots/tiago_robot!191
+* remove use_sim_time parameter
+* Contributors: Jordan Palacios, Noel Jimenez
+
+4.0.4 (2023-03-02)
+------------------
+* Merge branch 'fix_controllers_config' into 'humble-devel'
+  remove initial / from controllers config
+  See merge request robots/tiago_robot!190
+* remove initial / from controllers config
+* Contributors: Jordan Palacios, Noel Jimenez
+
+4.0.3 (2023-02-22)
+------------------
+
+4.0.2 (2023-02-08)
+------------------
+
+4.0.1 (2022-11-10)
+------------------
+* Merge branch 'update_license' into 'humble-devel'
+  Update license
+  See merge request robots/tiago_robot!180
+* update license
+* Merge branch 'fix_dependency' into 'humble-devel'
+  fix buildtool dependency
+  See merge request robots/tiago_robot!179
+* fix buildtool dependency
+* Contributors: Jordan Palacios, Noel Jimenez
+
+4.0.0 (2022-11-08)
+------------------
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup package.xml files and rm duplicated launcher
+  See merge request robots/tiago_robot!174
+* rm duplicated launcher
+* update package.xml deps
+* Merge branch 'fix_substitution' into 'humble-devel'
+  fix end effector substitution
+  See merge request robots/tiago_robot!169
+* fix end effector substitution
+* Merge branch 'default_robot_name' into 'humble-devel'
+  Add missing default robot name
+  See merge request robots/tiago_robot!168
+* add missing default robot name
+* Merge branch 'update_copyright' into 'humble-devel'
+  update copyright and license
+  See merge request robots/tiago_robot!167
+* update copyright and license
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup
+  See merge request robots/tiago_robot!165
+* rm ros1 launchers
+* Merge branch 'update_maintainers' into 'humble-devel'
+  Update maintainers
+  See merge request robots/tiago_robot!163
+* update maintainers
+* Merge branch 'linters' into 'humble-devel'
+  Linters
+  See merge request robots/tiago_robot!159
+* rm print
+* linters
+* Merge branch 'launch_refactor' into 'humble-devel'
+  launch files refactor
+  See merge request robots/tiago_robot!158
+* launch files refactor
+* Merge branch 'tiago_launcher' into 'galactic-devel'
+  Tiago launcher
+  See merge request robots/tiago_robot!150
+* add todo
+* Merge branch 'pal-hey5-ros2' into 'foxy-devel'
+  pal-hey5 launch files and config
+  See merge request robots/tiago_robot!130
+* use tiago_launch_utils
+* add pal-gripper launch
+* update default controllers launch file
+* pal-hey5 launch files and config
+* Add basic tests to tiago_controller_configuration
+* Add extra joints
+* Add use_sim_time to controllers as a workaround for https://github.com/ros-controls/ros2_control/issues/325
+* Added new parameters required for joint trajectory controllers
+  Also, enabled default controllers
+* Lower controller manager to 100hz
+* Using joint_state_broadcaster instead of controller
+* Increased controller manager update rate to match gazebo's
+* Added twist_mux to the tiago bringup
+  mobile_base_controller now uses the twist unstamped topic instead
+* Use correct namespacing for parameters
+* Using controller_manager launch_utils
+* Support for pal-gripper end effector
+* Now uses launch_pal utils
+* Added wrist to arm_controller
+* Added arm_controller, no wrists
+* Added head_controller
+* Added torso_controller
+* Added default_controllers with mobile_base and joint_state controllers
+* Added gazebo_controller_manager_cfg.yaml
+* tiago_controller_configuration readded and migrated to ros2
+* Ignoring tiago_bringup and tiago_controller_configuration for now
+* Contributors: Jordan Palacios, Noel Jimenez, Noel Jimenez Garcia, Victor Lopez, cescfolch, victor
 
 2.0.55 (2021-01-15)
 -------------------

@@ -1,0 +1,2 @@
+Invoking command in '/ros2-migration/build/pmb2_laser_sensors': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2-migration/build/pmb2_laser_sensors -- -j8 -l8
+Invoked command in '/ros2-migration/build/pmb2_laser_sensors' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2-migration/build/pmb2_laser_sensors -- -j8 -l8

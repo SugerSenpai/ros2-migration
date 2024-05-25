@@ -24,7 +24,7 @@
 #include <cob_base_controller_utils/OdometryTracker.h>
 #include <cob_omni_drive_controller/UndercarriageCtrlGeom.h>
 
-#include <std_srvs/Trigger.h>
+#include <std_srvs/srv/trigger.hpp>
 
 #include "GeomController.h"
 

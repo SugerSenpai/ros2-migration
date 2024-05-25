@@ -1,9 +1,0 @@
-/**:
-  ros__parameters:
-    cartesian_impedance:
-      damping_gain: 0.1
-      dt: 0.01
-      robot_model_chains:
-      - gripper_link
-      stiffness_gain: 90.0
-      type: impedance_control/CartesianImpedance

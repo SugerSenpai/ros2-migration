@@ -1,0 +1,2 @@
+Invoking command in '/ros2-migration/arena/build/pmb2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/pmb2_description -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/pmb2_description
+Invoked command in '/ros2-migration/arena/build/pmb2_description' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/pmb2_description -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/pmb2_description
