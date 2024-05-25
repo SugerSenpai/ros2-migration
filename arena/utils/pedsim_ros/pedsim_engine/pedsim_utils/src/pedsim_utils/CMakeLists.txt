@@ -11,7 +11,6 @@ add_compile_options(-Wall -Wunused -std=c++11)
 set(PACKAGE_DEPS cmake_modules geometry_msgs pedsim_msgs roscpp rospy)
 
 find_package(ament_cmake REQUIRED)
-find_package(REQUIRED REQUIRED)
 find_package(${PACKAGE_DEPS} REQUIRED)
 find_package(Eigen3 REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${REQUIRED_INCLUDE_DIRS}

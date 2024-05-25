@@ -24,7 +24,6 @@ endif(SHALL_DEBUG)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(Boost REQUIRED)
-find_package(REQUIRED REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${rclcpp_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS} ${REQUIRED_INCLUDE_DIRS})
 include_directories(${INCLUDE_DIRS})

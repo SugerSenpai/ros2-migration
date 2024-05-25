@@ -12,7 +12,6 @@ find_package(ament_cmake REQUIRED)
 find_package(PkgConfig REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(REQUIRED REQUIRED)
 find_package(std_msgs REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${PkgConfig_INCLUDE_DIRS}
   ${rosidl_default_generators_INCLUDE_DIRS} ${geometry_msgs_INCLUDE_DIRS}

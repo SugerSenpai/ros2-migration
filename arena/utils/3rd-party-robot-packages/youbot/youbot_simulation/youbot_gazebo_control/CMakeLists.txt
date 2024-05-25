@@ -21,7 +21,6 @@ find_package(pluginlib REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(urdf REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(REQUIRED REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(realtime_tools REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${roslint_INCLUDE_DIRS}
