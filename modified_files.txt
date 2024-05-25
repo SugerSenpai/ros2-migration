@@ -1,0 +1,4 @@
+Files that contained dynamic_reconfigure. It doesnt exist anymore in ros2 and the functionality has to be reimplemented. 
+
+/home/jonas/ros2-migration/arena_updated/arena-rosnav/task_generator/CMakeLists.txt
+/home/jonas/ros2-migration/arena_updated/arena-rosnav/task_generator/task_generator/CMakeLists.txt

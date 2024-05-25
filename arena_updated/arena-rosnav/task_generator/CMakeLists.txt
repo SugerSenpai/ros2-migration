@@ -15,7 +15,6 @@ include_directories(${INCLUDE_DIRS})
 set(LIBRARY_DIRS ${ament_cmake_LIBRARIES} ${rclpy_LIBRARIES})
 set(LIBS ${ament_cmake_LIBRARIES} ${rclpy_LIBRARIES})
 
-generate_dynamic_reconfigure_options(cfg/TaskGenerator.cfg)
 
 
 install(PROGRAMS scripts/main.py scripts/scenario_helper.py
