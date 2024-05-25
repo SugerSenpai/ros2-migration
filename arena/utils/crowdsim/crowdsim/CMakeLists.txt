@@ -15,7 +15,7 @@ include_directories(
   ${std_msgs_INCLUDE_DIRS}
 )
 
-add_executable(crowdsim_node src/crowdsim_node.cpp)
+#add_executable(crowdsim_node src/crowdsim_node.cpp)
 
 ament_target_dependencies(crowdsim_node
   rclcpp
@@ -23,7 +23,7 @@ ament_target_dependencies(crowdsim_node
 )
 
 install(TARGETS
-  crowdsim_node
+  #crowdsim_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
