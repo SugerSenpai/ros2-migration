@@ -15,7 +15,7 @@
  */
 
 
-#include <std_srvs/Trigger.h>
+#include <std_srvs/srv/Trigger.hpp>
 #include <cob_base_controller_utils/WheelCommands.h>
 #include <ros/ros.h>
 
