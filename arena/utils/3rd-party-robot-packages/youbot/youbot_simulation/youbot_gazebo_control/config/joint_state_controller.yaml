@@ -1,3 +1,5 @@
-joint_state_controller:
-    type: joint_state_controller/JointStateController
-    publish_rate: 100
+/**:
+  ros__parameters:
+    joint_state_controller:
+      publish_rate: 100
+      type: joint_state_controller/JointStateController

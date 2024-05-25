@@ -27,7 +27,7 @@ set(LIBS ${ament_cmake_LIBRARIES} ${sensor_msgs_LIBRARIES} ${nav_msgs_LIBRARIES}
   ${std_msgs_LIBRARIES})
 
 
-catkin_install_python(PROGRAMS scripts/data_recorder_node scripts/get_metrics
+install(PROGRAMS scripts/data_recorder_node scripts/get_metrics
   scripts/create_plots scripts/process_data
   DESTINATION bin)
 
@@ -38,6 +38,6 @@ ament_export_dependencies(rclpy)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(std_msgs)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

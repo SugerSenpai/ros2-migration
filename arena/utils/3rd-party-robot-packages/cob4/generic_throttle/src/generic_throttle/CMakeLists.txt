@@ -15,10 +15,10 @@ set(LIBRARY_DIRS ${ament_cmake_LIBRARIES})
 set(LIBS ${ament_cmake_LIBRARIES})
 
 
-catkin_install_python(PROGRAMS scripts/${PROJECT_NAME}_node.py
+install(PROGRAMS scripts/${PROJECT_NAME}_node.py
   DESTINATION bin)
 
 ament_export_dependencies(ament_cmake)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

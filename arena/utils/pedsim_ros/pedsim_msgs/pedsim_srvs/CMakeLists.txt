@@ -40,6 +40,6 @@ link_directories(${catkin_LIBRARY_DIRS})
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(rosidl_default_generators)
 ament_export_dependencies(${MESSAGE_DEPENDENCIES})
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

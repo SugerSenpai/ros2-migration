@@ -23,13 +23,13 @@ generate_dynamic_reconfigure_options(cfg/HelperTools.cfg)
 ## Install ##
 #############
 
-catkin_install_python(PROGRAMS scripts/auto_tools.py scripts/auto_init.py
+install(PROGRAMS scripts/auto_tools.py scripts/auto_init.py
   scripts/auto_recover.py scripts/fake_diagnostics.py scripts/fake_driver.py
   scripts/visualize_navigation_goals.py
   DESTINATION bin)
 
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(rosidl_default_generators)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

@@ -21,6 +21,7 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
+find_package(REQUIRED REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${geometry_msgs_INCLUDE_DIRS}
   ${rosidl_default_generators_INCLUDE_DIRS} ${gazebo_INCLUDE_DIRS}
   ${thread_INCLUDE_DIRS} ${tf2_INCLUDE_DIRS} ${rclcpp_INCLUDE_DIRS}
@@ -82,7 +83,8 @@ ament_export_dependencies(rclcpp)
 ament_export_dependencies(std_msgs)
 ament_export_dependencies(nav_msgs)
 ament_export_dependencies(std_srvs)
-include_directories(${INCLUDE_DIRS})
+ament_export_dependencies(REQUIRED)
+ament_export_include_directories(${INCLUDE_DIRS})
 ament_export_libraries(ridgeback_ros_force_based_move ${LIBS})
 
 ament_package()

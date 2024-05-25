@@ -65,7 +65,7 @@ ament_export_dependencies(tf2)
 ament_export_dependencies(tf2_ros)
 ament_export_dependencies(angles)
 ament_export_dependencies(nav_core)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 ament_export_libraries(carrot_planner ${LIBS})
 
 ament_package()

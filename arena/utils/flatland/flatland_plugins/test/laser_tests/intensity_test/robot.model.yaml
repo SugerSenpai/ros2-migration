@@ -1,40 +1,65 @@
-# Turtlebot
-
-bodies:  # List of named bodies
-  - name: base_link
-    pose: [0, 0, 0] 
-    type: dynamic
-    color: [1, 1, 0, 1]
-    footprints:
-      - type: circle
+/**:
+  ros__parameters:
+    bodies:
+    - color:
+      - 1
+      - 1
+      - 0
+      - 1
+      footprints:
+      - center:
+        - 0
+        - 0
         density: 1
-        center: [0, 0]
         radius: 0.1
-
-plugins:
-  - type: Laser
-    name: laser_front
-    body: base_link
-    range: 5
-    angle: {min: -1.5707963267948966, max: 1.5707963267948966, increment: 1.5707963267948966}
-
-  - type: Laser
-    name: laser_center
-    topic: /scan_center
-    frame: center_laser
-    body: base_link
-    origin: [0, 0, 0]
-    range: 5
-    update_rate: 5000
-    angle: {min: 0, max: 6.283185307179586, increment: 1.5707963267948966}
-    layers: ["layer_1", "reflectance"]
-
-  - type: Laser
-    name: laser_back
-    topic: scan_back
-    body: base_link
-    origin: [-1, -1, 1.5707963267948966]
-    range: 4
-    update_rate: 1
-    angle: {min: 0, max: 6.283185307179586, increment: 1.5707963267948966}
-    layers: ["layer_2", "reflectance"]
+        type: circle
+      name: base_link
+      pose:
+      - 0
+      - 0
+      - 0
+      type: dynamic
+    plugins:
+    - angle:
+        increment: 1.5707963267948966
+        max: 1.5707963267948966
+        min: -1.5707963267948966
+      body: base_link
+      name: laser_front
+      range: 5
+      type: Laser
+    - angle:
+        increment: 1.5707963267948966
+        max: 6.283185307179586
+        min: 0
+      body: base_link
+      frame: center_laser
+      layers:
+      - layer_1
+      - reflectance
+      name: laser_center
+      origin:
+      - 0
+      - 0
+      - 0
+      range: 5
+      topic: /scan_center
+      type: Laser
+      update_rate: 5000
+    - angle:
+        increment: 1.5707963267948966
+        max: 6.283185307179586
+        min: 0
+      body: base_link
+      layers:
+      - layer_2
+      - reflectance
+      name: laser_back
+      origin:
+      - -1
+      - -1
+      - 1.5707963267948966
+      range: 4
+      topic: scan_back
+      type: Laser
+      update_rate: 1

@@ -90,7 +90,7 @@ ament_export_dependencies(hardware_interface)
 ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(realtime_tools)
 ament_export_dependencies(thread)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 ament_export_libraries(cob_omni_drive_geom ${PROJECT_NAME} ${LIBS})
 
 ament_package()

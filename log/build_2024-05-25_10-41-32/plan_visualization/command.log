@@ -1,2 +1,0 @@
-Invoking command in '/ros2-migration/build/plan_visualization': /usr/bin/cmake /ros2-migration/arena/arena-rosnav/utils/misc/plan_visualization -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/plan_visualization
-Invoked command in '/ros2-migration/build/plan_visualization' returned '1': /usr/bin/cmake /ros2-migration/arena/arena-rosnav/utils/misc/plan_visualization -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/plan_visualization

@@ -1,23 +1,31 @@
-# Turtlebot
-
-
-bodies:  # List of named bodies
-  - name: base_link_1
-    pose: [0, 0, 0] 
-    type: dynamic
-    color: [1, 1, 1, 0.5]
-    footprints:
-      - type: circle
+/**:
+  ros__parameters:
+    bodies:
+    - color:
+      - 1
+      - 1
+      - 1
+      - 0.5
+      footprints:
+      - center:
+        - 0
+        - 0
         density: 30
-        center: [0, 0]
         radius: 1
         sensor: true
-
-plugins:
-  - type: Bumper
-    name: Bumper_B
-    world_frame_id: world
-    topic: collisions_B
-    publish_all_collisions: false
-    update_rate: 10
-    exclude: ["random_body"]
+        type: circle
+      name: base_link_1
+      pose:
+      - 0
+      - 0
+      - 0
+      type: dynamic
+    plugins:
+    - exclude:
+      - random_body
+      name: Bumper_B
+      publish_all_collisions: false
+      topic: collisions_B
+      type: Bumper
+      update_rate: 10
+      world_frame_id: world

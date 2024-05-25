@@ -116,6 +116,7 @@ find_package(cob_srvs REQUIRED)
 find_package(eigen_conversions REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(REQUIRED REQUIRED)
 find_package(roslint REQUIRED)
 find_package(kdl_conversions REQUIRED)
 find_package(trajectory_msgs REQUIRED)
@@ -189,17 +190,17 @@ install(TARGETS debug_fk_vel_recursive_node debug_trajectory_marker_node
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION include/${PROJECT_NAME})
 
-catkin_install_python(PROGRAMS scripts/test_publisher_float_sine_noise.py
+install(PROGRAMS scripts/test_publisher_float_sine_noise.py
   scripts/test_publisher_twist_sine.py scripts/test_publisher_twist.py
   scripts/test_publisher_twist_stamped.py scripts/test_publisher_twist_series.py
   scripts/test_publisher_vel.py
   DESTINATION bin)
 
-catkin_install_python(PROGRAMS scripts/collect_twist_control_eval_data.py
+install(PROGRAMS scripts/collect_twist_control_eval_data.py
   scripts/evaluate_dbg_jnt_velocity_tests.py
   DESTINATION bin)
 
-catkin_install_python(PROGRAMS scripts/test/test_careobot_base.py
+install(PROGRAMS scripts/test/test_careobot_base.py
   scripts/test/test_careobot_GPM_jla_ca_torus.py
   scripts/test/test_careobot_st_jla_ca_selfcollision_arm_left_direct_head.py
   scripts/test/test_careobot_st_jla_ca_selfcollision_arm_left_internal_motion.py
@@ -229,6 +230,7 @@ ament_export_dependencies(cob_srvs)
 ament_export_dependencies(eigen_conversions)
 ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(rclcpp)
+ament_export_dependencies(REQUIRED)
 ament_export_dependencies(roslint)
 ament_export_dependencies(kdl_conversions)
 ament_export_dependencies(trajectory_msgs)
@@ -236,7 +238,7 @@ ament_export_dependencies(visualization_msgs)
 ament_export_dependencies(control_msgs)
 ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(nav_msgs)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 ament_export_libraries(controller_interfaces damping_methods inv_calculations
   constraint_solvers limiters kinematic_extensions
   inverse_differential_kinematics_solver twist_controller ${LIBS})

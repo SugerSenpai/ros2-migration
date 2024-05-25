@@ -1,2 +1,0 @@
-[0.025s] Invoking command in '/ros2-migration/build/tiago_controller_configuration': /usr/bin/cmake --build /ros2-migration/build/tiago_controller_configuration -- -j8 -l8
-[0.119s] Invoked command in '/ros2-migration/build/tiago_controller_configuration' returned '0': /usr/bin/cmake --build /ros2-migration/build/tiago_controller_configuration -- -j8 -l8

@@ -72,6 +72,6 @@ install(DIRECTORY include/${PROJECT_NAME}/
 
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(${PACKAGE_DEPS})
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

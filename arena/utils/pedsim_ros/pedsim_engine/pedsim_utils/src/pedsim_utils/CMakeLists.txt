@@ -11,6 +11,7 @@ add_compile_options(-Wall -Wunused -std=c++11)
 set(PACKAGE_DEPS cmake_modules geometry_msgs pedsim_msgs roscpp rospy)
 
 find_package(ament_cmake REQUIRED)
+find_package(REQUIRED REQUIRED)
 find_package(${PACKAGE_DEPS} REQUIRED)
 find_package(Eigen3 REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${REQUIRED_INCLUDE_DIRS}
@@ -59,9 +60,10 @@ install(TARGETS ${LIBRARY_NAME}
 # catkin_add_nosetests(test)
 
 ament_export_dependencies(ament_cmake)
+ament_export_dependencies(REQUIRED)
 ament_export_dependencies(${PACKAGE_DEPS})
 ament_export_dependencies(Eigen3)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 ament_export_libraries(${LIBRARY_NAME} ${LIBS})
 
 ament_package()

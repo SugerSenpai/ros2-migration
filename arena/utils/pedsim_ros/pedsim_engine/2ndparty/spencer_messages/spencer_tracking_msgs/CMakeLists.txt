@@ -48,6 +48,6 @@ ament_export_dependencies(rosidl_default_generators)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(std_msgs)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

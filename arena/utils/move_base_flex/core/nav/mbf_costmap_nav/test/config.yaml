@@ -1,7 +1,19 @@
-search:
-    global:
-        track_unknown_space: false
-        footprint: [[-0.6, -0.6], [1.6, -0.6], [1.6, 0.6], [-0.6, 0.6]] # in Y it is a bit larger than one cell
+/**:
+  ros__parameters:
+    search:
+      global:
+        footprint:
+        - - -0.6
+          - -0.6
+        - - 1.6
+          - -0.6
+        - - 1.6
+          - 0.6
+        - - -0.6
+          - 0.6
         plugins:
-        - {name: static,    type: "costmap_2d::StaticLayer"}
-        - {name: obstacles, type: "costmap_2d::ObstacleLayer"}
+        - name: static
+          type: costmap_2d::StaticLayer
+        - name: obstacles
+          type: costmap_2d::ObstacleLayer
+        track_unknown_space: false

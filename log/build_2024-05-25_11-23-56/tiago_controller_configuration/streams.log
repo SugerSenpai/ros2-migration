@@ -1,2 +1,0 @@
-[0.034s] Invoking command in '/ros2-migration/build/tiago_controller_configuration': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2-migration/build/tiago_controller_configuration -- -j8 -l8
-[0.087s] Invoked command in '/ros2-migration/build/tiago_controller_configuration' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2-migration/build/tiago_controller_configuration -- -j8 -l8

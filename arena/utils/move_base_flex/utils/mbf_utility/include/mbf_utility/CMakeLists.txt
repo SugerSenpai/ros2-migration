@@ -55,7 +55,7 @@ ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(tf2_geometry_msgs)
 ament_export_dependencies(mbf_msgs)
 ament_export_dependencies(rclcpp)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 ament_export_libraries(${PROJECT_NAME} ${LIBS})
 
 ament_package()

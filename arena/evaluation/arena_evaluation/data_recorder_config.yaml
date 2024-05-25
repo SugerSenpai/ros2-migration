@@ -1,3 +1,5 @@
-max_episodes: 15 # terminates simulation upon reaching xth episode
-max_time: 1200 # terminates simulation after x seconds
-record_frequency: 400 # time interval in which data is stored in ms
+/**:
+  ros__parameters:
+    max_episodes: 15
+    max_time: 1200
+    record_frequency: 400

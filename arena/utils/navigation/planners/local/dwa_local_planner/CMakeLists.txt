@@ -22,6 +22,7 @@ find_package(nav_msgs REQUIRED)
 find_package(angles REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(REQUIRED REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${rclcpp_INCLUDE_DIRS}
   ${Eigen3_INCLUDE_DIRS} ${costmap_2d_INCLUDE_DIRS}
   ${tf2_geometry_msgs_INCLUDE_DIRS} ${base_local_planner_INCLUDE_DIRS}
@@ -81,7 +82,8 @@ ament_export_dependencies(nav_msgs)
 ament_export_dependencies(angles)
 ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(tf2_ros)
-include_directories(${INCLUDE_DIRS})
+ament_export_dependencies(REQUIRED)
+ament_export_include_directories(${INCLUDE_DIRS})
 ament_export_libraries(dwa_local_planner ${LIBS})
 
 ament_package()

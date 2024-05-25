@@ -40,6 +40,6 @@ rosidl_generate_interfaces(${PROJECT_NAME} "msg/msg" "msg/FILES"
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(${MESSAGE_DEPENDENCIES})
 ament_export_dependencies(rosidl_default_generators)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

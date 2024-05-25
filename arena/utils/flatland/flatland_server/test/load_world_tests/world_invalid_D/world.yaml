@@ -1,7 +1,9 @@
-properties: {}
-layers:
-  - name: "layer"
-    map: "../simple_test_A/map.yaml"
-  - name: "layer"
-    map: "../simple_test_A/map3d.yaml"
-models: []
+/**:
+  ros__parameters:
+    layers:
+    - map: ../simple_test_A/map.yaml
+      name: layer
+    - map: ../simple_test_A/map3d.yaml
+      name: layer
+    models: []
+    properties: {}

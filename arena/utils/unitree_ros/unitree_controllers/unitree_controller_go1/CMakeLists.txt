@@ -152,6 +152,6 @@ ament_export_dependencies(NumPy)
 ament_export_dependencies(gazebo_ros)
 ament_export_dependencies(joint_state_controller)
 ament_export_dependencies(Boost)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

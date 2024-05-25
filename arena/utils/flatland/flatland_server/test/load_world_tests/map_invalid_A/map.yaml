@@ -1,7 +1,11 @@
-image: ../simple_test_A/map.png
-resolution: 0.050000
-origins: [-16.600000, -6.650000, 0.000000] # invalid
-negate: 0
-occupied_thresh: 0.65
-free_thresh: 0.196
-
+/**:
+  ros__parameters:
+    free_thresh: 0.196
+    image: ../simple_test_A/map.png
+    negate: 0
+    occupied_thresh: 0.65
+    origins:
+    - -16.6
+    - -6.65
+    - 0.0
+    resolution: 0.05

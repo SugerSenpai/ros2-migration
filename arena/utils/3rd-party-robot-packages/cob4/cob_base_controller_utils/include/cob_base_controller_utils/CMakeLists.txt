@@ -61,7 +61,7 @@ install(TARGETS cob_spin_detector cob_stuck_detector
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION include/${PROJECT_NAME})
 
-catkin_install_python(PROGRAMS scripts/test_publisher_twist_sine.py
+install(PROGRAMS scripts/test_publisher_twist_sine.py
   scripts/test_publisher_twist_step.py
   DESTINATION bin)
 
@@ -77,6 +77,6 @@ ament_export_dependencies(tf2)
 ament_export_dependencies(nav_msgs)
 ament_export_dependencies(urdf)
 ament_export_dependencies(std_msgs)
-include_directories(${INCLUDE_DIRS})
+ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

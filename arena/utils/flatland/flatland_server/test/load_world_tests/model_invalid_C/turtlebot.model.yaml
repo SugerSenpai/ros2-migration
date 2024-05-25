@@ -1,54 +1,105 @@
-# Turtlebot
-
-
-bodies:  # List of named bodies
-  - name: base
-    pose: [0, 0, 0] 
-    type: dynamic 
-    color: [1, 1, 0, 0.25]
-    linear_damping: 0.1
-    angular_damping: 0.125
-    footprints:
-      - type: circle
-        center: [0, 0] 
-        radius: 1.777 
+/**:
+  ros__parameters:
+    bodies:
+    - angular_damping: 0.125
+      color:
+      - 1
+      - 1
+      - 0
+      - 0.25
+      footprints:
+      - center:
+        - 0
+        - 0
         density: 0
-      - type: polygon
-        points: [[-0.1, 0.1], [-0.1, -0.1], [0.1, -0.1], [0.1, 0.1]]
-        density: 0
-
-  - name: left_wheel
-    pose: [-1, 0, 0] 
-    type: dynamic  
-    color: [1, 0, 0, 0.25] 
-    footprints:
-      - type: polygon
+        radius: 1.777
+        type: circle
+      - density: 0
+        points:
+        - - -0.1
+          - 0.1
+        - - -0.1
+          - -0.1
+        - - 0.1
+          - -0.1
+        - - 0.1
+          - 0.1
+        type: polygon
+      linear_damping: 0.1
+      name: base
+      pose:
+      - 0
+      - 0
+      - 0
+      type: dynamic
+    - color:
+      - 1
+      - 0
+      - 0
+      - 0.25
+      footprints:
+      - density: 0
+        points:
+        - - -.2
+          - 0.75
+        - - -.2
+          - -.75
+        - - 0.2
+          - -.75
+        - - 0.2
+          - 0.75
         sensor: true
-        density: 0
-        points: [[-.2, 0.75], [-.2, -.75], [.2, -.75], [.2, .75]]
-
-  - name: right_wheel
-    pose: [1, 0, 0] 
-    type: dynamic  
-    color: [0, 1, 0, 0.25] 
-    footprints:
-      - type: polygon
-        density: 0
-        points: [[-.2, 0.75], [-.2, -.75], [.2, -.75], [.2, .75]]
-
-joints:
-  - name: left_wheel_weld
-    type: weld
-    bodies:
-      - name: base
-        anchor: [-1, 0]
-      - name: left_wheel
-        anchor: [0, 0]
-
-  - name: right_wheel_weld
-    type: weld
-    bodies:
-      - name: base
-        anchor: [1, 0]
-      - name: right_wheel
-        anchor: [0, 0, 3] # invalid shoudl be 2
+        type: polygon
+      name: left_wheel
+      pose:
+      - -1
+      - 0
+      - 0
+      type: dynamic
+    - color:
+      - 0
+      - 1
+      - 0
+      - 0.25
+      footprints:
+      - density: 0
+        points:
+        - - -.2
+          - 0.75
+        - - -.2
+          - -.75
+        - - 0.2
+          - -.75
+        - - 0.2
+          - 0.75
+        type: polygon
+      name: right_wheel
+      pose:
+      - 1
+      - 0
+      - 0
+      type: dynamic
+    joints:
+    - bodies:
+      - anchor:
+        - -1
+        - 0
+        name: base
+      - anchor:
+        - 0
+        - 0
+        name: left_wheel
+      name: left_wheel_weld
+      type: weld
+    - bodies:
+      - anchor:
+        - 1
+        - 0
+        name: base
+      - anchor:
+        - 0
+        - 0
+        - 3
+        name: right_wheel
+      name: right_wheel_weld
+      type: weld

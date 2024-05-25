@@ -1,4 +1,0 @@
-[31mCMake Error at CMakeLists.txt:18 (add_message_files):
-  Unknown CMake command "add_message_files".
-
-[0m

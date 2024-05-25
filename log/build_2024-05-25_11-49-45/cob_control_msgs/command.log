@@ -1,2 +1,0 @@
-Invoking command in '/ros2-migration/build/cob_control_msgs': CMAKE_PREFIX_PATH=/ros2-migration/install/tiago_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /ros2-migration/build/cob_control_msgs -- -j8 -l8
-Invoked command in '/ros2-migration/build/cob_control_msgs' returned '2': CMAKE_PREFIX_PATH=/ros2-migration/install/tiago_controller_configuration:/opt/ros/humble /usr/bin/cmake --build /ros2-migration/build/cob_control_msgs -- -j8 -l8
