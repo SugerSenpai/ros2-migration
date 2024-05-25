@@ -1,27 +1,36 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(mecanum_gazebo_plugin)
 
-find_package(catkin REQUIRED COMPONENTS rosconsole roslint)
-find_package(gazebo)
+# Find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_ros REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(gazebo_dev REQUIRED)
+find_package(gazebo_ros REQUIRED)
+find_package(roslint REQUIRED)
 
-catkin_package(
-  #  LIBRARIES mecanum_gazebo_plugin
-)
-
+# Include directories
 include_directories(
-  ${catkin_INCLUDE_DIRS}
-  ${GAZEBO_INCLUDE_DIRS}
+  include
+  ${rclcpp_INCLUDE_DIRS}
+  ${gazebo_dev_INCLUDE_DIRS}
+  ${gazebo_ros_INCLUDE_DIRS}
 )
 
-#add_library(${PROJECT_NAME} src/mecanum_plugin)
-#target_link_libraries(${PROJECT_NAME}
-#  ${catkin_LIBRARIES}
-#  ${GAZEBO_LIBRARIES}
-#)
+# Add library
+add_library(${PROJECT_NAME} SHARED src/mecanum_plugin.cpp)
+ament_target_dependencies(${PROJECT_NAME}
+  rclcpp
+  gazebo_dev
+  gazebo_ros
+)
 
-# roslint_cpp()
-# roslint_add_test()
+# Install
+install(TARGETS ${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME}
+)
 
-#install(TARGETS ${PROJECT_NAME}
-#  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#)
+# Linters and tests
+roslint_cpp()
+
+ament_package()

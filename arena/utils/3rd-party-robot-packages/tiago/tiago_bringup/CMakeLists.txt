@@ -1,8 +1,17 @@
 cmake_minimum_required(VERSION 3.8)
 project(tiago_bringup)
 
-find_package(ament_cmake_auto REQUIRED)
-ament_auto_find_build_dependencies()
+find_package(ament_cmake REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(joy_linux REQUIRED)
+find_package(joy_teleop REQUIRED)
+find_package(launch_pal REQUIRED)
+find_package(play_motion2 REQUIRED)
+find_package(teleop_tools_msgs REQUIRED)
+find_package(tiago_controller_configuration REQUIRED)
+find_package(tiago_description REQUIRED)
+find_package(twist_mux REQUIRED)
+find_package(twist_mux_msgs REQUIRED)
 
 if(pal_module_cmake_FOUND)
   pal_register_modules(
@@ -22,4 +31,4 @@ install(
   DESTINATION lib/${PROJECT_NAME}
 )
 
-ament_auto_package(INSTALL_TO_SHARE config launch)
+ament_package()

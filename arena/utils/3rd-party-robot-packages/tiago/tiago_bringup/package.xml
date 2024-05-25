@@ -11,20 +11,17 @@
 
   <url type="website">https://github.com/pal-robotics/tiago_simulation</url>
 
-  <buildtool_depend>ament_cmake_auto</buildtool_depend>
-
-  <build_depend condition="$PAL_DISTRO >= alum">pal_module_cmake</build_depend>
-
-  <exec_depend>geometry_msgs</exec_depend>
-  <exec_depend>joy_linux</exec_depend>
-  <exec_depend>joy_teleop</exec_depend>
-  <exec_depend>launch_pal</exec_depend>
-  <exec_depend>play_motion2</exec_depend>
-  <exec_depend>teleop_tools_msgs</exec_depend>
-  <exec_depend>tiago_controller_configuration</exec_depend>
-  <exec_depend>tiago_description</exec_depend>
-  <exec_depend>twist_mux</exec_depend>
-  <exec_depend>twist_mux_msgs</exec_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>geometry_msgs</depend>
+  <depend>joy_linux</depend>
+  <depend>joy_teleop</depend>
+  <depend>launch_pal</depend>
+  <depend>play_motion2</depend>
+  <depend>teleop_tools_msgs</depend>
+  <depend>tiago_controller_configuration</depend>
+  <depend>tiago_description</depend>
+  <depend>twist_mux</depend>
+  <depend>twist_mux_msgs</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
