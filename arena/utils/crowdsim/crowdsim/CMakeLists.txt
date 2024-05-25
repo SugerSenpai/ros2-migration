@@ -7,17 +7,25 @@ if(NOT CMAKE_CXX_STANDARD)
 endif()
 
 find_package(ament_cmake REQUIRED)
-find_package(catkin REQUIRED)
-set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${REQUIRED_INCLUDE_DIRS}
-  ${catkin_INCLUDE_DIRS})
-include_directories(${INCLUDE_DIRS})
-set(LIBRARY_DIRS ${ament_cmake_LIBRARIES} ${REQUIRED_LIBRARIES}
-  ${catkin_LIBRARIES})
-set(LIBS ${ament_cmake_LIBRARIES} ${REQUIRED_LIBRARIES} ${catkin_LIBRARIES})
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 
-ament_export_dependencies(ament_cmake)
-ament_export_dependencies(REQUIRED)
-ament_export_dependencies(catkin)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(
+  ${rclcpp_INCLUDE_DIRS}
+  ${std_msgs_INCLUDE_DIRS}
+)
+
+add_executable(crowdsim_node src/crowdsim_node.cpp)
+
+ament_target_dependencies(crowdsim_node
+  rclcpp
+  std_msgs
+)
+
+install(TARGETS
+  crowdsim_node
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()
+
