@@ -1,0 +1,32 @@
+[0.025s] Invoking command in '/ros2-migration/build/pmb2_description': /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/pmb2_description -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/pmb2_description
+[0.482s] -- The C compiler identification is GNU 11.4.0
+[0.700s] -- The CXX compiler identification is GNU 11.4.0
+[0.707s] -- Detecting C compiler ABI info
+[0.802s] -- Detecting C compiler ABI info - done
+[0.810s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.811s] -- Detecting C compile features
+[0.811s] -- Detecting C compile features - done
+[0.815s] -- Detecting CXX compiler ABI info
+[0.901s] -- Detecting CXX compiler ABI info - done
+[0.909s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.909s] -- Detecting CXX compile features
+[0.910s] -- Detecting CXX compile features - done
+[0.929s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[0.929s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.929s]   has asked CMake to find a package configuration file provided by
+[0.929s]   "ament_cmake", but CMake did not find one.
+[0.929s] 
+[0.929s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.929s]   any of the following names:
+[0.930s] 
+[0.930s]     ament_cmakeConfig.cmake
+[0.930s]     ament_cmake-config.cmake
+[0.930s] 
+[0.930s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.930s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.930s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.930s]   has been installed.
+[0.930s] 
+[0.930s] [0m
+[0.930s] -- Configuring incomplete, errors occurred!
+[0.930s] See also "/ros2-migration/build/pmb2_description/CMakeFiles/CMakeOutput.log".

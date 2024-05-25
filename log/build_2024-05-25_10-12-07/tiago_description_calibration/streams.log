@@ -1,0 +1,32 @@
+[0.028s] Invoking command in '/ros2-migration/build/tiago_description_calibration': /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description_calibration -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/tiago_description_calibration
+[0.471s] -- The C compiler identification is GNU 11.4.0
+[0.695s] -- The CXX compiler identification is GNU 11.4.0
+[0.704s] -- Detecting C compiler ABI info
+[0.797s] -- Detecting C compiler ABI info - done
+[0.804s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.805s] -- Detecting C compile features
+[0.805s] -- Detecting C compile features - done
+[0.808s] -- Detecting CXX compiler ABI info
+[0.897s] -- Detecting CXX compiler ABI info - done
+[0.906s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.907s] -- Detecting CXX compile features
+[0.908s] -- Detecting CXX compile features - done
+[0.927s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[0.927s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.927s]   has asked CMake to find a package configuration file provided by
+[0.927s]   "ament_cmake", but CMake did not find one.
+[0.927s] 
+[0.927s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.927s]   any of the following names:
+[0.927s] 
+[0.927s]     ament_cmakeConfig.cmake
+[0.927s]     ament_cmake-config.cmake
+[0.928s] 
+[0.928s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.928s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.928s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.928s]   has been installed.
+[0.928s] 
+[0.928s] [0m
+[0.929s] -- Configuring incomplete, errors occurred!
+[0.929s] See also "/ros2-migration/build/tiago_description_calibration/CMakeFiles/CMakeOutput.log".

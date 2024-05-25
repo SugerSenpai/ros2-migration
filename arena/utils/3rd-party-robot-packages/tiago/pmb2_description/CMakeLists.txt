@@ -10,7 +10,6 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(catkin REQUIRED)
-find_package(REQUIRED REQUIRED)
 find_package(rostest REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS}
   ${REQUIRED_INCLUDE_DIRS} ${rostest_INCLUDE_DIRS})
@@ -39,7 +38,6 @@ endif()
 
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(catkin)
-ament_export_dependencies(REQUIRED)
 ament_export_dependencies(rostest)
 ament_export_include_directories(${INCLUDE_DIRS})
 

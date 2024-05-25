@@ -1,0 +1,1 @@
+Invoking command in '/ros2-migration/arena/build/cob_base_controller_utils': /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_base_controller_utils -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/cob_base_controller_utils

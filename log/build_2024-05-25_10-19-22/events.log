@@ -1,0 +1,95 @@
+[0.000000] (-) TimerEvent: {}
+[0.000473] (-) JobUnselected: {'identifier': 'amcl_utils'}
+[0.000524] (-) JobUnselected: {'identifier': 'arena_bringup'}
+[0.000587] (-) JobUnselected: {'identifier': 'arena_evaluation'}
+[0.000621] (-) JobUnselected: {'identifier': 'arena_evaluation_msgs'}
+[0.000642] (-) JobUnselected: {'identifier': 'arena_simulation_setup'}
+[0.000668] (-) JobUnselected: {'identifier': 'brics_actuator'}
+[0.000693] (-) JobUnselected: {'identifier': 'cob_base_controller_utils'}
+[0.000713] (-) JobUnselected: {'identifier': 'cob_control_msgs'}
+[0.000732] (-) JobUnselected: {'identifier': 'cob_gazebo_ros_control'}
+[0.000884] (-) JobUnselected: {'identifier': 'cob_helper_tools'}
+[0.001003] (-) JobUnselected: {'identifier': 'cob_omni_drive_controller'}
+[0.001052] (-) JobUnselected: {'identifier': 'cob_scan_unifier'}
+[0.001114] (-) JobUnselected: {'identifier': 'cob_sick_s300'}
+[0.001149] (-) JobUnselected: {'identifier': 'cob_srvs'}
+[0.001170] (-) JobUnselected: {'identifier': 'cob_twist_controller'}
+[0.001196] (-) JobUnselected: {'identifier': 'crowdsim'}
+[0.001223] (-) JobUnselected: {'identifier': 'eval'}
+[0.001285] (-) JobUnselected: {'identifier': 'flatland'}
+[0.001316] (-) JobUnselected: {'identifier': 'gazebo_utils'}
+[0.001351] (-) JobUnselected: {'identifier': 'generic_throttle'}
+[0.001377] (-) JobUnselected: {'identifier': 'grid_map_generator'}
+[0.001396] (-) JobUnselected: {'identifier': 'intermediate_planner'}
+[0.001421] (-) JobUnselected: {'identifier': 'ira_laser_tools'}
+[0.001452] (-) JobUnselected: {'identifier': 'map_clock_simulator'}
+[0.001490] (-) JobUnselected: {'identifier': 'map_distance_server'}
+[0.001547] (-) JobUnselected: {'identifier': 'map_generator'}
+[0.001578] (-) JobUnselected: {'identifier': 'mapping'}
+[0.001597] (-) JobUnselected: {'identifier': 'mecanum_gazebo_plugin'}
+[0.001628] (-) JobUnselected: {'identifier': 'move_base_flex'}
+[0.001648] (-) JobUnselected: {'identifier': 'navigation'}
+[0.001666] (-) JobUnselected: {'identifier': 'observations'}
+[0.001725] (-) JobUnselected: {'identifier': 'omni_base_description'}
+[0.001754] (-) JobUnselected: {'identifier': 'path_search'}
+[0.001788] (-) JobUnselected: {'identifier': 'pedsim_ros'}
+[0.001813] (-) JobUnselected: {'identifier': 'plan_manager'}
+[0.001832] (-) JobUnselected: {'identifier': 'plan_visualization'}
+[0.001853] (-) JobUnselected: {'identifier': 'pmb2_description'}
+[0.001874] (-) JobUnselected: {'identifier': 'ridgeback_control'}
+[0.001893] (-) JobUnselected: {'identifier': 'ridgeback_gazebo_plugins'}
+[0.001911] (-) JobUnselected: {'identifier': 'rl_utils'}
+[0.001946] (-) JobUnselected: {'identifier': 'rviz_plugins'}
+[0.001965] (-) JobUnselected: {'identifier': 'rviz_utils'}
+[0.001985] (-) JobUnselected: {'identifier': 'sensor_simulator'}
+[0.002002] (-) JobUnselected: {'identifier': 'spacial_horizon'}
+[0.002020] (-) JobUnselected: {'identifier': 'stable_baselines3'}
+[0.002037] (-) JobUnselected: {'identifier': 'task_generator'}
+[0.002055] (-) JobUnselected: {'identifier': 'testing'}
+[0.002072] (-) JobUnselected: {'identifier': 'tiago_bringup'}
+[0.002089] (-) JobUnselected: {'identifier': 'tiago_controller_configuration'}
+[0.002107] (-) JobUnselected: {'identifier': 'tiago_controller_configuration_gazebo'}
+[0.002125] (-) JobUnselected: {'identifier': 'tiago_description'}
+[0.002142] (-) JobUnselected: {'identifier': 'tiago_description_calibration'}
+[0.002210] (-) JobUnselected: {'identifier': 'tiago_gazebo'}
+[0.002229] (-) JobUnselected: {'identifier': 'training'}
+[0.002247] (-) JobUnselected: {'identifier': 'traj_planner'}
+[0.002264] (-) JobUnselected: {'identifier': 'unitree_controller_go1'}
+[0.002282] (-) JobUnselected: {'identifier': 'unitree_legged_control'}
+[0.002299] (-) JobUnselected: {'identifier': 'unitree_legged_msgs'}
+[0.002316] (-) JobUnselected: {'identifier': 'youbot_description'}
+[0.002349] (-) JobUnselected: {'identifier': 'youbot_simulation'}
+[0.002370] (plan_msgs) JobQueued: {'identifier': 'plan_msgs', 'dependencies': OrderedDict()}
+[0.002392] (plan_msgs) JobStarted: {'identifier': 'plan_msgs'}
+[0.008021] (plan_msgs) JobProgress: {'identifier': 'plan_msgs', 'progress': 'cmake'}
+[0.008346] (plan_msgs) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/arena-rosnav/utils/ros/msgs/plan_msgs', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/install/plan_msgs'], 'cwd': '/ros2-migration/build/plan_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration/install'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-befa2539-bc2b-48d0-8eb1-04f199883658.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('COLCON_PREFIX_PATH', '/ros2-migration/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':5'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-bb16fb8514.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/build/plan_msgs'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.019930] (plan_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099237] (-) TimerEvent: {}
+[0.140624] (plan_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.164410] (plan_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.166866] (plan_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.172895] (plan_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.184143] (plan_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.199344] (-) TimerEvent: {}
+[0.199937] (plan_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299468] (-) TimerEvent: {}
+[0.318169] (plan_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.399586] (-) TimerEvent: {}
+[0.403847] (plan_msgs) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.488641] (plan_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.499684] (-) TimerEvent: {}
+[0.599877] (-) TimerEvent: {}
+[0.700132] (-) TimerEvent: {}
+[0.720687] (plan_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:229 (message):\n'}
+[0.720859] (plan_msgs) StderrLine: {'line': b'  Packages installing interfaces must include\n'}
+[0.721025] (plan_msgs) StderrLine: {'line': b"  '<member_of_group>rosidl_interface_packages</member_of_group>' in their\n"}
+[0.721103] (plan_msgs) StderrLine: {'line': b'  package.xml\n'}
+[0.721175] (plan_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.721244] (plan_msgs) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[0.721312] (plan_msgs) StderrLine: {'line': b'\n'}
+[0.721379] (plan_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.721445] (plan_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.721518] (plan_msgs) StdoutLine: {'line': b'See also "/ros2-migration/build/plan_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.725644] (plan_msgs) CommandEnded: {'returncode': 1}
+[0.741497] (plan_msgs) JobEnded: {'identifier': 'plan_msgs', 'rc': 1}
+[0.751970] (-) EventReactorShutdown: {}

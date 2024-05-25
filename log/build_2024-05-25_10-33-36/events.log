@@ -1,0 +1,390 @@
+[0.000000] (-) TimerEvent: {}
+[0.000184] (amcl_utils) JobQueued: {'identifier': 'amcl_utils', 'dependencies': OrderedDict()}
+[0.000233] (arena_evaluation) JobQueued: {'identifier': 'arena_evaluation', 'dependencies': OrderedDict()}
+[0.000260] (arena_evaluation_msgs) JobQueued: {'identifier': 'arena_evaluation_msgs', 'dependencies': OrderedDict()}
+[0.000283] (arena_simulation_setup) JobQueued: {'identifier': 'arena_simulation_setup', 'dependencies': OrderedDict()}
+[0.000304] (brics_actuator) JobQueued: {'identifier': 'brics_actuator', 'dependencies': OrderedDict()}
+[0.000324] (cob_base_controller_utils) JobQueued: {'identifier': 'cob_base_controller_utils', 'dependencies': OrderedDict()}
+[0.000344] (cob_control_msgs) JobQueued: {'identifier': 'cob_control_msgs', 'dependencies': OrderedDict()}
+[0.000363] (cob_gazebo_ros_control) JobQueued: {'identifier': 'cob_gazebo_ros_control', 'dependencies': OrderedDict()}
+[0.000650] (cob_helper_tools) JobQueued: {'identifier': 'cob_helper_tools', 'dependencies': OrderedDict()}
+[0.000696] (cob_scan_unifier) JobQueued: {'identifier': 'cob_scan_unifier', 'dependencies': OrderedDict()}
+[0.000721] (cob_sick_s300) JobQueued: {'identifier': 'cob_sick_s300', 'dependencies': OrderedDict()}
+[0.000750] (cob_srvs) JobQueued: {'identifier': 'cob_srvs', 'dependencies': OrderedDict()}
+[0.000780] (crowdsim) JobQueued: {'identifier': 'crowdsim', 'dependencies': OrderedDict()}
+[0.000907] (eval) JobQueued: {'identifier': 'eval', 'dependencies': OrderedDict()}
+[0.000945] (flatland) JobQueued: {'identifier': 'flatland', 'dependencies': OrderedDict()}
+[0.001053] (gazebo_utils) JobQueued: {'identifier': 'gazebo_utils', 'dependencies': OrderedDict()}
+[0.001226] (generic_throttle) JobQueued: {'identifier': 'generic_throttle', 'dependencies': OrderedDict()}
+[0.001275] (grid_map_generator) JobQueued: {'identifier': 'grid_map_generator', 'dependencies': OrderedDict()}
+[0.001314] (ira_laser_tools) JobQueued: {'identifier': 'ira_laser_tools', 'dependencies': OrderedDict()}
+[0.001355] (map_clock_simulator) JobQueued: {'identifier': 'map_clock_simulator', 'dependencies': OrderedDict()}
+[0.001392] (map_distance_server) JobQueued: {'identifier': 'map_distance_server', 'dependencies': OrderedDict()}
+[0.001427] (mapping) JobQueued: {'identifier': 'mapping', 'dependencies': OrderedDict()}
+[0.001449] (mecanum_gazebo_plugin) JobQueued: {'identifier': 'mecanum_gazebo_plugin', 'dependencies': OrderedDict()}
+[0.001469] (move_base_flex) JobQueued: {'identifier': 'move_base_flex', 'dependencies': OrderedDict()}
+[0.001488] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict()}
+[0.001507] (observations) JobQueued: {'identifier': 'observations', 'dependencies': OrderedDict()}
+[0.001527] (pedsim_ros) JobQueued: {'identifier': 'pedsim_ros', 'dependencies': OrderedDict()}
+[0.001570] (plan_msgs) JobQueued: {'identifier': 'plan_msgs', 'dependencies': OrderedDict()}
+[0.001592] (plan_visualization) JobQueued: {'identifier': 'plan_visualization', 'dependencies': OrderedDict()}
+[0.001612] (pmb2_description) JobQueued: {'identifier': 'pmb2_description', 'dependencies': OrderedDict()}
+[0.001631] (ridgeback_control) JobQueued: {'identifier': 'ridgeback_control', 'dependencies': OrderedDict()}
+[0.001651] (ridgeback_gazebo_plugins) JobQueued: {'identifier': 'ridgeback_gazebo_plugins', 'dependencies': OrderedDict()}
+[0.001670] (rl_utils) JobQueued: {'identifier': 'rl_utils', 'dependencies': OrderedDict()}
+[0.001689] (rviz_plugins) JobQueued: {'identifier': 'rviz_plugins', 'dependencies': OrderedDict()}
+[0.001707] (rviz_utils) JobQueued: {'identifier': 'rviz_utils', 'dependencies': OrderedDict()}
+[0.001727] (sensor_simulator) JobQueued: {'identifier': 'sensor_simulator', 'dependencies': OrderedDict()}
+[0.001745] (spacial_horizon) JobQueued: {'identifier': 'spacial_horizon', 'dependencies': OrderedDict()}
+[0.001765] (stable_baselines3) JobQueued: {'identifier': 'stable_baselines3', 'dependencies': OrderedDict()}
+[0.001784] (task_generator) JobQueued: {'identifier': 'task_generator', 'dependencies': OrderedDict()}
+[0.001817] (testing) JobQueued: {'identifier': 'testing', 'dependencies': OrderedDict()}
+[0.001861] (tiago_controller_configuration) JobQueued: {'identifier': 'tiago_controller_configuration', 'dependencies': OrderedDict()}
+[0.001928] (tiago_description_calibration) JobQueued: {'identifier': 'tiago_description_calibration', 'dependencies': OrderedDict()}
+[0.001962] (training) JobQueued: {'identifier': 'training', 'dependencies': OrderedDict()}
+[0.001982] (unitree_legged_msgs) JobQueued: {'identifier': 'unitree_legged_msgs', 'dependencies': OrderedDict()}
+[0.002008] (youbot_description) JobQueued: {'identifier': 'youbot_description', 'dependencies': OrderedDict()}
+[0.002033] (youbot_simulation) JobQueued: {'identifier': 'youbot_simulation', 'dependencies': OrderedDict()}
+[0.002054] (arena_bringup) JobQueued: {'identifier': 'arena_bringup', 'dependencies': OrderedDict([('crowdsim', '/ros2-migration/install/crowdsim'), ('ira_laser_tools', '/ros2-migration/install/ira_laser_tools'), ('navigation', '/ros2-migration/install/navigation'), ('pedsim_ros', '/ros2-migration/install/pedsim_ros')])}
+[0.002081] (cob_omni_drive_controller) JobQueued: {'identifier': 'cob_omni_drive_controller', 'dependencies': OrderedDict([('cob_base_controller_utils', '/ros2-migration/install/cob_base_controller_utils')])}
+[0.002149] (cob_twist_controller) JobQueued: {'identifier': 'cob_twist_controller', 'dependencies': OrderedDict([('cob_control_msgs', '/ros2-migration/install/cob_control_msgs'), ('cob_srvs', '/ros2-migration/install/cob_srvs')])}
+[0.002185] (map_generator) JobQueued: {'identifier': 'map_generator', 'dependencies': OrderedDict([('map_distance_server', '/ros2-migration/install/map_distance_server')])}
+[0.002224] (omni_base_description) JobQueued: {'identifier': 'omni_base_description', 'dependencies': OrderedDict([('pmb2_description', '/ros2-migration/install/pmb2_description')])}
+[0.002254] (path_search) JobQueued: {'identifier': 'path_search', 'dependencies': OrderedDict([('mapping', '/ros2-migration/install/mapping')])}
+[0.002277] (plan_manager) JobQueued: {'identifier': 'plan_manager', 'dependencies': OrderedDict([('plan_msgs', '/ros2-migration/install/plan_msgs'), ('plan_visualization', '/ros2-migration/install/plan_visualization')])}
+[0.002302] (tiago_bringup) JobQueued: {'identifier': 'tiago_bringup', 'dependencies': OrderedDict([('tiago_controller_configuration', '/ros2-migration/install/tiago_controller_configuration')])}
+[0.002324] (tiago_controller_configuration_gazebo) JobQueued: {'identifier': 'tiago_controller_configuration_gazebo', 'dependencies': OrderedDict([('tiago_controller_configuration', '/ros2-migration/install/tiago_controller_configuration')])}
+[0.002346] (tiago_description) JobQueued: {'identifier': 'tiago_description', 'dependencies': OrderedDict([('pmb2_description', '/ros2-migration/install/pmb2_description'), ('tiago_description_calibration', '/ros2-migration/install/tiago_description_calibration')])}
+[0.002374] (unitree_controller_go1) JobQueued: {'identifier': 'unitree_controller_go1', 'dependencies': OrderedDict([('unitree_legged_msgs', '/ros2-migration/install/unitree_legged_msgs')])}
+[0.002396] (unitree_legged_control) JobQueued: {'identifier': 'unitree_legged_control', 'dependencies': OrderedDict([('unitree_legged_msgs', '/ros2-migration/install/unitree_legged_msgs')])}
+[0.002418] (tiago_gazebo) JobQueued: {'identifier': 'tiago_gazebo', 'dependencies': OrderedDict([('pmb2_description', '/ros2-migration/install/pmb2_description'), ('tiago_controller_configuration', '/ros2-migration/install/tiago_controller_configuration'), ('tiago_description_calibration', '/ros2-migration/install/tiago_description_calibration'), ('tiago_bringup', '/ros2-migration/install/tiago_bringup'), ('tiago_controller_configuration_gazebo', '/ros2-migration/install/tiago_controller_configuration_gazebo'), ('tiago_description', '/ros2-migration/install/tiago_description')])}
+[0.002447] (traj_planner) JobQueued: {'identifier': 'traj_planner', 'dependencies': OrderedDict([('mapping', '/ros2-migration/install/mapping'), ('path_search', '/ros2-migration/install/path_search')])}
+[0.002473] (intermediate_planner) JobQueued: {'identifier': 'intermediate_planner', 'dependencies': OrderedDict([('mapping', '/ros2-migration/install/mapping'), ('plan_msgs', '/ros2-migration/install/plan_msgs'), ('plan_visualization', '/ros2-migration/install/plan_visualization'), ('path_search', '/ros2-migration/install/path_search'), ('traj_planner', '/ros2-migration/install/traj_planner')])}
+[0.002515] (mapping) JobStarted: {'identifier': 'mapping'}
+[0.007218] (pmb2_description) JobStarted: {'identifier': 'pmb2_description'}
+[0.011268] (tiago_controller_configuration) JobStarted: {'identifier': 'tiago_controller_configuration'}
+[0.014841] (plan_msgs) JobStarted: {'identifier': 'plan_msgs'}
+[0.017834] (plan_visualization) JobStarted: {'identifier': 'plan_visualization'}
+[0.021578] (tiago_description_calibration) JobStarted: {'identifier': 'tiago_description_calibration'}
+[0.025169] (unitree_legged_msgs) JobStarted: {'identifier': 'unitree_legged_msgs'}
+[0.028611] (cob_base_controller_utils) JobStarted: {'identifier': 'cob_base_controller_utils'}
+[0.034734] (mapping) JobProgress: {'identifier': 'mapping', 'progress': 'cmake'}
+[0.035387] (mapping) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/arena-rosnav/utils/misc/mapping', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/install/mapping'], 'cwd': '/ros2-migration/build/mapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration/install'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-befa2539-bc2b-48d0-8eb1-04f199883658.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('COLCON_PREFIX_PATH', '/ros2-migration/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':5'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-bb16fb8514.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/build/mapping'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.037874] (pmb2_description) JobProgress: {'identifier': 'pmb2_description', 'progress': 'cmake'}
+[0.039022] (pmb2_description) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/pmb2_description', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/install/pmb2_description'], 'cwd': '/ros2-migration/build/pmb2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration/install'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-befa2539-bc2b-48d0-8eb1-04f199883658.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('COLCON_PREFIX_PATH', '/ros2-migration/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':5'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-bb16fb8514.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/build/pmb2_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.039856] (tiago_controller_configuration) JobProgress: {'identifier': 'tiago_controller_configuration', 'progress': 'cmake'}
+[0.040523] (tiago_controller_configuration) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_controller_configuration', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/install/tiago_controller_configuration'], 'cwd': '/ros2-migration/build/tiago_controller_configuration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration/install'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-befa2539-bc2b-48d0-8eb1-04f199883658.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('COLCON_PREFIX_PATH', '/ros2-migration/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':5'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-bb16fb8514.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/build/tiago_controller_configuration'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.042007] (plan_msgs) JobProgress: {'identifier': 'plan_msgs', 'progress': 'cmake'}
+[0.042386] (plan_msgs) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/arena-rosnav/utils/ros/msgs/plan_msgs', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/install/plan_msgs'], 'cwd': '/ros2-migration/build/plan_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration/install'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-befa2539-bc2b-48d0-8eb1-04f199883658.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('COLCON_PREFIX_PATH', '/ros2-migration/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':5'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-bb16fb8514.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/build/plan_msgs'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.043649] (plan_visualization) JobProgress: {'identifier': 'plan_visualization', 'progress': 'cmake'}
+[0.044188] (plan_visualization) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/arena-rosnav/utils/misc/plan_visualization', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/install/plan_visualization'], 'cwd': '/ros2-migration/build/plan_visualization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration/install'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-befa2539-bc2b-48d0-8eb1-04f199883658.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('COLCON_PREFIX_PATH', '/ros2-migration/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':5'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-bb16fb8514.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/build/plan_visualization'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.045832] (tiago_description_calibration) JobProgress: {'identifier': 'tiago_description_calibration', 'progress': 'cmake'}
+[0.046531] (tiago_description_calibration) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description_calibration', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/install/tiago_description_calibration'], 'cwd': '/ros2-migration/build/tiago_description_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration/install'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-befa2539-bc2b-48d0-8eb1-04f199883658.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('COLCON_PREFIX_PATH', '/ros2-migration/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':5'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-bb16fb8514.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/build/tiago_description_calibration'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.069309] (unitree_legged_msgs) JobProgress: {'identifier': 'unitree_legged_msgs', 'progress': 'cmake'}
+[0.070097] (unitree_legged_msgs) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/install/unitree_legged_msgs'], 'cwd': '/ros2-migration/build/unitree_legged_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration/install'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-befa2539-bc2b-48d0-8eb1-04f199883658.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('COLCON_PREFIX_PATH', '/ros2-migration/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':5'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-bb16fb8514.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/build/unitree_legged_msgs'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.082532] (cob_base_controller_utils) JobProgress: {'identifier': 'cob_base_controller_utils', 'progress': 'cmake'}
+[0.100723] (cob_base_controller_utils) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_base_controller_utils', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/install/cob_base_controller_utils'], 'cwd': '/ros2-migration/build/cob_base_controller_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration/install'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-befa2539-bc2b-48d0-8eb1-04f199883658.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('COLCON_PREFIX_PATH', '/ros2-migration/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':5'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-bb16fb8514.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-542e07c2-90a4-4af5-9117-576b7db53550.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/build/cob_base_controller_utils'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.101454] (-) TimerEvent: {}
+[0.129163] (mapping) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.144361] (pmb2_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.145213] (tiago_controller_configuration) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.172958] (plan_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.190482] (plan_visualization) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.190957] (tiago_description_calibration) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.196316] (plan_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.201546] (-) TimerEvent: {}
+[0.205234] (tiago_controller_configuration) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[0.205856] (tiago_controller_configuration) StderrLine: {'line': b'  By not providing "FindREQUIRED.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.206093] (tiago_controller_configuration) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "REQUIRED",\n'}
+[0.206445] (tiago_controller_configuration) StderrLine: {'line': b'  but CMake did not find one.\n'}
+[0.206539] (tiago_controller_configuration) StderrLine: {'line': b'\n'}
+[0.206613] (tiago_controller_configuration) StderrLine: {'line': b'  Could not find a package configuration file provided by "REQUIRED" with any\n'}
+[0.206685] (tiago_controller_configuration) StderrLine: {'line': b'  of the following names:\n'}
+[0.206753] (tiago_controller_configuration) StderrLine: {'line': b'\n'}
+[0.206819] (tiago_controller_configuration) StderrLine: {'line': b'    REQUIREDConfig.cmake\n'}
+[0.206886] (tiago_controller_configuration) StderrLine: {'line': b'    required-config.cmake\n'}
+[0.206953] (tiago_controller_configuration) StderrLine: {'line': b'\n'}
+[0.207018] (tiago_controller_configuration) StderrLine: {'line': b'  Add the installation prefix of "REQUIRED" to CMAKE_PREFIX_PATH or set\n'}
+[0.207084] (tiago_controller_configuration) StderrLine: {'line': b'  "REQUIRED_DIR" to a directory containing one of the above files.  If\n'}
+[0.207150] (tiago_controller_configuration) StderrLine: {'line': b'  "REQUIRED" provides a separate development package or SDK, be sure it has\n'}
+[0.207216] (tiago_controller_configuration) StderrLine: {'line': b'  been installed.\n'}
+[0.207281] (tiago_controller_configuration) StderrLine: {'line': b'\n'}
+[0.207346] (tiago_controller_configuration) StderrLine: {'line': b'\x1b[0m\n'}
+[0.207412] (tiago_controller_configuration) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.207486] (tiago_controller_configuration) StdoutLine: {'line': b'See also "/ros2-migration/build/tiago_controller_configuration/CMakeFiles/CMakeOutput.log".\n'}
+[0.207557] (unitree_legged_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.207644] (tiago_controller_configuration) CommandEnded: {'returncode': 1}
+[0.211364] (plan_visualization) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.218734] (pmb2_description) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[0.218883] (pmb2_description) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.218961] (pmb2_description) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.219031] (pmb2_description) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.219099] (pmb2_description) StderrLine: {'line': b'\n'}
+[0.219165] (pmb2_description) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.219231] (pmb2_description) StderrLine: {'line': b'  of the following names:\n'}
+[0.219296] (pmb2_description) StderrLine: {'line': b'\n'}
+[0.219360] (pmb2_description) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.219425] (pmb2_description) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.219488] (pmb2_description) StderrLine: {'line': b'\n'}
+[0.219551] (pmb2_description) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.219616] (pmb2_description) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.219685] (pmb2_description) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.219750] (pmb2_description) StderrLine: {'line': b'  installed.\n'}
+[0.219814] (pmb2_description) StderrLine: {'line': b'\n'}
+[0.219878] (pmb2_description) StderrLine: {'line': b'\x1b[0m\n'}
+[0.219942] (pmb2_description) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.220014] (pmb2_description) StdoutLine: {'line': b'See also "/ros2-migration/build/pmb2_description/CMakeFiles/CMakeOutput.log".\n'}
+[0.221240] (cob_base_controller_utils) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.221393] (cob_base_controller_utils) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:17 (add_dependencies):\n'}
+[0.221484] (cob_base_controller_utils) StderrLine: {'line': b'  add_dependencies called with incorrect number of arguments\n'}
+[0.221561] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.221629] (cob_base_controller_utils) StderrLine: {'line': b'\x1b[0m\n'}
+[0.221698] (pmb2_description) CommandEnded: {'returncode': 1}
+[0.223881] (unitree_legged_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.224286] (mapping) StdoutLine: {'line': b'-- Found message_filters: 4.3.4 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[0.225831] (unitree_legged_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.228777] (unitree_legged_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.237224] (plan_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.237707] (plan_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.238183] (plan_visualization) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.240633] (plan_visualization) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.241223] (pmb2_description) JobEnded: {'identifier': 'pmb2_description', 'rc': 1}
+[0.242269] (tiago_controller_configuration) JobEnded: {'identifier': 'tiago_controller_configuration', 'rc': 'SIGINT'}
+[0.242523] (plan_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.246935] (tiago_description_calibration) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[0.247114] (tiago_description_calibration) StderrLine: {'line': b'  By not providing "FindREQUIRED.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.247193] (tiago_description_calibration) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "REQUIRED",\n'}
+[0.247264] (tiago_description_calibration) StderrLine: {'line': b'  but CMake did not find one.\n'}
+[0.247332] (tiago_description_calibration) StderrLine: {'line': b'\n'}
+[0.247400] (tiago_description_calibration) StderrLine: {'line': b'  Could not find a package configuration file provided by "REQUIRED" with any\n'}
+[0.247468] (tiago_description_calibration) StderrLine: {'line': b'  of the following names:\n'}
+[0.247534] (tiago_description_calibration) StderrLine: {'line': b'\n'}
+[0.247598] (tiago_description_calibration) StderrLine: {'line': b'    REQUIREDConfig.cmake\n'}
+[0.247662] (tiago_description_calibration) StderrLine: {'line': b'    required-config.cmake\n'}
+[0.247727] (tiago_description_calibration) StderrLine: {'line': b'\n'}
+[0.247791] (tiago_description_calibration) StderrLine: {'line': b'  Add the installation prefix of "REQUIRED" to CMAKE_PREFIX_PATH or set\n'}
+[0.247859] (tiago_description_calibration) StderrLine: {'line': b'  "REQUIRED_DIR" to a directory containing one of the above files.  If\n'}
+[0.248214] (tiago_description_calibration) StderrLine: {'line': b'  "REQUIRED" provides a separate development package or SDK, be sure it has\n'}
+[0.248303] (tiago_description_calibration) StderrLine: {'line': b'  been installed.\n'}
+[0.248374] (tiago_description_calibration) StderrLine: {'line': b'\n'}
+[0.248441] (tiago_description_calibration) StderrLine: {'line': b'\x1b[0m\n'}
+[0.248685] (tiago_description_calibration) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.248778] (tiago_description_calibration) StdoutLine: {'line': b'See also "/ros2-migration/build/tiago_description_calibration/CMakeFiles/CMakeOutput.log".\n'}
+[0.248976] (tiago_description_calibration) JobEnded: {'identifier': 'tiago_description_calibration', 'rc': 'SIGINT'}
+[0.249435] (plan_visualization) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.253342] (mapping) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.255914] (mapping) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.258230] (plan_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.260682] (unitree_legged_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.260834] (plan_visualization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.263444] (mapping) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.275548] (mapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.277183] (plan_visualization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.277685] (plan_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.286657] (cob_base_controller_utils) StdoutLine: {'line': b'-- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[0.291716] (mapping) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.292439] (unitree_legged_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.301661] (-) TimerEvent: {}
+[0.310920] (cob_base_controller_utils) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.320190] (cob_base_controller_utils) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.326611] (cob_base_controller_utils) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.331875] (plan_visualization) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.337900] (cob_base_controller_utils) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.353624] (cob_base_controller_utils) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.354646] (mapping) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.355939] (mapping) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.375630] (plan_visualization) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.378391] (cob_base_controller_utils) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:23 (find_package):\n'}
+[0.379001] (cob_base_controller_utils) StderrLine: {'line': b'  By not providing "Findthread.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.379082] (cob_base_controller_utils) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "thread", but\n'}
+[0.379155] (cob_base_controller_utils) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.379224] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.379292] (cob_base_controller_utils) StderrLine: {'line': b'  Could not find a package configuration file provided by "thread" with any\n'}
+[0.379360] (cob_base_controller_utils) StderrLine: {'line': b'  of the following names:\n'}
+[0.379427] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.379492] (cob_base_controller_utils) StderrLine: {'line': b'    threadConfig.cmake\n'}
+[0.379565] (cob_base_controller_utils) StderrLine: {'line': b'    thread-config.cmake\n'}
+[0.379630] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.379694] (cob_base_controller_utils) StderrLine: {'line': b'  Add the installation prefix of "thread" to CMAKE_PREFIX_PATH or set\n'}
+[0.379760] (cob_base_controller_utils) StderrLine: {'line': b'  "thread_DIR" to a directory containing one of the above files.  If "thread"\n'}
+[0.379826] (cob_base_controller_utils) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.379891] (cob_base_controller_utils) StderrLine: {'line': b'  installed.\n'}
+[0.379956] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.380021] (cob_base_controller_utils) StderrLine: {'line': b'\x1b[0m\n'}
+[0.380086] (cob_base_controller_utils) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.380159] (cob_base_controller_utils) StdoutLine: {'line': b'See also "/ros2-migration/build/cob_base_controller_utils/CMakeFiles/CMakeOutput.log".\n'}
+[0.386498] (cob_base_controller_utils) JobEnded: {'identifier': 'cob_base_controller_utils', 'rc': 'SIGINT'}
+[0.401757] (-) TimerEvent: {}
+[0.419355] (plan_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[0.419520] (plan_msgs) StderrLine: {'line': b'  By not providing "Findmessage_generation.cmake" in CMAKE_MODULE_PATH this\n'}
+[0.419595] (plan_msgs) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[0.419664] (plan_msgs) StderrLine: {'line': b'  "message_generation", but CMake did not find one.\n'}
+[0.419729] (plan_msgs) StderrLine: {'line': b'\n'}
+[0.419795] (plan_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[0.419861] (plan_msgs) StderrLine: {'line': b'  "message_generation" with any of the following names:\n'}
+[0.419925] (plan_msgs) StderrLine: {'line': b'\n'}
+[0.419989] (plan_msgs) StderrLine: {'line': b'    message_generationConfig.cmake\n'}
+[0.420053] (plan_msgs) StderrLine: {'line': b'    message_generation-config.cmake\n'}
+[0.420118] (plan_msgs) StderrLine: {'line': b'\n'}
+[0.420182] (plan_msgs) StderrLine: {'line': b'  Add the installation prefix of "message_generation" to CMAKE_PREFIX_PATH or\n'}
+[0.420247] (plan_msgs) StderrLine: {'line': b'  set "message_generation_DIR" to a directory containing one of the above\n'}
+[0.420312] (plan_msgs) StderrLine: {'line': b'  files.  If "message_generation" provides a separate development package or\n'}
+[0.420377] (plan_msgs) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[0.420441] (plan_msgs) StderrLine: {'line': b'\n'}
+[0.420506] (plan_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.420622] (plan_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.420702] (plan_msgs) StdoutLine: {'line': b'See also "/ros2-migration/build/plan_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.420925] (unitree_legged_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.423665] (plan_msgs) JobEnded: {'identifier': 'plan_msgs', 'rc': 'SIGINT'}
+[0.425113] (plan_visualization) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.426463] (plan_visualization) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.471569] (mapping) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.501881] (-) TimerEvent: {}
+[0.541067] (plan_visualization) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.601992] (-) TimerEvent: {}
+[0.618302] (unitree_legged_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):\n'}
+[0.618486] (unitree_legged_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name\n'}
+[0.618652] (unitree_legged_msgs) StderrLine: {'line': b'  unitree_legged_msgs --arguments-file\n'}
+[0.618733] (unitree_legged_msgs) StderrLine: {'line': b'  /ros2-migration/build/unitree_legged_msgs/rosidl_adapter__arguments__unitree_legged_msgs.json\n'}
+[0.618804] (unitree_legged_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[0.618873] (unitree_legged_msgs) StderrLine: {'line': b'  /ros2-migration/build/unitree_legged_msgs/rosidl_adapter/unitree_legged_msgs\n'}
+[0.618944] (unitree_legged_msgs) StderrLine: {'line': b'  --output-file\n'}
+[0.619010] (unitree_legged_msgs) StderrLine: {'line': b'  /ros2-migration/build/unitree_legged_msgs/rosidl_adapter/unitree_legged_msgs.idls)\n'}
+[0.619076] (unitree_legged_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[0.619142] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.619209] (unitree_legged_msgs) StderrLine: {'line': b"  Error processing 'float32 Kp' of 'unitree_legged_msgs/MotorCmd': ''Kp' is\n"}
+[0.619275] (unitree_legged_msgs) StderrLine: {'line': b'  an invalid field name.  It should have the pattern\n'}
+[0.619340] (unitree_legged_msgs) StderrLine: {'line': b"  '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''\n"}
+[0.619405] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.619469] (unitree_legged_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[0.619533] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.619599] (unitree_legged_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n'}
+[0.619664] (unitree_legged_msgs) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[0.619728] (unitree_legged_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.10/runpy.py", line 86, in _run_code\n'}
+[0.619793] (unitree_legged_msgs) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[0.619857] (unitree_legged_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[0.619922] (unitree_legged_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[0.619986] (unitree_legged_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[0.620051] (unitree_legged_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[0.620116] (unitree_legged_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl\n'}
+[0.620181] (unitree_legged_msgs) StderrLine: {'line': b'      return convert_msg_to_idl(\n'}
+[0.620245] (unitree_legged_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[0.620310] (unitree_legged_msgs) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[0.620375] (unitree_legged_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 519, in parse_message_string\n'}
+[0.620440] (unitree_legged_msgs) StderrLine: {'line': b'      fields.append(Field(\n'}
+[0.620505] (unitree_legged_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 354, in __init__\n'}
+[0.620579] (unitree_legged_msgs) StderrLine: {'line': b'      raise NameError(\n'}
+[0.620645] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.620710] (unitree_legged_msgs) StderrLine: {'line': b"  NameError: 'Kp' is an invalid field name.  It should have the pattern\n"}
+[0.620777] (unitree_legged_msgs) StderrLine: {'line': b"  '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'\n"}
+[0.620843] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.620908] (unitree_legged_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.620974] (unitree_legged_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[0.621048] (unitree_legged_msgs) StderrLine: {'line': b'  CMakeLists.txt:24 (rosidl_generate_interfaces)\n'}
+[0.621117] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.621183] (unitree_legged_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.621249] (unitree_legged_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.621321] (unitree_legged_msgs) StdoutLine: {'line': b'See also "/ros2-migration/build/unitree_legged_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.622491] (unitree_legged_msgs) JobEnded: {'identifier': 'unitree_legged_msgs', 'rc': 'SIGINT'}
+[0.643993] (mapping) StdoutLine: {'line': b'-- Found rclpy: 3.3.13 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.644306] (mapping) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[0.683857] (plan_visualization) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (find_package):\n'}
+[0.684064] (plan_visualization) StderrLine: {'line': b'  By not providing "FindREQUIRED.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.684174] (plan_visualization) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "REQUIRED",\n'}
+[0.684246] (plan_visualization) StderrLine: {'line': b'  but CMake did not find one.\n'}
+[0.684314] (plan_visualization) StderrLine: {'line': b'\n'}
+[0.684383] (plan_visualization) StderrLine: {'line': b'  Could not find a package configuration file provided by "REQUIRED" with any\n'}
+[0.684451] (plan_visualization) StderrLine: {'line': b'  of the following names:\n'}
+[0.684518] (plan_visualization) StderrLine: {'line': b'\n'}
+[0.684591] (plan_visualization) StderrLine: {'line': b'    REQUIREDConfig.cmake\n'}
+[0.684657] (plan_visualization) StderrLine: {'line': b'    required-config.cmake\n'}
+[0.684723] (plan_visualization) StderrLine: {'line': b'\n'}
+[0.684788] (plan_visualization) StderrLine: {'line': b'  Add the installation prefix of "REQUIRED" to CMAKE_PREFIX_PATH or set\n'}
+[0.684853] (plan_visualization) StderrLine: {'line': b'  "REQUIRED_DIR" to a directory containing one of the above files.  If\n'}
+[0.684918] (plan_visualization) StderrLine: {'line': b'  "REQUIRED" provides a separate development package or SDK, be sure it has\n'}
+[0.684983] (plan_visualization) StderrLine: {'line': b'  been installed.\n'}
+[0.685048] (plan_visualization) StderrLine: {'line': b'\n'}
+[0.685115] (plan_visualization) StderrLine: {'line': b'\x1b[0m\n'}
+[0.685181] (plan_visualization) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.685254] (plan_visualization) StdoutLine: {'line': b'See also "/ros2-migration/build/plan_visualization/CMakeFiles/CMakeOutput.log".\n'}
+[0.689490] (plan_visualization) JobEnded: {'identifier': 'plan_visualization', 'rc': 'SIGINT'}
+[0.702128] (-) TimerEvent: {}
+[0.802413] (-) TimerEvent: {}
+[0.902678] (-) TimerEvent: {}
+[0.935255] (mapping) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.002796] (-) TimerEvent: {}
+[1.060340] (mapping) StdoutLine: {'line': b'-- Found tf2: 0.25.6 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.078119] (mapping) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:17 (find_package):\n'}
+[1.078274] (mapping) StderrLine: {'line': b'  By not providing "Findpcl_ros.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[1.078353] (mapping) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "pcl_ros", but\n'}
+[1.078425] (mapping) StderrLine: {'line': b'  CMake did not find one.\n'}
+[1.078493] (mapping) StderrLine: {'line': b'\n'}
+[1.078561] (mapping) StderrLine: {'line': b'  Could not find a package configuration file provided by "pcl_ros" with any\n'}
+[1.078630] (mapping) StderrLine: {'line': b'  of the following names:\n'}
+[1.078696] (mapping) StderrLine: {'line': b'\n'}
+[1.078764] (mapping) StderrLine: {'line': b'    pcl_rosConfig.cmake\n'}
+[1.078830] (mapping) StderrLine: {'line': b'    pcl_ros-config.cmake\n'}
+[1.078895] (mapping) StderrLine: {'line': b'\n'}
+[1.078966] (mapping) StderrLine: {'line': b'  Add the installation prefix of "pcl_ros" to CMAKE_PREFIX_PATH or set\n'}
+[1.079031] (mapping) StderrLine: {'line': b'  "pcl_ros_DIR" to a directory containing one of the above files.  If\n'}
+[1.079096] (mapping) StderrLine: {'line': b'  "pcl_ros" provides a separate development package or SDK, be sure it has\n'}
+[1.079162] (mapping) StderrLine: {'line': b'  been installed.\n'}
+[1.079227] (mapping) StderrLine: {'line': b'\n'}
+[1.079292] (mapping) StderrLine: {'line': b'\x1b[0m\n'}
+[1.079357] (mapping) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.079429] (mapping) StdoutLine: {'line': b'See also "/ros2-migration/build/mapping/CMakeFiles/CMakeOutput.log".\n'}
+[1.083836] (mapping) JobEnded: {'identifier': 'mapping', 'rc': 'SIGINT'}
+[1.094420] (amcl_utils) JobSkipped: {'identifier': 'amcl_utils'}
+[1.094474] (arena_evaluation) JobSkipped: {'identifier': 'arena_evaluation'}
+[1.094500] (arena_evaluation_msgs) JobSkipped: {'identifier': 'arena_evaluation_msgs'}
+[1.094521] (arena_simulation_setup) JobSkipped: {'identifier': 'arena_simulation_setup'}
+[1.094542] (brics_actuator) JobSkipped: {'identifier': 'brics_actuator'}
+[1.094561] (cob_control_msgs) JobSkipped: {'identifier': 'cob_control_msgs'}
+[1.094579] (cob_gazebo_ros_control) JobSkipped: {'identifier': 'cob_gazebo_ros_control'}
+[1.094599] (cob_helper_tools) JobSkipped: {'identifier': 'cob_helper_tools'}
+[1.094618] (cob_scan_unifier) JobSkipped: {'identifier': 'cob_scan_unifier'}
+[1.094637] (cob_sick_s300) JobSkipped: {'identifier': 'cob_sick_s300'}
+[1.094739] (cob_srvs) JobSkipped: {'identifier': 'cob_srvs'}
+[1.094773] (crowdsim) JobSkipped: {'identifier': 'crowdsim'}
+[1.094796] (eval) JobSkipped: {'identifier': 'eval'}
+[1.094817] (flatland) JobSkipped: {'identifier': 'flatland'}
+[1.094836] (gazebo_utils) JobSkipped: {'identifier': 'gazebo_utils'}
+[1.094857] (generic_throttle) JobSkipped: {'identifier': 'generic_throttle'}
+[1.094877] (grid_map_generator) JobSkipped: {'identifier': 'grid_map_generator'}
+[1.094896] (ira_laser_tools) JobSkipped: {'identifier': 'ira_laser_tools'}
+[1.095080] (map_clock_simulator) JobSkipped: {'identifier': 'map_clock_simulator'}
+[1.095115] (map_distance_server) JobSkipped: {'identifier': 'map_distance_server'}
+[1.095286] (mecanum_gazebo_plugin) JobSkipped: {'identifier': 'mecanum_gazebo_plugin'}
+[1.095339] (move_base_flex) JobSkipped: {'identifier': 'move_base_flex'}
+[1.095386] (navigation) JobSkipped: {'identifier': 'navigation'}
+[1.095411] (observations) JobSkipped: {'identifier': 'observations'}
+[1.095432] (pedsim_ros) JobSkipped: {'identifier': 'pedsim_ros'}
+[1.095452] (ridgeback_control) JobSkipped: {'identifier': 'ridgeback_control'}
+[1.095472] (ridgeback_gazebo_plugins) JobSkipped: {'identifier': 'ridgeback_gazebo_plugins'}
+[1.095492] (rl_utils) JobSkipped: {'identifier': 'rl_utils'}
+[1.095512] (rviz_plugins) JobSkipped: {'identifier': 'rviz_plugins'}
+[1.095531] (rviz_utils) JobSkipped: {'identifier': 'rviz_utils'}
+[1.095570] (sensor_simulator) JobSkipped: {'identifier': 'sensor_simulator'}
+[1.095591] (spacial_horizon) JobSkipped: {'identifier': 'spacial_horizon'}
+[1.095610] (stable_baselines3) JobSkipped: {'identifier': 'stable_baselines3'}
+[1.095628] (task_generator) JobSkipped: {'identifier': 'task_generator'}
+[1.095646] (testing) JobSkipped: {'identifier': 'testing'}
+[1.095665] (training) JobSkipped: {'identifier': 'training'}
+[1.095683] (youbot_description) JobSkipped: {'identifier': 'youbot_description'}
+[1.095701] (youbot_simulation) JobSkipped: {'identifier': 'youbot_simulation'}
+[1.095720] (arena_bringup) JobSkipped: {'identifier': 'arena_bringup'}
+[1.095739] (cob_omni_drive_controller) JobSkipped: {'identifier': 'cob_omni_drive_controller'}
+[1.095757] (cob_twist_controller) JobSkipped: {'identifier': 'cob_twist_controller'}
+[1.095775] (map_generator) JobSkipped: {'identifier': 'map_generator'}
+[1.095793] (omni_base_description) JobSkipped: {'identifier': 'omni_base_description'}
+[1.095811] (path_search) JobSkipped: {'identifier': 'path_search'}
+[1.095837] (plan_manager) JobSkipped: {'identifier': 'plan_manager'}
+[1.095856] (tiago_bringup) JobSkipped: {'identifier': 'tiago_bringup'}
+[1.095875] (tiago_controller_configuration_gazebo) JobSkipped: {'identifier': 'tiago_controller_configuration_gazebo'}
+[1.095895] (tiago_description) JobSkipped: {'identifier': 'tiago_description'}
+[1.095913] (unitree_controller_go1) JobSkipped: {'identifier': 'unitree_controller_go1'}
+[1.095932] (unitree_legged_control) JobSkipped: {'identifier': 'unitree_legged_control'}
+[1.095951] (tiago_gazebo) JobSkipped: {'identifier': 'tiago_gazebo'}
+[1.095970] (traj_planner) JobSkipped: {'identifier': 'traj_planner'}
+[1.095988] (intermediate_planner) JobSkipped: {'identifier': 'intermediate_planner'}
+[1.096007] (-) EventReactorShutdown: {}

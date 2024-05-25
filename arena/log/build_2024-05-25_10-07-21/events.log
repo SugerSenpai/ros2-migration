@@ -1,0 +1,307 @@
+[0.000000] (-) TimerEvent: {}
+[0.000456] (amcl_utils) JobQueued: {'identifier': 'amcl_utils', 'dependencies': OrderedDict()}
+[0.000492] (arena_evaluation) JobQueued: {'identifier': 'arena_evaluation', 'dependencies': OrderedDict()}
+[0.000517] (arena_evaluation_msgs) JobQueued: {'identifier': 'arena_evaluation_msgs', 'dependencies': OrderedDict()}
+[0.000534] (arena_simulation_setup) JobQueued: {'identifier': 'arena_simulation_setup', 'dependencies': OrderedDict()}
+[0.000653] (brics_actuator) JobQueued: {'identifier': 'brics_actuator', 'dependencies': OrderedDict()}
+[0.000673] (cob_base_controller_utils) JobQueued: {'identifier': 'cob_base_controller_utils', 'dependencies': OrderedDict()}
+[0.000760] (cob_control_msgs) JobQueued: {'identifier': 'cob_control_msgs', 'dependencies': OrderedDict()}
+[0.000812] (cob_gazebo_ros_control) JobQueued: {'identifier': 'cob_gazebo_ros_control', 'dependencies': OrderedDict()}
+[0.000839] (cob_helper_tools) JobQueued: {'identifier': 'cob_helper_tools', 'dependencies': OrderedDict()}
+[0.000856] (cob_scan_unifier) JobQueued: {'identifier': 'cob_scan_unifier', 'dependencies': OrderedDict()}
+[0.000876] (cob_sick_s300) JobQueued: {'identifier': 'cob_sick_s300', 'dependencies': OrderedDict()}
+[0.000897] (cob_srvs) JobQueued: {'identifier': 'cob_srvs', 'dependencies': OrderedDict()}
+[0.000912] (crowdsim) JobQueued: {'identifier': 'crowdsim', 'dependencies': OrderedDict()}
+[0.000956] (eval) JobQueued: {'identifier': 'eval', 'dependencies': OrderedDict()}
+[0.000972] (flatland) JobQueued: {'identifier': 'flatland', 'dependencies': OrderedDict()}
+[0.000995] (gazebo_utils) JobQueued: {'identifier': 'gazebo_utils', 'dependencies': OrderedDict()}
+[0.001021] (generic_throttle) JobQueued: {'identifier': 'generic_throttle', 'dependencies': OrderedDict()}
+[0.001042] (grid_map_generator) JobQueued: {'identifier': 'grid_map_generator', 'dependencies': OrderedDict()}
+[0.001057] (ira_laser_tools) JobQueued: {'identifier': 'ira_laser_tools', 'dependencies': OrderedDict()}
+[0.001075] (map_clock_simulator) JobQueued: {'identifier': 'map_clock_simulator', 'dependencies': OrderedDict()}
+[0.001096] (map_distance_server) JobQueued: {'identifier': 'map_distance_server', 'dependencies': OrderedDict()}
+[0.001133] (mapping) JobQueued: {'identifier': 'mapping', 'dependencies': OrderedDict()}
+[0.001176] (mecanum_gazebo_plugin) JobQueued: {'identifier': 'mecanum_gazebo_plugin', 'dependencies': OrderedDict()}
+[0.001200] (move_base_flex) JobQueued: {'identifier': 'move_base_flex', 'dependencies': OrderedDict()}
+[0.001215] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict()}
+[0.001237] (observations) JobQueued: {'identifier': 'observations', 'dependencies': OrderedDict()}
+[0.001252] (pedsim_ros) JobQueued: {'identifier': 'pedsim_ros', 'dependencies': OrderedDict()}
+[0.001266] (plan_msgs) JobQueued: {'identifier': 'plan_msgs', 'dependencies': OrderedDict()}
+[0.001311] (plan_visualization) JobQueued: {'identifier': 'plan_visualization', 'dependencies': OrderedDict()}
+[0.001333] (pmb2_description) JobQueued: {'identifier': 'pmb2_description', 'dependencies': OrderedDict()}
+[0.001358] (ridgeback_control) JobQueued: {'identifier': 'ridgeback_control', 'dependencies': OrderedDict()}
+[0.001378] (ridgeback_gazebo_plugins) JobQueued: {'identifier': 'ridgeback_gazebo_plugins', 'dependencies': OrderedDict()}
+[0.001394] (rl_utils) JobQueued: {'identifier': 'rl_utils', 'dependencies': OrderedDict()}
+[0.001409] (rviz_plugins) JobQueued: {'identifier': 'rviz_plugins', 'dependencies': OrderedDict()}
+[0.001427] (rviz_utils) JobQueued: {'identifier': 'rviz_utils', 'dependencies': OrderedDict()}
+[0.001453] (sensor_simulator) JobQueued: {'identifier': 'sensor_simulator', 'dependencies': OrderedDict()}
+[0.001494] (spacial_horizon) JobQueued: {'identifier': 'spacial_horizon', 'dependencies': OrderedDict()}
+[0.001517] (stable_baselines3) JobQueued: {'identifier': 'stable_baselines3', 'dependencies': OrderedDict()}
+[0.001533] (task_generator) JobQueued: {'identifier': 'task_generator', 'dependencies': OrderedDict()}
+[0.001547] (testing) JobQueued: {'identifier': 'testing', 'dependencies': OrderedDict()}
+[0.001566] (tiago_controller_configuration) JobQueued: {'identifier': 'tiago_controller_configuration', 'dependencies': OrderedDict()}
+[0.001584] (tiago_description_calibration) JobQueued: {'identifier': 'tiago_description_calibration', 'dependencies': OrderedDict()}
+[0.001701] (training) JobQueued: {'identifier': 'training', 'dependencies': OrderedDict()}
+[0.001716] (unitree_legged_msgs) JobQueued: {'identifier': 'unitree_legged_msgs', 'dependencies': OrderedDict()}
+[0.001755] (youbot_description) JobQueued: {'identifier': 'youbot_description', 'dependencies': OrderedDict()}
+[0.001780] (youbot_simulation) JobQueued: {'identifier': 'youbot_simulation', 'dependencies': OrderedDict()}
+[0.001822] (arena_bringup) JobQueued: {'identifier': 'arena_bringup', 'dependencies': OrderedDict([('crowdsim', '/ros2-migration/arena/install/crowdsim'), ('ira_laser_tools', '/ros2-migration/arena/install/ira_laser_tools'), ('navigation', '/ros2-migration/arena/install/navigation'), ('pedsim_ros', '/ros2-migration/arena/install/pedsim_ros')])}
+[0.001870] (cob_omni_drive_controller) JobQueued: {'identifier': 'cob_omni_drive_controller', 'dependencies': OrderedDict([('cob_base_controller_utils', '/ros2-migration/arena/install/cob_base_controller_utils')])}
+[0.001895] (cob_twist_controller) JobQueued: {'identifier': 'cob_twist_controller', 'dependencies': OrderedDict([('cob_control_msgs', '/ros2-migration/arena/install/cob_control_msgs'), ('cob_srvs', '/ros2-migration/arena/install/cob_srvs')])}
+[0.001912] (map_generator) JobQueued: {'identifier': 'map_generator', 'dependencies': OrderedDict([('map_distance_server', '/ros2-migration/arena/install/map_distance_server')])}
+[0.001935] (omni_base_description) JobQueued: {'identifier': 'omni_base_description', 'dependencies': OrderedDict([('pmb2_description', '/ros2-migration/arena/install/pmb2_description')])}
+[0.001952] (path_search) JobQueued: {'identifier': 'path_search', 'dependencies': OrderedDict([('mapping', '/ros2-migration/arena/install/mapping')])}
+[0.001968] (plan_manager) JobQueued: {'identifier': 'plan_manager', 'dependencies': OrderedDict([('plan_msgs', '/ros2-migration/arena/install/plan_msgs'), ('plan_visualization', '/ros2-migration/arena/install/plan_visualization')])}
+[0.002011] (tiago_bringup) JobQueued: {'identifier': 'tiago_bringup', 'dependencies': OrderedDict([('tiago_controller_configuration', '/ros2-migration/arena/install/tiago_controller_configuration')])}
+[0.002043] (tiago_controller_configuration_gazebo) JobQueued: {'identifier': 'tiago_controller_configuration_gazebo', 'dependencies': OrderedDict([('tiago_controller_configuration', '/ros2-migration/arena/install/tiago_controller_configuration')])}
+[0.002064] (tiago_description) JobQueued: {'identifier': 'tiago_description', 'dependencies': OrderedDict([('pmb2_description', '/ros2-migration/arena/install/pmb2_description'), ('tiago_description_calibration', '/ros2-migration/arena/install/tiago_description_calibration')])}
+[0.002082] (unitree_controller_go1) JobQueued: {'identifier': 'unitree_controller_go1', 'dependencies': OrderedDict([('unitree_legged_msgs', '/ros2-migration/arena/install/unitree_legged_msgs')])}
+[0.002100] (unitree_legged_control) JobQueued: {'identifier': 'unitree_legged_control', 'dependencies': OrderedDict([('unitree_legged_msgs', '/ros2-migration/arena/install/unitree_legged_msgs')])}
+[0.002135] (tiago_gazebo) JobQueued: {'identifier': 'tiago_gazebo', 'dependencies': OrderedDict([('pmb2_description', '/ros2-migration/arena/install/pmb2_description'), ('tiago_controller_configuration', '/ros2-migration/arena/install/tiago_controller_configuration'), ('tiago_description_calibration', '/ros2-migration/arena/install/tiago_description_calibration'), ('tiago_bringup', '/ros2-migration/arena/install/tiago_bringup'), ('tiago_controller_configuration_gazebo', '/ros2-migration/arena/install/tiago_controller_configuration_gazebo'), ('tiago_description', '/ros2-migration/arena/install/tiago_description')])}
+[0.002185] (traj_planner) JobQueued: {'identifier': 'traj_planner', 'dependencies': OrderedDict([('mapping', '/ros2-migration/arena/install/mapping'), ('path_search', '/ros2-migration/arena/install/path_search')])}
+[0.002210] (intermediate_planner) JobQueued: {'identifier': 'intermediate_planner', 'dependencies': OrderedDict([('mapping', '/ros2-migration/arena/install/mapping'), ('plan_msgs', '/ros2-migration/arena/install/plan_msgs'), ('plan_visualization', '/ros2-migration/arena/install/plan_visualization'), ('path_search', '/ros2-migration/arena/install/path_search'), ('traj_planner', '/ros2-migration/arena/install/traj_planner')])}
+[0.002230] (mapping) JobStarted: {'identifier': 'mapping'}
+[0.011940] (pmb2_description) JobStarted: {'identifier': 'pmb2_description'}
+[0.013847] (tiago_controller_configuration) JobStarted: {'identifier': 'tiago_controller_configuration'}
+[0.014948] (plan_msgs) JobStarted: {'identifier': 'plan_msgs'}
+[0.016178] (plan_visualization) JobStarted: {'identifier': 'plan_visualization'}
+[0.017949] (tiago_description_calibration) JobStarted: {'identifier': 'tiago_description_calibration'}
+[0.018711] (unitree_legged_msgs) JobStarted: {'identifier': 'unitree_legged_msgs'}
+[0.019931] (cob_base_controller_utils) JobStarted: {'identifier': 'cob_base_controller_utils'}
+[0.023925] (mapping) JobProgress: {'identifier': 'mapping', 'progress': 'cmake'}
+[0.024430] (mapping) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/arena-rosnav/utils/misc/mapping', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/mapping'], 'cwd': '/ros2-migration/arena/build/mapping', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d77b1168-02ec-44e7-8973-e82cac5f0ea0.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3e2d67d8d6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/arena/build/mapping'), ('COLCON', '1')]), 'shell': False}
+[0.026411] (pmb2_description) JobProgress: {'identifier': 'pmb2_description', 'progress': 'cmake'}
+[0.026956] (pmb2_description) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/pmb2_description', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/pmb2_description'], 'cwd': '/ros2-migration/arena/build/pmb2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d77b1168-02ec-44e7-8973-e82cac5f0ea0.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3e2d67d8d6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/arena/build/pmb2_description'), ('COLCON', '1')]), 'shell': False}
+[0.029494] (tiago_controller_configuration) JobProgress: {'identifier': 'tiago_controller_configuration', 'progress': 'cmake'}
+[0.029532] (tiago_controller_configuration) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_controller_configuration', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/tiago_controller_configuration'], 'cwd': '/ros2-migration/arena/build/tiago_controller_configuration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d77b1168-02ec-44e7-8973-e82cac5f0ea0.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3e2d67d8d6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/arena/build/tiago_controller_configuration'), ('COLCON', '1')]), 'shell': False}
+[0.031378] (plan_msgs) JobProgress: {'identifier': 'plan_msgs', 'progress': 'cmake'}
+[0.031795] (plan_msgs) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/arena-rosnav/utils/ros/msgs/plan_msgs', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/plan_msgs'], 'cwd': '/ros2-migration/arena/build/plan_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d77b1168-02ec-44e7-8973-e82cac5f0ea0.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3e2d67d8d6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/arena/build/plan_msgs'), ('COLCON', '1')]), 'shell': False}
+[0.033384] (plan_visualization) JobProgress: {'identifier': 'plan_visualization', 'progress': 'cmake'}
+[0.033717] (plan_visualization) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/arena-rosnav/utils/misc/plan_visualization', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/plan_visualization'], 'cwd': '/ros2-migration/arena/build/plan_visualization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d77b1168-02ec-44e7-8973-e82cac5f0ea0.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3e2d67d8d6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/arena/build/plan_visualization'), ('COLCON', '1')]), 'shell': False}
+[0.035211] (tiago_description_calibration) JobProgress: {'identifier': 'tiago_description_calibration', 'progress': 'cmake'}
+[0.035738] (tiago_description_calibration) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description_calibration', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/tiago_description_calibration'], 'cwd': '/ros2-migration/arena/build/tiago_description_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d77b1168-02ec-44e7-8973-e82cac5f0ea0.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3e2d67d8d6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/arena/build/tiago_description_calibration'), ('COLCON', '1')]), 'shell': False}
+[0.044653] (unitree_legged_msgs) JobProgress: {'identifier': 'unitree_legged_msgs', 'progress': 'cmake'}
+[0.045862] (unitree_legged_msgs) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/unitree_legged_msgs'], 'cwd': '/ros2-migration/arena/build/unitree_legged_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d77b1168-02ec-44e7-8973-e82cac5f0ea0.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3e2d67d8d6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/arena/build/unitree_legged_msgs'), ('COLCON', '1')]), 'shell': False}
+[0.048537] (cob_base_controller_utils) JobProgress: {'identifier': 'cob_base_controller_utils', 'progress': 'cmake'}
+[0.049117] (cob_base_controller_utils) Command: {'cmd': ['/usr/bin/cmake', '/ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_base_controller_utils', '-DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/cob_base_controller_utils'], 'cwd': '/ros2-migration/arena/build/cob_base_controller_utils', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARENA_DIR', '/arena_ws'), ('HOSTNAME', 'b7d6e8308065'), ('GIT_ASKPASS', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass.sh'), ('BRANCH', 'ros2'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/ros2-migration'), ('TERM_PROGRAM_VERSION', '1.89.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-d77b1168-02ec-44e7-8973-e82cac5f0ea0.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_KEYRING_BACKEND', 'keyring.backends.fail.Keyring'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.local/bin:/root/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli:/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock","/tmp/.X11-unix/X4","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':4'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-3e2d67d8d6.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-0edb988e-37d8-4234-b787-5196f0ac97d1.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X4'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ros2-migration/arena/build/cob_base_controller_utils'), ('COLCON', '1')]), 'shell': False}
+[0.051138] (mapping) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.051250] (mapping) StdoutLine: {'line': b'See also "/ros2-migration/arena/build/mapping/CMakeFiles/CMakeOutput.log".\n'}
+[0.051982] (mapping) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[0.052098] (mapping) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.052182] (mapping) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.052254] (mapping) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.052319] (mapping) StderrLine: {'line': b'\n'}
+[0.052385] (mapping) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.052603] (mapping) StderrLine: {'line': b'  any of the following names:\n'}
+[0.052669] (mapping) StderrLine: {'line': b'\n'}
+[0.052739] (mapping) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.052802] (mapping) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.052866] (mapping) StderrLine: {'line': b'\n'}
+[0.052929] (mapping) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.052993] (mapping) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.053056] (mapping) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.053119] (mapping) StderrLine: {'line': b'  has been installed.\n'}
+[0.053182] (mapping) StderrLine: {'line': b'\n'}
+[0.053245] (mapping) StderrLine: {'line': b'\x1b[0m\n'}
+[0.056321] (pmb2_description) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.056461] (pmb2_description) StdoutLine: {'line': b'See also "/ros2-migration/arena/build/pmb2_description/CMakeFiles/CMakeOutput.log".\n'}
+[0.056983] (pmb2_description) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:11 (find_package):\n'}
+[0.057096] (pmb2_description) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.057173] (pmb2_description) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.057244] (pmb2_description) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.057493] (pmb2_description) StderrLine: {'line': b'\n'}
+[0.057634] (pmb2_description) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.057702] (pmb2_description) StderrLine: {'line': b'  any of the following names:\n'}
+[0.057767] (pmb2_description) StderrLine: {'line': b'\n'}
+[0.057831] (pmb2_description) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.057894] (pmb2_description) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.057958] (pmb2_description) StderrLine: {'line': b'\n'}
+[0.058020] (pmb2_description) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.058084] (pmb2_description) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.058148] (pmb2_description) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.058221] (pmb2_description) StderrLine: {'line': b'  has been installed.\n'}
+[0.058285] (pmb2_description) StderrLine: {'line': b'\n'}
+[0.058350] (pmb2_description) StderrLine: {'line': b'\x1b[0m\n'}
+[0.058681] (tiago_controller_configuration) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.058944] (tiago_controller_configuration) StdoutLine: {'line': b'See also "/ros2-migration/arena/build/tiago_controller_configuration/CMakeFiles/CMakeOutput.log".\n'}
+[0.059021] (tiago_controller_configuration) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:9 (find_package):\n'}
+[0.059096] (tiago_controller_configuration) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.059163] (tiago_controller_configuration) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.059227] (tiago_controller_configuration) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.059291] (tiago_controller_configuration) StderrLine: {'line': b'\n'}
+[0.059355] (tiago_controller_configuration) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.059419] (tiago_controller_configuration) StderrLine: {'line': b'  any of the following names:\n'}
+[0.059482] (tiago_controller_configuration) StderrLine: {'line': b'\n'}
+[0.059545] (tiago_controller_configuration) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.059608] (tiago_controller_configuration) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.059671] (tiago_controller_configuration) StderrLine: {'line': b'\n'}
+[0.059739] (tiago_controller_configuration) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.059803] (tiago_controller_configuration) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.059866] (tiago_controller_configuration) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.060058] (tiago_controller_configuration) StderrLine: {'line': b'  has been installed.\n'}
+[0.060131] (tiago_controller_configuration) StderrLine: {'line': b'\n'}
+[0.060201] (tiago_controller_configuration) StderrLine: {'line': b'\x1b[0m\n'}
+[0.060276] (plan_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.060761] (plan_msgs) StdoutLine: {'line': b'See also "/ros2-migration/arena/build/plan_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.061232] (plan_visualization) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.064338] (plan_visualization) StdoutLine: {'line': b'See also "/ros2-migration/arena/build/plan_visualization/CMakeFiles/CMakeOutput.log".\n'}
+[0.065245] (plan_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[0.065814] (plan_msgs) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.066244] (plan_msgs) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.066332] (plan_msgs) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.066402] (plan_msgs) StderrLine: {'line': b'\n'}
+[0.066470] (plan_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.066538] (plan_msgs) StderrLine: {'line': b'  of the following names:\n'}
+[0.066604] (plan_msgs) StderrLine: {'line': b'\n'}
+[0.066670] (plan_msgs) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.066735] (plan_msgs) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.066799] (plan_msgs) StderrLine: {'line': b'\n'}
+[0.066864] (plan_msgs) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.066928] (plan_msgs) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.066993] (plan_msgs) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.067225] (plan_msgs) StderrLine: {'line': b'  installed.\n'}
+[0.067292] (plan_msgs) StderrLine: {'line': b'\n'}
+[0.067498] (plan_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.067568] (plan_visualization) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:17 (find_package):\n'}
+[0.067682] (plan_visualization) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.067939] (plan_visualization) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.068023] (plan_visualization) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.068094] (plan_visualization) StderrLine: {'line': b'\n'}
+[0.068176] (plan_visualization) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.068315] (plan_visualization) StderrLine: {'line': b'  any of the following names:\n'}
+[0.068513] (plan_visualization) StderrLine: {'line': b'\n'}
+[0.068609] (plan_visualization) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.068698] (plan_visualization) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.068773] (plan_visualization) StderrLine: {'line': b'\n'}
+[0.068965] (plan_visualization) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.069307] (plan_visualization) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.069517] (plan_visualization) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.069693] (plan_visualization) StderrLine: {'line': b'  has been installed.\n'}
+[0.069832] (plan_visualization) StderrLine: {'line': b'\n'}
+[0.069912] (plan_visualization) StderrLine: {'line': b'\x1b[0m\n'}
+[0.070004] (tiago_description_calibration) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:11 (find_package):\n'}
+[0.070208] (tiago_description_calibration) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.070287] (tiago_description_calibration) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.070373] (tiago_description_calibration) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.071348] (tiago_description_calibration) StderrLine: {'line': b'\n'}
+[0.071874] (tiago_description_calibration) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.072161] (tiago_description_calibration) StderrLine: {'line': b'  any of the following names:\n'}
+[0.072395] (tiago_description_calibration) StderrLine: {'line': b'\n'}
+[0.072658] (tiago_description_calibration) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.072806] (tiago_description_calibration) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.072870] (tiago_description_calibration) StderrLine: {'line': b'\n'}
+[0.072932] (tiago_description_calibration) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.072995] (tiago_description_calibration) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.073056] (tiago_description_calibration) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.073117] (tiago_description_calibration) StderrLine: {'line': b'  has been installed.\n'}
+[0.073178] (tiago_description_calibration) StderrLine: {'line': b'\n'}
+[0.073239] (tiago_description_calibration) StderrLine: {'line': b'\x1b[0m\n'}
+[0.073299] (tiago_description_calibration) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.073379] (tiago_description_calibration) StdoutLine: {'line': b'See also "/ros2-migration/arena/build/tiago_description_calibration/CMakeFiles/CMakeOutput.log".\n'}
+[0.073444] (unitree_legged_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:11 (find_package):\n'}
+[0.073519] (unitree_legged_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.073582] (unitree_legged_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.073643] (unitree_legged_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.073704] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.073765] (unitree_legged_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.073827] (unitree_legged_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[0.073887] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.073948] (unitree_legged_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.074009] (unitree_legged_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.074070] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.074131] (unitree_legged_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.074193] (unitree_legged_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.074254] (unitree_legged_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.074316] (unitree_legged_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[0.074377] (unitree_legged_msgs) StderrLine: {'line': b'\n'}
+[0.074437] (unitree_legged_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.074498] (unitree_legged_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.074572] (unitree_legged_msgs) StdoutLine: {'line': b'See also "/ros2-migration/arena/build/unitree_legged_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.074637] (cob_base_controller_utils) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:17 (add_dependencies):\n'}
+[0.074713] (cob_base_controller_utils) StderrLine: {'line': b'  add_dependencies called with incorrect number of arguments\n'}
+[0.074777] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.074839] (cob_base_controller_utils) StderrLine: {'line': b'\x1b[0m\n'}
+[0.074900] (cob_base_controller_utils) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (find_package):\n'}
+[0.074964] (cob_base_controller_utils) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.075026] (cob_base_controller_utils) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.075088] (cob_base_controller_utils) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.075149] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.075210] (cob_base_controller_utils) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.075273] (cob_base_controller_utils) StderrLine: {'line': b'  any of the following names:\n'}
+[0.075334] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.075395] (cob_base_controller_utils) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.075456] (cob_base_controller_utils) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.075517] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.075577] (cob_base_controller_utils) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.075639] (cob_base_controller_utils) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.075700] (cob_base_controller_utils) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.075761] (cob_base_controller_utils) StderrLine: {'line': b'  has been installed.\n'}
+[0.075822] (cob_base_controller_utils) StderrLine: {'line': b'\n'}
+[0.075882] (cob_base_controller_utils) StderrLine: {'line': b'\x1b[0m\n'}
+[0.075942] (cob_base_controller_utils) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.076012] (cob_base_controller_utils) StdoutLine: {'line': b'See also "/ros2-migration/arena/build/cob_base_controller_utils/CMakeFiles/CMakeOutput.log".\n'}
+[0.076077] (mapping) CommandEnded: {'returncode': 1}
+[0.076317] (mapping) JobEnded: {'identifier': 'mapping', 'rc': 1}
+[0.076610] (pmb2_description) CommandEnded: {'returncode': 1}
+[0.076822] (tiago_controller_configuration) CommandEnded: {'returncode': 1}
+[0.077013] (plan_msgs) JobEnded: {'identifier': 'plan_msgs', 'rc': 'SIGINT'}
+[0.077240] (plan_visualization) JobEnded: {'identifier': 'plan_visualization', 'rc': 'SIGINT'}
+[0.077454] (tiago_description_calibration) JobEnded: {'identifier': 'tiago_description_calibration', 'rc': 'SIGINT'}
+[0.077663] (tiago_controller_configuration) JobEnded: {'identifier': 'tiago_controller_configuration', 'rc': 'SIGINT'}
+[0.077867] (pmb2_description) JobEnded: {'identifier': 'pmb2_description', 'rc': 'SIGINT'}
+[0.078070] (unitree_legged_msgs) JobEnded: {'identifier': 'unitree_legged_msgs', 'rc': 'SIGINT'}
+[0.078273] (cob_base_controller_utils) JobEnded: {'identifier': 'cob_base_controller_utils', 'rc': 'SIGINT'}
+[0.083406] (amcl_utils) JobSkipped: {'identifier': 'amcl_utils'}
+[0.083454] (arena_evaluation) JobSkipped: {'identifier': 'arena_evaluation'}
+[0.083479] (arena_evaluation_msgs) JobSkipped: {'identifier': 'arena_evaluation_msgs'}
+[0.083501] (arena_simulation_setup) JobSkipped: {'identifier': 'arena_simulation_setup'}
+[0.083521] (brics_actuator) JobSkipped: {'identifier': 'brics_actuator'}
+[0.083557] (cob_control_msgs) JobSkipped: {'identifier': 'cob_control_msgs'}
+[0.083657] (cob_gazebo_ros_control) JobSkipped: {'identifier': 'cob_gazebo_ros_control'}
+[0.083680] (cob_helper_tools) JobSkipped: {'identifier': 'cob_helper_tools'}
+[0.083699] (cob_scan_unifier) JobSkipped: {'identifier': 'cob_scan_unifier'}
+[0.083718] (cob_sick_s300) JobSkipped: {'identifier': 'cob_sick_s300'}
+[0.083737] (cob_srvs) JobSkipped: {'identifier': 'cob_srvs'}
+[0.083780] (crowdsim) JobSkipped: {'identifier': 'crowdsim'}
+[0.083801] (eval) JobSkipped: {'identifier': 'eval'}
+[0.083820] (flatland) JobSkipped: {'identifier': 'flatland'}
+[0.083861] (gazebo_utils) JobSkipped: {'identifier': 'gazebo_utils'}
+[0.083881] (generic_throttle) JobSkipped: {'identifier': 'generic_throttle'}
+[0.083900] (grid_map_generator) JobSkipped: {'identifier': 'grid_map_generator'}
+[0.083918] (ira_laser_tools) JobSkipped: {'identifier': 'ira_laser_tools'}
+[0.083937] (map_clock_simulator) JobSkipped: {'identifier': 'map_clock_simulator'}
+[0.083955] (map_distance_server) JobSkipped: {'identifier': 'map_distance_server'}
+[0.083974] (mecanum_gazebo_plugin) JobSkipped: {'identifier': 'mecanum_gazebo_plugin'}
+[0.083993] (move_base_flex) JobSkipped: {'identifier': 'move_base_flex'}
+[0.084013] (navigation) JobSkipped: {'identifier': 'navigation'}
+[0.084031] (observations) JobSkipped: {'identifier': 'observations'}
+[0.084050] (pedsim_ros) JobSkipped: {'identifier': 'pedsim_ros'}
+[0.084091] (ridgeback_control) JobSkipped: {'identifier': 'ridgeback_control'}
+[0.084110] (ridgeback_gazebo_plugins) JobSkipped: {'identifier': 'ridgeback_gazebo_plugins'}
+[0.084149] (rl_utils) JobSkipped: {'identifier': 'rl_utils'}
+[0.084190] (rviz_plugins) JobSkipped: {'identifier': 'rviz_plugins'}
+[0.084232] (rviz_utils) JobSkipped: {'identifier': 'rviz_utils'}
+[0.084252] (sensor_simulator) JobSkipped: {'identifier': 'sensor_simulator'}
+[0.084271] (spacial_horizon) JobSkipped: {'identifier': 'spacial_horizon'}
+[0.084311] (stable_baselines3) JobSkipped: {'identifier': 'stable_baselines3'}
+[0.084333] (task_generator) JobSkipped: {'identifier': 'task_generator'}
+[0.084368] (testing) JobSkipped: {'identifier': 'testing'}
+[0.084407] (training) JobSkipped: {'identifier': 'training'}
+[0.084427] (youbot_description) JobSkipped: {'identifier': 'youbot_description'}
+[0.084444] (youbot_simulation) JobSkipped: {'identifier': 'youbot_simulation'}
+[0.084462] (arena_bringup) JobSkipped: {'identifier': 'arena_bringup'}
+[0.084480] (cob_omni_drive_controller) JobSkipped: {'identifier': 'cob_omni_drive_controller'}
+[0.084498] (cob_twist_controller) JobSkipped: {'identifier': 'cob_twist_controller'}
+[0.084515] (map_generator) JobSkipped: {'identifier': 'map_generator'}
+[0.084533] (omni_base_description) JobSkipped: {'identifier': 'omni_base_description'}
+[0.084550] (path_search) JobSkipped: {'identifier': 'path_search'}
+[0.084568] (plan_manager) JobSkipped: {'identifier': 'plan_manager'}
+[0.084585] (tiago_bringup) JobSkipped: {'identifier': 'tiago_bringup'}
+[0.084603] (tiago_controller_configuration_gazebo) JobSkipped: {'identifier': 'tiago_controller_configuration_gazebo'}
+[0.084621] (tiago_description) JobSkipped: {'identifier': 'tiago_description'}
+[0.084639] (unitree_controller_go1) JobSkipped: {'identifier': 'unitree_controller_go1'}
+[0.084657] (unitree_legged_control) JobSkipped: {'identifier': 'unitree_legged_control'}
+[0.084674] (tiago_gazebo) JobSkipped: {'identifier': 'tiago_gazebo'}
+[0.084693] (traj_planner) JobSkipped: {'identifier': 'traj_planner'}
+[0.084710] (intermediate_planner) JobSkipped: {'identifier': 'intermediate_planner'}
+[0.084728] (-) EventReactorShutdown: {}

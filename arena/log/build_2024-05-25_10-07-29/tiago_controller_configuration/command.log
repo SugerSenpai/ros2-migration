@@ -1,0 +1,2 @@
+Invoking command in '/ros2-migration/arena/build/tiago_controller_configuration': /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_controller_configuration -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/tiago_controller_configuration
+Invoked command in '/ros2-migration/arena/build/tiago_controller_configuration' returned '1': /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_controller_configuration -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/tiago_controller_configuration
