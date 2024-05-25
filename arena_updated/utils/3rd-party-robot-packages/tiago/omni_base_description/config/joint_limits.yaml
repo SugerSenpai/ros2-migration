@@ -1,0 +1,15 @@
+/**:
+  ros__parameters:
+    joint_limits:
+      wheel_front_left_joint:
+        has_acceleration_limits: true
+        max_acceleration: 10.0
+      wheel_front_right_joint:
+        has_acceleration_limits: true
+        max_acceleration: 10.0
+      wheel_rear_left_joint:
+        has_acceleration_limits: true
+        max_acceleration: 10.0
+      wheel_rear_right_joint:
+        has_acceleration_limits: true
+        max_acceleration: 10.0

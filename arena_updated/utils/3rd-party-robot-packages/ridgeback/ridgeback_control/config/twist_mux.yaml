@@ -1,0 +1,24 @@
+/**:
+  ros__parameters:
+    locks:
+    - name: e_stop
+      priority: 255
+      timeout: 0.0
+      topic: e_stop
+    topics:
+    - name: joy
+      priority: 10
+      timeout: 0.5
+      topic: joy_teleop/cmd_vel
+    - name: bt_joy
+      priority: 9
+      timeout: 0.5
+      topic: bluetooth_teleop/cmd_vel
+    - name: interactive_marker
+      priority: 8
+      timeout: 0.5
+      topic: twist_marker_server/cmd_vel
+    - name: external
+      priority: 1
+      timeout: 0.5
+      topic: cmd_vel

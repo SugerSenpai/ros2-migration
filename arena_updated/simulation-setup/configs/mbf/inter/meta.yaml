@@ -1,0 +1,5 @@
+/**:
+  ros__parameters:
+    inters:
+    - name: MetaInter
+      type: meta_inter/MetaInter

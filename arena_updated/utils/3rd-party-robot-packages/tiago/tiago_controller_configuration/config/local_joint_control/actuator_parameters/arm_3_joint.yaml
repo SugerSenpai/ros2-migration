@@ -1,0 +1,15 @@
+/**:
+  ros__parameters:
+    actuator_names:
+    - arm_3_motor
+    ball_screw_efficiency: 0.0
+    ball_screw_lead: 0.0
+    check_mode: false
+    joint_elasticity: 10000.0
+    joint_elasticity_damping: -20.0
+    motor_inertia: 1.0e-05
+    motor_torque_constant: -0.087
+    reduction_ratio: 100.0
+    static_friction: 0.05
+    torque_sensor_offset: 0.0
+    viscous_friction: 0.05

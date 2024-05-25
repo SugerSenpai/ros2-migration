@@ -1,0 +1,35 @@
+/**:
+  ros__parameters:
+    topics:
+    - name: navigation
+      priority: 10
+      timeout: 0.5
+      topic: nav_vel
+    - name: joystick
+      priority: 100
+      timeout: 0.5
+      topic: joy_vel
+    - name: keyboard
+      priority: 90
+      timeout: 0.5
+      topic: key_vel
+    - name: tablet
+      priority: 100
+      timeout: 0.5
+      topic: tab_vel
+    - name: marker
+      priority: 99
+      timeout: 0.5
+      topic: marker_vel
+    - name: phone
+      priority: 98
+      timeout: 0.5
+      topic: phone_vel
+    - name: rviz_joy
+      priority: 95
+      timeout: 0.5
+      topic: rviz_joy_vel
+    - name: servoing_cmd_vel
+      priority: 20
+      timeout: 0.5
+      topic: servoing_cmd_vel

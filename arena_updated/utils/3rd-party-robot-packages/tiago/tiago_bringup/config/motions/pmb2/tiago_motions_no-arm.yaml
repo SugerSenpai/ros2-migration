@@ -1,0 +1,59 @@
+/**:
+  ros__parameters:
+    play_motion:
+      controllers:
+      - head_controller
+      - torso_controller
+      motions:
+        head_tour:
+          joints:
+          - head_1_joint
+          - head_2_joint
+          meta:
+            description: head_tour
+            name: Head Tour
+            usage: demo
+          points:
+          - positions:
+            - 0
+            - 0
+            time_from_start: 0.1
+          - positions:
+            - 0.7
+            - 0
+            time_from_start: 3.0
+          - positions:
+            - 0.7
+            - 0.3
+            time_from_start: 6.0
+          - positions:
+            - 0.7
+            - -0.3
+            time_from_start: 9.0
+          - positions:
+            - 0.7
+            - 0.3
+            time_from_start: 12.0
+          - positions:
+            - -0.7
+            - 0.3
+            time_from_start: 15.0
+          - positions:
+            - -0.7
+            - -0.3
+            time_from_start: 18.0
+          - positions:
+            - 0
+            - 0
+            time_from_start: 21.0
+        home:
+          joints:
+          - torso_lift_joint
+          meta:
+            description: Go home
+            name: Home
+            usage: demo
+          points:
+          - positions:
+            - 0.15
+            time_from_start: 3.0

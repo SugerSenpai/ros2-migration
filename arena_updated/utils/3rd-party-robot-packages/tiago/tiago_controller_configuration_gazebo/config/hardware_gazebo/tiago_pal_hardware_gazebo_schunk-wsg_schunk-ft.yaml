@@ -1,0 +1,16 @@
+/**:
+  ros__parameters:
+    force_torque:
+      left_fingertip:
+        frame: gripper_left_fingertip_link
+        sensor_joint: gripper_left_finger_joint
+      right_fingertip:
+        frame: gripper_right_fingertip_link
+        sensor_joint: gripper_right_finger_joint
+      wrist_ft:
+        frame: wrist_ft_link
+        sensor_joint: arm_7_joint
+    imu:
+      base_imu:
+        frame: base_imu_link
+        gazebo_sensor_name: imu_sensor

@@ -1,0 +1,6 @@
+/**:
+  ros__parameters:
+    mobile_base_controller:
+      axis_separation_multiplier: 1.0
+      wheel_radius_multiplier: 1.0
+      wheel_separation_multiplier: 1.0

@@ -1,0 +1,13 @@
+/**:
+  ros__parameters:
+    dynamixel_parameters:
+      head_1_joint:
+        compliance_slope: 50
+        id: 1
+        invert_commands: false
+        torque_limit: 0.5
+      head_2_joint:
+        compliance_slope: 50
+        id: 2
+        invert_commands: true
+        torque_limit: 0.8

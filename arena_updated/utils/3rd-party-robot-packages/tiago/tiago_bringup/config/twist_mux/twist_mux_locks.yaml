@@ -1,0 +1,15 @@
+/**:
+  ros__parameters:
+    locks:
+    - name: pause
+      priority: 100
+      timeout: 0.0
+      topic: pause_navigation
+    - name: loop_closure
+      priority: 200
+      timeout: 0.0
+      topic: stop_closing_loop
+    - name: joystick
+      priority: 100
+      timeout: 0.0
+      topic: joy_priority

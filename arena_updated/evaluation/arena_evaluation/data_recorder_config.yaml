@@ -1,0 +1,5 @@
+/**:
+  ros__parameters:
+    max_episodes: 15
+    max_time: 1200
+    record_frequency: 400

@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    hand_controller:
+      constraints:
+        goal_time: 0.6
+        hand_index_joint:
+          goal: 0.6
+        hand_mrl_joint:
+          goal: 0.3
+        hand_thumb_joint:
+          goal: 0.3
+        stopped_velocity_tolerance: 0.75
+      joints:
+      - hand_thumb_joint
+      - hand_index_joint
+      - hand_mrl_joint
+      stop_trajectory_duration: 0.0
+      type: position_controllers/JointTrajectoryController

@@ -1,0 +1,20 @@
+/**:
+  ros__parameters:
+    defaults:
+      wheel_offset: 0
+    publish_rate: 50
+    type: cob_omni_drive_controller/OdometryController
+    wheels:
+    - drive: fl_caster_r_wheel_joint
+      steer: fl_caster_rotation_joint
+      x_pos: 0.368
+    - drive: bl_caster_r_wheel_joint
+      steer: bl_caster_rotation_joint
+      y_pos: 0.186
+    - drive: br_caster_r_wheel_joint
+      steer: br_caster_rotation_joint
+      wheel_offset: 0.1
+      wheel_radius: 0.08
+    - drive: fr_caster_r_wheel_joint
+      steer: fr_caster_rotation_joint
+      steer_drive_coupling: 0.5

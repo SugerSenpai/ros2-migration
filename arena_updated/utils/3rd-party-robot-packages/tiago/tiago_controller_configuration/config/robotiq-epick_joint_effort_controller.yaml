@@ -1,0 +1,5 @@
+/**:
+  ros__parameters:
+    gripper_controller:
+      joint: gripper_vacuum_joint
+      type: effort_controllers/JointEffortController

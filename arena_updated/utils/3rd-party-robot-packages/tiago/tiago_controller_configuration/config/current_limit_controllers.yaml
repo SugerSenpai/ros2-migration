@@ -1,0 +1,23 @@
+/**:
+  ros__parameters:
+    arm_current_limit_controller:
+      actuators:
+      - arm_1_motor
+      - arm_2_motor
+      - arm_3_motor
+      - arm_4_motor
+      - arm_5_motor
+      - arm_6_motor
+      - arm_7_motor
+      type: pal_ros_controllers/CurrentLimitController
+    hand_current_limit_controller:
+      actuators:
+      - hand_thumb_motor
+      - hand_index_motor
+      - hand_mrl_motor
+      type: pal_ros_controllers/CurrentLimitController
+    wheels_current_limit_controller:
+      actuators:
+      - wheel_left_motor
+      - wheel_right_motor
+      type: pal_ros_controllers/CurrentLimitController

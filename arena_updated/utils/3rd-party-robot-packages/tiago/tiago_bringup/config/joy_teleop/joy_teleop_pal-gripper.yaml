@@ -1,0 +1,108 @@
+/**:
+  ros__parameters:
+    teleop:
+      close_gripper:
+        action_goal:
+          increment_by:
+          - -0.01
+          - -0.01
+        action_name: /gripper_controller/increment
+        buttons:
+        - 7
+        type: action
+      head_down:
+        action_goal:
+          increment_by:
+          - -0.1
+          - 0
+        action_name: /head_controller/increment
+        buttons:
+        - 2
+        type: action
+      head_left:
+        action_goal:
+          increment_by:
+          - 0
+          - 0.1
+        action_name: /head_controller/increment
+        buttons:
+        - 3
+        type: action
+      head_right:
+        action_goal:
+          increment_by:
+          - 0
+          - -0.1
+        action_name: /head_controller/increment
+        buttons:
+        - 1
+        type: action
+      head_up:
+        action_goal:
+          increment_by:
+          - 0.1
+          - 0
+        action_name: /head_controller/increment
+        buttons:
+        - 0
+        type: action
+      joy_priority:
+        action_name: joy_priority_action
+        buttons:
+        - 9
+        type: action
+      joy_turbo_angular_decrease:
+        action_name: joy_turbo_angular_decrease
+        buttons:
+        - 8
+        - 2
+        type: action
+      joy_turbo_angular_increase:
+        action_name: joy_turbo_angular_increase
+        buttons:
+        - 8
+        - 0
+        type: action
+      joy_turbo_decrease:
+        action_name: joy_turbo_decrease
+        buttons:
+        - 8
+        - 1
+        type: action
+      joy_turbo_increase:
+        action_name: joy_turbo_increase
+        buttons:
+        - 8
+        - 3
+        type: action
+      joy_turbo_reset:
+        action_name: joy_turbo_reset
+        buttons:
+        - 10
+        - 11
+        type: action
+      open_gripper:
+        action_goal:
+          increment_by:
+          - 0.01
+          - 0.01
+        action_name: /gripper_controller/increment
+        buttons:
+        - 5
+        type: action
+      torso_down:
+        action_goal:
+          increment_by:
+          - -0.05
+        action_name: /torso_controller/increment
+        buttons:
+        - 6
+        type: action
+      torso_up:
+        action_goal:
+          increment_by:
+          - 0.05
+        action_name: /torso_controller/increment
+        buttons:
+        - 4
+        type: action

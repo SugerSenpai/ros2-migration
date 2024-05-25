@@ -1,0 +1,7 @@
+/**:
+  ros__parameters:
+    gravity_compensation:
+      dt: 0.01
+      robot_model_chains:
+      - hand_palm_link
+      type: force_control/GravityCompensation

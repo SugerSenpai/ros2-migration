@@ -1,0 +1,10 @@
+/**:
+  ros__parameters:
+    force_torque:
+      wrist_ft:
+        frame: wrist_ft_link
+        sensor_joint: arm_7_joint
+    imu:
+      base_imu:
+        frame: base_imu_link
+        gazebo_sensor_name: imu_sensor

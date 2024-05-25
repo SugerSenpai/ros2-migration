@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    joy_node:
+      autorepeat_rate: 20
+      deadzone: 0.1
+    teleop_twist_joy:
+      axis_angular:
+        yaw: 3
+      axis_linear:
+        x: 1
+        y: 0
+      enable_button: 4
+      enable_turbo_button: 5
+      scale_angular:
+        yaw: 0.5
+      scale_linear:
+        x: 0.4
+        y: 0.4
