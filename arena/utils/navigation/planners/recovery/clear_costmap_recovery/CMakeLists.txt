@@ -68,7 +68,6 @@ install(DIRECTORY include/${PROJECT_NAME}/
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(costmap_2d)
 ament_export_dependencies(cmake_modules)
-ament_export_dependencies(REQUIRED)
 ament_export_dependencies(tf2_ros)
 ament_export_dependencies(rostest)
 ament_export_dependencies(rclcpp)

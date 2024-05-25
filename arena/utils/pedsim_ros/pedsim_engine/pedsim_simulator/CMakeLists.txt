@@ -106,7 +106,6 @@ install(DIRECTORY include/${PROJECT_NAME}/
 
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(Qt5Widgets)
-ament_export_dependencies(REQUIRED)
 ament_export_dependencies(${PEDSIM_SIMULATOR_DEPENDENCIES})
 ament_export_dependencies(Boost)
 ament_export_dependencies(PkgConfig)

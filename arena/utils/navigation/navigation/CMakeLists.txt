@@ -15,7 +15,6 @@ set(LIBRARY_DIRS ${ament_cmake_LIBRARIES} ${catkin_LIBRARIES}
 set(LIBS ${ament_cmake_LIBRARIES} ${catkin_LIBRARIES} ${REQUIRED_LIBRARIES})
 
 ament_export_dependencies(ament_cmake)
-ament_export_dependencies(REQUIRED)
 ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

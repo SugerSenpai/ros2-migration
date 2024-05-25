@@ -61,7 +61,7 @@ if __name__ == "__main__":
     lines_to_remove = [
         "find_package(catkin REQUIRED)",
         "ament_export_dependencies(catkin)", 
-        #"ament_export_dependencies(REQUIRED)"
+        "ament_export_dependencies(REQUIRED)"
     ]
     
     try:

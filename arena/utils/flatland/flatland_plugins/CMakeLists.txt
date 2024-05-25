@@ -153,7 +153,6 @@ endif()
 
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(tf2)
-ament_export_dependencies(REQUIRED)
 ament_export_dependencies(std_msgs)
 ament_export_dependencies(flatland_msgs)
 ament_export_dependencies(pluginlib)

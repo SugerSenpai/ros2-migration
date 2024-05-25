@@ -59,7 +59,6 @@ install(TARGETS ${LIBRARY_NAME}
 # catkin_add_nosetests(test)
 
 ament_export_dependencies(ament_cmake)
-ament_export_dependencies(REQUIRED)
 ament_export_dependencies(${PACKAGE_DEPS})
 ament_export_dependencies(Eigen3)
 ament_export_include_directories(${INCLUDE_DIRS})

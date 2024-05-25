@@ -29,7 +29,6 @@ install(DIRECTORY launch/ DESTINATION share/${PROJECT_NAME}/launch)
 
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(roslaunch)
-ament_export_dependencies(REQUIRED)
 ament_export_include_directories(${INCLUDE_DIRS})
 
 ament_package()

@@ -121,7 +121,6 @@ ament_export_dependencies(costmap_2d)
 ament_export_dependencies(mbf_utility)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(nav_core)
-ament_export_dependencies(REQUIRED)
 ament_export_include_directories(${INCLUDE_DIRS})
 ament_export_libraries(${MBF_NAV_CORE_WRAPPER_LIB} ${MBF_COSTMAP_2D_SERVER_LIB}
   ${LIBS})
