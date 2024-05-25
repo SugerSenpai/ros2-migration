@@ -1,28 +1,28 @@
 
 uint8[2] head
-uint8 levelFlag
-uint8 frameReserve
+uint8 levelflag
+uint8 framereserve
 
 uint32[2] sn
 uint32[2] version
-uint16 bandWidth
+uint16 bandwidth
 IMU imu
-MotorState[20] motorState
+MotorState[20] motorstate
 BmsState bms
-int16[4] footForce
-int16[4] footForceEst
+int16[4] footforce
+int16[4] footforceest
 uint8 mode
 float32 progress
-uint8 gaitType		   
-float32 footRaiseHeight		  
+uint8 gaittype		   
+float32 footraiseheight		  
 float32[3] position 
-float32 bodyHeight			  
+float32 bodyheight			  
 float32[3] velocity 
-float32 yawSpeed				   
-float32[4] rangeObstacle
-Cartesian[4] footPosition2Body 
-Cartesian[4] footSpeed2Body	
-uint8[40] wirelessRemote
+float32 yawspeed				   
+float32[4] rangeobstacle
+Cartesian[4] footposition2body 
+Cartesian[4] footspeed2body	
+uint8[40] wirelessremote
 uint32 reserve
 
 uint32 crc
