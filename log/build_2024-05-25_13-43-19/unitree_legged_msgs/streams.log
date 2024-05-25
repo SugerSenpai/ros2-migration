@@ -1,0 +1,52 @@
+[0.026s] Invoking command in '/ros2-migration/build/unitree_legged_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/unitree_legged_msgs
+[0.065s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.288s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.290s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.294s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.441s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.725s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.083s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[1.083s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.083s]   unitree_legged_msgs --arguments-file
+[1.083s]   /ros2-migration/build/unitree_legged_msgs/rosidl_adapter__arguments__unitree_legged_msgs.json
+[1.083s]   --output-dir
+[1.083s]   /ros2-migration/build/unitree_legged_msgs/rosidl_adapter/unitree_legged_msgs
+[1.083s]   --output-file
+[1.084s]   /ros2-migration/build/unitree_legged_msgs/rosidl_adapter/unitree_legged_msgs.idls)
+[1.084s]   returned error code 1:
+[1.084s] 
+[1.084s]   Error processing 'float32 Kp' of 'unitree_legged_msgs/MotorCmd': ''Kp' is
+[1.084s]   an invalid field name.  It should have the pattern
+[1.084s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[1.084s] 
+[1.084s]   Traceback (most recent call last):
+[1.084s] 
+[1.084s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[1.084s]       return _run_code(code, main_globals, None,
+[1.084s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[1.084s]       exec(code, run_globals)
+[1.084s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.084s]       sys.exit(main())
+[1.085s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[1.085s]       abs_idl_file = convert_to_idl(
+[1.085s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.085s]       return convert_msg_to_idl(
+[1.085s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.085s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.085s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 519, in parse_message_string
+[1.085s]       fields.append(Field(
+[1.097s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 354, in __init__
+[1.097s]       raise NameError(
+[1.097s] 
+[1.097s]   NameError: 'Kp' is an invalid field name.  It should have the pattern
+[1.097s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[1.098s] 
+[1.098s] Call Stack (most recent call first):
+[1.098s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.098s]   CMakeLists.txt:24 (rosidl_generate_interfaces)
+[1.098s] 
+[1.098s] [0m
+[1.098s] -- Configuring incomplete, errors occurred!
+[1.098s] See also "/ros2-migration/build/unitree_legged_msgs/CMakeFiles/CMakeOutput.log".
+[1.101s] Invoked command in '/ros2-migration/build/unitree_legged_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs -DCMAKE_INSTALL_PREFIX=/ros2-migration/install/unitree_legged_msgs

@@ -53,7 +53,6 @@ find_package(costmap_2d REQUIRED)
 find_package(mbf_utility REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(nav_core REQUIRED)
-find_package(REQUIRED REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${std_msgs_INCLUDE_DIRS}
   ${mbf_abstract_nav_INCLUDE_DIRS} ${nav_msgs_INCLUDE_DIRS} ${chrono_INCLUDE_DIRS}
   ${thread_INCLUDE_DIRS} ${map_server_INCLUDE_DIRS} ${angles_INCLUDE_DIRS}

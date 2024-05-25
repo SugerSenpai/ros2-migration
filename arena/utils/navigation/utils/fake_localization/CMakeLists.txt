@@ -23,7 +23,6 @@ find_package(ros2_console REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(Boost REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
-find_package(REQUIRED REQUIRED)
 find_package(rclpy REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${nav_msgs_INCLUDE_DIRS}
   ${angles_INCLUDE_DIRS} ${message_filters_INCLUDE_DIRS} ${tf2_ros_INCLUDE_DIRS}

@@ -1,0 +1,39 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cob_control_msgs/msg/ObstacleDistance.msg
+// generated code does not contain a copyright notice
+
+#include "cob_control_msgs/msg/Header.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module cob_control_msgs {
+  module msg {
+    struct ObstacleDistance {
+      cob_control_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Collision pair consists of link of interest and obstacle" "\n"
+        "Registration name of the link of interest")
+      string link_of_interest;
+
+      @verbatim (language="comment", text=
+        "Registration name of the obstacle")
+      string obstacle_id;
+
+      @verbatim (language="comment", text=
+        "distance between the nearest points on obstacle and link of interest")
+      double distance;
+
+      @verbatim (language="comment", text=
+        "Vector pointing to the origin of the link")
+      geometry_msgs::msg::Vector3 frame_vector;
+
+      @verbatim (language="comment", text=
+        "Vector pointing to the nearest point on the link collision geometry (e.g. mesh)")
+      geometry_msgs::msg::Vector3 nearest_point_frame_vector;
+
+      @verbatim (language="comment", text=
+        "Vector pointing to the nearest point on the obstacle collision geometry (e.g. mesh)")
+      geometry_msgs::msg::Vector3 nearest_point_obstacle_vector;
+    };
+  };
+};

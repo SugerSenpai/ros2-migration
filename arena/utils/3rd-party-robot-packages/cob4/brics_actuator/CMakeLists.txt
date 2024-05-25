@@ -10,7 +10,6 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(REQUIRED REQUIRED)
 find_package(catkin REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${geometry_msgs_INCLUDE_DIRS}

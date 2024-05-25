@@ -1,0 +1,2 @@
+string[] links
+string[] objects

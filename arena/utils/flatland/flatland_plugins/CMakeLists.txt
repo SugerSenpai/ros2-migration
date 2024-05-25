@@ -10,7 +10,6 @@ set(CMAKE_CXX_FLAGS -std=c++14)
 
 find_package(ament_cmake REQUIRED)
 find_package(tf2 REQUIRED)
-find_package(REQUIRED REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(flatland_msgs REQUIRED)
 find_package(pluginlib REQUIRED)

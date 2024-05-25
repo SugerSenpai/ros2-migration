@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/cob_base_controller_utils__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cob_base_controller_utils/msg/detail/wheel_commands__type_support.c.o"
+  "CMakeFiles/cob_base_controller_utils__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cob_base_controller_utils/msg/detail/wheel_commands__type_support.c.o.d"
+  "libcob_base_controller_utils__rosidl_typesupport_introspection_c.pdb"
+  "libcob_base_controller_utils__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/cob_base_controller_utils/msg/detail/wheel_commands__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/cob_base_controller_utils/msg/detail/wheel_commands__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/cob_base_controller_utils__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

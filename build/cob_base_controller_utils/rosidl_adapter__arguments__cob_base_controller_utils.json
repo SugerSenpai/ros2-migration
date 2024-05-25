@@ -1,0 +1,6 @@
+{
+  "package_name": "cob_base_controller_utils",
+  "non_idl_tuples": [
+    "/ros2-migration/arena/utils/3rd-party-robot-packages/cob4/cob_base_controller_utils:msg/WheelCommands.msg"
+  ]
+}

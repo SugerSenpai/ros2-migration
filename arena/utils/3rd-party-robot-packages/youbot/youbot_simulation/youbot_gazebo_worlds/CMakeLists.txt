@@ -11,7 +11,6 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(catkin REQUIRED)
 find_package(roslaunch REQUIRED)
-find_package(REQUIRED REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS}
   ${roslaunch_INCLUDE_DIRS} ${REQUIRED_INCLUDE_DIRS})
 include_directories(${INCLUDE_DIRS})

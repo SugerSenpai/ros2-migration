@@ -13,7 +13,6 @@ find_package(pluginlib REQUIRED)
 find_package(hardware_interface REQUIRED)
 find_package(gazebo REQUIRED)
 find_package(transmission_interface REQUIRED)
-find_package(REQUIRED REQUIRED)
 find_package(controller_manager REQUIRED)
 find_package(gazebo_ros_control REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${rclcpp_INCLUDE_DIRS}
