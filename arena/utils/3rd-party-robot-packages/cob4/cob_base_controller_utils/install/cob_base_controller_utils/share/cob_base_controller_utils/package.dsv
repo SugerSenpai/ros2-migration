@@ -1,5 +1,0 @@
-source;share/cob_base_controller_utils/local_setup.bash
-source;share/cob_base_controller_utils/local_setup.dsv
-source;share/cob_base_controller_utils/local_setup.ps1
-source;share/cob_base_controller_utils/local_setup.sh
-source;share/cob_base_controller_utils/local_setup.zsh
