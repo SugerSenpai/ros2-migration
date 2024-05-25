@@ -1,4 +1,0 @@
-source;share/cob_control_msgs/local_setup.bash
-source;share/cob_control_msgs/local_setup.dsv
-source;share/cob_control_msgs/local_setup.sh
-source;share/cob_control_msgs/local_setup.zsh

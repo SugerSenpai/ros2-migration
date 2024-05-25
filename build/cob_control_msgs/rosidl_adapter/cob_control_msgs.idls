@@ -1,3 +1,0 @@
-/ros2-migration/build/cob_control_msgs/rosidl_adapter/cob_control_msgs:msg/ObstacleDistance.idl
-/ros2-migration/build/cob_control_msgs/rosidl_adapter/cob_control_msgs:msg/ObstacleDistances.idl
-/ros2-migration/build/cob_control_msgs/rosidl_adapter/cob_control_msgs:srv/GetObstacleDistance.idl

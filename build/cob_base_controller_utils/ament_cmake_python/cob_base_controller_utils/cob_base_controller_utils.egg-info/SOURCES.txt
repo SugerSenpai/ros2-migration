@@ -1,6 +1,0 @@
-setup.py
-cob_base_controller_utils/__init__.py
-cob_base_controller_utils.egg-info/PKG-INFO
-cob_base_controller_utils.egg-info/SOURCES.txt
-cob_base_controller_utils.egg-info/dependency_links.txt
-cob_base_controller_utils.egg-info/top_level.txt
