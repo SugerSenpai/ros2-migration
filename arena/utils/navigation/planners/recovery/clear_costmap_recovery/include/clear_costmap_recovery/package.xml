@@ -29,10 +29,6 @@
   <exec_depend>rclcpp</exec_depend>
   <exec_depend>tf2_ros</exec_depend>
   <test_depend>rostest</test_depend>
-  <export>
-        <nav_core plugin="${prefix}/ccr_plugin.xml" />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><nav_core plugin="${prefix}/ccr_plugin.xml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

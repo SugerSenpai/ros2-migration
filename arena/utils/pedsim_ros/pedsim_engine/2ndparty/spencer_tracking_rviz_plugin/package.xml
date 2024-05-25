@@ -20,10 +20,6 @@
   <exec_depend>spencer_social_relation_msgs</exec_depend>
   <exec_depend>spencer_human_attribute_msgs</exec_depend>
   <exec_depend>roslib</exec_depend>
-  <export>
-      <rviz plugin="${prefix}/plugin_description.xml" />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><rviz plugin="${prefix}/plugin_description.xml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

@@ -43,10 +43,6 @@
   <exec_depend>mbf_msgs</exec_depend>
   <exec_depend>tf2</exec_depend>
   <exec_depend>tf2_ros</exec_depend>
-  <export>
-      <rosdoc config="rosdoc.yaml" />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><rosdoc config="rosdoc.yaml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

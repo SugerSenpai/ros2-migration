@@ -22,10 +22,6 @@
   <exec_depend>mbf_msgs</exec_depend>
   <exec_depend>mbf_simple_nav</exec_depend>
   <exec_depend>mbf_utility</exec_depend>
-  <export>
-    <metapackage />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><metapackage />
+  <build_type>ament_cmake</build_type>
+  </export></package>

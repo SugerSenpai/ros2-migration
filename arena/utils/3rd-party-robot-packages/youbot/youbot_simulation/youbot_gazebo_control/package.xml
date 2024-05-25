@@ -29,10 +29,6 @@
   <exec_depend>joint_state_controller</exec_depend>
   <exec_depend>joint_trajectory_controller</exec_depend>
   <test_depend>roslaunch</test_depend>
-  <export>
-    <controller_interface plugin="${prefix}/youbot_gazebo_control_plugins.xml" />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><controller_interface plugin="${prefix}/youbot_gazebo_control_plugins.xml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

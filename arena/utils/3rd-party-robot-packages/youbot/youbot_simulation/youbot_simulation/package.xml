@@ -9,10 +9,6 @@
   <license>GPLv3</license>
   <url type="website">http://github.com/mas-group/youbot_simulation</url>
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <export>
-    <metapackage />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><metapackage />
+  <build_type>ament_cmake</build_type>
+  </export></package>

@@ -24,11 +24,6 @@
   <exec_depend>rclcpp</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>unitree_legged_msgs</exec_depend>
-  <export>
-        
-        <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

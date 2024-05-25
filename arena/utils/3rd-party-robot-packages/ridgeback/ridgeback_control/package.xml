@@ -28,10 +28,6 @@
   <exec_depend>tf</exec_depend>
   <exec_depend>urdf</exec_depend>
   <test_depend>roslaunch</test_depend>
-  <export>
-    <controller_interface plugin="${prefix}/mecanum_drive_controller_plugins.xml" />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><controller_interface plugin="${prefix}/mecanum_drive_controller_plugins.xml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

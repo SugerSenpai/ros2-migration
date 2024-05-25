@@ -29,10 +29,6 @@
   <exec_depend>flatland_msgs</exec_depend>
   <exec_depend>nav_msgs</exec_depend>
   <exec_depend>flatland_plugins</exec_depend>
-  <export>
-    <flatland_server plugin="${prefix}/arena_plugins.xml" />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><flatland_server plugin="${prefix}/arena_plugins.xml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

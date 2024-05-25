@@ -12,10 +12,6 @@
   <exec_depend>flatland_plugins</exec_depend>
   <exec_depend>flatland_server</exec_depend>
   <exec_depend>flatland_viz</exec_depend>
-  <export>
-    <metapackage />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><metapackage />
+  <build_type>ament_cmake</build_type>
+  </export></package>

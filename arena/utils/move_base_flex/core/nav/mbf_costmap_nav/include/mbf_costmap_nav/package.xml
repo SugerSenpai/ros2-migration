@@ -54,10 +54,6 @@
   <exec_depend>tf</exec_depend>
   <test_depend>gtest</test_depend>
   <test_depend>map_server</test_depend>
-  <export>
-      <rosdoc config="rosdoc.yaml" />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><rosdoc config="rosdoc.yaml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>

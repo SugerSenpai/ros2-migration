@@ -47,10 +47,6 @@
   <exec_depend>tf2</exec_depend>
   <exec_depend>tf2_geometry_msgs</exec_depend>
   <exec_depend>tf2_ros</exec_depend>
-  <export>
-        <nav_core plugin="${prefix}/blp_plugin.xml" />
-  </export>
-  <export>
-    <build_type>ament_cmake</build_type>
-  </export>
-</package>
+  <export><nav_core plugin="${prefix}/blp_plugin.xml" />
+  <build_type>ament_cmake</build_type>
+  </export></package>
