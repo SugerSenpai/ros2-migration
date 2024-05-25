@@ -19,7 +19,6 @@ install(PROGRAMS nodes/crowdsim_agents
   DESTINATION bin)
 
 ament_export_dependencies(ament_cmake)
-ament_export_dependencies(catkin)
 ament_export_dependencies(REQUIRED)
 ament_export_include_directories(${INCLUDE_DIRS})
 

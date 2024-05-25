@@ -60,7 +60,7 @@ if __name__ == "__main__":
     # Set the lines you want to remove
     lines_to_remove = [
         "find_package(catkin REQUIRED)",
-        #"ament_export_dependencies(catkin)", 
+        "ament_export_dependencies(catkin)", 
         #"ament_export_dependencies(REQUIRED)"
     ]
     
