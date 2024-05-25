@@ -34,6 +34,6 @@ install(DIRECTORY urdf/ DESTINATION share/${PROJECT_NAME}/urdf)
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(catkin)
 ament_export_dependencies(roslaunch)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 
 ament_package()

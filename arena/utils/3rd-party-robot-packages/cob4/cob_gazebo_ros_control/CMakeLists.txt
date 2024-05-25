@@ -63,7 +63,7 @@ ament_export_dependencies(gazebo)
 ament_export_dependencies(transmission_interface)
 ament_export_dependencies(controller_manager)
 ament_export_dependencies(gazebo_ros_control)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(hwi_switch_robot_hw_sim hwi_switch_gazebo_ros_control
   ${LIBS})
 

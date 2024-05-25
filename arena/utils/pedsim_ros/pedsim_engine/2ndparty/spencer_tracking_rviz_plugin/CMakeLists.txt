@@ -144,7 +144,7 @@ ament_export_dependencies(Qt4)
 ament_export_dependencies(QtGui)
 ament_export_dependencies(rviz)
 ament_export_dependencies(pedsim)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(${PROJECT_NAME} ${LIBS})
 
 ament_package()

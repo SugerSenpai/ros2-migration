@@ -84,7 +84,7 @@ ament_export_dependencies(urdf)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(tf2)
 ament_export_dependencies(realtime_tools)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(steered_wheel_base_controller ${LIBS})
 
 ament_package()

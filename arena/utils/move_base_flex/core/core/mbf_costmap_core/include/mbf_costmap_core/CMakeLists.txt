@@ -46,6 +46,6 @@ ament_export_dependencies(mbf_abstract_core)
 ament_export_dependencies(std_msgs)
 ament_export_dependencies(nav_core)
 ament_export_dependencies(tf2)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 
 ament_package()

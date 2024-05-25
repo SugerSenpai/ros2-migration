@@ -74,7 +74,7 @@ ament_export_dependencies(pluginlib)
 ament_export_dependencies(tf2_geometry_msgs)
 ament_export_dependencies(tf2)
 ament_export_dependencies(cmake_modules)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(rotate_recovery ${LIBS})
 
 ament_package()

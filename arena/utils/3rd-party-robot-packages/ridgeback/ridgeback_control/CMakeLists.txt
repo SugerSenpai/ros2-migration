@@ -59,7 +59,7 @@ ament_export_dependencies(nav_msgs)
 ament_export_dependencies(controller_interface)
 ament_export_dependencies(urdf)
 ament_export_dependencies(roslaunch)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(mecanum_drive_controller ${LIBS})
 
 ament_package()

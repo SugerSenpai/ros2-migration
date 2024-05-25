@@ -86,7 +86,7 @@ ament_export_dependencies(chrono)
 ament_export_dependencies(mbf_abstract_nav)
 ament_export_dependencies(pluginlib)
 ament_export_dependencies(tf2_ros)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(${MBF_SIMPLE_SERVER_LIB} ${LIBS})
 
 ament_package()

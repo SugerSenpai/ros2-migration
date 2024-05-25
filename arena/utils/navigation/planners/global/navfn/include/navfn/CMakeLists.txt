@@ -147,7 +147,7 @@ ament_export_dependencies(rclcpp)
 ament_export_dependencies(rosidl_default_generators)
 ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(visualization_msgs)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(navfn ${LIBS})
 
 ament_package()

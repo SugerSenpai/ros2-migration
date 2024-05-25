@@ -166,7 +166,7 @@ ament_export_dependencies(tf2_ros)
 ament_export_dependencies(diagnostic_updater)
 ament_export_dependencies(tf2_geometry_msgs)
 ament_export_dependencies(tf2)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(amcl_pf amcl_map amcl_sensors ${LIBS})
 
 ament_package()

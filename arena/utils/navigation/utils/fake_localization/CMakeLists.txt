@@ -59,6 +59,6 @@ ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(Boost)
 ament_export_dependencies(tf2_geometry_msgs)
 ament_export_dependencies(rclpy)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 
 ament_package()

@@ -109,6 +109,6 @@ ament_export_dependencies(Qt5Widgets)
 ament_export_dependencies(${PEDSIM_SIMULATOR_DEPENDENCIES})
 ament_export_dependencies(Boost)
 ament_export_dependencies(PkgConfig)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 
 ament_package()

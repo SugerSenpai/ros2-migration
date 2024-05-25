@@ -236,7 +236,7 @@ ament_export_dependencies(visualization_msgs)
 ament_export_dependencies(control_msgs)
 ament_export_dependencies(sensor_msgs)
 ament_export_dependencies(nav_msgs)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(controller_interfaces damping_methods inv_calculations
   constraint_solvers limiters kinematic_extensions
   inverse_differential_kinematics_solver twist_controller ${LIBS})

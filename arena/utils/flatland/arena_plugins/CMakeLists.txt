@@ -151,7 +151,7 @@ ament_export_dependencies(flatland_msgs)
 ament_export_dependencies(std_msgs)
 ament_export_dependencies(tf2)
 ament_export_dependencies(rostest)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(arena_plugins_lib ${LIBS})
 
 ament_package()

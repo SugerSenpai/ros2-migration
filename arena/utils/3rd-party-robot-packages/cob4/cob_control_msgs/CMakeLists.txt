@@ -29,6 +29,6 @@ ament_export_dependencies(ament_cmake)
 ament_export_dependencies(std_msgs)
 ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(rosidl_default_generators)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 
 ament_package()

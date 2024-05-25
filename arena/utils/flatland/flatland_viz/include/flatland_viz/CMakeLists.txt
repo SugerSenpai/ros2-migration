@@ -164,7 +164,7 @@ ament_export_dependencies(rclcpp)
 ament_export_dependencies(flatland_msgs)
 ament_export_dependencies(EXACT)
 ament_export_dependencies(PkgConfig)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(flatland_viz_plugins ${LIBS})
 
 ament_package()

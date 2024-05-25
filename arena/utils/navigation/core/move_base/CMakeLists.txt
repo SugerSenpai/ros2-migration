@@ -101,7 +101,7 @@ ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(std_srvs)
 ament_export_dependencies(costmap_2d)
 ament_export_dependencies(rclpy)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(move_base ${LIBS})
 
 ament_package()

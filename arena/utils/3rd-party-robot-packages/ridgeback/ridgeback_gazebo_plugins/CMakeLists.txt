@@ -82,7 +82,7 @@ ament_export_dependencies(rclcpp)
 ament_export_dependencies(std_msgs)
 ament_export_dependencies(nav_msgs)
 ament_export_dependencies(std_srvs)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(ridgeback_ros_force_based_move ${LIBS})
 
 ament_package()

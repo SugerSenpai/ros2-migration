@@ -43,7 +43,7 @@ add_library(pedsim ${SOURCES})
 ament_export_dependencies(ament_cmake)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(Boost)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(pedsim ${LIBS})
 
 ament_package()

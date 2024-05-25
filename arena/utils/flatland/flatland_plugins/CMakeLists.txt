@@ -162,7 +162,7 @@ ament_export_dependencies(PkgConfig)
 ament_export_dependencies(cmake_modules)
 ament_export_dependencies(Eigen3)
 ament_export_dependencies(rclcpp)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(flatland_plugins_lib ${LIBS})
 
 ament_package()

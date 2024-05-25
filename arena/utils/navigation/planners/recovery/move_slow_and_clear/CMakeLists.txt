@@ -69,7 +69,7 @@ ament_export_dependencies(thread)
 ament_export_dependencies(Eigen3)
 ament_export_dependencies(rclcpp)
 ament_export_dependencies(pluginlib)
-ament_export_include_directories(${INCLUDE_DIRS})
+include_directories(${INCLUDE_DIRS})
 ament_export_libraries(${PROJECT_NAME} ${LIBS})
 
 ament_package()
