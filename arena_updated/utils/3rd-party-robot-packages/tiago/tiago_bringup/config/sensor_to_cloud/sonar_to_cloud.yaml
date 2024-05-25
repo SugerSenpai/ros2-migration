@@ -1,6 +1,0 @@
-/**:
-  ros__parameters:
-    aperture_angle: 0.18
-    arc_resolution: 0.1
-    infinity_dist: 4.0
-    sonar_base_topic: sonar_base

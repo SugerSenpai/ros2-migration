@@ -1,5 +1,0 @@
-/**:
-  ros__parameters:
-    inters:
-    - name: BypassInter
-      type: bypass_inter/BypassInter
