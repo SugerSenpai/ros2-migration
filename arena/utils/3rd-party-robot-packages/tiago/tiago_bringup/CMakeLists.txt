@@ -3,7 +3,7 @@ project(tiago_bringup)
 
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(joy_linux REQUIRED)
+find_package(joy REQUIRED)  # Replacing joy_linux with joy
 find_package(joy_teleop REQUIRED)
 find_package(launch_pal REQUIRED)
 find_package(play_motion2 REQUIRED)
