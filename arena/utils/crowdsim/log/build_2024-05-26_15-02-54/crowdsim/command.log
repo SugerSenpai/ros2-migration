@@ -1,0 +1,6 @@
+Invoking command in '/ros2-migration/arena/utils/crowdsim/build/crowdsim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2-migration/arena/utils/crowdsim -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/utils/crowdsim/install/crowdsim
+Invoked command in '/ros2-migration/arena/utils/crowdsim/build/crowdsim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ros2-migration/arena/utils/crowdsim -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/utils/crowdsim/install/crowdsim
+Invoking command in '/ros2-migration/arena/utils/crowdsim/build/crowdsim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2-migration/arena/utils/crowdsim/build/crowdsim -- -j8 -l8
+Invoked command in '/ros2-migration/arena/utils/crowdsim/build/crowdsim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ros2-migration/arena/utils/crowdsim/build/crowdsim -- -j8 -l8
+Invoking command in '/ros2-migration/arena/utils/crowdsim/build/crowdsim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2-migration/arena/utils/crowdsim/build/crowdsim
+Invoked command in '/ros2-migration/arena/utils/crowdsim/build/crowdsim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ros2-migration/arena/utils/crowdsim/build/crowdsim

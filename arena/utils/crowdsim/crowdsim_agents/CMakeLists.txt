@@ -28,4 +28,3 @@ install(TARGETS
 )
 
 ament_package()
-
