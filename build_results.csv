@@ -1,0 +1,43 @@
+Package Name,Path,Build System,Result,Error Message
+arena_bringup,arena/arena-rosnav/arena_bringup,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'arena_bringup']' returned non-zero exit status 1."
+arena_evaluation,arena/evaluation/arena_evaluation,ros.ament_cmake,Success,
+arena_evaluation_msgs,arena/evaluation/arena_evaluation_msgs,ros.ament_cmake,Success,
+arena_simulation_setup,arena/simulation-setup,ros.ament_cmake,Success,
+crowdsim,arena/utils/crowdsim,ros.ament_cmake,Success,
+eval,arena/arena-rosnav/utils/misc/eval,ros.catkin,Success,
+flatland,arena/utils/flatland,ros.ament_cmake,Success,
+gazebo_utils,arena/arena-rosnav/utils/plugins/gazebo_utils,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'gazebo_utils']' returned non-zero exit status 1."
+grid_map_generator,arena/arena-rosnav/utils/misc/grid_map_generator,ros.ament_python,Failed,"Command '['colcon', 'build', '--packages-select', 'grid_map_generator']' returned non-zero exit status 1."
+intermediate_planner,arena/arena-rosnav/utils/ros/rosnodes/intermediate_planner,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'intermediate_planner']' returned non-zero exit status 1."
+map_clock_simulator,arena/arena-rosnav/utils/ros/rosnodes/map_clock_simulator,ros.catkin,Success,
+map_distance_server,arena/arena-rosnav/utils/ros/rosnodes/map_distance_server,ros.ament_cmake,Success,
+map_generator,arena/arena-rosnav/utils/misc/map_generator,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'map_generator']' returned non-zero exit status 1."
+mapping,arena/arena-rosnav/utils/misc/mapping,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'mapping']' returned non-zero exit status 2."
+move_base_flex,arena/utils/move_base_flex,ros.ament_cmake,Success,
+navigation,arena/utils/navigation,ros.ament_cmake,Success,
+observations,arena/arena-rosnav/utils/ros/msgs/observations,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'observations']' returned non-zero exit status 1."
+path_search,arena/arena-rosnav/utils/misc/path_search,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'path_search']' returned non-zero exit status 1."
+pedsim_ros,arena/utils/pedsim_ros,ros.ament_cmake,Success,
+plan_manager,arena/arena-rosnav/utils/ros/rosnodes/plan_manager,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'plan_manager']' returned non-zero exit status 1."
+plan_msgs,arena/arena-rosnav/utils/ros/msgs/plan_msgs,ros.catkin,Success,
+plan_visualization,arena/arena-rosnav/utils/misc/plan_visualization,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'plan_visualization']' returned non-zero exit status 2."
+pmb2_robot,arena/utils/3rd-party-robot-packages/tiago/pmb2_robot,ros.ament_cmake,Success,
+rl_utils,arena/arena-rosnav/utils/misc/rl_utils,ros.ament_python,Success,
+rviz_plugins,arena/arena-rosnav/utils/plugins/rviz_plugins,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'rviz_plugins']' returned non-zero exit status 1."
+rviz_utils,arena/arena-rosnav/utils/misc/rviz_utils,ros.ament_python,Success,
+sensor_simulator,arena/arena-rosnav/utils/ros/rosnodes/sensor_simulator,ros.catkin,Failed,"Command '['colcon', 'build', '--packages-select', 'sensor_simulator']' returned non-zero exit status 1."
+spacial_horizon,arena/arena-rosnav/utils/ros/rosnodes/spacial_horizon,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'spacial_horizon']' returned non-zero exit status 1."
+stable_baselines3,arena/utils/stable-baselines3,python,Success,
+task_generator,arena/arena-rosnav/task_generator,ros.ament_cmake,Success,
+testing,arena/arena-rosnav/testing,ros.ament_python,Failed,"Command '['colcon', 'build', '--packages-select', 'testing']' returned non-zero exit status 1."
+tiago_bringup,arena/utils/3rd-party-robot-packages/tiago/tiago_bringup,ros.ament_cmake,Success,
+tiago_controller_configuration,arena/utils/3rd-party-robot-packages/tiago/tiago_controller_configuration,ros.ament_cmake,Success,
+tiago_description,arena/utils/3rd-party-robot-packages/tiago/tiago_description,ros.ament_cmake,Success,
+tiago_gazebo,arena/utils/3rd-party-robot-packages/tiago/tiago_gazebo,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'tiago_gazebo']' returned non-zero exit status 1."
+tiago_robot,arena/utils/3rd-party-robot-packages/tiago/tiago_robot,ros.ament_cmake,Success,
+tiago_simulation,arena/utils/3rd-party-robot-packages/tiago/tiago_simulation,ros.ament_cmake,Success,
+training,arena/arena-rosnav/training,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'training']' returned non-zero exit status 1."
+traj_planner,arena/arena-rosnav/utils/misc/traj_planner,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'traj_planner']' returned non-zero exit status 1."
+unitree_controller_go1,arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'unitree_controller_go1']' returned non-zero exit status 1."
+unitree_legged_control,arena/utils/unitree_ros/unitree_ros/unitree_legged_control,ros.ament_cmake,Failed,"Command '['colcon', 'build', '--packages-select', 'unitree_legged_control']' returned non-zero exit status 1."
+unitree_legged_msgs,arena/utils/unitree_ros/unitree_legged_msgs,ros.ament_cmake,Success,
