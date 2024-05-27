@@ -62,9 +62,11 @@ def build_package(package_name, package_path, build_system):
             text=True,
             check=True
         )
-        return "Success", result.stdout
+        return "Success", ""
     except subprocess.CalledProcessError as e:
-        return "Failed", e.stderr
+        # Limit the error message to 2000 characters
+        error_message = e.stderr[:2000]
+        return "Failed", error_message
 
 # Open CSV file to write the results
 with open(csv_file, mode='w', newline='') as file:
@@ -74,6 +76,6 @@ with open(csv_file, mode='w', newline='') as file:
     # Iterate over the packages and build each one
     for package_name, package_path, build_system in packages:
         result, error_message = build_package(package_name, package_path, build_system)
-        writer.writerow([package_name, package_path, build_system, result, error_message])
+        writer.writerow([package_name, package_path, build_system, result, error_message if result == "Failed" else ""])
 
 print(f"Build results saved to {csv_file}")
