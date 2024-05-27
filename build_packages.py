@@ -53,11 +53,18 @@ csv_file = 'build_results.csv'
 # Function to execute colcon build command
 def build_package(package_name, package_path, build_system):
     try:
-        # Change directory to the package path
-        subprocess.run(["colcon", "build", "--packages-select", package_name], check=True, cwd=package_path)
-        return "Success", ""
+        # Run colcon build command and capture output
+        result = subprocess.run(
+            ["colcon", "build", "--packages-select", package_name],
+            cwd=package_path,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            check=True
+        )
+        return "Success", result.stdout
     except subprocess.CalledProcessError as e:
-        return "Failed", str(e)
+        return "Failed", e.stderr
 
 # Open CSV file to write the results
 with open(csv_file, mode='w', newline='') as file:
