@@ -1,0 +1,7 @@
+ros-humble-pcl-ros
+ros-humble-joy
+ros-humble-joy-teleop
+ros-humble-play-motion2-msgs
+ros-humble-gazebo-ros-pkgs
+ros-humble-realtime-tools
+ros-humble-message-generation
