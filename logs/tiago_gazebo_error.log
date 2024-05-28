@@ -1,4 +1,3 @@
-[0.256s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
 --- stderr: tiago_gazebo
 CMake Error at CMakeLists.txt:18 (find_package):
   By not providing "Findplay_motion2_msgs.cmake" in CMAKE_MODULE_PATH this
@@ -18,4 +17,4 @@ CMake Error at CMakeLists.txt:18 (find_package):
 
 
 ---
-Failed   <<< tiago_gazebo [0.48s, exited with code 1]
+Failed   <<< tiago_gazebo [0.47s, exited with code 1]

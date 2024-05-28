@@ -1,4 +1,3 @@
-[0.243s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
 --- stderr: path_search
 CMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
   The package name passed to `find_package_handle_standard_args` (USB_10)

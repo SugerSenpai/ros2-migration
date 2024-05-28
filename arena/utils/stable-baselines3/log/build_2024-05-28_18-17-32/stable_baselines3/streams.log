@@ -1,0 +1,20 @@
+[0.615s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/stable-baselines3': PYTHONPATH=/home/ahmo030/ros2-migration/arena/utils/stable-baselines3/build/stable_baselines3/prefix_override:/home/ahmo030/ros2-migration/arena/utils/stable-baselines3/install/stable_baselines3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/stable_baselines3 build --build-base /home/ahmo030/ros2-migration/arena/utils/stable-baselines3/build/stable_baselines3/build install --record /home/ahmo030/ros2-migration/arena/utils/stable-baselines3/build/stable_baselines3/install.log --single-version-externally-managed
+[0.821s] running egg_info
+[0.825s] writing build/stable_baselines3/stable_baselines3.egg-info/PKG-INFO
+[0.825s] writing dependency_links to build/stable_baselines3/stable_baselines3.egg-info/dependency_links.txt
+[0.825s] writing requirements to build/stable_baselines3/stable_baselines3.egg-info/requires.txt
+[0.825s] writing top-level names to build/stable_baselines3/stable_baselines3.egg-info/top_level.txt
+[0.827s] reading manifest file 'build/stable_baselines3/stable_baselines3.egg-info/SOURCES.txt'
+[0.827s] adding license file 'LICENSE'
+[0.827s] adding license file 'NOTICE'
+[0.828s] writing manifest file 'build/stable_baselines3/stable_baselines3.egg-info/SOURCES.txt'
+[0.828s] running build
+[0.828s] running build_py
+[0.830s] running install
+[0.830s] running install_lib
+[0.832s] running install_egg_info
+[0.833s] removing '/home/ahmo030/ros2-migration/arena/utils/stable-baselines3/install/stable_baselines3/lib/python3.10/site-packages/stable_baselines3-2.1.0-py3.10.egg-info' (and everything under it)
+[0.833s] Copying build/stable_baselines3/stable_baselines3.egg-info to /home/ahmo030/ros2-migration/arena/utils/stable-baselines3/install/stable_baselines3/lib/python3.10/site-packages/stable_baselines3-2.1.0-py3.10.egg-info
+[0.834s] running install_scripts
+[0.848s] writing list of installed files to '/home/ahmo030/ros2-migration/arena/utils/stable-baselines3/build/stable_baselines3/install.log'
+[0.860s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/stable-baselines3' returned '0': PYTHONPATH=/home/ahmo030/ros2-migration/arena/utils/stable-baselines3/build/stable_baselines3/prefix_override:/home/ahmo030/ros2-migration/arena/utils/stable-baselines3/install/stable_baselines3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/stable_baselines3 build --build-base /home/ahmo030/ros2-migration/arena/utils/stable-baselines3/build/stable_baselines3/build install --record /home/ahmo030/ros2-migration/arena/utils/stable-baselines3/build/stable_baselines3/install.log --single-version-externally-managed
