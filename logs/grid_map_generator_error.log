@@ -1,0 +1,5 @@
+[0.270s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
+--- stderr: grid_map_generator
+error: package directory 'grid_map_generator' does not exist
+---
+Failed   <<< grid_map_generator [0.79s, exited with code 1]

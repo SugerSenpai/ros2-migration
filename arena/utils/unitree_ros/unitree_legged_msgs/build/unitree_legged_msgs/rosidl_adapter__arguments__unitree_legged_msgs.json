@@ -1,0 +1,16 @@
+{
+  "package_name": "unitree_legged_msgs",
+  "non_idl_tuples": [
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/MotorCmd.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/MotorState.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/BmsCmd.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/BmsState.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/Cartesian.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/IMU.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/LED.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/LowCmd.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/LowState.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/HighCmd.msg",
+    "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_legged_msgs:msg/HighState.msg"
+  ]
+}

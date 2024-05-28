@@ -1,0 +1,18 @@
+[0.265s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
+--- stderr: gazebo_utils
+CMake Error at CMakeLists.txt:40 (add_library):
+  Cannot find source file:
+
+    src/pose_tool.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+
+
+CMake Error at CMakeLists.txt:40 (add_library):
+  No SOURCES given to target: gazebo_utils
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+---
+Failed   <<< gazebo_utils [1.03s, exited with code 1]

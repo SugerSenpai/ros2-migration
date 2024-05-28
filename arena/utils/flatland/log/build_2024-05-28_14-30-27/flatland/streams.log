@@ -1,0 +1,42 @@
+[0.005s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ahmo030/ros2-migration/arena/utils/flatland -DCMAKE_INSTALL_PREFIX=/home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland
+[0.033s] -- The C compiler identification is GNU 11.4.0
+[0.067s] -- The CXX compiler identification is GNU 11.4.0
+[0.071s] -- Detecting C compiler ABI info
+[0.128s] -- Detecting C compiler ABI info - done
+[0.136s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.137s] -- Detecting C compile features
+[0.137s] -- Detecting C compile features - done
+[0.142s] -- Detecting CXX compiler ABI info
+[0.224s] -- Detecting CXX compiler ABI info - done
+[0.229s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.229s] -- Detecting CXX compile features
+[0.229s] -- Detecting CXX compile features - done
+[0.231s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.321s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.399s] WARNING: Metapackage "flatland" must buildtool_depend on catkin.
+[0.399s] WARNING: Metapackage "flatland" should not have other dependencies besides a buildtool_depend on catkin and exec_depends.
+[0.404s] -- Configuring done
+[0.406s] -- Generating done
+[0.406s] -- Build files have been written to: /home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland
+[0.408s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ahmo030/ros2-migration/arena/utils/flatland -DCMAKE_INSTALL_PREFIX=/home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland
+[0.409s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland -- -j16 -l16
+[0.425s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland -- -j16 -l16
+[0.438s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland
+[0.442s] -- Install configuration: ""
+[0.442s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/ament_index/resource_index/package_run_dependencies/flatland
+[0.442s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/ament_index/resource_index/parent_prefix_path/flatland
+[0.443s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/environment/ament_prefix_path.sh
+[0.443s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/environment/ament_prefix_path.dsv
+[0.443s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/environment/path.sh
+[0.443s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/environment/path.dsv
+[0.443s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/local_setup.bash
+[0.443s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/local_setup.sh
+[0.443s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/local_setup.zsh
+[0.444s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/local_setup.dsv
+[0.444s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/package.dsv
+[0.444s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/ament_index/resource_index/packages/flatland
+[0.444s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.444s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/cmake/flatlandConfig.cmake
+[0.444s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/cmake/flatlandConfig-version.cmake
+[0.444s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/flatland/install/flatland/share/flatland/package.xml
+[0.446s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ahmo030/ros2-migration/arena/utils/flatland/build/flatland

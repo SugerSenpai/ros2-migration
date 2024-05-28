@@ -1,361 +1,43 @@
-Package Name,Path,Build System,Result,Error Message
-arena_bringup,arena/arena-rosnav/arena_bringup,ros.ament_cmake,Failed,"--- stderr: arena_bringup
-CMake Error: The source directory ""/ros2-migration/arena/arena-rosnav/arena_bringup"" does not appear to contain CMakeLists.txt.
-Specify --help for usage, or press the help button on the CMake GUI.
-Traceback (most recent call last):
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_core/executor/__init__.py"", line 91, in __call__
-    rc = await self.task(*args, **kwargs)
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_core/task/__init__.py"", line 93, in __call__
-    return await task_method(*args, **kwargs)
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_ros/task/ament_cmake/build.py"", line 59, in build
-    rc = await extension.build(
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_cmake/task/cmake/build.py"", line 87, in build
-    rc = await self._reconfigure(args, env)
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_cmake/task/cmake/build.py"", line 182, in _reconfigure
-    buildfile = get_buildfile(cmake_cache)
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_cmake/task/cmake/__init__.py"", line 114, in get_buildfile
-    if 'Visual Studio' in generator:
-TypeError: argument of type 'NoneType' is not iterable
----
-Failed   <<< arena_bringup [0.02s, exited with code 1]
-argument of type 'NoneType' is not iterable
-"
+Package Name,Path,Build System,Result,Log File
+arena_bringup,arena/arena-rosnav/arena_bringup,ros.ament_cmake,Success,
 arena_evaluation,arena/evaluation/arena_evaluation,ros.ament_cmake,Success,
 arena_evaluation_msgs,arena/evaluation/arena_evaluation_msgs,ros.ament_cmake,Success,
 arena_simulation_setup,arena/simulation-setup,ros.ament_cmake,Success,
 crowdsim,arena/utils/crowdsim,ros.ament_cmake,Success,
 eval,arena/arena-rosnav/utils/misc/eval,ros.catkin,Success,
 flatland,arena/utils/flatland,ros.ament_cmake,Success,
-gazebo_utils,arena/arena-rosnav/utils/plugins/gazebo_utils,ros.ament_cmake,Failed,"--- stderr: gazebo_utils
-CMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
-  ament_package_xml() package name 'gazebo_utils' in '/package.xml' does not
-  match current PROJECT_NAME 'rviz_plugins'.  You must call project() with
-  the same package name before.
-Call Stack (most recent call first):
-  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
-  CMakeLists.txt:76 (ament_package)
-
-
----
-Failed   <<< gazebo_utils [3.49s, exited with code 1]
-"
-grid_map_generator,arena/arena-rosnav/utils/misc/grid_map_generator,ros.ament_python,Failed,"--- stderr: grid_map_generator
-error: package directory 'grid_map_generator' does not exist
----
-Failed   <<< grid_map_generator [0.89s, exited with code 1]
-"
-intermediate_planner,arena/arena-rosnav/utils/ros/rosnodes/intermediate_planner,ros.ament_cmake,Failed,"--- stderr: intermediate_planner
-CMake Error at CMakeLists.txt:20 (find_package):
-  By not providing ""Findmapping.cmake"" in CMAKE_MODULE_PATH this project has
-  asked CMake to find a package configuration file provided by ""mapping"", but
-  CMake did not find one.
-
-  Could not find a package configuration file provided by ""mapping"" with any
-  of the following names:
-
-    mappingConfig.cmake
-    mapping-config.cmake
-
-  Add the installation prefix of ""mapping"" to CMAKE_PREFIX_PATH or set
-  ""mapping_DIR"" to a directory containing one of the above files.  If
-  ""mapping"" provides a separate development package or SDK, be sure it has
-  been installed.
-
-
----
-Failed   <<< intermediate_planner [1.49s, exited with code 1]
-"
+gazebo_utils,arena/arena-rosnav/utils/plugins/gazebo_utils,ros.ament_cmake,Failed,logs/gazebo_utils_error.log
+grid_map_generator,arena/arena-rosnav/utils/misc/grid_map_generator,ros.ament_python,Failed,logs/grid_map_generator_error.log
+intermediate_planner,arena/arena-rosnav/utils/ros/rosnodes/intermediate_planner,ros.ament_cmake,Failed,logs/intermediate_planner_error.log
 map_clock_simulator,arena/arena-rosnav/utils/ros/rosnodes/map_clock_simulator,ros.catkin,Success,
 map_distance_server,arena/arena-rosnav/utils/ros/rosnodes/map_distance_server,ros.ament_cmake,Success,
-map_generator,arena/arena-rosnav/utils/misc/map_generator,ros.ament_cmake,Failed,"--- stderr: map_generator
-CMake Error at CMakeLists.txt:15 (find_package):
-  By not providing ""Findmap_distance_server.cmake"" in CMAKE_MODULE_PATH this
-  project has asked CMake to find a package configuration file provided by
-  ""map_distance_server"", but CMake did not find one.
-
-  Could not find a package configuration file provided by
-  ""map_distance_server"" with any of the following names:
-
-    map_distance_serverConfig.cmake
-    map_distance_server-config.cmake
-
-  Add the installation prefix of ""map_distance_server"" to CMAKE_PREFIX_PATH
-  or set ""map_distance_server_DIR"" to a directory containing one of the above
-  files.  If ""map_distance_server"" provides a separate development package or
-  SDK, be sure it has been installed.
-
-
----
-Failed   <<< map_generator [0.93s, exited with code 1]
-"
-mapping,arena/arena-rosnav/utils/misc/mapping,ros.ament_cmake,Failed,"--- stderr: mapping
-In file included from /ros2-migration/arena/arena-rosnav/utils/misc/mapping/src/mapping.cpp:1:
-/ros2-migration/arena/arena-rosnav/utils/misc/mapping/include/mapping/mapping.h:237:9: error: ‘ros’ does not name a type
-  237 |         ros::Subscriber indep_scan_sub_, indep_odom_sub_;
-      |         ^~~
-/ros2-migration/arena/arena-rosnav/utils/misc/mapping/include/mapping/mapping.h:240:9: error: ‘ros’ does not name a type
-  240 |         ros::ServiceClient static_map_client_;
-      |         ^~~
-/ros2-migration/arena/arena-rosnav/utils/misc/mapping/include/mapping/mapping.h:244:9: error: ‘ros’ does not name a type
-  244 |         ros::Publisher map_pub_,static_map_pub_,dynamic_map_pub_;
-      |         ^~~
-/ros2-migration/arena/arena-rosnav/utils/misc/mapping/include/mapping/mapping.h:245:9: error: ‘ros’ does not name a type
-  245 |         ros::Publisher esdf_pub_,esdf_static_pub_;
-      |         ^~~
-/ros2-migration/arena/arena-rosnav/utils/misc/mapping/include/mapping/mapping.h:246:9: error: ‘ros’ does not name a type
-  246 |         ros::Publisher depth_pub_; //laser pointcloud2
-      |         ^~~
-/ros2-migration/arena/arena-rosnav/utils/misc/mapping/include/mapping/mapping.h:247:9: error: ‘ros’ does not name a type
-  247 |         ros::Publisher update_range_pub_;
-      |         ^~~
-/ros2-migration/arena/arena-rosnav/utils/misc/mapping/include/mapping/mapping.h:248:9: error: ‘ros’ does not name a type
-  248 |         ros::Publisher unknown_pub_;
-      |         ^~~
-/ros2-migration/arena/arena-rosnav/utils/misc/mapping/include/mapping/mapping.h:252:17: error: ‘Timer’ in namespace ‘rclcpp’ does not name a type; did you mean ‘Time’?
-  252 |         rclcpp::Timer occ_timer_;
-      |                 ^~~~~
-      |                 Time
-/ros2-migration/arena/arena-rosnav/utils/misc/mapping/include/mapping/mapping.h:253:17: error: ‘Timer’ in namespace ‘rclcpp’ does not name a type; did you mean ‘Time’?
-  253 |         rclcpp::Timer esdf_timer_;
-      "
+map_generator,arena/arena-rosnav/utils/misc/map_generator,ros.ament_cmake,Failed,logs/map_generator_error.log
+mapping,arena/arena-rosnav/utils/misc/mapping,ros.ament_cmake,Failed,logs/mapping_error.log
 move_base_flex,arena/utils/move_base_flex,ros.ament_cmake,Success,
 navigation,arena/utils/navigation,ros.ament_cmake,Success,
-observations,arena/arena-rosnav/utils/ros/msgs/observations,ros.ament_cmake,Failed,"--- stderr: observations
-CMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:229 (message):
-  Packages installing interfaces must include
-  '<member_of_group>rosidl_interface_packages</member_of_group>' in their
-  package.xml
-Call Stack (most recent call first):
-  CMakeLists.txt:18 (rosidl_generate_interfaces)
-
-
----
-Failed   <<< observations [1.63s, exited with code 1]
-"
-path_search,arena/arena-rosnav/utils/misc/path_search,ros.ament_cmake,Failed,"--- stderr: path_search
-** WARNING ** io features related to pcap will be disabled
-CMake Error at CMakeLists.txt:18 (find_package):
-  By not providing ""Findmapping.cmake"" in CMAKE_MODULE_PATH this project has
-  asked CMake to find a package configuration file provided by ""mapping"", but
-  CMake did not find one.
-
-  Could not find a package configuration file provided by ""mapping"" with any
-  of the following names:
-
-    mappingConfig.cmake
-    mapping-config.cmake
-
-  Add the installation prefix of ""mapping"" to CMAKE_PREFIX_PATH or set
-  ""mapping_DIR"" to a directory containing one of the above files.  If
-  ""mapping"" provides a separate development package or SDK, be sure it has
-  been installed.
-
-
----
-Failed   <<< path_search [3.53s, exited with code 1]
-"
+observations,arena/arena-rosnav/utils/ros/msgs/observations,ros.ament_cmake,Failed,logs/observations_error.log
+path_search,arena/arena-rosnav/utils/misc/path_search,ros.ament_cmake,Failed,logs/path_search_error.log
 pedsim_ros,arena/utils/pedsim_ros,ros.ament_cmake,Success,
-plan_manager,arena/arena-rosnav/utils/ros/rosnodes/plan_manager,ros.ament_cmake,Failed,"--- stderr: plan_manager
-CMake Error at CMakeLists.txt:171:
-  Parse error.  Function missing ending "")"".  End of file reached.
-
-
----
-Failed   <<< plan_manager [0.03s, exited with code 1]
-"
-plan_msgs,arena/arena-rosnav/utils/ros/msgs/plan_msgs,ros.catkin,Success,
-plan_visualization,arena/arena-rosnav/utils/misc/plan_visualization,ros.ament_cmake,Failed,"--- stderr: plan_visualization
-In file included from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
-                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
-                 from /ros2-migration/arena/arena-rosnav/utils/misc/plan_visualization/include/plan_visualization/planning_visualization.h:10,
-                 from /ros2-migration/arena/arena-rosnav/utils/misc/plan_visualization/src/planning_visualization.cpp:1:
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:788:36: error: ‘variant’ in namespace ‘std’ does not name a template type
-  788 |   using CallbackInfoVariant = std::variant<
-      |                                    ^~~~~~~
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:788:31: note: ‘std::variant’ is only available from C++17 onwards
-  788 |   using CallbackInfoVariant = std::variant<
-      |                               ^~~
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:794:52: error: ‘CallbackInfoVariant’ has not been declared
-  794 |   async_send_request_impl(const Request & request, CallbackInfoVariant value)
-      |                                                    ^~~~~~~~~~~~~~~~~~~
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:808:8: error: ‘optional’ in namespace ‘std’ does not name a template type
-  808 |   std::optional<CallbackInfoVariant>
-      |        ^~~~~~~~
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:80"
+plan_manager,arena/arena-rosnav/utils/ros/rosnodes/plan_manager,ros.ament_cmake,Failed,logs/plan_manager_error.log
+plan_msgs,arena/arena-rosnav/utils/ros/msgs/plan_msgs,ros.catkin,Failed,logs/plan_msgs_error.log
+plan_visualization,arena/arena-rosnav/utils/misc/plan_visualization,ros.ament_cmake,Failed,logs/plan_visualization_error.log
 pmb2_robot,arena/utils/3rd-party-robot-packages/tiago/pmb2_robot,ros.ament_cmake,Success,
 rl_utils,arena/arena-rosnav/utils/misc/rl_utils,ros.ament_python,Success,
-rviz_plugins,arena/arena-rosnav/utils/plugins/rviz_plugins,ros.ament_cmake,Failed,"--- stderr: rviz_plugins
-CMake Error at CMakeLists.txt:38 (add_library):
-  Cannot find source file:
-
-    /ros2-migration/arena/arena-rosnav/utils/plugins/rviz_plugins/build/rviz_plugins/moc_goal_tool.cpp
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
-  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
----
-Failed   <<< rviz_plugins [2.86s, exited with code 1]
-"
+rviz_plugins,arena/arena-rosnav/utils/plugins/rviz_plugins,ros.ament_cmake,Failed,logs/rviz_plugins_error.log
 rviz_utils,arena/arena-rosnav/utils/misc/rviz_utils,ros.ament_python,Success,
-sensor_simulator,arena/arena-rosnav/utils/ros/rosnodes/sensor_simulator,ros.catkin,Failed,"--- stderr: sensor_simulator
-CMake Error at CMakeLists.txt:100 (catkin_package):
-  Unknown CMake command ""catkin_package"".
-
-
----
-Failed   <<< sensor_simulator [0.33s, exited with code 1]
-"
-spacial_horizon,arena/arena-rosnav/utils/ros/rosnodes/spacial_horizon,ros.ament_cmake,Failed,"--- stderr: spacial_horizon
-** WARNING ** io features related to pcap will be disabled
-CMake Error at CMakeLists.txt:121 (find_package):
-  By not providing ""Findactionlib.cmake"" in CMAKE_MODULE_PATH this project
-  has asked CMake to find a package configuration file provided by
-  ""actionlib"", but CMake did not find one.
-
-  Could not find a package configuration file provided by ""actionlib"" with
-  any of the following names:
-
-    actionlibConfig.cmake
-    actionlib-config.cmake
-
-  Add the installation prefix of ""actionlib"" to CMAKE_PREFIX_PATH or set
-  ""actionlib_DIR"" to a directory containing one of the above files.  If
-  ""actionlib"" provides a separate development package or SDK, be sure it has
-  been installed.
-
-
----
-Failed   <<< spacial_horizon [3.07s, exited with code 1]
-"
+sensor_simulator,arena/arena-rosnav/utils/ros/rosnodes/sensor_simulator,ros.catkin,Failed,logs/sensor_simulator_error.log
+spacial_horizon,arena/arena-rosnav/utils/ros/rosnodes/spacial_horizon,ros.ament_cmake,Failed,logs/spacial_horizon_error.log
 stable_baselines3,arena/utils/stable-baselines3,python,Success,
 task_generator,arena/arena-rosnav/task_generator,ros.ament_cmake,Success,
-testing,arena/arena-rosnav/testing,ros.ament_python,Failed,"[0.442s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'testing' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
-[0.442s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'testing' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
---- stderr: testing
-Traceback (most recent call last):
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_core/executor/__init__.py"", line 91, in __call__
-    rc = await self.task(*args, **kwargs)
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_core/task/__init__.py"", line 93, in __call__
-    return await task_method(*args, **kwargs)
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_ros/task/ament_python/build.py"", line 102, in build
-    return await extension.build(additional_hooks=additional_hooks)
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/build.py"", line 90, in build
-    available_commands = await self._get_available_commands(
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/build.py"", line 188, in _get_available_commands
-    output = await check_output(
-  File ""/usr/local/lib/python3.10/dist-packages/colcon_core/subprocess.py"", line 129, in check_output
-    assert not rc, f'Expected {args} to pass: {stderr_data}'
-AssertionError: Expected ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', '--help-commands'] to pass: /usr/bin/python3: can't open file '/ros2-migration/arena/arena-rosnav/testing/setup.py': [Errno 2] No such file or directory
-
----
-Failed   <<< testing [0.04s, exited with code 1]
-Expected ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', '--help-commands'] to pass: /usr/bin/python3: can't open file '/ros2-migration/arena/arena-rosnav/testing/setup.py': [Errno 2] No such file or directory
-
-"
+testing,arena/arena-rosnav/testing,ros.ament_python,Failed,logs/testing_error.log
 tiago_bringup,arena/utils/3rd-party-robot-packages/tiago/tiago_bringup,ros.ament_cmake,Success,
 tiago_controller_configuration,arena/utils/3rd-party-robot-packages/tiago/tiago_controller_configuration,ros.ament_cmake,Success,
 tiago_description,arena/utils/3rd-party-robot-packages/tiago/tiago_description,ros.ament_cmake,Success,
-tiago_gazebo,arena/utils/3rd-party-robot-packages/tiago/tiago_gazebo,ros.ament_cmake,Failed,"--- stderr: tiago_gazebo
-CMake Error at CMakeLists.txt:18 (find_package):
-  By not providing ""Findplay_motion2_msgs.cmake"" in CMAKE_MODULE_PATH this
-  project has asked CMake to find a package configuration file provided by
-  ""play_motion2_msgs"", but CMake did not find one.
-
-  Could not find a package configuration file provided by ""play_motion2_msgs""
-  with any of the following names:
-
-    play_motion2_msgsConfig.cmake
-    play_motion2_msgs-config.cmake
-
-  Add the installation prefix of ""play_motion2_msgs"" to CMAKE_PREFIX_PATH or
-  set ""play_motion2_msgs_DIR"" to a directory containing one of the above
-  files.  If ""play_motion2_msgs"" provides a separate development package or
-  SDK, be sure it has been installed.
-
-
----
-Failed   <<< tiago_gazebo [1.60s, exited with code 1]
-"
+tiago_gazebo,arena/utils/3rd-party-robot-packages/tiago/tiago_gazebo,ros.ament_cmake,Failed,logs/tiago_gazebo_error.log
 tiago_robot,arena/utils/3rd-party-robot-packages/tiago/tiago_robot,ros.ament_cmake,Success,
 tiago_simulation,arena/utils/3rd-party-robot-packages/tiago/tiago_simulation,ros.ament_cmake,Success,
-training,arena/arena-rosnav/training,ros.ament_cmake,Failed,"--- stderr: training
-CMake Error at CMakeLists.txt:21 (find_package):
-  By not providing ""Findflatland_msgs.cmake"" in CMAKE_MODULE_PATH this
-  project has asked CMake to find a package configuration file provided by
-  ""flatland_msgs"", but CMake did not find one.
-
-  Could not find a package configuration file provided by ""flatland_msgs""
-  with any of the following names:
-
-    flatland_msgsConfig.cmake
-    flatland_msgs-config.cmake
-
-  Add the installation prefix of ""flatland_msgs"" to CMAKE_PREFIX_PATH or set
-  ""flatland_msgs_DIR"" to a directory containing one of the above files.  If
-  ""flatland_msgs"" provides a separate development package or SDK, be sure it
-  has been installed.
-
-
----
-Failed   <<< training [2.08s, exited with code 1]
-"
-traj_planner,arena/arena-rosnav/utils/misc/traj_planner,ros.ament_cmake,Failed,"--- stderr: traj_planner
-CMake Error at CMakeLists.txt:15 (find_package):
-  By not providing ""Findpath_search.cmake"" in CMAKE_MODULE_PATH this project
-  has asked CMake to find a package configuration file provided by
-  ""path_search"", but CMake did not find one.
-
-  Could not find a package configuration file provided by ""path_search"" with
-  any of the following names:
-
-    path_searchConfig.cmake
-    path_search-config.cmake
-
-  Add the installation prefix of ""path_search"" to CMAKE_PREFIX_PATH or set
-  ""path_search_DIR"" to a directory containing one of the above files.  If
-  ""path_search"" provides a separate development package or SDK, be sure it
-  has been installed.
-
-
----
-Failed   <<< traj_planner [0.80s, exited with code 1]
-"
-unitree_controller_go1,arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1,ros.ament_cmake,Failed,"--- stderr: unitree_controller_go1
-CMake Error at CMakeLists.txt:29 (and):
-  Unknown CMake command ""and"".
-
-
----
-Failed   <<< unitree_controller_go1 [0.29s, exited with code 1]
-"
-unitree_legged_control,arena/utils/unitree_ros/unitree_ros/unitree_legged_control,ros.ament_cmake,Failed,"--- stderr: unitree_legged_control
-CMake Error at CMakeLists.txt:12 (find_package):
-  By not providing ""Findhardware_interface.cmake"" in CMAKE_MODULE_PATH this
-  project has asked CMake to find a package configuration file provided by
-  ""hardware_interface"", but CMake did not find one.
-
-  Could not find a package configuration file provided by
-  ""hardware_interface"" with any of the following names:
-
-    hardware_interfaceConfig.cmake
-    hardware_interface-config.cmake
-
-  Add the installation prefix of ""hardware_interface"" to CMAKE_PREFIX_PATH or
-  set ""hardware_interface_DIR"" to a directory containing one of the above
-  files.  If ""hardware_interface"" provides a separate development package or
-  SDK, be sure it has been installed.
-
-
----
-Failed   <<< unitree_legged_control [0.55s, exited with code 1]
-"
+training,arena/arena-rosnav/training,ros.ament_cmake,Failed,logs/training_error.log
+traj_planner,arena/arena-rosnav/utils/misc/traj_planner,ros.ament_cmake,Failed,logs/traj_planner_error.log
+unitree_controller_go1,arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1,ros.ament_cmake,Failed,logs/unitree_controller_go1_error.log
+unitree_legged_control,arena/utils/unitree_ros/unitree_ros/unitree_legged_control,ros.ament_cmake,Failed,logs/unitree_legged_control_error.log
 unitree_legged_msgs,arena/utils/unitree_ros/unitree_legged_msgs,ros.ament_cmake,Success,

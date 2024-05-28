@@ -1,0 +1,8 @@
+[0.006s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1/build/unitree_controller_go1': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1 -DCMAKE_INSTALL_PREFIX=/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1/install/unitree_controller_go1
+[0.011s] CMake Error at CMakeLists.txt:29 (and):
+[0.011s]   Unknown CMake command "and".
+[0.011s] 
+[0.012s] 
+[0.012s] -- Configuring incomplete, errors occurred!
+[0.012s] See also "/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1/build/unitree_controller_go1/CMakeFiles/CMakeOutput.log".
+[0.012s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1/build/unitree_controller_go1' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1 -DCMAKE_INSTALL_PREFIX=/home/ahmo030/ros2-migration/arena/utils/unitree_ros/unitree_controllers/unitree_controller_go1/install/unitree_controller_go1

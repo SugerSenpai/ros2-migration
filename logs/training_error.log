@@ -1,0 +1,21 @@
+[0.298s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
+--- stderr: training
+CMake Error at CMakeLists.txt:21 (find_package):
+  By not providing "Findflatland_msgs.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "flatland_msgs", but CMake did not find one.
+
+  Could not find a package configuration file provided by "flatland_msgs"
+  with any of the following names:
+
+    flatland_msgsConfig.cmake
+    flatland_msgs-config.cmake
+
+  Add the installation prefix of "flatland_msgs" to CMAKE_PREFIX_PATH or set
+  "flatland_msgs_DIR" to a directory containing one of the above files.  If
+  "flatland_msgs" provides a separate development package or SDK, be sure it
+  has been installed.
+
+
+---
+Failed   <<< training [0.67s, exited with code 1]

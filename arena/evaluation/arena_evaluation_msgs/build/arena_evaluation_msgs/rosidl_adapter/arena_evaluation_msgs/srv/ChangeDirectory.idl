@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from arena_evaluation_msgs/srv/ChangeDirectory.srv
+// generated code does not contain a copyright notice
+
+
+module arena_evaluation_msgs {
+  module srv {
+    struct ChangeDirectory_Request {
+      string data;
+    };
+    struct ChangeDirectory_Response {
+      boolean result;
+    };
+  };
+};
