@@ -1,10 +1,40 @@
-# Ignore build directory
-/build
+# Ignore all colcon build directories
+**/build/
+**/install/
+**/log/
 
-# Ignore install directory
-/install
+# Ignore specific build directories for ROS
+**/devel/
+**/catkin_ws/build/
+**/catkin_ws/devel/
+**/catkin_ws/install/
 
-# Ignore log directory
-/log
+# Ignore Python cache files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
 
-.vscode
+# Ignore any other build system files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Ignore the CSV result file
+build_results.csv
+
+# Ignore any temporary files
+*.tmp
+*.temp
+*.log
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore user-specific files
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
