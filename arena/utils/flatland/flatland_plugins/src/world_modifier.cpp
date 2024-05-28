@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 #include <Box2D/Box2D.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 #include <flatland_plugins/world_modifier.h>
 #include <flatland_server/layer.h>

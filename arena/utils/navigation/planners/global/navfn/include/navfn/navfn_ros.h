@@ -37,7 +37,7 @@
 #ifndef NAVFN_NAVFN_ROS_H_
 #define NAVFN_NAVFN_ROS_H_
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <navfn/navfn.h>
 #include <costmap_2d/costmap_2d.h>
 #include <geometry_msgs/PoseStamped.h>

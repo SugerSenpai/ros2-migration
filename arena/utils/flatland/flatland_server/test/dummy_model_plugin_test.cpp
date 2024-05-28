@@ -49,7 +49,7 @@
 #include <flatland_server/model_plugin.h>
 #include <gtest/gtest.h>
 #include <pluginlib/class_loader.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <yaml-cpp/yaml.h>
 
 /**

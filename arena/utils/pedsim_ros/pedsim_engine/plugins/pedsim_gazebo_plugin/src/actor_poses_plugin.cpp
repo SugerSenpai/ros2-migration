@@ -8,7 +8,7 @@ Created on Mon Dec  2
 #include <gazebo/physics/physics.hh>
 #include <gazebo/util/system.hh>
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include "ros/callback_queue.h"
 #include "ros/subscribe_options.h"
 #include <thread>

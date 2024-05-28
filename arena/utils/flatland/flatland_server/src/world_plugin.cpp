@@ -45,7 +45,7 @@
  */
 
 #include <Box2D/Box2D.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 #include <flatland_server/world.h>
 #include <flatland_server/world_plugin.h>

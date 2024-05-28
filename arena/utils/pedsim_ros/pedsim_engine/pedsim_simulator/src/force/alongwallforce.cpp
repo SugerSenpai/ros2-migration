@@ -35,7 +35,7 @@
 #include <pedsim_simulator/force/alongwallforce.h>
 #include <pedsim_simulator/scene.h>
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 AlongWallForce::AlongWallForce(Agent* agentIn) : Force(agentIn) {
   // initialize values

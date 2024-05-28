@@ -8,7 +8,7 @@
 #include "unitree_legged_sdk/unitree_legged_sdk.h"
 
 #ifdef COMPILE_WITH_MOVE_BASE
-    #include <ros/ros.h>
+    #include "rclcpp/rclcpp.h"
     #include <ros/time.h>
     #include <sensor_msgs/JointState.h>
 #endif  // COMPILE_WITH_MOVE_BASE

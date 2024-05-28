@@ -8,7 +8,7 @@
 #include "ped_obstacle.h"
 #include "ped_scene.h"
 #include "ped_waypoint.h"
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 #include <algorithm>
 #include <cmath>

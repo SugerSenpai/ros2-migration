@@ -45,7 +45,7 @@
  */
 
 #include <flatland_server/body.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 namespace flatland_server {
 

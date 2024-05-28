@@ -40,7 +40,7 @@
 #include <QFile>
 #include <iostream>
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 ScenarioReader::ScenarioReader() {
   // initialize values

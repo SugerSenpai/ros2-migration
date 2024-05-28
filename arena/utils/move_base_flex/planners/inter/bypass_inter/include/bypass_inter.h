@@ -1,7 +1,7 @@
 #ifndef BYPASS_INTER_H_
 #define BYPASS_INTER_H_
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <mbf_costmap_core/costmap_inter.h>
 
 namespace bypass_inter

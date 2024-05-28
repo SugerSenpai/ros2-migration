@@ -16,7 +16,7 @@
 #endif  // COMPILE_DEBUG
 
 #ifdef COMPILE_WITH_MOVE_BASE
-    #include <ros/ros.h>
+    #include "rclcpp/rclcpp.h"
     #include <ros/time.h>
     #include <geometry_msgs/TransformStamped.h>
     #include <tf/transform_broadcaster.h>

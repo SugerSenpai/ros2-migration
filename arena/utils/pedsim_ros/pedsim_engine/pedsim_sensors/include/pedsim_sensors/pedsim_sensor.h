@@ -31,9 +31,9 @@
 #ifndef PEDSIM_SENSOR_H
 #define PEDSIM_SENSOR_H
 
-#include <tf/transform_listener.h>
+#include "tf2_ros/transform_listener.h"
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 #include <nav_msgs/Odometry.h>
 

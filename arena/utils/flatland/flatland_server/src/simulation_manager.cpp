@@ -51,7 +51,7 @@
 #include <flatland_server/model.h>
 #include <flatland_server/service_manager.h>
 #include <flatland_server/world.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <nav_msgs/OccupancyGrid.h>
 #include <std_msgs/String.h>
 #include <std_srvs/Empty.h>

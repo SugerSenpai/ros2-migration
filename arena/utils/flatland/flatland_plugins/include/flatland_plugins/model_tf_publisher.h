@@ -47,7 +47,7 @@
 #include <flatland_plugins/update_timer.h>
 #include <flatland_server/model_plugin.h>
 #include <flatland_server/timekeeper.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <tf/transform_broadcaster.h>
 
 #ifndef FLATLAND_PLUGINS_MODEL_TF_PUBLISHER_H

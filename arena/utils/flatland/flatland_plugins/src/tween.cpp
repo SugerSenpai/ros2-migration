@@ -49,7 +49,7 @@
 #include <flatland_server/debug_visualization.h>
 #include <flatland_server/model_plugin.h>
 #include <pluginlib/class_list_macros.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <tf/tf.h>
 
 namespace flatland_plugins {

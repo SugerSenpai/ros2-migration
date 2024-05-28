@@ -37,7 +37,7 @@
  *********************************************************************/
 #ifndef COSTMAP_2D_COSTMAP_LAYER_H_
 #define COSTMAP_2D_COSTMAP_LAYER_H_
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <costmap_2d/layer.h>
 #include <costmap_2d/layered_costmap.h>
 

@@ -45,7 +45,7 @@
  */
 
 #include "flatland_server/yaml_preprocessor.h"
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <boost/algorithm/string/trim.hpp>
 #include <boost/lexical_cast.hpp>
 

@@ -47,7 +47,7 @@
 #include <Box2D/Box2D.h>
 #include <flatland_server/types.h>
 #include <flatland_server/world_plugin.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <string>
 
 #ifndef FLATLAND_PLUGINS_WORLD_RANDOM_WALL_H

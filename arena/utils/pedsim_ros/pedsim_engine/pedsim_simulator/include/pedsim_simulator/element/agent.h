@@ -40,7 +40,7 @@
 #include <pedsim_simulator/agent_pose_stamped.h>
 
 #ifndef Q_MOC_RUN
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <QGraphicsRectItem>  // TODO -remove qgraphics dependencies
 #endif
 

@@ -36,7 +36,7 @@
 #include <queue>
 
 #include <pedsim_msgs/AgentStates.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <sensor_msgs/PointCloud.h>
 
 namespace pedsim_ros {

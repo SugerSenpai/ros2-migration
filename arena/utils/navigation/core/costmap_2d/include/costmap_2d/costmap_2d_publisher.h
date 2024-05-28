@@ -37,7 +37,7 @@
  *********************************************************************/
 #ifndef COSTMAP_2D_COSTMAP_2D_PUBLISHER_H_
 #define COSTMAP_2D_COSTMAP_2D_PUBLISHER_H_
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <costmap_2d/layered_costmap.h>
 #include <nav_msgs/OccupancyGrid.h>
 #include <map_msgs/OccupancyGridUpdate.h>

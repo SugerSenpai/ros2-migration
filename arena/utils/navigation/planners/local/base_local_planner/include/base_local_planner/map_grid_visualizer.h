@@ -34,7 +34,7 @@
 #ifndef MAP_GRID_VISUALIZER_H_
 #define MAP_GRID_VISUALIZER_H_
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <base_local_planner/map_grid.h>
 #include <costmap_2d/costmap_2d.h>
 

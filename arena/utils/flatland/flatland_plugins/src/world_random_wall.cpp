@@ -50,7 +50,7 @@
 #include <flatland_server/types.h>
 #include <flatland_server/world_plugin.h>
 #include <pluginlib/class_list_macros.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <yaml-cpp/yaml.h>
 #include <algorithm>
 #include <iostream>

@@ -51,7 +51,7 @@
 #include <flatland_server/flatland_plugin.h>
 #include <flatland_server/model.h>
 #include <flatland_server/timekeeper.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <yaml-cpp/yaml.h>
 
 namespace flatland_server {

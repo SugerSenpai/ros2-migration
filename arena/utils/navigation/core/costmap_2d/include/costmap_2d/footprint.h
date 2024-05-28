@@ -38,7 +38,7 @@
 #ifndef COSTMAP_2D_FOOTPRINT_H
 #define COSTMAP_2D_FOOTPRINT_H
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <geometry_msgs/Polygon.h>
 #include <geometry_msgs/PolygonStamped.h>
 #include <geometry_msgs/Point.h>

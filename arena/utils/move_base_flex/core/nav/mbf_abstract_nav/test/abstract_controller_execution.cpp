@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 #include <mbf_abstract_core/abstract_controller.h>
 #include <mbf_abstract_nav/MoveBaseFlexConfig.h>

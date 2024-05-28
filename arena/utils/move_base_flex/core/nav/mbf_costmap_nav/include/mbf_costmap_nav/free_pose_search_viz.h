@@ -41,7 +41,7 @@
 #define SEARCH_HELPER_VIZ_H_
 
 // ros
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <geometry_msgs/Point.h>
 #include <geometry_msgs/Pose2D.h>
 #include <std_msgs/ColorRGBA.h>

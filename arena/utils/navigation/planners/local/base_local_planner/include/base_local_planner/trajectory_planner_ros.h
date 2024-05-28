@@ -37,7 +37,7 @@
 #ifndef TRAJECTORY_ROLLOUT_TRAJECTORY_PLANNER_ROS_H_
 #define TRAJECTORY_ROLLOUT_TRAJECTORY_PLANNER_ROS_H_
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <costmap_2d/costmap_2d.h>
 #include <costmap_2d/costmap_2d_publisher.h>
 #include <costmap_2d/costmap_2d_ros.h>

@@ -31,7 +31,7 @@
 
 #include <gtest/gtest.h>
 #include <ros/service.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <ros/package.h>
 #include <nav_msgs/GetMap.h>
 #include <nav_msgs/OccupancyGrid.h>

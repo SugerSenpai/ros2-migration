@@ -47,7 +47,7 @@
 #include "flatland_server/debug_visualization.h"
 #include <Box2D/Box2D.h>
 #include <ros/master.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <map>

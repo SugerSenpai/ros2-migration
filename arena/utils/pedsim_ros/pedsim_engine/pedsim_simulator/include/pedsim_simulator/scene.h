@@ -41,7 +41,7 @@
 #include <pedsim_simulator/utilities.h>
 #include <geometry_msgs/Point.h>
 #include <geometry_msgs/PoseStamped.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 #include <pedsim_simulator/element/obstacle.h>
 

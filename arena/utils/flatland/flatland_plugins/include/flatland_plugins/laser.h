@@ -48,7 +48,7 @@
 #include <flatland_server/model_plugin.h>
 #include <flatland_server/timekeeper.h>
 #include <flatland_server/types.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <sensor_msgs/LaserScan.h>
 #include <tf/transform_broadcaster.h>
 #include <thirdparty/ThreadPool.h>

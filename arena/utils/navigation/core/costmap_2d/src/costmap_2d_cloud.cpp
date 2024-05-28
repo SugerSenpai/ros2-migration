@@ -25,7 +25,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <sensor_msgs/PointCloud.h>
 #include <costmap_2d/VoxelGrid.h>
 #include <voxel_grid/voxel_grid.h>

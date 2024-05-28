@@ -67,7 +67,7 @@
 #include <QToolButton>
 #include <QUrl>
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <stdlib.h>
 
 #include "rviz/display.h"

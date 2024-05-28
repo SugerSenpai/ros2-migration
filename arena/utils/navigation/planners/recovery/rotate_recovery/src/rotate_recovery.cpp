@@ -38,7 +38,7 @@
 #include <pluginlib/class_list_macros.hpp>
 #include <nav_core/parameter_magic.h>
 #include <tf2/utils.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <geometry_msgs/Twist.h>
 #include <geometry_msgs/Point.h>
 #include <angles/angles.h>

@@ -1,7 +1,7 @@
 #ifndef POLITE_INTER_H_
 #define POLITE_INTER_H_
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <mbf_costmap_core/costmap_inter.h>
 #include <boost/thread/mutex.hpp>
 #include <dynamic_reconfigure/server.h>

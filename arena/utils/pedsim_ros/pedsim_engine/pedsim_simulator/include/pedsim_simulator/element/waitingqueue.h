@@ -36,7 +36,7 @@
 #include <pedsim_simulator/element/waypoint.h>
 
 #ifndef Q_MOC_RUN
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <QPointF>
 #endif
 

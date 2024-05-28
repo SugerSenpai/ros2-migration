@@ -52,7 +52,7 @@
 #include <flatland_msgs/SpawnModels.h>
 #include <flatland_server/simulation_manager.h>
 #include <flatland_server/world.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <std_srvs/Empty.h>
 
 #ifndef FLATLAND_PLUGIN_SERVICE_MANAGER_H

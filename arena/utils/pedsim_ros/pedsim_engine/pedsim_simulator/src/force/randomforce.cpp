@@ -34,7 +34,7 @@
 #include <pedsim_simulator/rng.h>
 #include <pedsim_simulator/scene.h>
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 RandomForce::RandomForce(Agent* agentIn) : Force(agentIn) {
   // initialize values

@@ -46,7 +46,7 @@
 
 #include <flatland_plugins/update_timer.h>
 #include <flatland_server/model_plugin.h>
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 #include <std_msgs/Bool.h>
 
 #ifndef FLATLAND_PLUGINS_BOOL_SENSOR_H

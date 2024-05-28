@@ -47,7 +47,7 @@
 #include <pedsim_simulator/force/randomforce.h>
 #include <QGraphicsScene>
 
-#include <ros/ros.h>
+#include "rclcpp/rclcpp.h"
 
 // initialize static value
 Scene* Scene::Scene::instance = nullptr;
