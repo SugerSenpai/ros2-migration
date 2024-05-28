@@ -1,0 +1,21 @@
+[0.282s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
+--- stderr: unitree_legged_control
+CMake Error at CMakeLists.txt:13 (find_package):
+  By not providing "Findunitree_legged_msgs.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "unitree_legged_msgs", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "unitree_legged_msgs" with any of the following names:
+
+    unitree_legged_msgsConfig.cmake
+    unitree_legged_msgs-config.cmake
+
+  Add the installation prefix of "unitree_legged_msgs" to CMAKE_PREFIX_PATH
+  or set "unitree_legged_msgs_DIR" to a directory containing one of the above
+  files.  If "unitree_legged_msgs" provides a separate development package or
+  SDK, be sure it has been installed.
+
+
+---
+Failed   <<< unitree_legged_control [0.75s, exited with code 1]

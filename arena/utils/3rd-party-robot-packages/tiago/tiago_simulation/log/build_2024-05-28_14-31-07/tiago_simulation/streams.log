@@ -1,0 +1,39 @@
+[0.005s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation -DCMAKE_INSTALL_PREFIX=/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation
+[0.120s] -- The C compiler identification is GNU 11.4.0
+[0.182s] -- The CXX compiler identification is GNU 11.4.0
+[0.185s] -- Detecting C compiler ABI info
+[0.247s] -- Detecting C compiler ABI info - done
+[0.254s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.255s] -- Detecting C compile features
+[0.255s] -- Detecting C compile features - done
+[0.260s] -- Detecting CXX compiler ABI info
+[0.325s] -- Detecting CXX compiler ABI info - done
+[0.329s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.329s] -- Detecting CXX compile features
+[0.330s] -- Detecting CXX compile features - done
+[0.331s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.458s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.548s] -- Configuring done
+[0.549s] -- Generating done
+[0.549s] -- Build files have been written to: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation
+[0.551s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation -DCMAKE_INSTALL_PREFIX=/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation
+[0.552s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation -- -j16 -l16
+[0.573s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation -- -j16 -l16
+[0.605s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation
+[0.615s] -- Install configuration: ""
+[0.616s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/ament_index/resource_index/package_run_dependencies/tiago_simulation
+[0.616s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/ament_index/resource_index/parent_prefix_path/tiago_simulation
+[0.616s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/environment/ament_prefix_path.sh
+[0.617s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/environment/ament_prefix_path.dsv
+[0.617s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/environment/path.sh
+[0.617s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/environment/path.dsv
+[0.617s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/local_setup.bash
+[0.617s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/local_setup.sh
+[0.618s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/local_setup.zsh
+[0.618s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/local_setup.dsv
+[0.618s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/package.dsv
+[0.618s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/ament_index/resource_index/packages/tiago_simulation
+[0.618s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/cmake/tiago_simulationConfig.cmake
+[0.618s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/cmake/tiago_simulationConfig-version.cmake
+[0.619s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/install/tiago_simulation/share/tiago_simulation/package.xml
+[0.620s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_simulation/build/tiago_simulation

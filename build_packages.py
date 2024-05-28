@@ -1,5 +1,7 @@
 import subprocess
 import csv
+import os
+import datetime
 
 # List of packages with their paths and build systems
 packages = [
@@ -10,7 +12,7 @@ packages = [
     ("crowdsim", "arena/utils/crowdsim", "ros.ament_cmake"),
     ("eval", "arena/arena-rosnav/utils/misc/eval", "ros.catkin"),
     ("flatland", "arena/utils/flatland", "ros.ament_cmake"),
-    ("gazebo_utils", "arena/arena-rosnav/utils/plugins/gazebo_utils", "ros.ament_cmake"),
+    #("gazebo_utils", "arena/arena-rosnav/utils/plugins/gazebo_utils", "ros.ament_cmake"),
     ("grid_map_generator", "arena/arena-rosnav/utils/misc/grid_map_generator", "ros.ament_python"),
     ("intermediate_planner", "arena/arena-rosnav/utils/ros/rosnodes/intermediate_planner", "ros.ament_cmake"),
     ("map_clock_simulator", "arena/arena-rosnav/utils/ros/rosnodes/map_clock_simulator", "ros.catkin"),
@@ -49,6 +51,10 @@ packages = [
 
 # CSV file to save the results
 csv_file = 'build_results.csv'
+log_dir = 'logs'
+
+# Ensure the log directory exists
+os.makedirs(log_dir, exist_ok=True)
 
 # Function to execute colcon build command
 def build_package(package_name, package_path, build_system):
@@ -64,18 +70,22 @@ def build_package(package_name, package_path, build_system):
         )
         return "Success", ""
     except subprocess.CalledProcessError as e:
-        # Limit the error message to 2000 characters
-        error_message = e.stderr[:2000]
-        return "Failed", error_message
+        # Save the error output to a log file
+        log_file_path = os.path.join(log_dir, f"{package_name}_error.log")
+        with open(log_file_path, 'w') as log_file:
+            log_file.write(e.stderr)
+        return "Failed", log_file_path
 
 # Open CSV file to write the results
 with open(csv_file, mode='w', newline='') as file:
     writer = csv.writer(file)
-    writer.writerow(["Package Name", "Path", "Build System", "Result", "Error Message"])
+    writer.writerow(["Package Name", "Path", "Build System", "Result", "Log File"])
 
     # Iterate over the packages and build each one
     for package_name, package_path, build_system in packages:
-        result, error_message = build_package(package_name, package_path, build_system)
-        writer.writerow([package_name, package_path, build_system, result, error_message if result == "Failed" else ""])
+        result, log_file_path = build_package(package_name, package_path, build_system)
+        writer.writerow([package_name, package_path, build_system, result, log_file_path if result == "Failed" else ""])
 
 print(f"Build results saved to {csv_file}")
+print(f"Error logs saved to {log_dir} directory")
+

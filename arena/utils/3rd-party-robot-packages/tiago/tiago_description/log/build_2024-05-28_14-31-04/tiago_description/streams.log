@@ -1,0 +1,170 @@
+[0.005s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description -DCMAKE_INSTALL_PREFIX=/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description
+[0.040s] -- The C compiler identification is GNU 11.4.0
+[0.072s] -- The CXX compiler identification is GNU 11.4.0
+[0.076s] -- Detecting C compiler ABI info
+[0.133s] -- Detecting C compiler ABI info - done
+[0.137s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.137s] -- Detecting C compile features
+[0.138s] -- Detecting C compile features - done
+[0.140s] -- Detecting CXX compiler ABI info
+[0.213s] -- Detecting CXX compiler ABI info - done
+[0.217s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.218s] -- Detecting CXX compile features
+[0.218s] -- Detecting CXX compile features - done
+[0.219s] -- Found ament_cmake_auto: 1.3.8 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.319s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.407s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.416s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.433s] -- Found PythonInterp: /usr/bin/python3.6 (found suitable version "3.6.15", minimum required is "3.6") 
+[0.443s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.15", minimum required is "3.5") 
+[0.443s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3.6
+[0.443s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+[0.443s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+[0.457s] -- Found PythonExtra: .so  
+[0.477s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.480s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.480s] -- Configured cppcheck include dirs: 
+[0.480s] -- Configured cppcheck exclude dirs and/or files: 
+[0.483s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.483s] -- Configured cpplint exclude dirs and/or files: 
+[0.484s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.485s] -- Added test 'lint_cmake' to check CMake code style
+[0.485s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.488s] -- Added test 'uncrustify' to check C / C++ code style
+[0.488s] -- Configured uncrustify additional arguments: 
+[0.489s] -- Added test 'xmllint' to check XML markup files
+[0.490s] -- Configuring done
+[0.492s] -- Generating done
+[0.492s] -- Build files have been written to: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description
+[0.496s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description -DCMAKE_INSTALL_PREFIX=/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description
+[0.497s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description -- -j16 -l16
+[0.523s] Built target ament_cmake_python_copy_tiago_description
+[0.729s] running egg_info
+[0.729s] creating tiago_description.egg-info
+[0.732s] writing tiago_description.egg-info/PKG-INFO
+[0.732s] writing dependency_links to tiago_description.egg-info/dependency_links.txt
+[0.732s] writing top-level names to tiago_description.egg-info/top_level.txt
+[0.732s] writing manifest file 'tiago_description.egg-info/SOURCES.txt'
+[0.734s] reading manifest file 'tiago_description.egg-info/SOURCES.txt'
+[0.734s] writing manifest file 'tiago_description.egg-info/SOURCES.txt'
+[0.748s] Built target ament_cmake_python_build_tiago_description_egg
+[0.753s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description -- -j16 -l16
+[0.767s] Invoking command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description
+[0.771s] -- Install configuration: ""
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/environment/pythonpath.sh
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/environment/pythonpath.dsv
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description-4.2.12-py3.10.egg-info
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description-4.2.12-py3.10.egg-info/SOURCES.txt
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description-4.2.12-py3.10.egg-info/top_level.txt
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description-4.2.12-py3.10.egg-info/dependency_links.txt
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description-4.2.12-py3.10.egg-info/PKG-INFO
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/__init__.py
+[0.771s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/tiago_launch_utils.py
+[0.790s] Listing '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description'...
+[0.790s] Compiling '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/__init__.py'...
+[0.790s] Compiling '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/local/lib/python3.10/dist-packages/tiago_description/tiago_launch_utils.py'...
+[0.792s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/gazebo
+[0.792s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/gazebo/gazebo.urdf.xacro
+[0.792s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/launch
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/launch/robot_state_publisher.launch.py
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/launch/show.launch.py
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/sensors
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/sensors/xtion_pro_live
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/sensors/xtion_pro_live/xtion_pro_live.png
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/sensors/xtion_pro_live/xtion_pro_live.dae
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_6-wrist-2017.stl
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_1_normals.png
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_1_collision.dae
+[0.793s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_4.stl
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_3.stl
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_6_collision-wrist-2017.dae
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_5_collision-wrist-2010.dae
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_1.stl
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_4_collision.dae
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_4_specular.png
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_3_specular.png
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_6_normals.png
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_2_specular.png
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_4_color.png
+[0.794s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_5-wrist-2010.stl
+[0.795s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_1_specular.png
+[0.795s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_2.stl
+[0.795s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_4_collision.stl
+[0.795s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_3_color.png
+[0.795s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_5-wrist-2017.stl
+[0.795s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_4_normals.png
+[0.795s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_5_collision-wrist-2017.dae
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_2_collision.dae
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_3_normals.png
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_1_color.png
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_2_normals.png
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_2_color.png
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_3_collision.dae
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_6_specular.png
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_6_collision-wrist-2010.dae
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_6-wrist-2010.stl
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/arm/arm_6_color.png
+[0.796s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/torso
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision.dae
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_with_arm.stl
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision_neck.dae
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_without_arm.stl
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/torso/torso_fix.stl
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision_shoulder.dae
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/torso/torso_lift_collision_core.dae
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/head
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/head/head_1_collision.dae
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/head/head_2_collision.dae
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/head/head_1.stl
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/meshes/head/head_2.stl
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/robots
+[0.797s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/robots/tiago.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/ros2_control
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/ros2_control/ros2_control.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/ros2_control/transmissions.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/sensors
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/sensors/orbbec_astra.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/sensors/ftsensor.gazebo.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/sensors/ftsensor.ros2_control.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/sensors/openni.gazebo.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/sensors/ftsensor.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/sensors/xtion_pro_live.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/calibration
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/calibration/extrinsic_camera_calibration_constants.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/calibration/calibration_constants.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/arm
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/arm/arm.ros2_control.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/arm/wrist.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/arm/wrist.ros2_control.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/arm/arm.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/end_effector
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/end_effector/end_effector.urdf.xacro
+[0.798s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/torso
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/torso/torso.urdf.xacro
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/torso/torso.ros2_control.xacro
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/head
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/head/head.urdf.xacro
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/urdf/head/head.ros2_control.xacro
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/config
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/config/tiago.rviz
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/config/urdf.rviz
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/ament_index/resource_index/package_run_dependencies/tiago_description
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/ament_index/resource_index/parent_prefix_path/tiago_description
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/environment/ament_prefix_path.sh
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/environment/ament_prefix_path.dsv
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/environment/path.sh
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/environment/path.dsv
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/local_setup.bash
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/local_setup.sh
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/local_setup.zsh
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/local_setup.dsv
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/package.dsv
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/ament_index/resource_index/packages/tiago_description
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig.cmake
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/cmake/tiago_descriptionConfig-version.cmake
+[0.799s] -- Installing: /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/install/tiago_description/share/tiago_description/package.xml
+[0.800s] Invoked command in '/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_description/build/tiago_description
