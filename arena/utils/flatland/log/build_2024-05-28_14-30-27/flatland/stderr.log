@@ -1,2 +1,0 @@
-WARNING: Metapackage "flatland" must buildtool_depend on catkin.
-WARNING: Metapackage "flatland" should not have other dependencies besides a buildtool_depend on catkin and exec_depends.

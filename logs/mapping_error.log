@@ -1,8 +1,0 @@
-[0.249s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
---- stderr: mapping
-CMake Error: The current CMakeCache.txt directory /home/ahmo030/ros2-migration/arena/arena-rosnav/utils/misc/mapping/build/mapping/CMakeCache.txt is different than the directory /ros2-migration/arena/arena-rosnav/utils/misc/mapping/build/mapping where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
-CMake Error: The source directory "/ros2-migration/arena/arena-rosnav/utils/misc/mapping" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.
-gmake: *** [Makefile:294: cmake_check_build_system] Error 1
----
-Failed   <<< mapping [0.04s, exited with code 2]

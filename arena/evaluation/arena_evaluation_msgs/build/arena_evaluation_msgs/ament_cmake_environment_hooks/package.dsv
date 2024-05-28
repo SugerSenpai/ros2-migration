@@ -1,4 +1,0 @@
-source;share/arena_evaluation_msgs/local_setup.bash
-source;share/arena_evaluation_msgs/local_setup.dsv
-source;share/arena_evaluation_msgs/local_setup.sh
-source;share/arena_evaluation_msgs/local_setup.zsh

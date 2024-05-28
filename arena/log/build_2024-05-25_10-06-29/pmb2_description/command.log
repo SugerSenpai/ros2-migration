@@ -1,1 +1,0 @@
-Invoking command in '/ros2-migration/arena/build/pmb2_description': /usr/bin/cmake /ros2-migration/arena/utils/3rd-party-robot-packages/tiago/pmb2_description -DCMAKE_INSTALL_PREFIX=/ros2-migration/arena/install/pmb2_description

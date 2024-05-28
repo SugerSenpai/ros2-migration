@@ -1,4 +1,0 @@
-srv/ChangeDirectory.idl
-srv/ChangeDirectory.srv
-srv/ChangeDirectory_Request.msg
-srv/ChangeDirectory_Response.msg

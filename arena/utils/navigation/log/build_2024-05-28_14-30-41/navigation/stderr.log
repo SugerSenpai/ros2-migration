@@ -1,2 +1,0 @@
-WARNING: Metapackage "navigation" must buildtool_depend on catkin.
-WARNING: Metapackage "navigation" should not have other dependencies besides a buildtool_depend on catkin and exec_depends.

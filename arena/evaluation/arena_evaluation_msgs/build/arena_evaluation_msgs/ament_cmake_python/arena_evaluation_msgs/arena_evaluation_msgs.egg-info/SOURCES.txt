@@ -1,8 +1,0 @@
-setup.py
-arena_evaluation_msgs/__init__.py
-arena_evaluation_msgs.egg-info/PKG-INFO
-arena_evaluation_msgs.egg-info/SOURCES.txt
-arena_evaluation_msgs.egg-info/dependency_links.txt
-arena_evaluation_msgs.egg-info/top_level.txt
-arena_evaluation_msgs/srv/__init__.py
-arena_evaluation_msgs/srv/_change_directory.py

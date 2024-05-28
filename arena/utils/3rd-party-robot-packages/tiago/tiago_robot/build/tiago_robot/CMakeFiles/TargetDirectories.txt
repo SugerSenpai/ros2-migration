@@ -1,9 +1,0 @@
-/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_robot/build/tiago_robot/CMakeFiles/uninstall.dir
-/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_robot/build/tiago_robot/CMakeFiles/tiago_robot_uninstall.dir
-/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_robot/build/tiago_robot/CMakeFiles/test.dir
-/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_robot/build/tiago_robot/CMakeFiles/edit_cache.dir
-/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_robot/build/tiago_robot/CMakeFiles/rebuild_cache.dir
-/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_robot/build/tiago_robot/CMakeFiles/list_install_components.dir
-/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_robot/build/tiago_robot/CMakeFiles/install.dir
-/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_robot/build/tiago_robot/CMakeFiles/install/local.dir
-/home/ahmo030/ros2-migration/arena/utils/3rd-party-robot-packages/tiago/tiago_robot/build/tiago_robot/CMakeFiles/install/strip.dir

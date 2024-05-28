@@ -1,2 +1,0 @@
-WARNING: Metapackage "move_base_flex" must buildtool_depend on catkin.
-WARNING: Metapackage "move_base_flex" should not have other dependencies besides a buildtool_depend on catkin and exec_depends.

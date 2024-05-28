@@ -1,4 +1,0 @@
-source;share/crowdsim/local_setup.bash
-source;share/crowdsim/local_setup.dsv
-source;share/crowdsim/local_setup.sh
-source;share/crowdsim/local_setup.zsh
