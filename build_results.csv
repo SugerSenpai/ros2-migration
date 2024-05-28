@@ -6,8 +6,7 @@ arena_simulation_setup,arena/simulation-setup,ros.ament_cmake,Success,
 crowdsim,arena/utils/crowdsim,ros.ament_cmake,Success,
 eval,arena/arena-rosnav/utils/misc/eval,ros.catkin,Success,
 flatland,arena/utils/flatland,ros.ament_cmake,Success,
-gazebo_utils,arena/arena-rosnav/utils/plugins/gazebo_utils,ros.ament_cmake,Failed,logs/gazebo_utils_error.log
-grid_map_generator,arena/arena-rosnav/utils/misc/grid_map_generator,ros.ament_python,Failed,logs/grid_map_generator_error.log
+grid_map_generator,arena/arena-rosnav/utils/misc/grid_map_generator,ros.ament_python,Success,
 intermediate_planner,arena/arena-rosnav/utils/ros/rosnodes/intermediate_planner,ros.ament_cmake,Failed,logs/intermediate_planner_error.log
 map_clock_simulator,arena/arena-rosnav/utils/ros/rosnodes/map_clock_simulator,ros.catkin,Success,
 map_distance_server,arena/arena-rosnav/utils/ros/rosnodes/map_distance_server,ros.ament_cmake,Success,

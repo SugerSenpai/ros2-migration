@@ -1,4 +1,0 @@
---- stderr: grid_map_generator
-error: package directory 'grid_map_generator' does not exist
----
-Failed   <<< grid_map_generator [0.72s, exited with code 1]

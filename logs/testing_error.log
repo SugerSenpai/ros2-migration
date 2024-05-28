@@ -1,5 +1,6 @@
-[0.248s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'testing' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
-[0.248s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'testing' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[0.345s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
+[0.348s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'testing' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[0.348s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'testing' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
 --- stderr: testing
 Traceback (most recent call last):
   File "/home/ahmo030/.local/lib/python3.10/site-packages/colcon_core/executor/__init__.py", line 91, in __call__
@@ -17,6 +18,6 @@ Traceback (most recent call last):
 AssertionError: Expected ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', '--help-commands'] to pass: /usr/bin/python3: can't open file '/home/ahmo030/ros2-migration/arena/arena-rosnav/testing/setup.py': [Errno 2] No such file or directory
 
 ---
-Failed   <<< testing [0.02s, exited with code 1]
+Failed   <<< testing [0.03s, exited with code 1]
 Expected ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', '--help-commands'] to pass: /usr/bin/python3: can't open file '/home/ahmo030/ros2-migration/arena/arena-rosnav/testing/setup.py': [Errno 2] No such file or directory
 

@@ -1,3 +1,4 @@
+[0.247s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
 --- stderr: plan_visualization
 In file included from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
@@ -2591,4 +2592,4 @@ gmake[2]: *** [CMakeFiles/plan_visualization.dir/build.make:76: CMakeFiles/plan_
 gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/plan_visualization.dir/all] Error 2
 gmake: *** [Makefile:146: all] Error 2
 ---
-Failed   <<< plan_visualization [1.73s, exited with code 2]
+Failed   <<< plan_visualization [1.87s, exited with code 2]

@@ -1,3 +1,4 @@
+[0.276s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
 --- stderr: plan_manager
 CMake Error at CMakeLists.txt:171:
   Parse error.  Function missing ending ")".  End of file reached.

@@ -12,7 +12,7 @@ packages = [
     ("crowdsim", "arena/utils/crowdsim", "ros.ament_cmake"),
     ("eval", "arena/arena-rosnav/utils/misc/eval", "ros.catkin"),
     ("flatland", "arena/utils/flatland", "ros.ament_cmake"),
-    ("gazebo_utils", "arena/arena-rosnav/utils/plugins/gazebo_utils", "ros.ament_cmake"),
+    #("gazebo_utils", "arena/arena-rosnav/utils/plugins/gazebo_utils", "ros.ament_cmake"),
     ("grid_map_generator", "arena/arena-rosnav/utils/misc/grid_map_generator", "ros.ament_python"),
     ("intermediate_planner", "arena/arena-rosnav/utils/ros/rosnodes/intermediate_planner", "ros.ament_cmake"),
     ("map_clock_simulator", "arena/arena-rosnav/utils/ros/rosnodes/map_clock_simulator", "ros.catkin"),

@@ -1,3 +1,4 @@
+[0.261s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ahmo030/arena_ws/devel' in the environment variable CMAKE_PREFIX_PATH seems to be a catkin workspace but it doesn't contain any 'local_setup.*' files. Maybe the catkin version is not up-to-date?
 --- stderr: spacial_horizon
 CMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
   The package name passed to `find_package_handle_standard_args` (USB_10)
@@ -338,4 +339,4 @@ CMake Error at CMakeLists.txt:125 (find_package):
 
 
 ---
-Failed   <<< spacial_horizon [1.82s, exited with code 1]
+Failed   <<< spacial_horizon [2.46s, exited with code 1]
