@@ -39,9 +39,9 @@
  */
 
 #include "mbf_costmap_nav/costmap_navigation_server.hpp"
-#include <signal.h>
-#include <mbf_utility/types.h>
-#include <tf2_ros/transform_listener.h>
+#include <signal.hpp>
+#include <mbf_utility/types.hpp>
+#include <tf2_ros/transform_listener.hpp>
 
 typedef boost::shared_ptr<mbf_costmap_nav::CostmapNavigationServer> CostmapNavigationServerPtr;
 mbf_costmap_nav::CostmapNavigationServer::Ptr costmap_nav_srv_ptr;

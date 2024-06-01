@@ -44,10 +44,10 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_plugins/tricycle_drive.h>
-#include <flatland_server/model_plugin.h>
-#include <gtest/gtest.h>
-#include <pluginlib/class_loader.h>
+#include <flatland_plugins/tricycle_drive.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <gtest/gtest.hpp>
+#include <pluginlib/class_loader.hpp>
 #include "rclcpp/rclcpp.hpp"
 
 TEST(TricycleDrivePluginTest, load_test) {

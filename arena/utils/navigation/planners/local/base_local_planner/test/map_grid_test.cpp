@@ -6,10 +6,10 @@
  */
 #include <queue>
 
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 
-#include <base_local_planner/map_grid.h>
-#include <base_local_planner/map_cell.h>
+#include <base_local_planner/map_grid.hpp>
+#include <base_local_planner/map_cell.hpp>
 
 #include "wavefront_map_accessor.hpp"
 

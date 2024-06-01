@@ -1,9 +1,9 @@
 #include "rclcpp/rclcpp.hpp"
-#include <gtest/gtest.h>
-#include <clear_costmap_recovery/clear_costmap_recovery.h>
+#include <gtest/gtest.hpp>
+#include <clear_costmap_recovery/clear_costmap_recovery.hpp>
 
-#include <costmap_2d/testing_helper.h>
-#include <tf2_ros/transform_listener.h>
+#include <costmap_2d/testing_helper.hpp>
+#include <tf2_ros/transform_listener.hpp>
 
 tf2_ros::Buffer* transformer;
 tf2_ros::TransformListener* tfl;

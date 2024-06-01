@@ -1,5 +1,5 @@
-#include <flatland_plugins/gps.h>
-#include <pluginlib/class_list_macros.h>
+#include <flatland_plugins/gps.hpp>
+#include <pluginlib/class_list_macros.hpp>
 
 using namespace flatland_server;
 

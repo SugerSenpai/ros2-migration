@@ -3,10 +3,10 @@
 ******************************************************************/
 
 #include "unitree_legged_sdk/unitree_legged_sdk.hpp"
-#include <math.h>
+#include <math.hpp>
 #include <iostream>
-#include <unistd.h>
-#include <string.h>
+#include <unistd.hpp>
+#include <string.hpp>
 
 using namespace UNITREE_LEGGED_SDK;
 

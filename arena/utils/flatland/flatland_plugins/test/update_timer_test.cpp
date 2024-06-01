@@ -44,11 +44,11 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_plugins/update_timer.h>
-#include <flatland_server/model_plugin.h>
-#include <flatland_server/timekeeper.h>
-#include <flatland_server/world.h>
-#include <gtest/gtest.h>
+#include <flatland_plugins/update_timer.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <flatland_server/timekeeper.hpp>
+#include <flatland_server/world.hpp>
+#include <gtest/gtest.hpp>
 #include <regex>
 
 namespace fs = boost::filesystem;

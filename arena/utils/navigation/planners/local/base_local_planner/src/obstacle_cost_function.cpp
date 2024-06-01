@@ -35,10 +35,10 @@
  * Author: TKruse
  *********************************************************************/
 
-#include <base_local_planner/obstacle_cost_function.h>
+#include <base_local_planner/obstacle_cost_function.hpp>
 #include <cmath>
 #include <Eigen/Core>
-#include <ros/console.h>
+#include <ros/console.hpp>
 
 namespace base_local_planner {
 

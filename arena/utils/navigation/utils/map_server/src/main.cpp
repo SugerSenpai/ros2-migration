@@ -35,8 +35,8 @@
               "  map: image file to load\n"\
               "  resolution: map resolution [meters/pixel]"
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.hpp>
+#include <stdlib.hpp>
 #include <fstream>
 #include <boost/filesystem.hpp>
 

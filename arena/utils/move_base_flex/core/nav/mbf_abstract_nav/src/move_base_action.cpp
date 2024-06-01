@@ -40,7 +40,7 @@
 
 #include <limits>
 
-#include <mbf_utility/navigation_utility.h>
+#include <mbf_utility/navigation_utility.hpp>
 
 #include "mbf_abstract_nav/MoveBaseFlexConfig.hpp"
 #include "mbf_abstract_nav/move_base_action.hpp"

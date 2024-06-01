@@ -44,13 +44,13 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_msgs/Collision.h>
-#include <flatland_msgs/Collisions.h>
-#include <flatland_plugins/bumper.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/timekeeper.h>
-#include <flatland_server/yaml_reader.h>
-#include <pluginlib/class_list_macros.h>
+#include <flatland_msgs/Collision.hpp>
+#include <flatland_msgs/Collisions.hpp>
+#include <flatland_plugins/bumper.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/timekeeper.hpp>
+#include <flatland_server/yaml_reader.hpp>
+#include <pluginlib/class_list_macros.hpp>
 #include <boost/algorithm/string/join.hpp>
 
 using namespace flatland_server;

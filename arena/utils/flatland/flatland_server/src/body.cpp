@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/body.h>
+#include <flatland_server/body.hpp>
 #include "rclcpp/rclcpp.hpp"
 
 namespace flatland_server {

@@ -34,19 +34,19 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <dwa_local_planner/dwa_planner.h>
-#include <base_local_planner/goal_functions.h>
+#include <dwa_local_planner/dwa_planner.hpp>
+#include <base_local_planner/goal_functions.hpp>
 #include <cmath>
 
 //for computing path distance
 #include <queue>
 
-#include <angles/angles.h>
+#include <angles/angles.hpp>
 
 #include "rclcpp/rclcpp.hpp"
-#include <tf2/utils.h>
-#include <sensor_msgs/PointCloud2.h>
-#include <sensor_msgs/point_cloud2_iterator.h>
+#include <tf2/utils.hpp>
+#include <sensor_msgs/PointCloud2.hpp>
+#include <sensor_msgs/point_cloud2_iterator.hpp>
 
 namespace dwa_local_planner {
   void DWAPlanner::reconfigure(DWAPlannerConfig &config)

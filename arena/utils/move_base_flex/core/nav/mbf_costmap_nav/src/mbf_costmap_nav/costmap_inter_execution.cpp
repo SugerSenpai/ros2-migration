@@ -37,7 +37,7 @@
  *    Jorge Santos Simón <santos@magazino.eu>
  *
  */
-#include <mbf_msgs/GetInterPathResult.h>
+#include <mbf_msgs/GetInterPathResult.hpp>
 
 #include "mbf_costmap_nav/costmap_inter_execution.hpp"
 

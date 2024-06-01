@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 
 int main(int argc, char **argv) {
   std::cout << "Running main() from gtest_main.cc\n";

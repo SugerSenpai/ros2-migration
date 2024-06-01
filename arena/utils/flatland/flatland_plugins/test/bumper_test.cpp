@@ -44,14 +44,14 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_msgs/Collisions.h>
-#include <flatland_plugins/bumper.h>
-#include <flatland_server/debug_visualization.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/model_plugin.h>
-#include <flatland_server/timekeeper.h>
-#include <flatland_server/world.h>
-#include <gtest/gtest.h>
+#include <flatland_msgs/Collisions.hpp>
+#include <flatland_plugins/bumper.hpp>
+#include <flatland_server/debug_visualization.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <flatland_server/timekeeper.hpp>
+#include <flatland_server/world.hpp>
+#include <gtest/gtest.hpp>
 #include <regex>
 
 namespace fs = boost::filesystem;

@@ -1,13 +1,13 @@
-#include <gtest/gtest.h>
-#include <gmock/gmock.h>
+#include <gtest/gtest.hpp>
+#include <gmock/gmock.hpp>
 
-#include <actionlib/client/simple_action_client.h>
-#include <actionlib/server/simple_action_server.h>
-#include <mbf_abstract_core/abstract_planner.h>
-#include <mbf_msgs/GetPathAction.h>
+#include <actionlib/client/simple_action_client.hpp>
+#include <actionlib/server/simple_action_server.hpp>
+#include <mbf_abstract_core/abstract_planner.hpp>
+#include <mbf_msgs/GetPathAction.hpp>
 
-#include <mbf_abstract_nav/planner_action.h>
-#include <mbf_abstract_nav/abstract_planner_execution.h>
+#include <mbf_abstract_nav/planner_action.hpp>
+#include <mbf_abstract_nav/abstract_planner_execution.hpp>
 
 #include <boost/chrono.hpp>
 #include <boost/thread/thread.hpp>

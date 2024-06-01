@@ -38,7 +38,7 @@
  *
  */
 
-#include <mbf_msgs/RecoveryResult.h>
+#include <mbf_msgs/RecoveryResult.hpp>
 #include "nav_core_wrapper/wrapper_recovery_behavior.hpp"
 
 namespace mbf_nav_core_wrapper

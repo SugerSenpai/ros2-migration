@@ -29,8 +29,8 @@
 
 #include <algorithm>
 
-#include <sys/types.h> // required by Darwin
-#include <math.h>
+#include <sys/types.hpp> // required by Darwin
+#include <math.hpp>
 
 #include "amcl/sensors/amcl_odom.hpp"
 

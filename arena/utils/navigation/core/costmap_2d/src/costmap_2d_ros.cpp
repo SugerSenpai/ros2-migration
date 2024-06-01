@@ -35,15 +35,15 @@
  * Author: Eitan Marder-Eppstein
  *         David V. Lu!!
  *********************************************************************/
-#include <costmap_2d/layered_costmap.h>
-#include <costmap_2d/costmap_2d_ros.h>
+#include <costmap_2d/layered_costmap.hpp>
+#include <costmap_2d/costmap_2d_ros.hpp>
 #include <cstdio>
 #include <string>
 #include <algorithm>
 #include <vector>
-#include <tf2/convert.h>
-#include <tf2/utils.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include <tf2/convert.hpp>
+#include <tf2/utils.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 using namespace std;
 

@@ -1,13 +1,13 @@
-#include <observations/Observation.h>
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/PoseWithCovarianceStamped.h>
-#include <sensor_msgs/LaserScan.h>
-#include <nav_msgs/Odometry.h>
+#include <observations/Observation.hpp>
+#include <geometry_msgs/PoseStamped.hpp>
+#include <geometry_msgs/PoseWithCovarianceStamped.hpp>
+#include <sensor_msgs/LaserScan.hpp>
+#include <nav_msgs/Odometry.hpp>
 #include "rclcpp/rclcpp.hpp"
 #include "Transform2D.hpp"
-#include <common/f_math.h>
-#include <signal.h>
-#include <math.h>
+#include <common/f_math.hpp>
+#include <signal.hpp>
+#include <math.hpp>
 
 #define MAX_LASER_DISTANCE 3.5
 #define forEach BOOST_FOREACH

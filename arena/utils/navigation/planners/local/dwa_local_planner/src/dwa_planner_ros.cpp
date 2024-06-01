@@ -35,19 +35,19 @@
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
 
-#include <dwa_local_planner/dwa_planner_ros.h>
+#include <dwa_local_planner/dwa_planner_ros.hpp>
 #include <Eigen/Core>
 #include <cmath>
 
-#include <ros/console.h>
+#include <ros/console.hpp>
 
 #include <pluginlib/class_list_macros.hpp>
 
-#include <base_local_planner/goal_functions.h>
-#include <nav_msgs/Path.h>
-#include <tf2/utils.h>
+#include <base_local_planner/goal_functions.hpp>
+#include <nav_msgs/Path.hpp>
+#include <tf2/utils.hpp>
 
-#include <nav_core/parameter_magic.h>
+#include <nav_core/parameter_magic.hpp>
 
 //register this planner as a BaseLocalPlanner plugin
 PLUGINLIB_EXPORT_CLASS(dwa_local_planner::DWAPlannerROS, nav_core::BaseLocalPlanner)

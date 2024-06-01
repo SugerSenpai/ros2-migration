@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/entity.h>
+#include <flatland_server/entity.hpp>
 #include <string>
 
 namespace flatland_server {

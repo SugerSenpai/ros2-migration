@@ -20,9 +20,9 @@
  */
 
 #include <queue>
-#include <math.h>
-#include <stdlib.h>
-#include <string.h>
+#include <math.hpp>
+#include <stdlib.hpp>
+#include <string.hpp>
 #include "amcl/map/map.hpp"
 
 class CellData

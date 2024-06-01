@@ -35,10 +35,10 @@
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
 
-#include <base_local_planner/trajectory_planner_ros.h>
+#include <base_local_planner/trajectory_planner_ros.hpp>
 
 #ifdef HAVE_SYS_TIME_H
-#include <sys/time.h>
+#include <sys/time.hpp>
 #endif
 
 #include <boost/tokenizer.hpp>
@@ -46,15 +46,15 @@
 #include <Eigen/Core>
 #include <cmath>
 
-#include <ros/console.h>
+#include <ros/console.hpp>
 
 #include <pluginlib/class_list_macros.hpp>
 
-#include <base_local_planner/goal_functions.h>
-#include <nav_msgs/Path.h>
+#include <base_local_planner/goal_functions.hpp>
+#include <nav_msgs/Path.hpp>
 
-#include <nav_core/parameter_magic.h>
-#include <tf2/utils.h>
+#include <nav_core/parameter_magic.hpp>
+#include <tf2/utils.hpp>
 
 //register this planner as a BaseLocalPlanner plugin
 PLUGINLIB_EXPORT_CLASS(base_local_planner::TrajectoryPlannerROS, nav_core::BaseLocalPlanner)

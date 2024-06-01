@@ -34,7 +34,7 @@
  *
  * Author: TKruse
  *********************************************************************/
-#include <mbf_utility/odometry_helper.h>
+#include <mbf_utility/odometry_helper.hpp>
 
 namespace mbf_utility
 {

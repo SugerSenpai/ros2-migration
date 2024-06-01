@@ -29,11 +29,11 @@
 * \author Sven Wehner <mail@svenwehner.de>
 */
 
-#include <pedsim_simulator/element/agent.h>
-#include <pedsim_simulator/element/queueingwaypoint.h>
-#include <pedsim_simulator/element/waitingqueue.h>
-#include <pedsim_simulator/utilities.h>
-#include <pedsim_simulator/waypointplanner/queueingplanner.h>
+#include <pedsim_simulator/element/agent.hpp>
+#include <pedsim_simulator/element/queueingwaypoint.hpp>
+#include <pedsim_simulator/element/waitingqueue.hpp>
+#include <pedsim_simulator/utilities.hpp>
+#include <pedsim_simulator/waypointplanner/queueingplanner.hpp>
 
 QueueingWaypointPlanner::QueueingWaypointPlanner() {
   // initialize values

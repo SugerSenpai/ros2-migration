@@ -34,10 +34,10 @@
  *
  * Author: TKruse
  *********************************************************************/
-#include <base_local_planner/odometry_helper_ros.h>
-#include <tf2/LinearMath/Quaternion.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-#include <tf2/convert.h>
+#include <base_local_planner/odometry_helper_ros.hpp>
+#include <tf2/LinearMath/Quaternion.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#include <tf2/convert.hpp>
 
 namespace base_local_planner {
 

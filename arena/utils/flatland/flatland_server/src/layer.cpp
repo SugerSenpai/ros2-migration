@@ -44,14 +44,14 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <Box2D/Box2D.h>
-#include <flatland_server/debug_visualization.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/geometry.h>
-#include <flatland_server/layer.h>
-#include <flatland_server/yaml_reader.h>
+#include <Box2D/Box2D.hpp>
+#include <flatland_server/debug_visualization.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/geometry.hpp>
+#include <flatland_server/layer.hpp>
+#include <flatland_server/yaml_reader.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <yaml-cpp/yaml.h>
+#include <yaml-cpp/yaml.hpp>
 #include <boost/algorithm/string/join.hpp>
 #include <boost/filesystem.hpp>
 #include <fstream>

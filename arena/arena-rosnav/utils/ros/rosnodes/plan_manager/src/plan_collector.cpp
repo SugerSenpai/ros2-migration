@@ -1,4 +1,4 @@
-#include <plan_manager/plan_collector.h>
+#include <plan_manager/plan_collector.hpp>
 
 
 PlanCollector::PlanCollector() {}

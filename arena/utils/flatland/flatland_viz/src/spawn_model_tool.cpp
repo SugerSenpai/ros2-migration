@@ -45,10 +45,10 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <OGRE/OgreEntity.h>
-#include <OGRE/OgreException.h>
-#include <OGRE/OgreMaterial.h>
-#include <OGRE/OgreSubEntity.h>
+#include <OGRE/OgreEntity.hpp>
+#include <OGRE/OgreException.hpp>
+#include <OGRE/OgreMaterial.hpp>
+#include <OGRE/OgreSubEntity.hpp>
 
 #include <QFileDialog>
 #include <QHBoxLayout>
@@ -62,11 +62,11 @@
 
 #include <boost/filesystem.hpp>
 
-#include <flatland_msgs/SpawnModel.h>
+#include <flatland_msgs/SpawnModel.hpp>
 
-#include <flatland_server/types.h>
+#include <flatland_server/types.hpp>
 
-#include <yaml-cpp/yaml.h>
+#include <yaml-cpp/yaml.hpp>
 
 #include "flatland_viz/load_model_dialog.hpp"
 #include "flatland_viz/spawn_model_tool.hpp"
@@ -379,5 +379,5 @@ void SpawnModelTool::SaveName(QString n) { model_name = n; }
 
 }  // end namespace flatland_viz
 
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 PLUGINLIB_EXPORT_CLASS(flatland_viz::SpawnModelTool, rviz::Tool)

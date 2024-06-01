@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_plugins/update_timer.h>
+#include <flatland_plugins/update_timer.hpp>
 #include <cstdint>
 
 namespace flatland_plugins {

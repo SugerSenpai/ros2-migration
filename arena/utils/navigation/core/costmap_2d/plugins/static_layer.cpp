@@ -36,11 +36,11 @@
  * Author: Eitan Marder-Eppstein
  *         David V. Lu!!
  *********************************************************************/
-#include <costmap_2d/static_layer.h>
-#include <costmap_2d/costmap_math.h>
+#include <costmap_2d/static_layer.hpp>
+#include <costmap_2d/costmap_math.hpp>
 #include <pluginlib/class_list_macros.hpp>
-#include <tf2/convert.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include <tf2/convert.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 PLUGINLIB_EXPORT_CLASS(costmap_2d::StaticLayer, costmap_2d::Layer)
 

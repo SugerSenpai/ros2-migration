@@ -28,8 +28,8 @@
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include <rviz/frame_manager.h>
-#include <rviz/selection/selection_manager.h>
+#include <rviz/frame_manager.hpp>
+#include <rviz/selection/selection_manager.hpp>
 
 #ifndef Q_MOC_RUN
 #include "human_attributes_display.hpp"
@@ -285,5 +285,5 @@ void HumanAttributesDisplay::processMessage(const spencer_human_attribute_msgs::
 
 // Tell pluginlib about this class.  It is important to do this in
 // global scope, outside our package's namespace.
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 PLUGINLIB_EXPORT_CLASS(spencer_tracking_rviz_plugin::HumanAttributesDisplay, rviz::Display)

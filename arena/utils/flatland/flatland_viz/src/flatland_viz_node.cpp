@@ -45,7 +45,7 @@
  */
 
 #include "rclcpp/rclcpp.hpp"
-#include <signal.h>
+#include <signal.hpp>
 #include <QApplication>
 #include "flatland_viz/flatland_window.hpp"
 

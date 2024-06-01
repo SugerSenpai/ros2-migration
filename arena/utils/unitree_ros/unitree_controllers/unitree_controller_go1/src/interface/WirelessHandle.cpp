@@ -5,8 +5,8 @@
 
 #include "interface/WirelessHandle.hpp"
 #include "common/mathTools.hpp"
-#include <string.h>
-#include <stdio.h>
+#include <string.hpp>
+#include <stdio.hpp>
 
 WirelessHandle::WirelessHandle(){
 }

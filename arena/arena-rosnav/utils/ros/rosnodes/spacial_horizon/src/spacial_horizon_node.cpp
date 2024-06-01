@@ -2,7 +2,7 @@
     Use global path of move_base and publish Subgoals based on SpacialHorizon
    algorithm
 */
-#include <spacial_horizon/spacial_horizon_node.h>
+#include <spacial_horizon/spacial_horizon_node.hpp>
 
 void SpacialHorizon::init(ros::NodeHandle &nh)
 {

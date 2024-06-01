@@ -26,7 +26,7 @@ float64 b2Timer::s_invFrequency = 0.0f;
 #define WIN32_LEAN_AND_MEAN
 #endif
 
-#include <windows.h>
+#include <windows.hpp>
 
 b2Timer::b2Timer()
 {
@@ -64,7 +64,7 @@ float32 b2Timer::GetMilliseconds() const
 
 #elif defined(__linux__) || defined (__APPLE__)
 
-#include <sys/time.h>
+#include <sys/time.hpp>
 
 b2Timer::b2Timer()
 {

@@ -28,10 +28,10 @@
 * \author Billy Okal <okal@cs.uni-freiburg.de>
 */
 
-// #include <signal.h>
+// #include <signal.hpp>
 // #include <QApplication>
 
-// #include <pedsim_simulator/simulator.h>
+// #include <pedsim_simulator/simulator.hpp>
 
 // int main(int argc, char** argv) {
 //   QApplication app(argc, argv);
@@ -55,11 +55,11 @@
 //   return app.exec();
 // }
 
-#include <signal.h>
+#include <signal.hpp>
 #include <QApplication>
 
-#include <pedsim_simulator/simulator.h>
-#include <pedsim_simulator/scene_services.h>
+#include <pedsim_simulator/simulator.hpp>
+#include <pedsim_simulator/scene_services.hpp>
 
 int main(int argc, char** argv) {
   QApplication app(argc, argv);

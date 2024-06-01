@@ -37,9 +37,9 @@
  *********************************************************************/
 
 #include "rclcpp/rclcpp.hpp"
-#include <visualization_msgs/MarkerArray.h>
-#include <costmap_2d/VoxelGrid.h>
-#include <voxel_grid/voxel_grid.h>
+#include <visualization_msgs/MarkerArray.hpp>
+#include <costmap_2d/VoxelGrid.hpp>
+#include <voxel_grid/voxel_grid.hpp>
 
 struct Cell
 {

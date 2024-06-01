@@ -45,7 +45,7 @@
  */
 
 #include "flatland_server/yaml_preprocessor.hpp"
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 #include "rclcpp/rclcpp.hpp"
 #include <cmath>
 

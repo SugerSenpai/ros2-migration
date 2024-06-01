@@ -45,14 +45,14 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <Box2D/Box2D.h>
-#include <arena_plugins/pose_pub.h>
-#include <flatland_server/debug_visualization.h>
-#include <flatland_server/model_plugin.h>
-#include <geometry_msgs/TransformStamped.h>
-#include <pluginlib/class_list_macros.h>
+#include <Box2D/Box2D.hpp>
+#include <arena_plugins/pose_pub.hpp>
+#include <flatland_server/debug_visualization.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <geometry_msgs/TransformStamped.hpp>
+#include <pluginlib/class_list_macros.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <tf/tf.h>
+#include <tf/tf.hpp>
 
 namespace flatland_plugins {
 

@@ -29,7 +29,7 @@
 
 #include "tf2_ros/transform_listener.hpp"
 
-#include <geometry_msgs/PoseStamped.h>
+#include <geometry_msgs/PoseStamped.hpp>
 
 #include "rviz/display_context.hpp"
 #include "rviz/properties/string_property.hpp"
@@ -77,5 +77,5 @@ void Goal3DTool::onPoseSet(double x, double y, double z, double theta)
 
 } // end namespace rviz
 
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 PLUGINLIB_EXPORT_CLASS( rviz::Goal3DTool, rviz::Tool )

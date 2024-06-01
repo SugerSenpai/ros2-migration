@@ -29,11 +29,11 @@
 
 #include <boost/bind.hpp>
 
-#include <OGRE/OgreManualObject.h>
-#include <OGRE/OgreMaterialManager.h>
-#include <OGRE/OgreSceneManager.h>
-#include <OGRE/OgreSceneNode.h>
-#include <OGRE/OgreTextureManager.h>
+#include <OGRE/OgreManualObject.hpp>
+#include <OGRE/OgreMaterialManager.hpp>
+#include <OGRE/OgreSceneManager.hpp>
+#include <OGRE/OgreSceneNode.hpp>
+#include <OGRE/OgreTextureManager.hpp>
 
 #include "rclcpp/rclcpp.hpp"
 
@@ -531,5 +531,5 @@ void ProbMapDisplay::reset()
 
 } // namespace rviz
 
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 PLUGINLIB_EXPORT_CLASS( rviz::ProbMapDisplay, rviz::Display )

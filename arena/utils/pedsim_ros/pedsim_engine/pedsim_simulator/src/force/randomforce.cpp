@@ -29,10 +29,10 @@
 * \author Sven Wehner <mail@svenwehner.de>
 */
 
-#include <pedsim_simulator/config.h>
-#include <pedsim_simulator/force/randomforce.h>
-#include <pedsim_simulator/rng.h>
-#include <pedsim_simulator/scene.h>
+#include <pedsim_simulator/config.hpp>
+#include <pedsim_simulator/force/randomforce.hpp>
+#include <pedsim_simulator/rng.hpp>
+#include <pedsim_simulator/scene.hpp>
 
 #include "rclcpp/rclcpp.hpp"
 

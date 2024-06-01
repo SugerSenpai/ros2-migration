@@ -44,13 +44,13 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/exceptions.h>
-#include <flatland_server/model.h>
-#include <flatland_server/model_plugin.h>
-#include <flatland_server/plugin_manager.h>
-#include <flatland_server/world.h>
-#include <flatland_server/world_plugin.h>
-#include <yaml-cpp/yaml.h>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/model.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <flatland_server/plugin_manager.hpp>
+#include <flatland_server/world.hpp>
+#include <flatland_server/world_plugin.hpp>
+#include <yaml-cpp/yaml.hpp>
 
 namespace flatland_server {
 

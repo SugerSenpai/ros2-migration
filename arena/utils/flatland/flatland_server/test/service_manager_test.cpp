@@ -44,13 +44,13 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_msgs/DeleteModel.h>
-#include <flatland_msgs/MoveModel.h>
-#include <flatland_msgs/SpawnModel.h>
-#include <flatland_server/simulation_manager.h>
-#include <flatland_server/timekeeper.h>
-#include <flatland_server/world.h>
-#include <gtest/gtest.h>
+#include <flatland_msgs/DeleteModel.hpp>
+#include <flatland_msgs/MoveModel.hpp>
+#include <flatland_msgs/SpawnModel.hpp>
+#include <flatland_server/simulation_manager.hpp>
+#include <flatland_server/timekeeper.hpp>
+#include <flatland_server/world.hpp>
+#include <gtest/gtest.hpp>
 #include <regex>
 #include <thread>
 

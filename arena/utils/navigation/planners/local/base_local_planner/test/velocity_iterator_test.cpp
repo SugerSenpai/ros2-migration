@@ -35,9 +35,9 @@
 
 
 
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 
-#include <base_local_planner/velocity_iterator.h>
+#include <base_local_planner/velocity_iterator.hpp>
 
 
 namespace base_local_planner {

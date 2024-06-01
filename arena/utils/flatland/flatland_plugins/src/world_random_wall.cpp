@@ -44,14 +44,14 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <Box2D/Box2D.h>
-#include <flatland_plugins/world_modifier.h>
-#include <flatland_plugins/world_random_wall.h>
-#include <flatland_server/types.h>
-#include <flatland_server/world_plugin.h>
-#include <pluginlib/class_list_macros.h>
+#include <Box2D/Box2D.hpp>
+#include <flatland_plugins/world_modifier.hpp>
+#include <flatland_plugins/world_random_wall.hpp>
+#include <flatland_server/types.hpp>
+#include <flatland_server/world_plugin.hpp>
+#include <pluginlib/class_list_macros.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <yaml-cpp/yaml.h>
+#include <yaml-cpp/yaml.hpp>
 #include <algorithm>
 #include <iostream>
 #include <string>

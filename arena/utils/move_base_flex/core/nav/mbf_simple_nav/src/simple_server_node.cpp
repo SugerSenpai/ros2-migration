@@ -39,8 +39,8 @@
  */
 
 #include "mbf_simple_nav/simple_navigation_server.hpp"
-#include <mbf_utility/types.h>
-#include <tf2_ros/transform_listener.h>
+#include <mbf_utility/types.hpp>
+#include <tf2_ros/transform_listener.hpp>
 
 int main(int argc, char **argv)
 {

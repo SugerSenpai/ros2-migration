@@ -34,12 +34,12 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <voxel_grid/voxel_grid.h>
+#include <voxel_grid/voxel_grid.hpp>
 #ifdef HAVE_SYS_TIME_H
-#include <sys/time.h>
+#include <sys/time.hpp>
 #endif
 
-#include <ros/console.h>
+#include <ros/console.hpp>
 
 namespace voxel_grid {
   VoxelGrid::VoxelGrid(unsigned int size_x, unsigned int size_y, unsigned int size_z)

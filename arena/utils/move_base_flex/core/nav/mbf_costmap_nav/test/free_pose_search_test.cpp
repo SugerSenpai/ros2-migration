@@ -38,18 +38,18 @@
  */
 
 // ros
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <costmap_2d/costmap_2d_ros.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-#include <tf2_ros/transform_listener.h>
-#include <costmap_2d/testing_helper.h>
+#include <costmap_2d/costmap_2d_ros.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#include <tf2_ros/transform_listener.hpp>
+#include <costmap_2d/testing_helper.hpp>
 
 // mbf
 #include "mbf_costmap_nav/free_pose_search.hpp"
 #include "mbf_costmap_nav/costmap_navigation_server.hpp"
 
-#include <tf2/utils.h>
+#include <tf2/utils.hpp>
 namespace mbf_costmap_nav::test
 {
 class SearchHelperTest : public ::testing::Test

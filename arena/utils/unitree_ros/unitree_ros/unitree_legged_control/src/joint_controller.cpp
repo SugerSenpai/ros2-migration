@@ -5,7 +5,7 @@ Use of this source code is governed by the MPL-2.0 license, see LICENSE.
 
 // #include "unitree_legged_control/joint_controller.hpp"
 #include "joint_controller.hpp"
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 
 // #define rqtTune // use rqt or not
 

@@ -44,12 +44,12 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_plugins/model_tf_publisher.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/model_plugin.h>
-#include <flatland_server/yaml_reader.h>
-#include <geometry_msgs/TransformStamped.h>
-#include <pluginlib/class_list_macros.h>
+#include <flatland_plugins/model_tf_publisher.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <flatland_server/yaml_reader.hpp>
+#include <geometry_msgs/TransformStamped.hpp>
+#include <pluginlib/class_list_macros.hpp>
 #include <Eigen/Dense>
 #include <boost/algorithm/string/join.hpp>
 

@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/collision_filter_registry.h>
+#include <flatland_server/collision_filter_registry.hpp>
 
 namespace flatland_server {
 

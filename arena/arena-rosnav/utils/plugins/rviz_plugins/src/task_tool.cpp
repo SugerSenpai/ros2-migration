@@ -41,5 +41,5 @@ void TaskTool::deactivate() {
 }  // end namespace flatland_viz
 
 // Tell pluginlib about the tool class
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 PLUGINLIB_EXPORT_CLASS(rviz::TaskTool, rviz::Tool)

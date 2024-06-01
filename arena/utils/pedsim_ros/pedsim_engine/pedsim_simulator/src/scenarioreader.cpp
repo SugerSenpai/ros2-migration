@@ -29,13 +29,13 @@
 * \author Sven Wehner <mail@svenwehner.de>
 */
 
-#include <pedsim_simulator/element/agent.h>
-#include <pedsim_simulator/element/agentcluster.h>
-#include <pedsim_simulator/element/areawaypoint.h>
-#include <pedsim_simulator/element/attractionarea.h>
-#include <pedsim_simulator/element/wall.h>
-#include <pedsim_simulator/element/waitingqueue.h>
-#include <pedsim_simulator/scenarioreader.h>
+#include <pedsim_simulator/element/agent.hpp>
+#include <pedsim_simulator/element/agentcluster.hpp>
+#include <pedsim_simulator/element/areawaypoint.hpp>
+#include <pedsim_simulator/element/attractionarea.hpp>
+#include <pedsim_simulator/element/wall.hpp>
+#include <pedsim_simulator/element/waitingqueue.hpp>
+#include <pedsim_simulator/scenarioreader.hpp>
 
 #include <QFile>
 #include <iostream>

@@ -45,19 +45,19 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <OGRE/OgreEntity.h>
-#include <OGRE/OgreSceneManager.h>
-#include <OGRE/OgreSceneNode.h>
-#include <OgreVector3.h>
+#include <OGRE/OgreEntity.hpp>
+#include <OGRE/OgreSceneManager.hpp>
+#include <OGRE/OgreSceneNode.hpp>
+#include <OgreVector3.hpp>
 
-#include <ros/console.h>
+#include <ros/console.hpp>
 
-#include <rviz/geometry.h>
-#include <rviz/mesh_loader.h>
-#include <rviz/properties/float_property.h>
-#include <rviz/properties/vector_property.h>
-#include <rviz/viewport_mouse_event.h>
-#include <rviz/visualization_manager.h>
+#include <rviz/geometry.hpp>
+#include <rviz/mesh_loader.hpp>
+#include <rviz/properties/float_property.hpp>
+#include <rviz/properties/vector_property.hpp>
+#include <rviz/viewport_mouse_event.hpp>
+#include <rviz/visualization_manager.hpp>
 
 #include <QCheckBox>
 #include <QCursor>

@@ -1,4 +1,4 @@
-#include <pedsim_simulator/element/robot.h>
+#include <pedsim_simulator/element/robot.hpp>
 
 Robot::Robot(pedsim::id name, std::string topicOdom, ros::NodeHandle nh)
 : ScenarioElement(){

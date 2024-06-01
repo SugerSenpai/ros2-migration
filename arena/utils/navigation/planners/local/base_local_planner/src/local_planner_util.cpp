@@ -35,9 +35,9 @@
  * Author: Eitan Marder-Eppstein
  *********************************************************************/
 
-#include <base_local_planner/local_planner_util.h>
+#include <base_local_planner/local_planner_util.hpp>
 
-#include <base_local_planner/goal_functions.h>
+#include <base_local_planner/goal_functions.hpp>
 
 namespace base_local_planner {
 

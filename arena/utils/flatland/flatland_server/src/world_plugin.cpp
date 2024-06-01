@@ -44,11 +44,11 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <Box2D/Box2D.h>
+#include <Box2D/Box2D.hpp>
 #include "rclcpp/rclcpp.hpp"
 
-#include <flatland_server/world.h>
-#include <flatland_server/world_plugin.h>
+#include <flatland_server/world.hpp>
+#include <flatland_server/world_plugin.hpp>
 #include <string>
 
 namespace flatland_server {

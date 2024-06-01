@@ -35,8 +35,8 @@
  * Author: Eitan Marder-Eppstein
  *         David V. Lu!!
  *********************************************************************/
-#include <costmap_2d/layered_costmap.h>
-#include <costmap_2d/footprint.h>
+#include <costmap_2d/layered_costmap.hpp>
+#include <costmap_2d/footprint.hpp>
 #include <cstdio>
 #include <string>
 #include <algorithm>

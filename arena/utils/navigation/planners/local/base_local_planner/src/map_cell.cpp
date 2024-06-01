@@ -32,7 +32,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
 
-#include <base_local_planner/map_cell.h>
+#include <base_local_planner/map_cell.hpp>
 
 namespace base_local_planner{
 

@@ -5,7 +5,7 @@
 
 #include "interface/IOSDK.hpp"
 #include "interface/WirelessHandle.hpp"
-#include <stdio.h>
+#include <stdio.hpp>
 
 #ifdef ROBOT_TYPE_Go1
 IOSDK::IOSDK():_safe(UNITREE_LEGGED_SDK::LeggedType::Aliengo), _udp(UNITREE_LEGGED_SDK::LOWLEVEL, 8090, "192.168.123.10", 8007){

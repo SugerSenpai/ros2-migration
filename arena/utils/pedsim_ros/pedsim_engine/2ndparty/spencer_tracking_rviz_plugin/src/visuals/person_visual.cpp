@@ -29,21 +29,21 @@
 */
 
 
-#include <rviz/mesh_loader.h>
+#include <rviz/mesh_loader.hpp>
 #ifndef Q_MOC_RUN
-#include <ros/console.h>
-#include <ros/package.h>
-#include <resource_retriever/retriever.h>
+#include <ros/console.hpp>
+#include <ros/package.hpp>
+#include <resource_retriever/retriever.hpp>
 
 #include <boost/algorithm/string/predicate.hpp>
 #include <boost/filesystem.hpp>
 #endif
-#include <OgreSceneManager.h>
-#include <OgreSubEntity.h>
-#include <OgreMaterialManager.h>
-#include <OgreTextureManager.h>
-#include <OgreTechnique.h>
-#include <OgreAnimation.h>
+#include <OgreSceneManager.hpp>
+#include <OgreSubEntity.hpp>
+#include <OgreMaterialManager.hpp>
+#include <OgreTextureManager.hpp>
+#include <OgreTechnique.hpp>
+#include <OgreAnimation.hpp>
 
 #include "person_visual.hpp"
 

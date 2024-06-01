@@ -27,8 +27,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <move_base/move_base.h>
-#include <tf2_ros/transform_listener.h>
+#include <move_base/move_base.hpp>
+#include <tf2_ros/transform_listener.hpp>
 
 int main(int argc, char** argv){
   ros::init(argc, argv, "move_base_node");

@@ -38,7 +38,7 @@
  *
  */
 
-#include <nav_msgs/Path.h>
+#include <nav_msgs/Path.hpp>
 
 #include "mbf_abstract_nav/abstract_navigation_server.hpp"
 

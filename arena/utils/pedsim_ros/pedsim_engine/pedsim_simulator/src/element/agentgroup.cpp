@@ -29,10 +29,10 @@
 * \author Sven Wehner <mail@svenwehner.de>
 */
 
-#include <pedsim_simulator/config.h>
-#include <pedsim_simulator/element/agent.h>
-#include <pedsim_simulator/element/agentgroup.h>
-#include <pedsim_simulator/rng.h>
+#include <pedsim_simulator/config.hpp>
+#include <pedsim_simulator/element/agent.hpp>
+#include <pedsim_simulator/element/agentgroup.hpp>
+#include <pedsim_simulator/rng.hpp>
 
 AgentGroup::AgentGroup() {
   static int staticid = 2000;

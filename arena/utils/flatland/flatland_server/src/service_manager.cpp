@@ -44,8 +44,8 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/service_manager.h>
-#include <flatland_server/types.h>
+#include <flatland_server/service_manager.hpp>
+#include <flatland_server/types.hpp>
 #include <exception>
 
 namespace flatland_server {

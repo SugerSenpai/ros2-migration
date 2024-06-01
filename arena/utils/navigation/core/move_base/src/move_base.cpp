@@ -35,16 +35,16 @@
 * Author: Eitan Marder-Eppstein
 *         Mike Phillips (put the planner in its own thread)
 *********************************************************************/
-#include <move_base/move_base.h>
-#include <move_base_msgs/RecoveryStatus.h>
+#include <move_base/move_base.hpp>
+#include <move_base_msgs/RecoveryStatus.hpp>
 #include <cmath>
 
 #include <boost/algorithm/string.hpp>
 #include <boost/thread.hpp>
 
-#include <geometry_msgs/Twist.h>
+#include <geometry_msgs/Twist.hpp>
 
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 namespace move_base {
 

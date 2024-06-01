@@ -27,7 +27,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 
 #include "base_local_planner/line_iterator.hpp"
 

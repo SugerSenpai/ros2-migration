@@ -28,8 +28,8 @@
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include <rviz/visualization_manager.h>
-#include <rviz/frame_manager.h>
+#include <rviz/visualization_manager.hpp>
+#include <rviz/frame_manager.hpp>
 #include "rviz/selection/selection_manager.hpp"
 
 #ifndef Q_MOC_RUN
@@ -163,5 +163,5 @@ void SocialRelationsDisplay::updateRelationVisualStyles(boost::shared_ptr<Relati
 
 // Tell pluginlib about this class.  It is important to do this in
 // global scope, outside our package's namespace.
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 PLUGINLIB_EXPORT_CLASS(spencer_tracking_rviz_plugin::SocialRelationsDisplay, rviz::Display)

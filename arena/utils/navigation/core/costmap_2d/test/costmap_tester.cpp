@@ -34,11 +34,11 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <costmap_2d/costmap_2d_ros.h>
-#include <costmap_2d/cost_values.h>
-#include <tf2_ros/transform_listener.h>
+#include <costmap_2d/costmap_2d_ros.hpp>
+#include <costmap_2d/cost_values.hpp>
+#include <tf2_ros/transform_listener.hpp>
 
 namespace costmap_2d {
 

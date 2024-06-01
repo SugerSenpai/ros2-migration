@@ -89,9 +89,9 @@
 #include "rviz/yaml_config_reader.hpp"
 #include "rviz/yaml_config_writer.hpp"
 
-#include <OgreMeshManager.h>
-#include <OgreRenderWindow.h>
-//#include <ogre_helpers/initialization.h>
+#include <OgreMeshManager.hpp>
+#include <OgreRenderWindow.hpp>
+//#include <ogre_helpers/initialization.hpp>
 
 void FlatlandWindow::openNewToolDialog() {
   QString class_id;

@@ -1,7 +1,7 @@
-#include <arena_plugins/random_move.h>
-#include <math.h>
-#include <pluginlib/class_list_macros.h>
-#include <ros/console.h>
+#include <arena_plugins/random_move.hpp>
+#include <math.hpp>
+#include <pluginlib/class_list_macros.hpp>
+#include <ros/console.hpp>
 
 #include <random>
 

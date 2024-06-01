@@ -36,8 +36,8 @@
  *         David V. Lu!!
  *********************************************************************/
 #include <boost/bind.hpp>
-#include <costmap_2d/costmap_2d_publisher.h>
-#include <costmap_2d/cost_values.h>
+#include <costmap_2d/costmap_2d_publisher.hpp>
+#include <costmap_2d/cost_values.hpp>
 
 namespace costmap_2d
 {

@@ -37,7 +37,7 @@
  *    Jorge Santos Simón <santos@magazino.eu>
  *
  */
-#include <nav_core/recovery_behavior.h>
+#include <nav_core/recovery_behavior.hpp>
 #include "nav_core_wrapper/wrapper_recovery_behavior.hpp"
 #include "mbf_costmap_nav/costmap_recovery_execution.hpp"
 

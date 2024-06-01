@@ -34,12 +34,12 @@
 *
 * Authors: Eitan Marder-Eppstein, Sachin Chitta
 *********************************************************************/
-#include <angles/angles.h>
-#include <carrot_planner/carrot_planner.h>
+#include <angles/angles.hpp>
+#include <carrot_planner/carrot_planner.hpp>
 #include <pluginlib/class_list_macros.hpp>
-#include <tf2/convert.h>
-#include <tf2/utils.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include <tf2/convert.hpp>
+#include <tf2/utils.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
 //register this planner as a BaseGlobalPlanner plugin
 PLUGINLIB_EXPORT_CLASS(carrot_planner::CarrotPlanner, nav_core::BaseGlobalPlanner)

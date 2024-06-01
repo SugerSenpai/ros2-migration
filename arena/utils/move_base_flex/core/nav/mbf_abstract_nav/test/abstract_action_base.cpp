@@ -1,12 +1,12 @@
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include <gmock/gmock.hpp>
+#include <gtest/gtest.hpp>
 
 // dummy message
-#include <mbf_msgs/GetPathAction.h>
-#include <mbf_utility/robot_information.h>
+#include <mbf_msgs/GetPathAction.hpp>
+#include <mbf_utility/robot_information.hpp>
 
 #include <mbf_abstract_nav/abstract_action_base.hpp>
-#include <mbf_abstract_nav/abstract_execution_base.h>
+#include <mbf_abstract_nav/abstract_execution_base.hpp>
 
 using namespace mbf_abstract_nav;
 

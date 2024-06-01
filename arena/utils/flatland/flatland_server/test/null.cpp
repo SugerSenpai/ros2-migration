@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 
 // Declare a test
 TEST(TestSuite, testA) { EXPECT_EQ(1, 1); }

@@ -1,9 +1,9 @@
-#include <gmock/gmock.h>
-#include <gtest/gtest.h>
+#include <gmock/gmock.hpp>
+#include <gtest/gtest.hpp>
 #include "rclcpp/rclcpp.hpp"
 
-#include <mbf_abstract_core/abstract_planner.h>
-#include <mbf_abstract_nav/abstract_planner_execution.h>
+#include <mbf_abstract_core/abstract_planner.hpp>
+#include <mbf_abstract_nav/abstract_planner_execution.hpp>
 
 // too long namespaces...
 using geometry_msgs::PoseStamped;

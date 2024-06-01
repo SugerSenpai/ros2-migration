@@ -34,7 +34,7 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <clear_costmap_recovery/clear_costmap_recovery.h>
+#include <clear_costmap_recovery/clear_costmap_recovery.hpp>
 #include <pluginlib/class_list_macros.hpp>
 #include <boost/pointer_cast.hpp>
 #include <vector>

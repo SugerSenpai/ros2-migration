@@ -43,15 +43,15 @@
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  */
-#include <Box2D/Box2D.h>
+#include <Box2D/Box2D.hpp>
 #include "rclcpp/rclcpp.hpp"
 
-#include <flatland_plugins/world_modifier.h>
-#include <flatland_server/layer.h>
-#include <flatland_server/types.h>
-#include <flatland_server/world.h>
-#include <flatland_server/yaml_reader.h>
-#include <yaml-cpp/yaml.h>
+#include <flatland_plugins/world_modifier.hpp>
+#include <flatland_server/layer.hpp>
+#include <flatland_server/types.hpp>
+#include <flatland_server/world.hpp>
+#include <flatland_server/yaml_reader.hpp>
+#include <yaml-cpp/yaml.hpp>
 #include <boost/filesystem.hpp>
 
 #include <algorithm>

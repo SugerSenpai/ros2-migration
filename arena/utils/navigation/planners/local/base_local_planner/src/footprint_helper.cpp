@@ -35,7 +35,7 @@
  * Author: TKruse
  *********************************************************************/
 
-#include <base_local_planner/footprint_helper.h>
+#include <base_local_planner/footprint_helper.hpp>
 
 namespace base_local_planner {
 

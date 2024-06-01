@@ -3,8 +3,8 @@
 ***********************************************************************/
 #include "Gait/WaveGenerator.hpp"
 #include <iostream>
-#include <sys/time.h>
-#include <math.h>
+#include <sys/time.hpp>
+#include <math.hpp>
 
 WaveGenerator::WaveGenerator(double period, double stancePhaseRatio, Vec4 bias)
     : _period(period), _stRatio(stancePhaseRatio), _bias(bias)

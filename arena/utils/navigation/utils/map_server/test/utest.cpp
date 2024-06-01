@@ -30,7 +30,7 @@
 /* Author: Brian Gerkey */
 
 #include <stdexcept> // for std::runtime_error
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 #include "map_server/image_loader.hpp"
 #include "test_constants.hpp"
 

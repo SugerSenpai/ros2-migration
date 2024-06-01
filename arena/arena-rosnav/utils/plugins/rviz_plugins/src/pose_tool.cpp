@@ -27,10 +27,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <OGRE/OgrePlane.h>
-#include <OGRE/OgreRay.h>
-#include <OGRE/OgreSceneNode.h>
-#include <OGRE/OgreViewport.h>
+#include <OGRE/OgrePlane.hpp>
+#include <OGRE/OgreRay.hpp>
+#include <OGRE/OgreSceneNode.hpp>
+#include <OGRE/OgreViewport.hpp>
 
 #include "rviz/geometry.hpp"
 #include "rviz/ogre_helpers/arrow.hpp"

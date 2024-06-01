@@ -31,8 +31,8 @@
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
-#include <base_local_planner/map_grid.h>
-#include <costmap_2d/cost_values.h>
+#include <base_local_planner/map_grid.hpp>
+#include <costmap_2d/cost_values.hpp>
 using namespace std;
 
 namespace base_local_planner{

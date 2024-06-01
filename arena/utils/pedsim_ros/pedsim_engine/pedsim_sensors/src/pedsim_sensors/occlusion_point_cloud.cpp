@@ -28,9 +28,9 @@
  * \author Billy Okal <okal@cs.uni-freiburg.de>
  */
 
-#include <pedsim_sensors/occlusion_point_cloud.h>
-#include <pedsim_utils/geometry.h>
-#include <math.h>
+#include <pedsim_sensors/occlusion_point_cloud.hpp>
+#include <pedsim_utils/geometry.hpp>
+#include <math.hpp>
 #include <random>
 #define INF 100000000
 

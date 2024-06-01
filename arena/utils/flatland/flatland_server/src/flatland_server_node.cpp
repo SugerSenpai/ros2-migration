@@ -45,7 +45,7 @@
  */
 
 #include "rclcpp/rclcpp.hpp"
-#include <signal.h>
+#include <signal.hpp>
 #include <string>
 
 #include "flatland_server/simulation_manager.hpp"

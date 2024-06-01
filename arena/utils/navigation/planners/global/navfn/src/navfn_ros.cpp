@@ -34,11 +34,11 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <navfn/navfn_ros.h>
+#include <navfn/navfn_ros.hpp>
 #include <pluginlib/class_list_macros.hpp>
-#include <costmap_2d/cost_values.h>
-#include <costmap_2d/costmap_2d.h>
-#include <sensor_msgs/point_cloud2_iterator.h>
+#include <costmap_2d/cost_values.hpp>
+#include <costmap_2d/costmap_2d.hpp>
+#include <sensor_msgs/point_cloud2_iterator.hpp>
 
 //register this planner as a BaseGlobalPlanner plugin
 PLUGINLIB_EXPORT_CLASS(navfn::NavfnROS, nav_core::BaseGlobalPlanner)

@@ -44,8 +44,8 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/exceptions.h>
-#include <flatland_server/model_body.h>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/model_body.hpp>
 #include <boost/algorithm/string/join.hpp>
 
 namespace flatland_server {

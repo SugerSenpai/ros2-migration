@@ -45,7 +45,7 @@
  */
 
 #include "flatland_server/model.hpp"
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 #include "rclcpp/rclcpp.hpp"
 #include <string>
 #include "flatland_server/collision_filter_registry.hpp"

@@ -3,13 +3,13 @@
 // expects a cost map in maps/willow-full-0.05.pgm
 //
 
-#include <navfn/navfn.h>
+#include <navfn/navfn.hpp>
 #ifdef HAVE_SYS_TIME_H
-#include <sys/time.h>
+#include <sys/time.hpp>
 #endif
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
+#include <stdio.hpp>
+#include <stdlib.hpp>
+#include <stdint.hpp>
 
 #include <string>
 #include <fstream>
@@ -19,12 +19,12 @@
 using namespace navfn;
 
 #ifdef __APPLE__
-# include <netpbm/pgm.h>
+# include <netpbm/pgm.hpp>
 #else
 extern "C" {
-#include <stdio.h>
+#include <stdio.hpp>
 // pgm.h is not very friendly with system headers... need to undef max() and min() afterwards
-#include <pgm.h>
+#include <pgm.hpp>
 #undef max
 #undef min
 }

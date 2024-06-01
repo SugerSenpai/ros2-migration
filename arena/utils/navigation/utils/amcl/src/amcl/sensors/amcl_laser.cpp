@@ -27,12 +27,12 @@
 //
 ///////////////////////////////////////////////////////////////////////////
 
-#include <sys/types.h> // required by Darwin
-#include <math.h>
-#include <stdlib.h>
-#include <assert.h>
+#include <sys/types.hpp> // required by Darwin
+#include <math.hpp>
+#include <stdlib.hpp>
+#include <assert.hpp>
 #ifdef HAVE_UNISTD_H
-#include <unistd.h>
+#include <unistd.hpp>
 #endif
 
 #include "amcl/sensors/amcl_laser.hpp"

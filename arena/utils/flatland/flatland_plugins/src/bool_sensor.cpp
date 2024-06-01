@@ -44,10 +44,10 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_plugins/bool_sensor.h>
-#include <flatland_server/timekeeper.h>
-#include <flatland_server/yaml_reader.h>
-#include <pluginlib/class_list_macros.h>
+#include <flatland_plugins/bool_sensor.hpp>
+#include <flatland_server/timekeeper.hpp>
+#include <flatland_server/yaml_reader.hpp>
+#include <pluginlib/class_list_macros.hpp>
 
 using namespace flatland_server;
 

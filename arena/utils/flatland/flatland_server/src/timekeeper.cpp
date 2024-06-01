@@ -44,8 +44,8 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/timekeeper.h>
-#include <rosgraph_msgs/Clock.h>
+#include <flatland_server/timekeeper.hpp>
+#include <rosgraph_msgs/Clock.hpp>
 
 namespace flatland_server {
 

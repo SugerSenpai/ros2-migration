@@ -37,8 +37,8 @@
  *    Jorge Santos Simón <santos@magazino.eu>
  *
  */
-#include <nav_core_wrapper/wrapper_global_planner.h>
-#include <mbf_msgs/GetPathResult.h>
+#include <nav_core_wrapper/wrapper_global_planner.hpp>
+#include <mbf_msgs/GetPathResult.hpp>
 
 #include "mbf_costmap_nav/costmap_planner_execution.hpp"
 

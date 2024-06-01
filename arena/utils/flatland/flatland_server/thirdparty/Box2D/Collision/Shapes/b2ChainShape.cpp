@@ -19,7 +19,7 @@
 #include "Box2D/Collision/Shapes/b2ChainShape.hpp"
 #include "Box2D/Collision/Shapes/b2EdgeShape.hpp"
 #include <new>
-#include <string.h>
+#include <string.hpp>
 
 b2ChainShape::~b2ChainShape()
 {

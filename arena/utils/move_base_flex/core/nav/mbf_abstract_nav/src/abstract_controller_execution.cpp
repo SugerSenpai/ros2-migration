@@ -38,7 +38,7 @@
  *
  */
 
-#include <mbf_msgs/ExePathResult.h>
+#include <mbf_msgs/ExePathResult.hpp>
 
 #include "mbf_abstract_nav/abstract_controller_execution.hpp"
 

@@ -2,7 +2,7 @@
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
 #include "common/LowPassFilter.hpp"
-#include <math.h>
+#include <math.hpp>
 
 LPFilter::LPFilter(double samplePeriod, double cutFrequency){
     _weight = 1.0 / ( 1.0 + 1.0/(2.0*M_PI * samplePeriod * cutFrequency) );

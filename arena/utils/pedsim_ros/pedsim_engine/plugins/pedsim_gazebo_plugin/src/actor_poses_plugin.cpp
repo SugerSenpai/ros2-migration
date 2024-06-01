@@ -13,8 +13,8 @@ Created on Mon Dec  2
 #include "ros/subscribe_options.hpp"
 #include <thread>
 
-#include<pedsim_msgs/TrackedPersons.h>
-#include<pedsim_msgs/AgentStates.h>
+#include<pedsim_msgs/TrackedPersons.hpp>
+#include<pedsim_msgs/AgentStates.hpp>
 
 
 namespace gazebo

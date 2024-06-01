@@ -31,13 +31,13 @@
 
 #include <QApplication>
 #include <algorithm>
-#include <ros/package.h>
+#include <ros/package.hpp>
 
-#include <pedsim_simulator/element/agentcluster.h>
-#include <pedsim_simulator/scene.h>
-#include <pedsim_simulator/simulator.h>
+#include <pedsim_simulator/element/agentcluster.hpp>
+#include <pedsim_simulator/scene.hpp>
+#include <pedsim_simulator/simulator.hpp>
 
-#include <pedsim_utils/geometry.h>
+#include <pedsim_utils/geometry.hpp>
 
 using namespace pedsim;
 

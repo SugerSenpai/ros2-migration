@@ -5,11 +5,11 @@
  *      Author: tkruse
  */
 
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 
 #include <vector>
 
-#include <base_local_planner/simple_trajectory_generator.h>
+#include <base_local_planner/simple_trajectory_generator.hpp>
 
 namespace base_local_planner {
 

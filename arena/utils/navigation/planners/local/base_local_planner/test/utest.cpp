@@ -31,21 +31,21 @@
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 #include <iostream>
 #include <vector>
 #include <utility>
 
-#include <base_local_planner/map_cell.h>
-#include <base_local_planner/map_grid.h>
-#include <base_local_planner/trajectory.h>
-#include <base_local_planner/trajectory_planner.h>
-#include <base_local_planner/costmap_model.h>
-#include <costmap_2d/costmap_2d.h>
-#include <math.h>
+#include <base_local_planner/map_cell.hpp>
+#include <base_local_planner/map_grid.hpp>
+#include <base_local_planner/trajectory.hpp>
+#include <base_local_planner/trajectory_planner.hpp>
+#include <base_local_planner/costmap_model.hpp>
+#include <costmap_2d/costmap_2d.hpp>
+#include <math.hpp>
 
-#include <geometry_msgs/Point.h>
-#include <base_local_planner/Position2DInt.h>
+#include <geometry_msgs/Point.hpp>
+#include <base_local_planner/Position2DInt.hpp>
 
 #include "wavefront_map_accessor.hpp"
 

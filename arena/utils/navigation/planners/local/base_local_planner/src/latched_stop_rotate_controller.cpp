@@ -5,19 +5,19 @@
  *      Author: tkruse
  */
 
-#include <base_local_planner/latched_stop_rotate_controller.h>
+#include <base_local_planner/latched_stop_rotate_controller.hpp>
 
 #include <cmath>
 
 #include <Eigen/Core>
 
-#include <angles/angles.h>
-#include <nav_msgs/Odometry.h>
+#include <angles/angles.hpp>
+#include <nav_msgs/Odometry.hpp>
 
-#include <base_local_planner/goal_functions.h>
-#include <base_local_planner/local_planner_limits.h>
+#include <base_local_planner/goal_functions.hpp>
+#include <base_local_planner/local_planner_limits.hpp>
 
-#include <tf2/utils.h>
+#include <tf2/utils.hpp>
 
 namespace base_local_planner {
 

@@ -35,12 +35,12 @@
  * Author: Eitan Marder-Eppstein
  *         David V. Lu!!
  *********************************************************************/
-#include <costmap_2d/obstacle_layer.h>
-#include <costmap_2d/costmap_math.h>
-#include <tf2_ros/message_filter.h>
+#include <costmap_2d/obstacle_layer.hpp>
+#include <costmap_2d/costmap_math.hpp>
+#include <tf2_ros/message_filter.hpp>
 
 #include <pluginlib/class_list_macros.hpp>
-#include <sensor_msgs/point_cloud2_iterator.h>
+#include <sensor_msgs/point_cloud2_iterator.hpp>
 
 PLUGINLIB_EXPORT_CLASS(costmap_2d::ObstacleLayer, costmap_2d::Layer)
 

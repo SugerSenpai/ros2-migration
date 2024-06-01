@@ -29,22 +29,22 @@
 * \author Sven Wehner <mail@svenwehner.de>
 */
 
-#include <pedsim_simulator/config.h>
-#include <pedsim_simulator/scene.h>
+#include <pedsim_simulator/config.hpp>
+#include <pedsim_simulator/scene.hpp>
 
-#include <pedsim/ped_tree.h>
-#include <pedsim_simulator/element/robot.h>
-#include <pedsim_simulator/element/agent.h>
-#include <pedsim_simulator/element/agentcluster.h>
-#include <pedsim_simulator/element/areawaypoint.h>
-#include <pedsim_simulator/element/attractionarea.h>
-#include <pedsim_simulator/element/wall.h>
-#include <pedsim_simulator/element/waitingqueue.h>
-#include <pedsim_simulator/force/alongwallforce.h>
-#include <pedsim_simulator/force/groupcoherenceforce.h>
-#include <pedsim_simulator/force/groupgazeforce.h>
-#include <pedsim_simulator/force/grouprepulsionforce.h>
-#include <pedsim_simulator/force/randomforce.h>
+#include <pedsim/ped_tree.hpp>
+#include <pedsim_simulator/element/robot.hpp>
+#include <pedsim_simulator/element/agent.hpp>
+#include <pedsim_simulator/element/agentcluster.hpp>
+#include <pedsim_simulator/element/areawaypoint.hpp>
+#include <pedsim_simulator/element/attractionarea.hpp>
+#include <pedsim_simulator/element/wall.hpp>
+#include <pedsim_simulator/element/waitingqueue.hpp>
+#include <pedsim_simulator/force/alongwallforce.hpp>
+#include <pedsim_simulator/force/groupcoherenceforce.hpp>
+#include <pedsim_simulator/force/groupgazeforce.hpp>
+#include <pedsim_simulator/force/grouprepulsionforce.hpp>
+#include <pedsim_simulator/force/randomforce.hpp>
 #include <QGraphicsScene>
 
 #include "rclcpp/rclcpp.hpp"

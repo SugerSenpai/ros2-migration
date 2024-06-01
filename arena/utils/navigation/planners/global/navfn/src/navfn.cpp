@@ -43,8 +43,8 @@
 //
 
 
-#include <navfn/navfn.h>
-#include <ros/console.h>
+#include <navfn/navfn.hpp>
+#include <ros/console.hpp>
 
 namespace navfn {
 

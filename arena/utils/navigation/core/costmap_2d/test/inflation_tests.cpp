@@ -34,13 +34,13 @@
 #include <map>
 #include <cmath>
 
-#include <costmap_2d/costmap_2d.h>
-#include <costmap_2d/layered_costmap.h>
-#include <costmap_2d/obstacle_layer.h>
-#include <costmap_2d/inflation_layer.h>
-#include <costmap_2d/observation_buffer.h>
-#include <costmap_2d/testing_helper.h>
-#include <gtest/gtest.h>
+#include <costmap_2d/costmap_2d.hpp>
+#include <costmap_2d/layered_costmap.hpp>
+#include <costmap_2d/obstacle_layer.hpp>
+#include <costmap_2d/inflation_layer.hpp>
+#include <costmap_2d/observation_buffer.hpp>
+#include <costmap_2d/testing_helper.hpp>
+#include <gtest/gtest.hpp>
 
 using namespace costmap_2d;
 using geometry_msgs::Point;

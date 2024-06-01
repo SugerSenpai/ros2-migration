@@ -44,13 +44,13 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/dummy_model_plugin.h>
-#include <flatland_server/model.h>
-#include <flatland_server/model_plugin.h>
-#include <gtest/gtest.h>
-#include <pluginlib/class_loader.h>
+#include <flatland_server/dummy_model_plugin.hpp>
+#include <flatland_server/model.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <gtest/gtest.hpp>
+#include <pluginlib/class_loader.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <yaml-cpp/yaml.h>
+#include <yaml-cpp/yaml.hpp>
 
 /**
  * Test the pluginlib is configured correctly so that the model can be

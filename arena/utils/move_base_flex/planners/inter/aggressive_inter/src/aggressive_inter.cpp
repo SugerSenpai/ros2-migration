@@ -5,11 +5,11 @@
 #include <vector>
 
 #include <pluginlib/class_list_macros.hpp>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <ros/master.h>
-#include <dynamic_reconfigure/Reconfigure.h>
-#include <dynamic_reconfigure/Config.h>
+#include <ros/master.hpp>
+#include <dynamic_reconfigure/Reconfigure.hpp>
+#include <dynamic_reconfigure/Config.hpp>
 PLUGINLIB_EXPORT_CLASS(aggressive_inter::AggressiveInter, mbf_costmap_core::CostmapInter)
 
 namespace aggressive_inter

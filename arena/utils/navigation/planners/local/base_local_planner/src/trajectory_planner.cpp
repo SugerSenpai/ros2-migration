@@ -35,23 +35,23 @@
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
 
-#include <base_local_planner/trajectory_planner.h>
-#include <costmap_2d/footprint.h>
+#include <base_local_planner/trajectory_planner.hpp>
+#include <costmap_2d/footprint.hpp>
 #include <string>
 #include <sstream>
-#include <math.h>
-#include <angles/angles.h>
+#include <math.hpp>
+#include <angles/angles.hpp>
 
 
 
 #include <boost/algorithm/string.hpp>
 
-#include <ros/console.h>
+#include <ros/console.hpp>
 
 //for computing path distance
 #include <queue>
-#include <tf2/LinearMath/Matrix3x3.h>
-#include <tf2/utils.h>
+#include <tf2/LinearMath/Matrix3x3.hpp>
+#include <tf2/utils.hpp>
 
 using namespace std;
 using namespace costmap_2d;

@@ -44,8 +44,8 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/exceptions.h>
-#include <flatland_server/joint.h>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/joint.hpp>
 #include "rclcpp/rclcpp.hpp"
 
 namespace flatland_server {

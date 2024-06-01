@@ -44,15 +44,15 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_plugins/model_tf_publisher.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/model_plugin.h>
-#include <flatland_server/timekeeper.h>
-#include <flatland_server/world.h>
-#include <geometry_msgs/TransformStamped.h>
-#include <gtest/gtest.h>
-#include <tf/transform_datatypes.h>
-#include <tf2_ros/transform_listener.h>
+#include <flatland_plugins/model_tf_publisher.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <flatland_server/timekeeper.hpp>
+#include <flatland_server/world.hpp>
+#include <geometry_msgs/TransformStamped.hpp>
+#include <gtest/gtest.hpp>
+#include <tf/transform_datatypes.hpp>
+#include <tf2_ros/transform_listener.hpp>
 #include <regex>
 
 namespace fs = boost::filesystem;

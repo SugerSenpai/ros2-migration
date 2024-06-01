@@ -44,10 +44,10 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/debug_visualization.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/geometry.h>
-#include <flatland_server/model.h>
+#include <flatland_server/debug_visualization.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/geometry.hpp>
+#include <flatland_server/model.hpp>
 
 namespace flatland_server {
 

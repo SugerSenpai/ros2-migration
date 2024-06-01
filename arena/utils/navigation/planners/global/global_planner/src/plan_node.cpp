@@ -35,11 +35,11 @@
  * Author: Bhaskara Marthi
  *         David V. Lu!!
  *********************************************************************/
-#include <global_planner/planner_core.h>
-#include <navfn/MakeNavPlan.h>
+#include <global_planner/planner_core.hpp>
+#include <navfn/MakeNavPlan.hpp>
 #include <boost/shared_ptr.hpp>
-#include <costmap_2d/costmap_2d_ros.h>
-#include <tf2_ros/transform_listener.h>
+#include <costmap_2d/costmap_2d_ros.hpp>
+#include <tf2_ros/transform_listener.hpp>
 
 namespace cm = costmap_2d;
 namespace rm = geometry_msgs;

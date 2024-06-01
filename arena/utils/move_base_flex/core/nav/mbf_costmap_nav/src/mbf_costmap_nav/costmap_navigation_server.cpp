@@ -38,17 +38,17 @@
  *
  */
 
-#include <tf/tf.h>
-#include <nav_msgs/Path.h>
-#include <geometry_msgs/PoseArray.h>
-#include <mbf_msgs/MoveBaseAction.h>
-#include <mbf_abstract_nav/MoveBaseFlexConfig.h>
-#include <actionlib/client/simple_action_client.h>
-#include <nav_core_wrapper/wrapper_global_planner.h>
-#include <nav_core_wrapper/wrapper_local_planner.h>
-#include <nav_core_wrapper/wrapper_recovery_behavior.h>
-#include <xmlrpcpp/XmlRpc.h>
-#include <angles/angles.h>
+#include <tf/tf.hpp>
+#include <nav_msgs/Path.hpp>
+#include <geometry_msgs/PoseArray.hpp>
+#include <mbf_msgs/MoveBaseAction.hpp>
+#include <mbf_abstract_nav/MoveBaseFlexConfig.hpp>
+#include <actionlib/client/simple_action_client.hpp>
+#include <nav_core_wrapper/wrapper_global_planner.hpp>
+#include <nav_core_wrapper/wrapper_local_planner.hpp>
+#include <nav_core_wrapper/wrapper_recovery_behavior.hpp>
+#include <xmlrpcpp/XmlRpc.hpp>
+#include <angles/angles.hpp>
 
 #include "mbf_costmap_nav/footprint_helper.hpp"
 #include "mbf_costmap_nav/costmap_navigation_server.hpp"

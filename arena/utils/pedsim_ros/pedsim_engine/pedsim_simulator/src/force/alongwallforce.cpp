@@ -29,11 +29,11 @@
 * \author Sven Wehner <mail@svenwehner.de>
 */
 
-#include <pedsim_simulator/config.h>
-#include <pedsim_simulator/element/agent.h>
-#include <pedsim_simulator/element/wall.h>
-#include <pedsim_simulator/force/alongwallforce.h>
-#include <pedsim_simulator/scene.h>
+#include <pedsim_simulator/config.hpp>
+#include <pedsim_simulator/element/agent.hpp>
+#include <pedsim_simulator/element/wall.hpp>
+#include <pedsim_simulator/force/alongwallforce.hpp>
+#include <pedsim_simulator/scene.hpp>
 
 #include "rclcpp/rclcpp.hpp"
 

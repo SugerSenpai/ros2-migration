@@ -44,14 +44,14 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <Box2D/Box2D.h>
-#include <flatland_server/debug_visualization.h>
-#include <flatland_server/entity.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/geometry.h>
-#include <flatland_server/types.h>
-#include <flatland_server/world.h>
-#include <gtest/gtest.h>
+#include <Box2D/Box2D.hpp>
+#include <flatland_server/debug_visualization.hpp>
+#include <flatland_server/entity.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/geometry.hpp>
+#include <flatland_server/types.hpp>
+#include <flatland_server/world.hpp>
+#include <gtest/gtest.hpp>
 #include <boost/filesystem.hpp>
 #include <regex>
 #include <string>

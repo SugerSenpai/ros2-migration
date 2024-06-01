@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/model_plugin.h>
+#include <flatland_server/model_plugin.hpp>
 
 namespace flatland_server {
 

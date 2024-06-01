@@ -1,4 +1,4 @@
-#include <flatland_viz/pause_sim_tool.h>
+#include <flatland_viz/pause_sim_tool.hpp>
 
 namespace flatland_viz {
 
@@ -25,5 +25,5 @@ void PauseSimTool::deactivate() {}
 }  // end namespace flatland_viz
 
 // Tell pluginlib about the tool class
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 PLUGINLIB_EXPORT_CLASS(flatland_viz::PauseSimTool, rviz::Tool)

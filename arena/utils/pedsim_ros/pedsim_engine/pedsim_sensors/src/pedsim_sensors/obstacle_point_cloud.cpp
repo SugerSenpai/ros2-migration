@@ -28,8 +28,8 @@
 * \author Billy Okal <okal@cs.uni-freiburg.de>
 */
 
-#include <pedsim_sensors/obstacle_point_cloud.h>
-#include <pedsim_utils/geometry.h>
+#include <pedsim_sensors/obstacle_point_cloud.hpp>
+#include <pedsim_utils/geometry.hpp>
 
 #include <random>
 

@@ -4,7 +4,7 @@
  * @author  	Ronja Gueldenring
  * @date 		2019/04/05
  **/
-#include <arena_plugins/triangle_profile.h>
+#include <arena_plugins/triangle_profile.hpp>
 
 namespace flatland_plugins {
 

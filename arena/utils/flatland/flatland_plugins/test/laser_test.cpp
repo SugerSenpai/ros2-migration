@@ -44,13 +44,13 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_plugins/laser.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/model_plugin.h>
-#include <flatland_server/timekeeper.h>
-#include <flatland_server/world.h>
-#include <gtest/gtest.h>
-#include <sensor_msgs/LaserScan.h>
+#include <flatland_plugins/laser.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <flatland_server/timekeeper.hpp>
+#include <flatland_server/world.hpp>
+#include <gtest/gtest.hpp>
+#include <sensor_msgs/LaserScan.hpp>
 #include <regex>
 
 namespace fs = boost::filesystem;

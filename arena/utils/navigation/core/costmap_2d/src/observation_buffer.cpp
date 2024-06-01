@@ -34,11 +34,11 @@
  *
  * Author: Eitan Marder-Eppstein
  *********************************************************************/
-#include <costmap_2d/observation_buffer.h>
+#include <costmap_2d/observation_buffer.hpp>
 
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-#include <tf2_sensor_msgs/tf2_sensor_msgs.h>
-#include <sensor_msgs/point_cloud2_iterator.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#include <tf2_sensor_msgs/tf2_sensor_msgs.hpp>
+#include <sensor_msgs/point_cloud2_iterator.hpp>
 
 using namespace std;
 using namespace tf2;

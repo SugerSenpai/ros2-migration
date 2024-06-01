@@ -28,7 +28,7 @@
 * \author Billy Okal <okal@cs.uni-freiburg.de>
 */
 
-#include <pedsim_visualizer/sim_visualizer.h>
+#include <pedsim_visualizer/sim_visualizer.hpp>
 
 int main(int argc, char** argv) {
   ros::init(argc, argv, "pedsim_visualizer");

@@ -1,5 +1,5 @@
-#include <arena_plugins/tween2.h>
-#include <pluginlib/class_list_macros.h>
+#include <arena_plugins/tween2.hpp>
+#include <pluginlib/class_list_macros.hpp>
 
 #include <cmath>
 namespace flatland_plugins {

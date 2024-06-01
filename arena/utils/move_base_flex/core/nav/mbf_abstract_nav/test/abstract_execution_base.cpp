@@ -1,5 +1,5 @@
-#include <gtest/gtest.h>
-#include <mbf_abstract_nav/abstract_execution_base.h>
+#include <gtest/gtest.hpp>
+#include <mbf_abstract_nav/abstract_execution_base.hpp>
 
 #include <boost/chrono.hpp>
 

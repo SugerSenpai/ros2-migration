@@ -27,17 +27,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <navfn/navfn.h>
-#include <stdlib.h>
-#include <stdint.h>
+#include <navfn/navfn.hpp>
+#include <stdlib.hpp>
+#include <stdint.hpp>
 
 #ifdef __APPLE__
-# include <netpbm/pgm.h>
+# include <netpbm/pgm.hpp>
 #else
 extern "C" {
-#include <stdio.h>
+#include <stdio.hpp>
 // pgm.h is not very friendly with system headers... need to undef max() and min() afterwards
-#include <pgm.h>
+#include <pgm.hpp>
 #undef max
 #undef min
 }

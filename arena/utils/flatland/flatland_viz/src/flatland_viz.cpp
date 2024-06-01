@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <OgreColourValue.h>
+#include <OgreColourValue.hpp>
 
 #include <QAction>
 #include <QApplication>
@@ -68,7 +68,7 @@
 #include <QUrl>
 
 #include "rclcpp/rclcpp.hpp"
-#include <stdlib.h>
+#include <stdlib.hpp>
 
 #include "rviz/display.hpp"
 #include "rviz/render_panel.hpp"

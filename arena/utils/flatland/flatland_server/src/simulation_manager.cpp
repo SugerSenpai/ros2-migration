@@ -45,16 +45,16 @@
  */
 
 #include "flatland_server/simulation_manager.hpp"
-#include <Box2D/Box2D.h>
-#include <flatland_server/debug_visualization.h>
-#include <flatland_server/layer.h>
-#include <flatland_server/model.h>
-#include <flatland_server/service_manager.h>
-#include <flatland_server/world.h>
+#include <Box2D/Box2D.hpp>
+#include <flatland_server/debug_visualization.hpp>
+#include <flatland_server/layer.hpp>
+#include <flatland_server/model.hpp>
+#include <flatland_server/service_manager.hpp>
+#include <flatland_server/world.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <nav_msgs/OccupancyGrid.h>
-#include <std_msgs/String.h>
-#include <std_srvs/Empty.h>
+#include <nav_msgs/OccupancyGrid.hpp>
+#include <std_msgs/String.hpp>
+#include <std_srvs/Empty.hpp>
 
 #include <exception>
 #include <limits>

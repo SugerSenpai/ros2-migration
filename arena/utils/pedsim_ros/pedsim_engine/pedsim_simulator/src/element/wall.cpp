@@ -29,7 +29,7 @@
 * \author Sven Wehner <mail@svenwehner.de>
 */
 
-#include <pedsim_simulator/element/wall.h>
+#include <pedsim_simulator/element/wall.hpp>
 
 Wall::Wall(double pax, double pay, double pbx, double pby, WallLayer layer)
     : Tobstacle(pax, pay, pbx, pby){

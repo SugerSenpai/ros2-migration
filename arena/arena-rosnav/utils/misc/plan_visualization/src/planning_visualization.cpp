@@ -1,4 +1,4 @@
-#include <plan_visualization/planning_visualization.h>
+#include <plan_visualization/planning_visualization.hpp>
 #include <iostream> // Include for std::cout (used in getColor)
 
 PlanningVisualization::PlanningVisualization(const rclcpp::NodeOptions & options) : Node("planning_visualization", options) {

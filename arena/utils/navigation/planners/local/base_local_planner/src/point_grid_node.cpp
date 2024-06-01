@@ -35,15 +35,15 @@
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
 
-#include <base_local_planner/point_grid.h>
-#include <ros/console.h>
+#include <base_local_planner/point_grid.hpp>
+#include <ros/console.hpp>
 #ifdef HAVE_SYS_TIME_H
-#include <sys/time.h>
+#include <sys/time.hpp>
 #endif
 
-#include <math.h>
+#include <math.hpp>
 #include <cstdio>
-#include <sensor_msgs/point_cloud2_iterator.h>
+#include <sensor_msgs/point_cloud2_iterator.hpp>
 
 using namespace std;
 using namespace costmap_2d;

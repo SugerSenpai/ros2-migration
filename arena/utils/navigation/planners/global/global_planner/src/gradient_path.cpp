@@ -35,10 +35,10 @@
  * Author: Eitan Marder-Eppstein
  *         David V. Lu!!
  *********************************************************************/
-#include <global_planner/gradient_path.h>
+#include <global_planner/gradient_path.hpp>
 #include <algorithm>
-#include <stdio.h>
-#include <global_planner/planner_core.h>
+#include <stdio.hpp>
+#include <global_planner/planner_core.hpp>
 
 namespace global_planner {
 

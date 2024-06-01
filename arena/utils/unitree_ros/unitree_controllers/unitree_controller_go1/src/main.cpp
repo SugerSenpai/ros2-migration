@@ -2,9 +2,9 @@
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
 #include <iostream>
-#include <unistd.h>
+#include <unistd.hpp>
 #include <csignal>
-#include <sched.h>
+#include <sched.hpp>
 
 #include "control/ControlFrame.hpp"
 #include "control/CtrlComponents.hpp"

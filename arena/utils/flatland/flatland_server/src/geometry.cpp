@@ -45,7 +45,7 @@
  */
 
 #include "flatland_server/geometry.hpp"
-#include <Box2D/Box2D.h>
+#include <Box2D/Box2D.hpp>
 #include <cmath>
 
 namespace flatland_server {

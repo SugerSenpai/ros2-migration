@@ -35,9 +35,9 @@
  * Author: TKruse
  *********************************************************************/
 
-#include <base_local_planner/simple_scored_sampling_planner.h>
+#include <base_local_planner/simple_scored_sampling_planner.hpp>
 
-#include <ros/console.h>
+#include <ros/console.hpp>
 
 namespace base_local_planner {
   

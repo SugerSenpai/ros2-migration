@@ -35,11 +35,11 @@
  * Author: TKruse
  *********************************************************************/
 
-#include <base_local_planner/simple_trajectory_generator.h>
+#include <base_local_planner/simple_trajectory_generator.hpp>
 
 #include <cmath>
 
-#include <base_local_planner/velocity_iterator.h>
+#include <base_local_planner/velocity_iterator.hpp>
 
 namespace base_local_planner {
 

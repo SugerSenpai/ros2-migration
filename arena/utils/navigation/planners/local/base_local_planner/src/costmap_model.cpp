@@ -34,9 +34,9 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <base_local_planner/line_iterator.h>
-#include <base_local_planner/costmap_model.h>
-#include <costmap_2d/cost_values.h>
+#include <base_local_planner/line_iterator.hpp>
+#include <base_local_planner/costmap_model.hpp>
+#include <costmap_2d/cost_values.hpp>
 
 using namespace std;
 using namespace costmap_2d;

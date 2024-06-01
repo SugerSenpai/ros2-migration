@@ -1,5 +1,5 @@
 
-#include <pedsim_utils/geometry.h>
+#include <pedsim_utils/geometry.hpp>
 
 namespace pedsim {
 

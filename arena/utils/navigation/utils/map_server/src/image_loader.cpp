@@ -36,14 +36,14 @@
 #include <cstring>
 #include <stdexcept>
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <stdlib.hpp>
+#include <stdio.hpp>
 
 // We use SDL_image to load the image from disk
-#include <SDL/SDL_image.h>
+#include <SDL/SDL_image.hpp>
 
 // Use Bullet's Quaternion object to create one from Euler angles
-#include <LinearMath/btQuaternion.h>
+#include <LinearMath/btQuaternion.hpp>
 
 #include "map_server/image_loader.hpp"
 

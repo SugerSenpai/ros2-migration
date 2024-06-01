@@ -41,8 +41,8 @@
 #include "mbf_costmap_nav/free_pose_search_viz.hpp"
 
 // ros
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-#include <tf2/LinearMath/Quaternion.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#include <tf2/LinearMath/Quaternion.hpp>
 
 namespace mbf_costmap_nav
 {

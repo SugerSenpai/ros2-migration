@@ -44,10 +44,10 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/dummy_model_plugin.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/model_plugin.h>
-#include <pluginlib/class_list_macros.h>
+#include <flatland_server/dummy_model_plugin.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <pluginlib/class_list_macros.hpp>
 
 using namespace flatland_server;
 

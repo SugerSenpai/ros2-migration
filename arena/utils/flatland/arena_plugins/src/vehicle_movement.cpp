@@ -3,14 +3,14 @@
  * @brief	 	The movement of the pedsim agents is as well applied to the flatland models.
  **/
 
-#include <arena_plugins/vehicle_movement.h>
-#include <arena_plugins/triangle_profile.h>
-#include <flatland_server/exceptions.h>
-#include <flatland_server/yaml_reader.h>
-#include <pluginlib/class_list_macros.h>
-#include<bits/stdc++.h>
+#include <arena_plugins/vehicle_movement.hpp>
+#include <arena_plugins/triangle_profile.hpp>
+#include <flatland_server/exceptions.hpp>
+#include <flatland_server/yaml_reader.hpp>
+#include <pluginlib/class_list_macros.hpp>
+#include<bits/stdc++.hpp>
 #include <iostream>
-#include <pwd.h>
+#include <pwd.hpp>
 #include <string>
 using namespace flatland_server;
 

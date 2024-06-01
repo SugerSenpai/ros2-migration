@@ -34,11 +34,11 @@
 *
 * Author: Dave Hershberger
 *********************************************************************/
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <costmap_2d/costmap_2d_ros.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
-#include <tf2_ros/transform_listener.h>
+#include <costmap_2d/costmap_2d_ros.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#include <tf2_ros/transform_listener.hpp>
 
 using namespace costmap_2d;
 

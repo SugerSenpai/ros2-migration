@@ -27,7 +27,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 
 #include "costmap_2d/array_parser.hpp"
 

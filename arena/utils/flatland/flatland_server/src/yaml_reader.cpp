@@ -44,8 +44,8 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/yaml_preprocessor.h>
-#include <flatland_server/yaml_reader.h>
+#include <flatland_server/yaml_preprocessor.hpp>
+#include <flatland_server/yaml_reader.hpp>
 #include <boost/filesystem/path.hpp>
 
 namespace flatland_server {

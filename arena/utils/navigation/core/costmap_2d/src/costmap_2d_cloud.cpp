@@ -26,9 +26,9 @@
  */
 
 #include "rclcpp/rclcpp.hpp"
-#include <sensor_msgs/PointCloud.h>
-#include <costmap_2d/VoxelGrid.h>
-#include <voxel_grid/voxel_grid.h>
+#include <sensor_msgs/PointCloud.hpp>
+#include <costmap_2d/VoxelGrid.hpp>
+#include <voxel_grid/voxel_grid.hpp>
 
 static inline void mapToWorld3D(const unsigned int mx, const unsigned int my, const unsigned int mz,
                                       const double origin_x, const double origin_y, const double origin_z,

@@ -35,7 +35,7 @@
  * Author: TKruse
  *********************************************************************/
 
-#include <base_local_planner/map_grid_cost_function.h>
+#include <base_local_planner/map_grid_cost_function.hpp>
 
 namespace base_local_planner {
 

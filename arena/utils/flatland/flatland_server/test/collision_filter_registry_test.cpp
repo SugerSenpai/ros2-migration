@@ -44,8 +44,8 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/collision_filter_registry.h>
-#include <gtest/gtest.h>
+#include <flatland_server/collision_filter_registry.hpp>
+#include <gtest/gtest.hpp>
 #include <algorithm>
 #include <vector>
 

@@ -31,7 +31,7 @@
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
-#include <base_local_planner/trajectory.h>
+#include <base_local_planner/trajectory.hpp>
 
 namespace base_local_planner {
   Trajectory::Trajectory()

@@ -2,7 +2,7 @@
 #include <Eigen/Eigen>
 #include <cmath>
 #include <iostream>
-#include <mapping/raycast.h>
+#include <mapping/raycast.hpp>
 
 
 int signum(int x) {

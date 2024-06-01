@@ -1,4 +1,4 @@
-#include <flatland_server/interactive_marker_manager.h>
+#include <flatland_server/interactive_marker_manager.hpp>
 
 namespace flatland_server {
 

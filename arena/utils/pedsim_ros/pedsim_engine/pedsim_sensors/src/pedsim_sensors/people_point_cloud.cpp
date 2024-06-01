@@ -28,7 +28,7 @@
 * \author Billy Okal <okal@cs.uni-freiburg.de>
 */
 
-#include <pedsim_sensors/people_point_cloud.h>
+#include <pedsim_sensors/people_point_cloud.hpp>
 
 #include <random>
 

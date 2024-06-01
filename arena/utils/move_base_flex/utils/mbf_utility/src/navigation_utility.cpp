@@ -40,12 +40,12 @@
 
 #include <cmath>
 
-#include <tf/tf.h>
+#include <tf/tf.hpp>
 
-#include <mbf_msgs/MoveBaseResult.h>
-#include <mbf_msgs/GetPathResult.h>
-#include <mbf_msgs/ExePathResult.h>
-#include <mbf_msgs/RecoveryResult.h>
+#include <mbf_msgs/MoveBaseResult.hpp>
+#include <mbf_msgs/GetPathResult.hpp>
+#include <mbf_msgs/ExePathResult.hpp>
+#include <mbf_msgs/RecoveryResult.hpp>
 
 #include "mbf_utility/navigation_utility.hpp"
 

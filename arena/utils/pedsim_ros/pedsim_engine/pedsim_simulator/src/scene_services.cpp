@@ -8,20 +8,20 @@
  * @date 24.3.2021
  **/
 
-#include <pedsim_simulator/element/robot.h>
-#include <pedsim_simulator/element/agent.h>
-#include <pedsim_simulator/element/agentcluster.h>
-#include <pedsim_simulator/element/areawaypoint.h>
-#include <pedsim_simulator/element/wall.h>
-#include <pedsim_simulator/scene_services.h>
-#include <geometry_msgs/Point.h>
-#include <std_srvs/SetBool.h>
-#include <flatland_msgs/SpawnModels.h>
-#include <flatland_msgs/DeleteModels.h>
-// #include <flatland_msgs/RespawnModels.h>
+#include <pedsim_simulator/element/robot.hpp>
+#include <pedsim_simulator/element/agent.hpp>
+#include <pedsim_simulator/element/agentcluster.hpp>
+#include <pedsim_simulator/element/areawaypoint.hpp>
+#include <pedsim_simulator/element/wall.hpp>
+#include <pedsim_simulator/scene_services.hpp>
+#include <geometry_msgs/Point.hpp>
+#include <std_srvs/SetBool.hpp>
+#include <flatland_msgs/SpawnModels.hpp>
+#include <flatland_msgs/DeleteModels.hpp>
+// #include <flatland_msgs/RespawnModels.hpp>
 #include <iostream>
-#include <pedsim_simulator/rng.h>
-#include <ros/package.h>
+#include <pedsim_simulator/rng.hpp>
+#include <ros/package.hpp>
 
 int SceneServices::agents_index_ = 20;
 int SceneServices::static_obstacles_index_ = 1;

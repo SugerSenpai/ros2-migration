@@ -5,15 +5,15 @@
  *      Author: tkruse
  */
 
-#include <gtest/gtest.h>
+#include <gtest/gtest.hpp>
 
 #include <vector>
 
-#include <base_local_planner/footprint_helper.h>
+#include <base_local_planner/footprint_helper.hpp>
 
-#include <base_local_planner/map_grid.h>
-#include <base_local_planner/costmap_model.h>
-#include <costmap_2d/costmap_2d.h>
+#include <base_local_planner/map_grid.hpp>
+#include <base_local_planner/costmap_model.hpp>
+#include <costmap_2d/costmap_2d.hpp>
 
 #include "wavefront_map_accessor.hpp"
 

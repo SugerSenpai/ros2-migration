@@ -44,14 +44,14 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <flatland_server/dummy_world_plugin.h>
-#include <flatland_server/world.h>
-#include <flatland_server/world_plugin.h>
-#include <flatland_server/yaml_reader.h>
-#include <gtest/gtest.h>
-#include <pluginlib/class_loader.h>
+#include <flatland_server/dummy_world_plugin.hpp>
+#include <flatland_server/world.hpp>
+#include <flatland_server/world_plugin.hpp>
+#include <flatland_server/yaml_reader.hpp>
+#include <gtest/gtest.hpp>
+#include <pluginlib/class_loader.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <yaml-cpp/yaml.h>
+#include <yaml-cpp/yaml.hpp>
 
 using namespace flatland_server;
 

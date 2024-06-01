@@ -45,11 +45,11 @@
  */
 
 #include "flatland_server/debug_visualization.hpp"
-#include <Box2D/Box2D.h>
-#include <flatland_server/timekeeper.h>
-#include <gtest/gtest.h>
+#include <Box2D/Box2D.hpp>
+#include <flatland_server/timekeeper.hpp>
+#include <gtest/gtest.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <visualization_msgs/MarkerArray.h>
+#include <visualization_msgs/MarkerArray.hpp>
 #include <cmath>
 
 // Test the bodyToMarkers method on a polygon shape

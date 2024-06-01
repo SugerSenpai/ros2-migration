@@ -29,15 +29,15 @@
 * \author Sven Wehner <mail@svenwehner.de>
 */
 
-#include <pedsim_simulator/agentstatemachine.h>
-#include <pedsim_simulator/config.h>
-#include <pedsim_simulator/element/agent.h>
-#include <pedsim_simulator/element/robot.h>
-#include <pedsim_simulator/element/waypoint.h>
-#include <pedsim_simulator/force/force.h>
-#include <pedsim_simulator/scene.h>
-#include <pedsim_simulator/waypointplanner/waypointplanner.h>
-#include <pedsim_simulator/rng.h>
+#include <pedsim_simulator/agentstatemachine.hpp>
+#include <pedsim_simulator/config.hpp>
+#include <pedsim_simulator/element/agent.hpp>
+#include <pedsim_simulator/element/robot.hpp>
+#include <pedsim_simulator/element/waypoint.hpp>
+#include <pedsim_simulator/force/force.hpp>
+#include <pedsim_simulator/scene.hpp>
+#include <pedsim_simulator/waypointplanner/waypointplanner.hpp>
+#include <pedsim_simulator/rng.hpp>
 #include "rclcpp/rclcpp.hpp"
 
 Agent::Agent() {

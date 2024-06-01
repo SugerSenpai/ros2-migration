@@ -34,8 +34,8 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <voxel_grid/voxel_grid.h>
-#include <gtest/gtest.h>
+#include <voxel_grid/voxel_grid.hpp>
+#include <gtest/gtest.hpp>
 
 TEST(voxel_grid, basicMarkingAndClearing){
   int size_x = 50, size_y = 10, size_z = 16;

@@ -30,7 +30,7 @@
 #include <boost/thread/mutex.hpp>
 
 // Signal handling
-#include <signal.h>
+#include <signal.hpp>
 
 #include "amcl/map/map.hpp"
 #include "amcl/pf/pf.hpp"
@@ -69,12 +69,12 @@
 #include "amcl/AMCLConfig.hpp"
 
 // Allows AMCL to run from bag file
-#include <rosbag/bag.h>
-#include <rosbag/view.h>
+#include <rosbag/bag.hpp>
+#include <rosbag/view.hpp>
 #include <boost/foreach.hpp>
 
 // For monitoring the estimator
-#include <diagnostic_updater/diagnostic_updater.h>
+#include <diagnostic_updater/diagnostic_updater.hpp>
 
 #define NEW_UNIFORM_SAMPLING 1
 

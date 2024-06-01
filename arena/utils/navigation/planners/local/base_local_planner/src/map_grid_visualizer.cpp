@@ -31,12 +31,12 @@
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
-#include <base_local_planner/map_grid_visualizer.h>
-#include <base_local_planner/map_cell.h>
+#include <base_local_planner/map_grid_visualizer.hpp>
+#include <base_local_planner/map_cell.hpp>
 #include <vector>
 
-#include <sensor_msgs/PointCloud2.h>
-#include <sensor_msgs/point_cloud2_iterator.h>
+#include <sensor_msgs/PointCloud2.hpp>
+#include <sensor_msgs/point_cloud2_iterator.hpp>
 
 namespace base_local_planner {
   MapGridVisualizer::MapGridVisualizer() {}

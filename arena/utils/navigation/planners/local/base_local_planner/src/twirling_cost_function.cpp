@@ -5,9 +5,9 @@
  *      Author: Morgan Quigley
  */
 
-#include <base_local_planner/twirling_cost_function.h>
+#include <base_local_planner/twirling_cost_function.hpp>
 
-#include <math.h>
+#include <math.hpp>
 
 namespace base_local_planner {
 

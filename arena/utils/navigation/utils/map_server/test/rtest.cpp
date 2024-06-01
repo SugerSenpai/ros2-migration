@@ -29,14 +29,14 @@
 
 /* Author: Brian Gerkey */
 
-#include <gtest/gtest.h>
-#include <ros/service.h>
+#include <gtest/gtest.hpp>
+#include <ros/service.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <ros/package.h>
-#include <nav_msgs/GetMap.h>
-#include <nav_msgs/OccupancyGrid.h>
-#include <nav_msgs/MapMetaData.h>
-#include <nav_msgs/LoadMap.h>
+#include <ros/package.hpp>
+#include <nav_msgs/GetMap.hpp>
+#include <nav_msgs/OccupancyGrid.hpp>
+#include <nav_msgs/MapMetaData.hpp>
+#include <nav_msgs/LoadMap.hpp>
 
 #include "test_constants.hpp"
 

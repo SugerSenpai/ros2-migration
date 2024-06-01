@@ -28,8 +28,8 @@
  * \author Billy Okal <okal@cs.uni-freiburg.de>
  */
 
-#include <pedsim_visualizer/sim_visualizer.h>
-#include <pedsim_utils/geometry.h>
+#include <pedsim_visualizer/sim_visualizer.hpp>
+#include <pedsim_utils/geometry.hpp>
 
 
 namespace pedsim

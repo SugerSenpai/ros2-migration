@@ -34,8 +34,8 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <base_local_planner/voxel_grid_model.h>
-#include <sensor_msgs/point_cloud2_iterator.h>
+#include <base_local_planner/voxel_grid_model.hpp>
+#include <sensor_msgs/point_cloud2_iterator.hpp>
 
 using namespace std;
 using namespace costmap_2d;

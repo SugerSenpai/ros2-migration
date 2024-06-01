@@ -35,8 +35,8 @@
  * Author: Eitan Marder-Eppstein
  *         David V. Lu!!
  *********************************************************************/
-#include <costmap_2d/semantic_layer.h>
-#include <costmap_2d/costmap_math.h>
+#include <costmap_2d/semantic_layer.hpp>
+#include <costmap_2d/costmap_math.hpp>
 
 #include <pluginlib/class_list_macros.hpp>
 

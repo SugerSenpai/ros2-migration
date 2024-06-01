@@ -34,10 +34,10 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <base_local_planner/goal_functions.h>
-#include <tf2/LinearMath/Matrix3x3.h>
-#include <tf2/utils.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include <base_local_planner/goal_functions.hpp>
+#include <tf2/LinearMath/Matrix3x3.hpp>
+#include <tf2/utils.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #ifdef _MSC_VER
 #define GOAL_ATTRIBUTE_UNUSED
 #else

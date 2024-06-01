@@ -1,16 +1,16 @@
-#include <gtest/gtest.h>
-#include <gmock/gmock.h>
+#include <gtest/gtest.hpp>
+#include <gmock/gmock.hpp>
 #include "rclcpp/rclcpp.hpp"
 
-#include <mbf_abstract_core/abstract_controller.h>
-#include <mbf_abstract_nav/MoveBaseFlexConfig.h>
-#include <mbf_abstract_nav/abstract_controller_execution.h>
+#include <mbf_abstract_core/abstract_controller.hpp>
+#include <mbf_abstract_nav/MoveBaseFlexConfig.hpp>
+#include <mbf_abstract_nav/abstract_controller_execution.hpp>
 
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/TwistStamped.h>
-#include <geometry_msgs/Twist.h>
-#include <tf/transform_datatypes.h>
-#include <geometry_msgs/TransformStamped.h>
+#include <geometry_msgs/PoseStamped.hpp>
+#include <geometry_msgs/TwistStamped.hpp>
+#include <geometry_msgs/Twist.hpp>
+#include <tf/transform_datatypes.hpp>
+#include <geometry_msgs/TransformStamped.hpp>
 
 #include <string>
 #include <vector>

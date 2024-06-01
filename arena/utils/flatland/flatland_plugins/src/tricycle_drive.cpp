@@ -44,14 +44,14 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <Box2D/Box2D.h>
-#include <flatland_plugins/tricycle_drive.h>
-#include <flatland_server/debug_visualization.h>
-#include <flatland_server/model_plugin.h>
-#include <flatland_server/yaml_reader.h>
-#include <pluginlib/class_list_macros.h>
+#include <Box2D/Box2D.hpp>
+#include <flatland_plugins/tricycle_drive.hpp>
+#include <flatland_server/debug_visualization.hpp>
+#include <flatland_server/model_plugin.hpp>
+#include <flatland_server/yaml_reader.hpp>
+#include <pluginlib/class_list_macros.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <tf/tf.h>
+#include <tf/tf.hpp>
 
 namespace flatland_plugins {
 

@@ -1,21 +1,20 @@
 import os
+import re
 
-def replace_include_statements(root_dir):
-    ros_include = '#include <ros/ros.h>'
-    rclcpp_include = '#include "rclcpp/rclcpp.h"'
-    tf_include = '#include <tf/transform_listener.h>'
-    tf2_include = '#include "tf2_ros/transform_listener.h"'
-    
+def replace_header_extension(root_dir):
     for dirpath, _, filenames in os.walk(root_dir):
         for filename in filenames:
             if filename.endswith('.cpp') or filename.endswith('.h'):
                 file_path = os.path.join(dirpath, filename)
                 with open(file_path, 'r') as file:
                     file_content = file.read()
-                
-                # Replace the include statements
-                new_content = file_content.replace(ros_include, rclcpp_include).replace(tf_include, tf2_include)
-                
+
+                # Replace .h" with .hpp" for include statements with quotes
+                new_content = re.sub(r'\.h"', r'.hpp"', file_content)
+
+                # Replace .h> with .hpp> for include statements with angle brackets
+                new_content = re.sub(r'\.h>', r'.hpp>', new_content)
+
                 # Write the new content back to the file if changes were made
                 if new_content != file_content:
                     with open(file_path, 'w') as file:
@@ -23,4 +22,4 @@ def replace_include_statements(root_dir):
                     print(f'Processed file: {file_path}')
 
 # Replace 'your_directory_path' with the path to your directory
-replace_include_statements('arena')
+replace_header_extension('arena')

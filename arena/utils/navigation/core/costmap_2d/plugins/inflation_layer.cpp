@@ -36,9 +36,9 @@
  *         David V. Lu!!
  *********************************************************************/
 #include <algorithm>
-#include <costmap_2d/inflation_layer.h>
-#include <costmap_2d/costmap_math.h>
-#include <costmap_2d/footprint.h>
+#include <costmap_2d/inflation_layer.hpp>
+#include <costmap_2d/costmap_math.hpp>
+#include <costmap_2d/footprint.hpp>
 #include <boost/thread.hpp>
 #include <pluginlib/class_list_macros.hpp>
 

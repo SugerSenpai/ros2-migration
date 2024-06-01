@@ -35,8 +35,8 @@
  * Author: Eitan Marder-Eppstein
  *         David V. Lu!!
  *********************************************************************/
-#include<global_planner/astar.h>
-#include<costmap_2d/cost_values.h>
+#include<global_planner/astar.hpp>
+#include<costmap_2d/cost_values.hpp>
 
 namespace global_planner {
 

@@ -34,14 +34,14 @@
 *
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
-#include <rotate_recovery/rotate_recovery.h>
+#include <rotate_recovery/rotate_recovery.hpp>
 #include <pluginlib/class_list_macros.hpp>
-#include <nav_core/parameter_magic.h>
-#include <tf2/utils.h>
+#include <nav_core/parameter_magic.hpp>
+#include <tf2/utils.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include <geometry_msgs/Twist.h>
-#include <geometry_msgs/Point.h>
-#include <angles/angles.h>
+#include <geometry_msgs/Twist.hpp>
+#include <geometry_msgs/Point.hpp>
+#include <angles/angles.hpp>
 #include <algorithm>
 #include <string>
 

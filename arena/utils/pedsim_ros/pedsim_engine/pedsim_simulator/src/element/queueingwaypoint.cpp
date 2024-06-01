@@ -29,8 +29,8 @@
 * \author Sven Wehner <mail@svenwehner.de>
 */
 
-#include <pedsim/ped_agent.h>
-#include <pedsim_simulator/element/queueingwaypoint.h>
+#include <pedsim/ped_agent.hpp>
+#include <pedsim_simulator/element/queueingwaypoint.hpp>
 
 QueueingWaypoint::QueueingWaypoint(const QString& nameIn,
                                    const Ped::Tvector& positionIn)
