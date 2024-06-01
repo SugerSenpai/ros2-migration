@@ -38,7 +38,7 @@
  *
  */
 
-#include "mbf_abstract_nav/recovery_action.h"
+#include "mbf_abstract_nav/recovery_action.hpp"
 
 namespace mbf_abstract_nav
 {

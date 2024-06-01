@@ -37,7 +37,7 @@
 #ifndef MOVE_SLOW_AND_CLEAR_MOVE_SLOW_AND_CLEAR_H_
 #define MOVE_SLOW_AND_CLEAR_MOVE_SLOW_AND_CLEAR_H_
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <nav_core/recovery_behavior.h>
 #include <costmap_2d/costmap_2d_ros.h>
 #include <boost/thread.hpp>

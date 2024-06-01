@@ -51,7 +51,7 @@
 #else
   // Previous versions still using TF
   #define USE_OLD_TF
-  #include "tf2_ros/transform_listener.h"
+  #include "tf2_ros/transform_listener.hpp"
   typedef boost::shared_ptr<tf::TransformListener> TFPtr;
   typedef tf::TransformListener TF;
   typedef tf::TransformException TFException;

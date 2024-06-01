@@ -38,7 +38,7 @@
  *
  */
 
-#include "nav_core_wrapper/wrapper_local_planner.h"
+#include "nav_core_wrapper/wrapper_local_planner.hpp"
 
 namespace mbf_nav_core_wrapper
 {

@@ -2,7 +2,7 @@
  Copyright (c) 2020, Unitree Robotics.Co.Ltd. All rights reserved.
 ******************************************************************/
 
-#include "unitree_legged_sdk/unitree_legged_sdk.h"
+#include "unitree_legged_sdk/unitree_legged_sdk.hpp"
 #include <math.h>
 #include <iostream>
 #include <stdio.h>

@@ -44,8 +44,8 @@
 #include <mbf_abstract_nav/abstract_planner_execution.h>
 #include <mbf_costmap_core/costmap_planner.h>
 
-#include "mbf_costmap_nav/MoveBaseFlexConfig.h"
-#include "mbf_costmap_nav/costmap_wrapper.h"
+#include "mbf_costmap_nav/MoveBaseFlexConfig.hpp"
+#include "mbf_costmap_nav/costmap_wrapper.hpp"
 
 
 namespace mbf_costmap_nav

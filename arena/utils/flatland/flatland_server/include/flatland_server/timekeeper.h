@@ -47,7 +47,7 @@
 #ifndef FLATLAND_SERVER_TIME_KEEPER_H
 #define FLATLAND_SERVER_TIME_KEEPER_H
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <ros/time.h>
 
 namespace flatland_server {

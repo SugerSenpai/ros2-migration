@@ -39,7 +39,7 @@
 
 #include <nav_msgs/OccupancyGrid.h>
 
-#include "rviz/display.h"
+#include "rviz/display.hpp"
 
 namespace Ogre
 {

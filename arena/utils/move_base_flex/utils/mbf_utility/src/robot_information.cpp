@@ -36,8 +36,8 @@
  *
  */
 
-#include "mbf_utility/robot_information.h"
-#include "mbf_utility/navigation_utility.h"
+#include "mbf_utility/robot_information.hpp"
+#include "mbf_utility/navigation_utility.hpp"
 
 namespace mbf_utility
 {

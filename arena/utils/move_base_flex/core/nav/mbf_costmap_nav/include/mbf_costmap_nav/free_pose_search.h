@@ -41,8 +41,8 @@
 #define SEARCH_HELPER_H_
 
 // mbf
-#include "mbf_costmap_nav/footprint_helper.h"
-#include "mbf_costmap_nav/free_pose_search_viz.h"
+#include "mbf_costmap_nav/footprint_helper.hpp"
+#include "mbf_costmap_nav/free_pose_search_viz.hpp"
 
 // std
 #include <optional>

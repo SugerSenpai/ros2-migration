@@ -6,8 +6,8 @@ Use of this source code is governed by the MPL-2.0 license, see LICENSE.
 #ifndef _UNITREE_LEGGED_LCM_SERVER_
 #define _UNITREE_LEGGED_LCM_SERVER_
 
-#include "comm.h"
-#include "unitree_legged_sdk/unitree_legged_sdk.h"
+#include "comm.hpp"
+#include "unitree_legged_sdk/unitree_legged_sdk.hpp"
 
 namespace UNITREE_LEGGED_SDK
 {

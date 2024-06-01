@@ -1,4 +1,4 @@
-#include "wall.h"
+#include "wall.hpp"
 #include <pedsim_msgs/Obstacle.h>
 
 #ifndef _scene_obstacle_h_

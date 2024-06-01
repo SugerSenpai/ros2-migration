@@ -49,7 +49,7 @@
 
 #include <Box2D/Box2D.h>
 #include <flatland_server/timekeeper.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <yaml-cpp/yaml.h>
 #include <string>
 

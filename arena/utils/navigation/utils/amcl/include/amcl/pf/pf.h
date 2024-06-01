@@ -28,8 +28,8 @@
 #ifndef PF_H
 #define PF_H
 
-#include "pf_vector.h"
-#include "pf_kdtree.h"
+#include "pf_vector.hpp"
+#include "pf_kdtree.hpp"
 
 #ifdef __cplusplus
 extern "C" {

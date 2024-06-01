@@ -33,7 +33,7 @@
 #define _agentstatemachine_h_
 
 #include <QObject>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 // Forward Declarations
 class Agent;

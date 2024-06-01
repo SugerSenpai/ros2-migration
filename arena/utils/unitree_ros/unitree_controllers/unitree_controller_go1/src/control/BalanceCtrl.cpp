@@ -1,9 +1,9 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "control/BalanceCtrl.h"
-#include "common/mathTools.h"
-#include "common/timeMarker.h"
+#include "control/BalanceCtrl.hpp"
+#include "common/mathTools.hpp"
+#include "common/timeMarker.hpp"
 
 BalanceCtrl::BalanceCtrl(double mass, Mat3 Ib, Mat6 S, double alpha, double beta)
             : _mass(mass), _Ib(Ib), _S(S), _alpha(alpha), _beta(beta){

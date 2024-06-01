@@ -2,7 +2,7 @@
 #ifndef INTER_UTIL_H
 #define INTER_UTIL_H
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <string>
 #include <vector>
 #include <std_msgs/String.h>

@@ -4,7 +4,7 @@
 #ifndef FREESTAND_H
 #define FREESTAND_H
 
-#include "FSM/FSMState.h"
+#include "FSM/FSMState.hpp"
 
 class State_FreeStand : public FSMState{
 public:

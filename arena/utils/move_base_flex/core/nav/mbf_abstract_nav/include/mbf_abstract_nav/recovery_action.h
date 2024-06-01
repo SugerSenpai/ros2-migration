@@ -48,7 +48,7 @@
 #include <mbf_utility/robot_information.h>
 
 #include "mbf_abstract_nav/abstract_action_base.hpp"
-#include "mbf_abstract_nav/abstract_recovery_execution.h"
+#include "mbf_abstract_nav/abstract_recovery_execution.hpp"
 
 namespace mbf_abstract_nav
 {

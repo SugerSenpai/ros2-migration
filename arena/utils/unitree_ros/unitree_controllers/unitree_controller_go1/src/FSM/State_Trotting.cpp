@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "FSM/State_Trotting.h"
+#include "FSM/State_Trotting.hpp"
 #include <iomanip>
 
 State_Trotting::State_Trotting(CtrlComponents *ctrlComp)

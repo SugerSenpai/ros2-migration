@@ -29,7 +29,7 @@
 
 #include <gtest/gtest.h>
 
-#include "costmap_2d/array_parser.h"
+#include "costmap_2d/array_parser.hpp"
 
 using namespace costmap_2d;
 

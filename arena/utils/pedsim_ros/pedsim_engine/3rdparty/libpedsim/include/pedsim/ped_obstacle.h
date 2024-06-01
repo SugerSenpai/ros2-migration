@@ -12,7 +12,7 @@
 #define LIBEXPORT
 #endif
 
-#include "ped_vector.h"
+#include "ped_vector.hpp"
 #include <iostream>
 
 namespace Ped {

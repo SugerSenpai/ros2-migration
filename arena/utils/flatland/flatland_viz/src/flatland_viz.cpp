@@ -67,17 +67,17 @@
 #include <QToolButton>
 #include <QUrl>
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <stdlib.h>
 
-#include "rviz/display.h"
-#include "rviz/render_panel.h"
-#include "rviz/view_manager.h"
-#include "rviz/visualization_manager.h"
+#include "rviz/display.hpp"
+#include "rviz/render_panel.hpp"
+#include "rviz/view_manager.hpp"
+#include "rviz/visualization_manager.hpp"
 
-#include "flatland_viz/flatland_window.h"
+#include "flatland_viz/flatland_window.hpp"
 
-#include "flatland_viz/flatland_viz.h"
+#include "flatland_viz/flatland_viz.hpp"
 
 // Constructor.
 FlatlandViz::FlatlandViz(FlatlandWindow* parent) : QWidget((QWidget*)parent) {

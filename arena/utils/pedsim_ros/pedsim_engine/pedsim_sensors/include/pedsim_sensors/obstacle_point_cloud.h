@@ -36,7 +36,7 @@
 #include <queue>
 
 #include <pedsim_msgs/Walls.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <sensor_msgs/PointCloud.h>
 
 namespace pedsim_ros {

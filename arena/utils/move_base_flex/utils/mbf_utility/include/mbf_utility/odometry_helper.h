@@ -39,7 +39,7 @@
 #define ODOMETRY_HELPER_H_
 
 #include <nav_msgs/Odometry.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <boost/thread.hpp>
 #include <geometry_msgs/PoseStamped.h>
 

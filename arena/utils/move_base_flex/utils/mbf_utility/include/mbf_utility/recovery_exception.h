@@ -3,7 +3,7 @@
 
 #include <exception>
 
-#include "mbf_utility/navigation_utility.h"
+#include "mbf_utility/navigation_utility.hpp"
 
 namespace mbf_utility
 {

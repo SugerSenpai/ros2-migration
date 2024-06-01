@@ -50,10 +50,10 @@
 #include <xmlrpcpp/XmlRpc.h>
 #include <angles/angles.h>
 
-#include "mbf_costmap_nav/footprint_helper.h"
-#include "mbf_costmap_nav/costmap_navigation_server.h"
-#include "mbf_costmap_nav/free_pose_search.h"
-#include "mbf_costmap_nav/free_pose_search_viz.h"
+#include "mbf_costmap_nav/footprint_helper.hpp"
+#include "mbf_costmap_nav/costmap_navigation_server.hpp"
+#include "mbf_costmap_nav/free_pose_search.hpp"
+#include "mbf_costmap_nav/free_pose_search_viz.hpp"
 
 namespace mbf_costmap_nav
 {

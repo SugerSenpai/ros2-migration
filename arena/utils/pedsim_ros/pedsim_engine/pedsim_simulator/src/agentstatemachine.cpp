@@ -42,7 +42,7 @@
 #include <pedsim_simulator/waypointplanner/queueingplanner.h>
 #include <pedsim_simulator/waypointplanner/shoppingplanner.h>
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 AgentStateMachine::AgentStateMachine(Agent* agentIn) {
   // initialize values

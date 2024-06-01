@@ -51,7 +51,7 @@
 
 #include <mbf_utility/robot_information.h>
 
-#include "mbf_abstract_nav/MoveBaseFlexConfig.h"
+#include "mbf_abstract_nav/MoveBaseFlexConfig.hpp"
 
 
 namespace mbf_abstract_nav

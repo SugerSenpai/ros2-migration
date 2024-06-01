@@ -3,8 +3,8 @@ Copyright (c) 2018-2019, Unitree Robotics.Co.Ltd. All rights reserved.
 Use of this source code is governed by the MPL-2.0 license, see LICENSE.
 ************************************************************************/
 
-// #include "unitree_legged_control/joint_controller.h"
-#include "joint_controller.h"
+// #include "unitree_legged_control/joint_controller.hpp"
+#include "joint_controller.hpp"
 #include <pluginlib/class_list_macros.h>
 
 // #define rqtTune // use rqt or not

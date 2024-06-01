@@ -5,19 +5,19 @@
 #define FSM_H
 
 // FSM States
-#include "FSM/FSMState.h"
-#include "FSM/State_FixedStand.h"
-#include "FSM/State_Passive.h"
-#include "FSM/State_FreeStand.h"
-#include "FSM/State_Trotting.h"
-#include "FSM/State_BalanceTest.h"
-#include "FSM/State_SwingTest.h"
-#include "FSM/State_StepTest.h"
-#include "FSM/State_Danger.h"
-#include "common/enumClass.h"
-#include "control/CtrlComponents.h"
+#include "FSM/FSMState.hpp"
+#include "FSM/State_FixedStand.hpp"
+#include "FSM/State_Passive.hpp"
+#include "FSM/State_FreeStand.hpp"
+#include "FSM/State_Trotting.hpp"
+#include "FSM/State_BalanceTest.hpp"
+#include "FSM/State_SwingTest.hpp"
+#include "FSM/State_StepTest.hpp"
+#include "FSM/State_Danger.hpp"
+#include "common/enumClass.hpp"
+#include "control/CtrlComponents.hpp"
 #ifdef COMPILE_WITH_MOVE_BASE
-#include "FSM/State_move_base.h"
+#include "FSM/State_move_base.hpp"
 #endif // COMPILE_WITH_MOVE_BASE
 
 struct FSMStateList

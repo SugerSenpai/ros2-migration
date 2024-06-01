@@ -44,11 +44,11 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <signal.h>
 #include <string>
 
-#include "flatland_server/simulation_manager.h"
+#include "flatland_server/simulation_manager.hpp"
 
 /** Global variables */
 flatland_server::SimulationManager *simulation_manager;

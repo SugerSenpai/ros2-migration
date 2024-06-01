@@ -9,7 +9,7 @@
 #ifndef _scene_service_h_
 #define _scene_service_h_
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <pedsim_simulator/scene.h>
 #include <pedsim_simulator/waypointplanner/waypointplanner.h>
 #include <pedsim_srvs/SpawnPeds.h>

@@ -4,8 +4,8 @@
 #ifndef GAITGENERATOR_H
 #define GAITGENERATOR_H
 
-#include "Gait/WaveGenerator.h"
-#include "Gait/FeetEndCal.h"
+#include "Gait/WaveGenerator.hpp"
+#include "Gait/FeetEndCal.hpp"
 
 #ifdef COMPILE_DEBUG
 #include <common/PyPlot.h>

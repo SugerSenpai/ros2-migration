@@ -29,8 +29,8 @@
 #ifndef AMCL_LASER_H
 #define AMCL_LASER_H
 
-#include "amcl_sensor.h"
-#include "../map/map.h"
+#include "amcl_sensor.hpp"
+#include "../map/map.hpp"
 
 namespace amcl
 {

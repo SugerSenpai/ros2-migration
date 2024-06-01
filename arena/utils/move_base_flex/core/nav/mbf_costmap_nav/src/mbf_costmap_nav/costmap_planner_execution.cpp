@@ -40,7 +40,7 @@
 #include <nav_core_wrapper/wrapper_global_planner.h>
 #include <mbf_msgs/GetPathResult.h>
 
-#include "mbf_costmap_nav/costmap_planner_execution.h"
+#include "mbf_costmap_nav/costmap_planner_execution.hpp"
 
 namespace mbf_costmap_nav
 {

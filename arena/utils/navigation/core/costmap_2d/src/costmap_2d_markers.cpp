@@ -36,7 +36,7 @@
  *         David V. Lu!!
  *********************************************************************/
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <visualization_msgs/MarkerArray.h>
 #include <costmap_2d/VoxelGrid.h>
 #include <voxel_grid/voxel_grid.h>

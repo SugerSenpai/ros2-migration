@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "common/unitreeLeg.h"
+#include "common/unitreeLeg.hpp"
 #include <iostream>
 
 

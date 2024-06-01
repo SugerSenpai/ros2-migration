@@ -38,7 +38,7 @@
 #include <iostream>
 #include <base_local_planner/trajectory_inc.h>
 #include <ros/console.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 #include <base_local_planner/map_cell.h>
 #include <costmap_2d/costmap_2d.h>

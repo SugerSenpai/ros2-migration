@@ -30,10 +30,10 @@
 
 #include <rviz/visualization_manager.h>
 #include <rviz/frame_manager.h>
-#include "rviz/selection/selection_manager.h"
+#include "rviz/selection/selection_manager.hpp"
 
 #ifndef Q_MOC_RUN
-#include "social_activities_display.h"
+#include "social_activities_display.hpp"
 
 #include <boost/lexical_cast.hpp>
 #include <boost/tokenizer.hpp>

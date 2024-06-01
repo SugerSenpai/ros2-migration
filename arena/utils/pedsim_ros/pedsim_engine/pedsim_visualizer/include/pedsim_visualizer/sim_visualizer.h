@@ -32,9 +32,9 @@
 #define SIM_VISUALIZER_H
 
 #include <ros/console.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
-#include "tf2_ros/transform_listener.h"
+#include "tf2_ros/transform_listener.hpp"
 #include <functional>
 #include <memory>
 #include <queue>

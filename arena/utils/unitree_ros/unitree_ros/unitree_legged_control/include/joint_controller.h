@@ -18,10 +18,10 @@ Use of this source code is governed by the MPL-2.0 license, see LICENSE.
 #include <realtime_tools/realtime_buffer.h>
 #include <controller_interface/controller.h>
 #include <hardware_interface/joint_command_interface.h>
-#include "unitree_legged_msgs/MotorCmd.h"
-#include "unitree_legged_msgs/MotorState.h"
+#include "unitree_legged_msgs/MotorCmd.hpp"
+#include "unitree_legged_msgs/MotorState.hpp"
 #include <geometry_msgs/WrenchStamped.h>
-#include "unitree_joint_control_tool.h"
+#include "unitree_joint_control_tool.hpp"
 
 #define PMSM      (0x0A)
 #define BRAKE     (0x00)

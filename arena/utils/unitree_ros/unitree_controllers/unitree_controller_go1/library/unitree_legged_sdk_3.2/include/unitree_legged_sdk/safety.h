@@ -6,8 +6,8 @@ Use of this source code is governed by the MPL-2.0 license, see LICENSE.
 #ifndef _UNITREE_LEGGED_SAFETY_H_
 #define _UNITREE_LEGGED_SAFETY_H_
 
-#include "comm.h"
-#include "quadruped.h"
+#include "comm.hpp"
+#include "quadruped.hpp"
 
 namespace UNITREE_LEGGED_SDK 
 {

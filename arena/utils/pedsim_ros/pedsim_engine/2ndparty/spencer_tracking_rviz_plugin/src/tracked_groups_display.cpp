@@ -30,9 +30,9 @@
 
 #include <rviz/visualization_manager.h>
 #include <rviz/frame_manager.h>
-#include "rviz/selection/selection_manager.h"
+#include "rviz/selection/selection_manager.hpp"
 
-#include "tracked_groups_display.h"
+#include "tracked_groups_display.hpp"
 #ifndef Q_MOC_RUN
 #include <boost/lexical_cast.hpp>
 #include <boost/tokenizer.hpp>

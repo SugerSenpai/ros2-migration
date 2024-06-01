@@ -3,10 +3,10 @@
 ***********************************************************************/
 #ifdef COMPILE_WITH_MOVE_BASE
 
-#include "FSM/State_move_base.h"
+#include "FSM/State_move_base.hpp"
 
 #ifdef COMPILE_WITH_ROS
-    #include "ros/ros.h"
+    #include "ros/ros.hpp"
 #endif
 
 State_move_base::State_move_base(CtrlComponents *ctrlComp)

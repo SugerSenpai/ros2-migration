@@ -32,8 +32,8 @@
 #ifndef Q_MOC_RUN
 #include <rviz/visualization_manager.h>
 #include <rviz/frame_manager.h>
-#include "rviz/selection/selection_manager.h"
-#include "tracked_persons_display.h"
+#include "rviz/selection/selection_manager.hpp"
+#include "tracked_persons_display.hpp"
 #include <boost/lexical_cast.hpp>
 #include <boost/tokenizer.hpp>
 #include <boost/foreach.hpp>

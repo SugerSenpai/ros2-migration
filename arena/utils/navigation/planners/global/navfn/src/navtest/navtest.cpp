@@ -14,7 +14,7 @@
 #include <string>
 #include <fstream>
 
-#include "navwin.h"
+#include "navwin.hpp"
 
 using namespace navfn;
 

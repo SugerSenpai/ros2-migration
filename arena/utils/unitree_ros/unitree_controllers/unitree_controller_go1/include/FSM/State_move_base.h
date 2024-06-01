@@ -6,8 +6,8 @@
 #ifndef STATE_MOVE_BASE_H
 #define STATE_MOVE_BASE_H
 
-#include "FSM/State_Trotting.h"
-#include "ros/ros.h"
+#include "FSM/State_Trotting.hpp"
+#include "ros/ros.hpp"
 #include <geometry_msgs/Twist.h>
 
 class State_move_base : public State_Trotting{

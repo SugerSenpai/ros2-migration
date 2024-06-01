@@ -33,7 +33,7 @@
 
 /* Note that these must be changed if the test image changes */
 
-#include "test_constants.h"
+#include "test_constants.hpp"
 
 const unsigned int g_valid_image_width = 10;
 const unsigned int g_valid_image_height = 10;

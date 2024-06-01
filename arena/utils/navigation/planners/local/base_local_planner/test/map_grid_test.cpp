@@ -11,7 +11,7 @@
 #include <base_local_planner/map_grid.h>
 #include <base_local_planner/map_cell.h>
 
-#include "wavefront_map_accessor.h"
+#include "wavefront_map_accessor.hpp"
 
 namespace base_local_planner {
 

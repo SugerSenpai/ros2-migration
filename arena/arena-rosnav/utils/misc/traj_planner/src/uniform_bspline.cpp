@@ -1,4 +1,4 @@
-#include "traj_planner/uniform_bspline.h"
+#include "traj_planner/uniform_bspline.hpp"
 #include "rclcpp/rclcpp.hpp"
 
 

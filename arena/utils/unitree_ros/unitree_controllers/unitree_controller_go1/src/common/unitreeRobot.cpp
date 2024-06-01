@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "common/unitreeRobot.h"
+#include "common/unitreeRobot.hpp"
 #include <iostream>
 
 Vec3 QuadrupedRobot::getX(LowlevelState &state){

@@ -57,7 +57,7 @@
 #include <flatland_server/timekeeper.h>
 #include <flatland_server/world.h>
 #include <gtest/gtest.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <boost/filesystem.hpp>
 #include <iostream>
 #include <regex>

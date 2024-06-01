@@ -42,7 +42,7 @@
 #define MBF_COSTMAP_NAV__WRAPPER_LOCAL_PLANNER_H_
 
 #include <nav_core/base_local_planner.h>
-#include "mbf_costmap_core/costmap_controller.h"
+#include "mbf_costmap_core/costmap_controller.hpp"
 
 #include <mbf_utility/types.h>
 

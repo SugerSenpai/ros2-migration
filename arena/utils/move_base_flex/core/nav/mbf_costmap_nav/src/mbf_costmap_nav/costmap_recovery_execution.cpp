@@ -38,8 +38,8 @@
  *
  */
 #include <nav_core/recovery_behavior.h>
-#include "nav_core_wrapper/wrapper_recovery_behavior.h"
-#include "mbf_costmap_nav/costmap_recovery_execution.h"
+#include "nav_core_wrapper/wrapper_recovery_behavior.hpp"
+#include "mbf_costmap_nav/costmap_recovery_execution.hpp"
 
 namespace mbf_costmap_nav
 {

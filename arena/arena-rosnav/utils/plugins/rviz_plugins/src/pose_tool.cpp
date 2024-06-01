@@ -32,13 +32,13 @@
 #include <OGRE/OgreSceneNode.h>
 #include <OGRE/OgreViewport.h>
 
-#include "rviz/geometry.h"
-#include "rviz/ogre_helpers/arrow.h"
-#include "rviz/viewport_mouse_event.h"
-#include "rviz/load_resource.h"
-#include "rviz/render_panel.h"
+#include "rviz/geometry.hpp"
+#include "rviz/ogre_helpers/arrow.hpp"
+#include "rviz/viewport_mouse_event.hpp"
+#include "rviz/load_resource.hpp"
+#include "rviz/render_panel.hpp"
 
-#include "pose_tool.h"
+#include "pose_tool.hpp"
 
 namespace rviz
 {

@@ -1,4 +1,4 @@
-#include "f_math.h"
+#include "f_math.hpp"
 
 int f_equals(float a, float b, float epsilon)
 {

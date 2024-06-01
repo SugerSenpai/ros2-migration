@@ -31,14 +31,14 @@
 
 #include <gtest/gtest.h>
 #include <ros/service.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <ros/package.h>
 #include <nav_msgs/GetMap.h>
 #include <nav_msgs/OccupancyGrid.h>
 #include <nav_msgs/MapMetaData.h>
 #include <nav_msgs/LoadMap.h>
 
-#include "test_constants.h"
+#include "test_constants.hpp"
 
 int g_argc;
 char** g_argv;

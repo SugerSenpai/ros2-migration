@@ -13,7 +13,7 @@
 #define LIBEXPORT
 #endif
 
-#include "ped_vector.h"
+#include "ped_vector.hpp"
 #include <iostream>
 #include <vector>
 #include <nav_msgs/OccupancyGrid.h>

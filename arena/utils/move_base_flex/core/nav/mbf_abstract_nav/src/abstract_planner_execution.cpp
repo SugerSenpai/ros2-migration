@@ -38,7 +38,7 @@
  *
  */
 
-#include "mbf_abstract_nav/abstract_planner_execution.h"
+#include "mbf_abstract_nav/abstract_planner_execution.hpp"
 
 namespace mbf_abstract_nav
 {

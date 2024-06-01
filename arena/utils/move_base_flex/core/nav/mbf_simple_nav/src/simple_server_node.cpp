@@ -38,7 +38,7 @@
  *
  */
 
-#include "mbf_simple_nav/simple_navigation_server.h"
+#include "mbf_simple_nav/simple_navigation_server.hpp"
 #include <mbf_utility/types.h>
 #include <tf2_ros/transform_listener.h>
 

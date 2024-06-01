@@ -4,11 +4,11 @@
 // Modified by Ronja Gueldenring
 //
 
-#include "ped_agent.h"
-#include "ped_obstacle.h"
-#include "ped_scene.h"
-#include "ped_waypoint.h"
-#include "rclcpp/rclcpp.h"
+#include "ped_agent.hpp"
+#include "ped_obstacle.hpp"
+#include "ped_scene.hpp"
+#include "ped_waypoint.hpp"
+#include "rclcpp/rclcpp.hpp"
 
 #include <algorithm>
 #include <cmath>

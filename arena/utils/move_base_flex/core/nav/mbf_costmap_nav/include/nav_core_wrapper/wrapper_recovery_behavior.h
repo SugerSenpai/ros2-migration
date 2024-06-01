@@ -42,7 +42,7 @@
 #define MBF_COSTMAP_NAV__WRAPPER_RECOVERY_BEHAVIOR_H_
 
 #include <nav_core/recovery_behavior.h>
-#include "mbf_costmap_core/costmap_recovery.h"
+#include "mbf_costmap_core/costmap_recovery.hpp"
 
 #include <mbf_utility/types.h>
 namespace mbf_nav_core_wrapper {

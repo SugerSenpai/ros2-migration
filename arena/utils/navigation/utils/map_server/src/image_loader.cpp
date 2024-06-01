@@ -45,7 +45,7 @@
 // Use Bullet's Quaternion object to create one from Euler angles
 #include <LinearMath/btQuaternion.h>
 
-#include "map_server/image_loader.h"
+#include "map_server/image_loader.hpp"
 
 // compute linear index for given map coords
 #define MAP_IDX(sx, i, j) ((sx) * (j) + (i))

@@ -4,8 +4,8 @@
 #ifndef UNITREELEG_H
 #define UNITREELEG_H
 
-#include "common/mathTypes.h"
-#include "common/enumClass.h"
+#include "common/mathTypes.hpp"
+#include "common/enumClass.hpp"
 
 class QuadrupedLeg{
 public:

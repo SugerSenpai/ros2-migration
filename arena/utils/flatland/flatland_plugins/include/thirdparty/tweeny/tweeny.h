@@ -45,7 +45,7 @@
  *
  * @code
  *
- * #include "tweeny.h"
+ * #include "tweeny.hpp"
  *
  * using tweeny::easing;
  *
@@ -110,9 +110,9 @@
 #ifndef TWEENY_H
 #define TWEENY_H
 
-#include "tween.h"
-#include "tween.h"
-#include "easing.h"
+#include "tween.hpp"
+#include "tween.hpp"
+#include "easing.hpp"
 
 /**
  * @brief The tweeny namespace contains all symbols and names for the Tweeny library.

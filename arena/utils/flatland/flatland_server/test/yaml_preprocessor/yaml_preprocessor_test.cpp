@@ -44,9 +44,9 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "flatland_server/yaml_preprocessor.h"
+#include "flatland_server/yaml_preprocessor.hpp"
 #include <gtest/gtest.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <cmath>
 
 namespace fs = boost::filesystem;

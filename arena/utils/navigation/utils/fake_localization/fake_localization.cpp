@@ -70,7 +70,7 @@
 
  **/
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <ros/time.h>
 
 #include <nav_msgs/Odometry.h>
@@ -79,7 +79,7 @@
 
 #include <angles/angles.h>
 
-#include "ros/console.h"
+#include "ros/console.hpp"
 
 #include <tf2/LinearMath/Transform.h>
 #include <tf2/convert.h>
@@ -88,7 +88,7 @@
 #include <tf2_ros/transform_broadcaster.h>
 #include <tf2_ros/transform_listener.h>
 #include <tf2_ros/message_filter.h>
-#include "message_filters/subscriber.h"
+#include "message_filters/subscriber.hpp"
 
 class FakeOdomNode
 {

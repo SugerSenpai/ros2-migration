@@ -4,12 +4,12 @@
 #ifndef BALANCECTRL_H
 #define BALANCECTRL_H
 
-#include "common/mathTypes.h"
+#include "common/mathTypes.hpp"
 #include "thirdParty/quadProgpp/QuadProg++.hh"
-#include "common/unitreeRobot.h"
+#include "common/unitreeRobot.hpp"
 
 #ifdef COMPILE_DEBUG
-    #include "common/PyPlot.h"
+    #include "common/PyPlot.hpp"
 #endif  // COMPILE_DEBUG
 
 class BalanceCtrl{

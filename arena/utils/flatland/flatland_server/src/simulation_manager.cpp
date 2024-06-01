@@ -44,14 +44,14 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "flatland_server/simulation_manager.h"
+#include "flatland_server/simulation_manager.hpp"
 #include <Box2D/Box2D.h>
 #include <flatland_server/debug_visualization.h>
 #include <flatland_server/layer.h>
 #include <flatland_server/model.h>
 #include <flatland_server/service_manager.h>
 #include <flatland_server/world.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <nav_msgs/OccupancyGrid.h>
 #include <std_msgs/String.h>
 #include <std_srvs/Empty.h>

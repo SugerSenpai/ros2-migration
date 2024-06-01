@@ -2,7 +2,7 @@
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
 #include <iostream>
-#include "FSM/State_FixedStand.h"
+#include "FSM/State_FixedStand.hpp"
 
 State_FixedStand::State_FixedStand(CtrlComponents *ctrlComp)
                 :FSMState(ctrlComp, FSMStateName::FIXEDSTAND, "fixed stand"){}

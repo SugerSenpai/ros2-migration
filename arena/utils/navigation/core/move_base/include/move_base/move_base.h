@@ -40,7 +40,7 @@
 #include <vector>
 #include <string>
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 #include <actionlib/server/simple_action_server.h>
 #include <move_base_msgs/MoveBaseAction.h>
@@ -57,7 +57,7 @@
 #include <std_srvs/Empty.h>
 
 #include <dynamic_reconfigure/server.h>
-#include "move_base/MoveBaseConfig.h"
+#include "move_base/MoveBaseConfig.hpp"
 
 namespace move_base {
   //typedefs to help us out with the action server so that we don't hace to type so much

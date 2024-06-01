@@ -3,8 +3,8 @@
 ***********************************************************************/
 #ifdef COMPILE_WITH_REAL_ROBOT
 
-#include "interface/WirelessHandle.h"
-#include "common/mathTools.h"
+#include "interface/WirelessHandle.hpp"
+#include "common/mathTools.hpp"
 #include <string.h>
 #include <stdio.h>
 

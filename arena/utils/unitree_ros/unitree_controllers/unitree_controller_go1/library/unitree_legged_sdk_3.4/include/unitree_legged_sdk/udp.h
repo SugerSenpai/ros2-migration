@@ -5,8 +5,8 @@
 #ifndef _UNITREE_LEGGED_UDP_H_
 #define _UNITREE_LEGGED_UDP_H_
 
-#include "comm.h"
-#include "unitree_legged_sdk/quadruped.h"
+#include "comm.hpp"
+#include "unitree_legged_sdk/quadruped.hpp"
 #include <pthread.h>
 #include <stdint.h>
 

@@ -38,7 +38,7 @@
  *
  */
 
-#include "nav_core_wrapper/wrapper_global_planner.h"
+#include "nav_core_wrapper/wrapper_global_planner.hpp"
 
 namespace mbf_nav_core_wrapper
 {

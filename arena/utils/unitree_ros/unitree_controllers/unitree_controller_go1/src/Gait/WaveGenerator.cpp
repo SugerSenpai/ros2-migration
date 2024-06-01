@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "Gait/WaveGenerator.h"
+#include "Gait/WaveGenerator.hpp"
 #include <iostream>
 #include <sys/time.h>
 #include <math.h>

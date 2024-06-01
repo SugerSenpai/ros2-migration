@@ -3,7 +3,7 @@
 // Copyright (c) 2003 - 2012 by Christian Gloor
 //
 
-#include "ped_obstacle.h"
+#include "ped_obstacle.hpp"
 
 #include <cmath>
 #include <vector>

@@ -40,7 +40,7 @@
 
 #include <mbf_msgs/ExePathResult.h>
 
-#include "mbf_abstract_nav/abstract_controller_execution.h"
+#include "mbf_abstract_nav/abstract_controller_execution.hpp"
 
 namespace mbf_abstract_nav
 {

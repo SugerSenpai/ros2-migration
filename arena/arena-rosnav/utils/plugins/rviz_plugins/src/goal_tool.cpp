@@ -27,14 +27,14 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "tf2_ros/transform_listener.h"
+#include "tf2_ros/transform_listener.hpp"
 
 #include <geometry_msgs/PoseStamped.h>
 
-#include "rviz/display_context.h"
-#include "rviz/properties/string_property.h"
+#include "rviz/display_context.hpp"
+#include "rviz/properties/string_property.hpp"
 
-#include "goal_tool.h"
+#include "goal_tool.hpp"
 
 namespace rviz
 {

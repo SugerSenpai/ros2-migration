@@ -14,7 +14,7 @@
 #include <unordered_map>
 #include <utility>
 
-#include "mapping/mapping.h"
+#include "mapping/mapping.hpp"
 
 #define IN_CLOSE_SET 'a'
 #define IN_OPEN_SET 'b'

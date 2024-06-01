@@ -7,14 +7,14 @@
 #include <string>
 #include <iostream>
 #include <unistd.h>
-#include "control/CtrlComponents.h"
-#include "message/LowlevelCmd.h"
-#include "message/LowlevelState.h"
-#include "common/enumClass.h"
-#include "common/mathTools.h"
-#include "common/mathTypes.h"
-#include "common/timeMarker.h"
-#include "interface/CmdPanel.h"
+#include "control/CtrlComponents.hpp"
+#include "message/LowlevelCmd.hpp"
+#include "message/LowlevelState.hpp"
+#include "common/enumClass.hpp"
+#include "common/mathTools.hpp"
+#include "common/mathTypes.hpp"
+#include "common/timeMarker.hpp"
+#include "interface/CmdPanel.hpp"
 
 class FSMState{
 public:

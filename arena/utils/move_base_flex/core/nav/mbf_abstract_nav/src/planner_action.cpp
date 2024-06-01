@@ -40,7 +40,7 @@
 
 #include <sstream>
 
-#include "mbf_abstract_nav/planner_action.h"
+#include "mbf_abstract_nav/planner_action.hpp"
 
 namespace mbf_abstract_nav
 {

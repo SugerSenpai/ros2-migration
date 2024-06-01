@@ -4,9 +4,9 @@
 #ifndef CONTROLFRAME_H
 #define CONTROLFRAME_H
 
-#include "FSM/FSM.h"
-#include "control/CtrlComponents.h"
-#include "interface/ROSParams.h"
+#include "FSM/FSM.hpp"
+#include "control/CtrlComponents.hpp"
+#include "interface/ROSParams.hpp"
 
 class ControlFrame{
 public:

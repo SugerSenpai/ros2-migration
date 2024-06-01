@@ -30,10 +30,10 @@
 
 #include <rviz/visualization_manager.h>
 #include <rviz/frame_manager.h>
-#include "rviz/selection/selection_manager.h"
+#include "rviz/selection/selection_manager.hpp"
 
 #ifndef Q_MOC_RUN
-#include "social_relations_display.h"
+#include "social_relations_display.hpp"
 #include <boost/foreach.hpp>
 #endif
 #define foreach BOOST_FOREACH

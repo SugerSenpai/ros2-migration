@@ -45,8 +45,8 @@
 #include <ros/duration.h>
 #include <string>
 
-#include "mbf_utility/odometry_helper.h"
-#include "mbf_utility/types.h"
+#include "mbf_utility/odometry_helper.hpp"
+#include "mbf_utility/types.hpp"
 
 namespace mbf_utility
 {

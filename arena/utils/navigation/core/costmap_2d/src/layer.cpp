@@ -27,7 +27,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "costmap_2d/layer.h"
+#include "costmap_2d/layer.hpp"
 
 namespace costmap_2d
 {

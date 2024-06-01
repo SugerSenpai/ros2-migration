@@ -3,8 +3,8 @@
 // Copyright (c) 2003 - 2012 by Christian Gloor
 //
 
-#include "ped_waypoint.h"
-#include "ped_agent.h"
+#include "ped_waypoint.hpp"
+#include "ped_agent.hpp"
 
 // initialize static variables
 int Ped::Twaypoint::staticid = 0;

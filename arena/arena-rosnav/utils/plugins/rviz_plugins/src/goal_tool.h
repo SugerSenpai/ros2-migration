@@ -33,9 +33,9 @@
 #ifndef Q_MOC_RUN  // See: https://bugreports.qt-project.org/browse/QTBUG-22829
 # include <QObject>
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
-# include "pose_tool.h"
+# include "pose_tool.hpp"
 #endif
 
 namespace rviz

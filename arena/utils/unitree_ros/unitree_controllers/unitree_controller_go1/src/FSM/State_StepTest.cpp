@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "FSM/State_StepTest.h"
+#include "FSM/State_StepTest.hpp"
 
 State_StepTest::State_StepTest(CtrlComponents *ctrlComp)
                   :FSMState(ctrlComp, FSMStateName::STEPTEST, "stepTest"),

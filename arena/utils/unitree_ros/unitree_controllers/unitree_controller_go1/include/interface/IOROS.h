@@ -6,15 +6,15 @@
 #ifndef IOROS_H
 #define IOROS_H
 
-#include "ros/ros.h"
-#include "interface/IOInterface.h"
-#include "unitree_legged_msgs/LowCmd.h"
-#include "unitree_legged_msgs/LowState.h"
-#include "unitree_legged_msgs/MotorCmd.h"
-#include "unitree_legged_msgs/MotorState.h"
+#include "ros/ros.hpp"
+#include "interface/IOInterface.hpp"
+#include "unitree_legged_msgs/LowCmd.hpp"
+#include "unitree_legged_msgs/LowState.hpp"
+#include "unitree_legged_msgs/MotorCmd.hpp"
+#include "unitree_legged_msgs/MotorState.hpp"
 #include <sensor_msgs/Imu.h>
 #include <string>
-#include "interface/ROSParams.h"
+#include "interface/ROSParams.hpp"
 #include <geometry_msgs/Twist.h>
 #include <rosgraph_msgs/Clock.h>
 

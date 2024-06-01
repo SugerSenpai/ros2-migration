@@ -33,7 +33,7 @@
 #include <pedsim_simulator/element/agent.h>
 #include <pedsim_simulator/force/groupcoherenceforce.h>
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 GroupCoherenceForce::GroupCoherenceForce(Agent* agentIn) : Force(agentIn) {
   // initialize values

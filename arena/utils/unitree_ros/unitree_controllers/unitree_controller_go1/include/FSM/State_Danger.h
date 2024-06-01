@@ -5,7 +5,7 @@
 #ifndef STATE_DANGER_H
 #define STATE_DANGER_H
 
-#include "FSM/FSMState.h"
+#include "FSM/FSMState.hpp"
 
 class State_Danger : public FSMState{
 public:

@@ -33,8 +33,8 @@
 
 #ifndef Q_MOC_RUN
 #include <spencer_social_relation_msgs/SocialRelations.h>
-#include "person_display_common.h"
-#include "tracked_persons_cache.h"
+#include "person_display_common.hpp"
+#include "tracked_persons_cache.hpp"
 #endif
 
 namespace spencer_tracking_rviz_plugin

@@ -38,7 +38,7 @@
  *
  */
 
-#include "mbf_costmap_nav/costmap_navigation_server.h"
+#include "mbf_costmap_nav/costmap_navigation_server.hpp"
 #include <signal.h>
 #include <mbf_utility/types.h>
 #include <tf2_ros/transform_listener.h>

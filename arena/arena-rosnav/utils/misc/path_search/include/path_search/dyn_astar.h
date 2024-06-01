@@ -6,7 +6,7 @@
 #include <ros/console.h>
 #include <Eigen/Eigen>
 #include <queue>
-#include "mapping/mapping.h"
+#include "mapping/mapping.hpp"
 
 //constexpr double inf = 1 >> 30;
 #define inf 1 >> 30

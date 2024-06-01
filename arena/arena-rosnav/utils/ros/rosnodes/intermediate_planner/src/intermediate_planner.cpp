@@ -1,4 +1,4 @@
-#include "intermediate_planner/intermediate_planner.h"
+#include "intermediate_planner/intermediate_planner.hpp"
 
 
 void InterPlanner::init(ros::NodeHandle & nh){

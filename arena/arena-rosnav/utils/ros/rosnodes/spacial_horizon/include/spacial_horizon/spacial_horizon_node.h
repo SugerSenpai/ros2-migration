@@ -3,13 +3,13 @@
 
 #include <Eigen/Eigen>
 #include <iostream>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <algorithm>
 #include <vector>
 
 #include <nav_msgs/Odometry.h>
 #include <geometry_msgs/PoseStamped.h>
-#include "geometry_msgs/PoseWithCovarianceStamped.h"
+#include "geometry_msgs/PoseWithCovarianceStamped.hpp"
 #include <nav_msgs/Path.h>
 #include <nav_msgs/GetPlan.h>
 #include <visualization_msgs/MarkerArray.h>

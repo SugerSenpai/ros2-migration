@@ -2,7 +2,7 @@
 #define _agent_pose_stamped_h_
 
 #include <pedsim/ped_vector.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 class AgentPoseStamped {
  public:

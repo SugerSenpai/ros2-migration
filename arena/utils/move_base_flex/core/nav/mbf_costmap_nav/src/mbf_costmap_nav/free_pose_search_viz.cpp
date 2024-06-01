@@ -38,7 +38,7 @@
  */
 
 // mbf
-#include "mbf_costmap_nav/free_pose_search_viz.h"
+#include "mbf_costmap_nav/free_pose_search_viz.hpp"
 
 // ros
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>

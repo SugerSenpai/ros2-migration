@@ -45,7 +45,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "flatland_viz/flatland_window.h"
+#include "flatland_viz/flatland_window.hpp"
 
 #include <QAction>
 #include <QActionGroup>
@@ -60,34 +60,34 @@
 #include <QVBoxLayout>
 #include <QWidget>
 
-#include "rviz/display.h"
-#include "rviz/display_context.h"
-#include "rviz/displays_panel.h"
-#include "rviz/env_config.h"
-#include "rviz/failed_panel.h"
-#include "rviz/help_panel.h"
-#include "rviz/load_resource.h"
-#include "rviz/loading_dialog.h"
-#include "rviz/new_object_dialog.h"
-#include "rviz/panel_dock_widget.h"
-#include "rviz/panel_factory.h"
-#include "rviz/properties/status_property.h"
-#include "rviz/render_panel.h"
-#include "rviz/screenshot_dialog.h"
-#include "rviz/selection/selection_manager.h"
-#include "rviz/selection_panel.h"
-#include "rviz/splash_screen.h"
-#include "rviz/time_panel.h"
-#include "rviz/tool.h"
-#include "rviz/tool_manager.h"
-#include "rviz/tool_properties_panel.h"
-#include "rviz/view_manager.h"
-#include "rviz/views_panel.h"
-#include "rviz/visualization_frame.h"
-#include "rviz/visualization_manager.h"
-#include "rviz/widget_geometry_change_detector.h"
-#include "rviz/yaml_config_reader.h"
-#include "rviz/yaml_config_writer.h"
+#include "rviz/display.hpp"
+#include "rviz/display_context.hpp"
+#include "rviz/displays_panel.hpp"
+#include "rviz/env_config.hpp"
+#include "rviz/failed_panel.hpp"
+#include "rviz/help_panel.hpp"
+#include "rviz/load_resource.hpp"
+#include "rviz/loading_dialog.hpp"
+#include "rviz/new_object_dialog.hpp"
+#include "rviz/panel_dock_widget.hpp"
+#include "rviz/panel_factory.hpp"
+#include "rviz/properties/status_property.hpp"
+#include "rviz/render_panel.hpp"
+#include "rviz/screenshot_dialog.hpp"
+#include "rviz/selection/selection_manager.hpp"
+#include "rviz/selection_panel.hpp"
+#include "rviz/splash_screen.hpp"
+#include "rviz/time_panel.hpp"
+#include "rviz/tool.hpp"
+#include "rviz/tool_manager.hpp"
+#include "rviz/tool_properties_panel.hpp"
+#include "rviz/view_manager.hpp"
+#include "rviz/views_panel.hpp"
+#include "rviz/visualization_frame.hpp"
+#include "rviz/visualization_manager.hpp"
+#include "rviz/widget_geometry_change_detector.hpp"
+#include "rviz/yaml_config_reader.hpp"
+#include "rviz/yaml_config_writer.hpp"
 
 #include <OgreMeshManager.h>
 #include <OgreRenderWindow.h>

@@ -32,7 +32,7 @@
 #define TWEENY_EASINGRESOLVE_H
 
 #include <tuple>
-#include "easing.h"
+#include "easing.hpp"
 
 namespace tweeny {
     namespace detail {

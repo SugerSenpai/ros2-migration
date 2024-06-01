@@ -30,9 +30,9 @@
 
 #include <rviz/visualization_manager.h>
 #include <rviz/frame_manager.h>
-#include "rviz/selection/selection_manager.h"
+#include "rviz/selection/selection_manager.hpp"
 
-#include "detected_persons_display.h"
+#include "detected_persons_display.hpp"
 #ifndef Q_MOC_RUN
 #include <boost/foreach.hpp>
 #endif

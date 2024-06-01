@@ -28,7 +28,7 @@
 #ifndef PF_PDF_H
 #define PF_PDF_H
 
-#include "pf_vector.h"
+#include "pf_vector.hpp"
 
 //#include <gsl/gsl_rng.h>
 //#include <gsl/gsl_randist.h>

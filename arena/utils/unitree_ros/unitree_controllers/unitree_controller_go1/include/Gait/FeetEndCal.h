@@ -4,8 +4,8 @@
 #ifndef FEETENDCAL_H
 #define FEETENDCAL_H
 
-#include "control/CtrlComponents.h"
-#include "message/LowlevelState.h"
+#include "control/CtrlComponents.hpp"
+#include "message/LowlevelState.hpp"
 
 class FeetEndCal{
 public:

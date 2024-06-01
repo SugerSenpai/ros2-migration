@@ -32,7 +32,7 @@
 #include <rviz/selection/selection_manager.h>
 
 #ifndef Q_MOC_RUN
-#include "human_attributes_display.h"
+#include "human_attributes_display.hpp"
 #include <boost/lexical_cast.hpp>
 #include <boost/tokenizer.hpp>
 #include <boost/foreach.hpp>

@@ -29,7 +29,7 @@
 #define PF_KDTREE_H
 
 #ifdef INCLUDE_RTKGUI
-#include "rtk.h"
+#include "rtk.hpp"
 #endif
 
 

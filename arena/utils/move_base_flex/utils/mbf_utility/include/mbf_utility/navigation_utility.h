@@ -49,7 +49,7 @@
 #include <tf2_ros/buffer.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 
-#include "mbf_utility/types.h"
+#include "mbf_utility/types.hpp"
 
 namespace mbf_utility
 {

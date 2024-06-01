@@ -3,7 +3,7 @@
 // 
 
 #include <string.h>
-#include "navwin.h"
+#include "navwin.hpp"
 
 namespace navfn {
 NavWin::NavWin(int w, int h, const char *name)

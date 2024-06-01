@@ -33,7 +33,7 @@
 #include <pedsim_simulator/element/agent.h>
 #include <pedsim_simulator/force/groupgazeforce.h>
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 GroupGazeForce::GroupGazeForce(Agent* agentIn) : Force(agentIn) {
   // initialize values

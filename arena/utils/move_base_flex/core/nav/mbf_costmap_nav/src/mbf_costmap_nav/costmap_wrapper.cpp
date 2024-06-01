@@ -38,7 +38,7 @@
  *
  */
 
-#include "mbf_costmap_nav/costmap_wrapper.h"
+#include "mbf_costmap_nav/costmap_wrapper.hpp"
 
 
 namespace mbf_costmap_nav

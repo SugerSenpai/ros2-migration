@@ -1,4 +1,4 @@
-#include "path_search/dyn_astar.h"
+#include "path_search/dyn_astar.hpp"
 
 using namespace std;
 using namespace Eigen;

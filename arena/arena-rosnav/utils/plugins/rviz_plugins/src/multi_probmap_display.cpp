@@ -35,22 +35,22 @@
 #include <OGRE/OgreSceneNode.h>
 #include <OGRE/OgreTextureManager.h>
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
-#include "tf2_ros/transform_listener.h"
+#include "tf2_ros/transform_listener.hpp"
 
-#include "rviz/frame_manager.h"
-#include "rviz/ogre_helpers/grid.h"
-#include "rviz/properties/float_property.h"
-#include "rviz/properties/int_property.h"
-#include "rviz/properties/property.h"
-#include "rviz/properties/quaternion_property.h"
-#include "rviz/properties/ros_topic_property.h"
-#include "rviz/properties/vector_property.h"
-#include "rviz/validate_floats.h"
-#include "rviz/display_context.h"
+#include "rviz/frame_manager.hpp"
+#include "rviz/ogre_helpers/grid.hpp"
+#include "rviz/properties/float_property.hpp"
+#include "rviz/properties/int_property.hpp"
+#include "rviz/properties/property.hpp"
+#include "rviz/properties/quaternion_property.hpp"
+#include "rviz/properties/ros_topic_property.hpp"
+#include "rviz/properties/vector_property.hpp"
+#include "rviz/validate_floats.hpp"
+#include "rviz/display_context.hpp"
 
-#include "multi_probmap_display.h"
+#include "multi_probmap_display.hpp"
 
 namespace rviz
 {

@@ -33,7 +33,7 @@
 
 #include <string>
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <nav_msgs/Odometry.h>
 #include <geometry_msgs/Pose.h>
 
@@ -41,7 +41,7 @@
 #include <pedsim_msgs/RobotState.h>
 
 #ifndef Q_MOC_RUN
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <QGraphicsRectItem>  // TODO -remove qgraphics dependencies
 #endif
 

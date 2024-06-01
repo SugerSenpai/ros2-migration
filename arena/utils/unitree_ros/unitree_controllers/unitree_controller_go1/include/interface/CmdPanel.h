@@ -4,16 +4,16 @@
 #ifndef CMDPANEL_H
 #define CMDPANEL_H
 
-#include "message/unitree_joystick.h"
-#include "common/enumClass.h"
+#include "message/unitree_joystick.hpp"
+#include "common/enumClass.hpp"
 #include <pthread.h>
 
 #ifdef COMPILE_WITH_REAL_ROBOT
     #ifdef ROBOT_TYPE_A1
-        #include "unitree_legged_sdk/unitree_legged_sdk.h"
+        #include "unitree_legged_sdk/unitree_legged_sdk.hpp"
     #endif  // ROBOT_TYPE_A1
     #ifdef ROBOT_TYPE_Go1
-        #include "unitree_legged_sdk/unitree_legged_sdk.h"
+        #include "unitree_legged_sdk/unitree_legged_sdk.hpp"
     #endif  // ROBOT_TYPE_Go1
 #endif  // COMPILE_WITH_REAL_ROBOT
 

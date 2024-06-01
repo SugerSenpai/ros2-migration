@@ -6,8 +6,8 @@ Use of this source code is governed by the MPL-2.0 license, see LICENSE.
 #ifndef _UNITREE_LEGGED_UDP_H_
 #define _UNITREE_LEGGED_UDP_H_
 
-#include "comm.h"
-#include "unitree_legged_sdk/quadruped.h"
+#include "comm.hpp"
+#include "unitree_legged_sdk/quadruped.hpp"
 #include <pthread.h>
 
 namespace UNITREE_LEGGED_SDK

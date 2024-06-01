@@ -1,4 +1,4 @@
-#include "zVector2d.h"
+#include "zVector2d.hpp"
 
 void zVector2D::normalize()
 {

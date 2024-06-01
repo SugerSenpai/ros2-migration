@@ -11,8 +11,8 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <termios.h>
-#include "interface/CmdPanel.h"
-#include "common/mathTools.h"
+#include "interface/CmdPanel.hpp"
+#include "common/mathTools.hpp"
 
 class KeyBoard : public CmdPanel{
 public:

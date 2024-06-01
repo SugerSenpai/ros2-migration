@@ -1,6 +1,6 @@
 #include <gmock/gmock.h>
 #include <gtest/gtest.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 #include <mbf_abstract_core/abstract_planner.h>
 #include <mbf_abstract_nav/abstract_planner_execution.h>

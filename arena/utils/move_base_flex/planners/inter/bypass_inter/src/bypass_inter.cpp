@@ -1,4 +1,4 @@
-#include "../include/bypass_inter.h"
+#include "../include/bypass_inter.hpp"
 #include <pluginlib/class_list_macros.hpp>
 
 PLUGINLIB_EXPORT_CLASS(bypass_inter::BypassInter, mbf_costmap_core::CostmapInter)

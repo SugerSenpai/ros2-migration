@@ -35,7 +35,7 @@
 #include <tuple>
 #include <array>
 
-#include "tweentraits.h"
+#include "tweentraits.hpp"
 
 namespace tweeny {
     namespace detail {

@@ -29,8 +29,8 @@
 #ifndef AMCL_ODOM_H
 #define AMCL_ODOM_H
 
-#include "amcl_sensor.h"
-#include "../pf/pf_pdf.h"
+#include "amcl_sensor.hpp"
+#include "../pf/pf_pdf.hpp"
 
 namespace amcl
 {

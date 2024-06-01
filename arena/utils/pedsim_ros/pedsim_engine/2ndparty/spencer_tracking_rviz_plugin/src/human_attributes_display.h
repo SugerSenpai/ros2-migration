@@ -36,9 +36,9 @@
 #include <boost/circular_buffer.hpp>
 #include <spencer_human_attribute_msgs/HumanAttributes.h>
 
-#include "person_display_common.h"
-#include "tracked_persons_cache.h"
-#include "visuals/mesh_node.h"
+#include "person_display_common.hpp"
+#include "tracked_persons_cache.hpp"
+#include "visuals/mesh_node.hpp"
 #endif
 
 namespace spencer_tracking_rviz_plugin

@@ -35,7 +35,7 @@
 #include <map>
 #include <boost/circular_buffer.hpp>
 #include <spencer_tracking_msgs/TrackedPersons.h>
-#include "person_display_common.h"
+#include "person_display_common.hpp"
 #endif
 #include <pedsim/types.h>
 

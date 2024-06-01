@@ -29,7 +29,7 @@
 
 #include <gtest/gtest.h>
 
-#include "base_local_planner/line_iterator.h"
+#include "base_local_planner/line_iterator.hpp"
 
 TEST( LineIterator, south )
 {

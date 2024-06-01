@@ -35,7 +35,7 @@
 * Author: Eitan Marder-Eppstein
 *********************************************************************/
 #include <gtest/gtest.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <costmap_2d/costmap_2d_ros.h>
 #include <costmap_2d/cost_values.h>
 #include <tf2_ros/transform_listener.h>

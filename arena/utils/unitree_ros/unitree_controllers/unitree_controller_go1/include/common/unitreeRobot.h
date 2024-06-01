@@ -4,8 +4,8 @@
 #ifndef UNITREEROBOT_H
 #define UNITREEROBOT_H
 
-#include "common/unitreeLeg.h"
-#include "message/LowlevelState.h"
+#include "common/unitreeLeg.hpp"
+#include "message/LowlevelState.hpp"
 
 class QuadrupedRobot{
 public:

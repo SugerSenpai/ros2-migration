@@ -53,7 +53,7 @@
 #include <QMessageBox>
 #include <QVBoxLayout>
 
-#include "flatland_viz/model_dialog.h"
+#include "flatland_viz/model_dialog.hpp"
 
 // Initialize static variables
 QColor ModelDialog::saved_color_;

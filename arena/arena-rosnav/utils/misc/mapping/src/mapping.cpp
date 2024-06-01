@@ -1,4 +1,4 @@
-#include "mapping/mapping.h"
+#include "mapping/mapping.hpp"
 
 /*init*/
 void GridMap::initMap(rclcpp::Node& nh){

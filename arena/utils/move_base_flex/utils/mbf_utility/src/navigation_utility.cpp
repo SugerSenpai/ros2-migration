@@ -47,7 +47,7 @@
 #include <mbf_msgs/ExePathResult.h>
 #include <mbf_msgs/RecoveryResult.h>
 
-#include "mbf_utility/navigation_utility.h"
+#include "mbf_utility/navigation_utility.hpp"
 
 namespace mbf_utility
 {

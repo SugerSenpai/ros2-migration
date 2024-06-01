@@ -4,9 +4,9 @@
 #ifndef TROTTING_H
 #define TROTTING_H
 
-#include "FSM/FSMState.h"
-#include "Gait/GaitGenerator.h"
-#include "control/BalanceCtrl.h"
+#include "FSM/FSMState.hpp"
+#include "Gait/GaitGenerator.hpp"
+#include "control/BalanceCtrl.hpp"
 
 class State_Trotting : public FSMState{
 public:

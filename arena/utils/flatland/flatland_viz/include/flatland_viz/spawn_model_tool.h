@@ -58,9 +58,9 @@
 #include <OgreVector3.h>
 
 #include <flatland_server/yaml_reader.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <rviz/ogre_helpers/billboard_line.h>
-#include "rviz/ogre_helpers/arrow.h"
+#include "rviz/ogre_helpers/arrow.hpp"
 
 namespace flatland_viz {
 /**

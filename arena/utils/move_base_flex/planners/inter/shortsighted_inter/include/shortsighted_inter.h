@@ -1,7 +1,7 @@
 #ifndef SHORTSIGHTED_INTER_H_
 #define SHORTSIGHTED_INTER_H_
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <mbf_costmap_core/costmap_inter.h>
 #include <boost/thread/mutex.hpp>
 

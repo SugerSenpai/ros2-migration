@@ -3,8 +3,8 @@ Copyright (c) 2020, Unitree Robotics.Co.Ltd. All rights reserved.
 Use of this source code is governed by the MPL-2.0 license, see LICENSE.
 ************************************************************************/
 
-#include "unitree_legged_sdk/unitree_legged_sdk.h"
-#include "unitree_legged_sdk/joystick.h"
+#include "unitree_legged_sdk/unitree_legged_sdk.hpp"
+#include "unitree_legged_sdk/joystick.hpp"
 #include <math.h>
 #include <iostream>
 #include <unistd.h>

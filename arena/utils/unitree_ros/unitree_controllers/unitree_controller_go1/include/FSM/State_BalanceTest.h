@@ -4,7 +4,7 @@
 #ifndef BALANCETEST_H
 #define BALANCETEST_H
 
-#include "FSM/FSMState.h"
+#include "FSM/FSMState.hpp"
 
 class State_BalanceTest : public FSMState{
 public:

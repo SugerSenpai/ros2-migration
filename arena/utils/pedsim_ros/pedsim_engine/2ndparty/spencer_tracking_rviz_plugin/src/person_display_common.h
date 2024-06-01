@@ -42,9 +42,9 @@
 
 #include <OGRE/OgreSceneNode.h>
 #include <OGRE/OgreSceneManager.h>
-#include "visuals/person_visual.h"
-#include "visuals/text_node.h"
-#include "visuals/covariance_visual.h"
+#include "visuals/person_visual.hpp"
+#include "visuals/text_node.hpp"
+#include "visuals/covariance_visual.hpp"
 #include <rviz/ogre_helpers/shape.h>
 #include <rviz/properties/bool_property.h>
 #include <rviz/properties/enum_property.h>

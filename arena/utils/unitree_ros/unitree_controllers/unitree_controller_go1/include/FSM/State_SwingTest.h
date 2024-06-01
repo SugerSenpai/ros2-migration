@@ -4,8 +4,8 @@
 #ifndef STATE_SWINGTEST_H
 #define STATE_SWINGTEST_H
 
-#include "FSM/FSMState.h"
-#include "Gait/GaitGenerator.h"
+#include "FSM/FSMState.hpp"
+#include "Gait/GaitGenerator.hpp"
 
 class State_SwingTest : public FSMState{
 public:

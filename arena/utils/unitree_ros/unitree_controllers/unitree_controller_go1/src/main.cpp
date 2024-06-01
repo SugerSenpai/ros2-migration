@@ -6,18 +6,18 @@
 #include <csignal>
 #include <sched.h>
 
-#include "control/ControlFrame.h"
-#include "control/CtrlComponents.h"
-#include "Gait/WaveGenerator.h"
-#include "control/BalanceCtrl.h"
+#include "control/ControlFrame.hpp"
+#include "control/CtrlComponents.hpp"
+#include "Gait/WaveGenerator.hpp"
+#include "control/BalanceCtrl.hpp"
 
 #ifdef COMPILE_WITH_REAL_ROBOT
-#include "interface/IOSDK.h"
+#include "interface/IOSDK.hpp"
 #endif // COMPILE_WITH_REAL_ROBOT
 
 #ifdef COMPILE_WITH_ROS
-#include "interface/KeyBoard.h"
-#include "interface/IOROS.h"
+#include "interface/KeyBoard.hpp"
+#include "interface/IOROS.hpp"
 #endif // COMPILE_WITH_ROS
 
 bool running = true;

@@ -6,7 +6,7 @@ Use of this source code is governed by the MPL-2.0 license, see LICENSE.
 #ifndef _UNITREE_LEGGED_LCM_H_
 #define _UNITREE_LEGGED_LCM_H_
 
-#include "comm.h"
+#include "comm.hpp"
 #include <lcm/lcm-cpp.hpp>
 #include <string.h>
 

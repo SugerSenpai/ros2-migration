@@ -29,11 +29,11 @@
  */
 
 #include <cstdio>
-#include "ros/ros.h"
-#include "ros/console.h"
-#include "nav_msgs/GetMap.h"
-#include "tf2/LinearMath/Matrix3x3.h"
-#include "geometry_msgs/Quaternion.h"
+#include "ros/ros.hpp"
+#include "ros/console.hpp"
+#include "nav_msgs/GetMap.hpp"
+#include "tf2/LinearMath/Matrix3x3.hpp"
+#include "geometry_msgs/Quaternion.hpp"
 
 using namespace std;
 

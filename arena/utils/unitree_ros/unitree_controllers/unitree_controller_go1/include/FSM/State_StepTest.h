@@ -4,7 +4,7 @@
 #ifndef STEPTEST_H
 #define STEPTEST_H
 
-#include "FSM/FSMState.h"
+#include "FSM/FSMState.hpp"
 
 class State_StepTest : public FSMState{
 public:

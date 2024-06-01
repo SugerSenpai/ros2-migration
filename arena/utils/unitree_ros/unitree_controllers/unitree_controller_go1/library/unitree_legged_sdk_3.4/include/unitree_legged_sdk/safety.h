@@ -5,8 +5,8 @@
 #ifndef _UNITREE_LEGGED_SAFETY_H_
 #define _UNITREE_LEGGED_SAFETY_H_
 
-#include "comm.h"
-#include "quadruped.h"
+#include "comm.hpp"
+#include "quadruped.hpp"
 
 namespace UNITREE_LEGGED_SDK 
 {

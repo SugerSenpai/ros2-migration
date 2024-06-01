@@ -15,7 +15,7 @@
 #include <base_local_planner/costmap_model.h>
 #include <costmap_2d/costmap_2d.h>
 
-#include "wavefront_map_accessor.h"
+#include "wavefront_map_accessor.hpp"
 
 namespace base_local_planner {
 

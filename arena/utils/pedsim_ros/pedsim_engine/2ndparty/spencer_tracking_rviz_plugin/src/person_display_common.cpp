@@ -29,7 +29,7 @@
 */
 
 #ifndef Q_MOC_RUN
-#include "person_display_common.h"
+#include "person_display_common.hpp"
 #include <boost/lexical_cast.hpp>
 #include <boost/tokenizer.hpp>
 #include <boost/foreach.hpp>

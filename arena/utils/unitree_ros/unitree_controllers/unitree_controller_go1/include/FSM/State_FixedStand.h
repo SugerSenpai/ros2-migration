@@ -4,7 +4,7 @@
 #ifndef FIXEDSTAND_H
 #define FIXEDSTAND_H
 
-#include "FSM/FSMState.h"
+#include "FSM/FSMState.hpp"
 
 class State_FixedStand : public FSMState{
 public:

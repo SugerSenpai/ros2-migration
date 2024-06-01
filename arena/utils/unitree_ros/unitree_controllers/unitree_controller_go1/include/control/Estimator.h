@@ -5,18 +5,18 @@
 #define ESTIMATOR_H
 
 #include <vector>
-#include "common/unitreeRobot.h"
-#include "common/LowPassFilter.h"
-#include "Gait/WaveGenerator.h"
-#include "message/LowlevelState.h"
+#include "common/unitreeRobot.hpp"
+#include "common/LowPassFilter.hpp"
+#include "Gait/WaveGenerator.hpp"
+#include "message/LowlevelState.hpp"
 #include "string"
 
 #ifdef COMPILE_DEBUG
-    #include "common/PyPlot.h"
+    #include "common/PyPlot.hpp"
 #endif  // COMPILE_DEBUG
 
 #ifdef COMPILE_WITH_MOVE_BASE
-    #include "rclcpp/rclcpp.h"
+    #include "rclcpp/rclcpp.hpp"
     #include <ros/time.h>
     #include <geometry_msgs/TransformStamped.h>
     #include <tf/transform_broadcaster.h>

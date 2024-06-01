@@ -1,5 +1,5 @@
 // inter_util.cpp
-#include "inter_util.h"
+#include "inter_util.hpp"
 #include <vector>
 #include <cmath>
 #include <unordered_map>

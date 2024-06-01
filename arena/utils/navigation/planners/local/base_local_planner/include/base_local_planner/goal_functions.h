@@ -37,7 +37,7 @@
 #ifndef BASE_LOCAL_PLANNER_GOAL_FUNCTIONS_H_
 #define BASE_LOCAL_PLANNER_GOAL_FUNCTIONS_H_
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <nav_msgs/Odometry.h>
 #include <nav_msgs/Path.h>
 #include <geometry_msgs/PoseStamped.h>

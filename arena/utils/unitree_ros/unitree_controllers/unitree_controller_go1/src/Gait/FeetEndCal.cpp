@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "Gait/FeetEndCal.h"
+#include "Gait/FeetEndCal.hpp"
 
 FeetEndCal::FeetEndCal(CtrlComponents *ctrlComp)
            : _est(ctrlComp->estimator), _lowState(ctrlComp->lowState),

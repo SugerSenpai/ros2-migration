@@ -14,7 +14,7 @@
 
 #include <cstddef>
 #include <vector>
-#include "ped_vector.h"
+#include "ped_vector.hpp"
 
 using namespace std;
 

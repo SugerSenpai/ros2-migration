@@ -4,20 +4,20 @@
 #ifndef CTRLCOMPONENTS_H
 #define CTRLCOMPONENTS_H
 
-#include "message/LowlevelCmd.h"
-#include "message/LowlevelState.h"
-#include "interface/IOInterface.h"
-#include "interface/CmdPanel.h"
-#include "common/unitreeRobot.h"
-#include "Gait/WaveGenerator.h"
-#include "control/Estimator.h"
-#include "control/BalanceCtrl.h"
+#include "message/LowlevelCmd.hpp"
+#include "message/LowlevelState.hpp"
+#include "interface/IOInterface.hpp"
+#include "interface/CmdPanel.hpp"
+#include "common/unitreeRobot.hpp"
+#include "Gait/WaveGenerator.hpp"
+#include "control/Estimator.hpp"
+#include "control/BalanceCtrl.hpp"
 #include <string>
 #include <iostream>
-#include "interface/ROSParams.h"
+#include "interface/ROSParams.hpp"
 
 #ifdef COMPILE_DEBUG
-#include "common/PyPlot.h"
+#include "common/PyPlot.hpp"
 #endif  // COMPILE_DEBUG
 
 struct CtrlComponents{

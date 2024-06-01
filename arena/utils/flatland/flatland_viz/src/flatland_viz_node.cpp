@@ -44,10 +44,10 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <signal.h>
 #include <QApplication>
-#include "flatland_viz/flatland_window.h"
+#include "flatland_viz/flatland_window.hpp"
 
 FlatlandWindow* window = nullptr;
 

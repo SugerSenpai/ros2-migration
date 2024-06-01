@@ -35,7 +35,7 @@
 #include <map>
 #include <boost/circular_buffer.hpp>
 #include <spencer_tracking_msgs/DetectedPersons.h>
-#include "person_display_common.h"
+#include "person_display_common.hpp"
 #endif
 
 namespace spencer_tracking_rviz_plugin

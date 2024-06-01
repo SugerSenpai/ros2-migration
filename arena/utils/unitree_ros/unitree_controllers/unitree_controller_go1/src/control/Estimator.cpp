@@ -1,12 +1,12 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "control/Estimator.h"
-#include "common/mathTools.h"
-#include "common/enumClass.h"
+#include "control/Estimator.hpp"
+#include "common/mathTools.hpp"
+#include "common/enumClass.hpp"
 
 #ifdef COMPILE_WITH_SIMULATION
-    #include "ros/ros.h"
+    #include "ros/ros.hpp"
 #endif
 
 Estimator::Estimator(QuadrupedRobot *robotModel, LowlevelState* lowState, 

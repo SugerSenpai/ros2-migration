@@ -52,7 +52,7 @@
 #include <mbf_utility/robot_information.h>
 #include <mbf_utility/navigation_utility.h>
 
-#include "mbf_abstract_nav/abstract_execution_base.h"
+#include "mbf_abstract_nav/abstract_execution_base.hpp"
 
 namespace mbf_abstract_nav
 {

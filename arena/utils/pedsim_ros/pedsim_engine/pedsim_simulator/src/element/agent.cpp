@@ -38,7 +38,7 @@
 #include <pedsim_simulator/scene.h>
 #include <pedsim_simulator/waypointplanner/waypointplanner.h>
 #include <pedsim_simulator/rng.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 Agent::Agent() {
   Ped::Tagent::setType(Ped::Tagent::ADULT);

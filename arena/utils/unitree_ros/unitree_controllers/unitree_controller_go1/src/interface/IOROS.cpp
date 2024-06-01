@@ -4,8 +4,8 @@
 
 #ifdef COMPILE_WITH_ROS
 
-#include "interface/IOROS.h"
-#include "interface/KeyBoard.h"
+#include "interface/IOROS.hpp"
+#include "interface/KeyBoard.hpp"
 #include <iostream>
 #include <unistd.h>
 #include <csignal>

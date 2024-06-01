@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "FSM/State_BalanceTest.h"
+#include "FSM/State_BalanceTest.hpp"
 
 State_BalanceTest::State_BalanceTest(CtrlComponents *ctrlComp)
                   :FSMState(ctrlComp, FSMStateName::BALANCETEST, "balanceTest"),

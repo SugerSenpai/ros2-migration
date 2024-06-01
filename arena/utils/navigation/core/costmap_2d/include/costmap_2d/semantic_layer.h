@@ -38,7 +38,7 @@
 #ifndef COSTMAP_2D_SEMANTIC_LAYER_H_
 #define COSTMAP_2D_SEMANTIC_LAYER_H_
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <costmap_2d/costmap_layer.h>
 #include <costmap_2d/layered_costmap.h>
 

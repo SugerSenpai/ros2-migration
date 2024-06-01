@@ -47,7 +47,7 @@
 #ifndef FLATLAND_VIZ_FLATLAND_VIZ_H
 #define FLATLAND_VIZ_FLATLAND_VIZ_H
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <QAction>
 #include <QActionGroup>
 #include <QList>
@@ -60,13 +60,13 @@
 #include <map>
 #include <set>
 
-#include "flatland_msgs/DebugTopicList.h"
-#include "rviz/config.h"
-#include "rviz/panel.h"
-#include "rviz/properties/property_tree_widget.h"
-#include "rviz/tool.h"
-#include "rviz/tool_manager.h"
-#include "rviz/window_manager_interface.h"
+#include "flatland_msgs/DebugTopicList.hpp"
+#include "rviz/config.hpp"
+#include "rviz/panel.hpp"
+#include "rviz/properties/property_tree_widget.hpp"
+#include "rviz/tool.hpp"
+#include "rviz/tool_manager.hpp"
+#include "rviz/window_manager_interface.hpp"
 
 class QSplashScreen;
 class QAction;

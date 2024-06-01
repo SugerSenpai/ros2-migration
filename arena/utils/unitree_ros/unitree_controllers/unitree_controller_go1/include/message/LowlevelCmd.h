@@ -4,8 +4,8 @@
 #ifndef LOWLEVELCMD_H
 #define LOWLEVELCMD_H
 
-#include "common/mathTypes.h"
-#include "common/mathTools.h"
+#include "common/mathTypes.hpp"
+#include "common/mathTools.hpp"
 
 struct MotorCmd{
     unsigned int mode;

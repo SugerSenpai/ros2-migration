@@ -32,41 +32,41 @@
 // Signal handling
 #include <signal.h>
 
-#include "amcl/map/map.h"
-#include "amcl/pf/pf.h"
-#include "amcl/sensors/amcl_odom.h"
-#include "amcl/sensors/amcl_laser.h"
+#include "amcl/map/map.hpp"
+#include "amcl/pf/pf.hpp"
+#include "amcl/sensors/amcl_odom.hpp"
+#include "amcl/sensors/amcl_laser.hpp"
 #include "portable_utils.hpp"
 
-#include "ros/assert.h"
+#include "ros/assert.hpp"
 
 // roscpp
-#include "ros/ros.h"
+#include "ros/ros.hpp"
 
 // Messages that I need
-#include "sensor_msgs/LaserScan.h"
-#include "geometry_msgs/PoseWithCovarianceStamped.h"
-#include "geometry_msgs/PoseArray.h"
-#include "geometry_msgs/Pose.h"
-#include "geometry_msgs/PoseStamped.h"
-#include "nav_msgs/GetMap.h"
-#include "nav_msgs/SetMap.h"
-#include "std_srvs/Empty.h"
+#include "sensor_msgs/LaserScan.hpp"
+#include "geometry_msgs/PoseWithCovarianceStamped.hpp"
+#include "geometry_msgs/PoseArray.hpp"
+#include "geometry_msgs/Pose.hpp"
+#include "geometry_msgs/PoseStamped.hpp"
+#include "nav_msgs/GetMap.hpp"
+#include "nav_msgs/SetMap.hpp"
+#include "std_srvs/Empty.hpp"
 
 // For transform support
-#include "tf2/LinearMath/Transform.h"
-#include "tf2/convert.h"
-#include "tf2/utils.h"
-#include "tf2_geometry_msgs/tf2_geometry_msgs.h"
-#include "tf2_ros/buffer.h"
-#include "tf2_ros/message_filter.h"
-#include "tf2_ros/transform_broadcaster.h"
-#include "tf2_ros/transform_listener.h"
-#include "message_filters/subscriber.h"
+#include "tf2/LinearMath/Transform.hpp"
+#include "tf2/convert.hpp"
+#include "tf2/utils.hpp"
+#include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
+#include "tf2_ros/buffer.hpp"
+#include "tf2_ros/message_filter.hpp"
+#include "tf2_ros/transform_broadcaster.hpp"
+#include "tf2_ros/transform_listener.hpp"
+#include "message_filters/subscriber.hpp"
 
 // Dynamic_reconfigure
-#include "dynamic_reconfigure/server.h"
-#include "amcl/AMCLConfig.h"
+#include "dynamic_reconfigure/server.hpp"
+#include "amcl/AMCLConfig.hpp"
 
 // Allows AMCL to run from bag file
 #include <rosbag/bag.h>

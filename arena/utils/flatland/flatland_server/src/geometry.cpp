@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "flatland_server/geometry.h"
+#include "flatland_server/geometry.hpp"
 #include <Box2D/Box2D.h>
 #include <cmath>
 

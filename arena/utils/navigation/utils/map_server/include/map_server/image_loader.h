@@ -33,7 +33,7 @@
  * Author: Brian Gerkey
  */
 
-#include "nav_msgs/GetMap.h"
+#include "nav_msgs/GetMap.hpp"
 
 /** Map mode
  *  Default: TRINARY -

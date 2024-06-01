@@ -37,15 +37,15 @@
  *********************************************************************/
 #ifndef COSTMAP_2D_COSTMAP_2D_PUBLISHER_H_
 #define COSTMAP_2D_COSTMAP_2D_PUBLISHER_H_
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <costmap_2d/layered_costmap.h>
 #include <nav_msgs/OccupancyGrid.h>
 #include <map_msgs/OccupancyGridUpdate.h>
 
 #include <costmap_2d/GetDump.h>
 
-#include "costmap_2d/obstacle_layer.h"
-#include "costmap_2d/semantic_layer.h"
+#include "costmap_2d/obstacle_layer.hpp"
+#include "costmap_2d/semantic_layer.hpp"
 
 namespace costmap_2d
 {

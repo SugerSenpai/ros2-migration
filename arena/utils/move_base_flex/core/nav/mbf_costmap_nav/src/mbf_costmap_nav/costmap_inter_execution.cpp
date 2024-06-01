@@ -39,7 +39,7 @@
  */
 #include <mbf_msgs/GetInterPathResult.h>
 
-#include "mbf_costmap_nav/costmap_inter_execution.h"
+#include "mbf_costmap_nav/costmap_inter_execution.hpp"
 
 namespace mbf_costmap_nav
 {

@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "FSM/State_FreeStand.h"
+#include "FSM/State_FreeStand.hpp"
 
 State_FreeStand::State_FreeStand(CtrlComponents *ctrlComp)
              :FSMState(ctrlComp, FSMStateName::FREESTAND, "free stand"){

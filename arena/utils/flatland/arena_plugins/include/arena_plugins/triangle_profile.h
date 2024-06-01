@@ -5,7 +5,7 @@
  * @date 		2019/04/05
  **/
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <arena_plugins/walking_profile.h>
 
 

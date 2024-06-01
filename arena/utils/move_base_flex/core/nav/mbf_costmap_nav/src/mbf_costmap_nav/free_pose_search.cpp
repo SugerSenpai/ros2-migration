@@ -38,7 +38,7 @@
  */
 
 // mbf_costmap_nav
-#include "mbf_costmap_nav/free_pose_search.h"
+#include "mbf_costmap_nav/free_pose_search.hpp"
 
 // std
 #include <queue>

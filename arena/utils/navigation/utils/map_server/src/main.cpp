@@ -40,12 +40,12 @@
 #include <fstream>
 #include <boost/filesystem.hpp>
 
-#include "ros/ros.h"
-#include "ros/console.h"
-#include "map_server/image_loader.h"
-#include "nav_msgs/MapMetaData.h"
-#include "nav_msgs/LoadMap.h"
-#include "yaml-cpp/yaml.h"
+#include "ros/ros.hpp"
+#include "ros/console.hpp"
+#include "map_server/image_loader.hpp"
+#include "nav_msgs/MapMetaData.hpp"
+#include "nav_msgs/LoadMap.hpp"
+#include "yaml-cpp/yaml.hpp"
 
 #ifdef HAVE_YAMLCPP_GT_0_5_0
 // The >> operator disappeared in yaml-cpp 0.5, so this function is

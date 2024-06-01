@@ -38,7 +38,7 @@
  *         David V. Lu!!
  *********************************************************************/
 #define POT_HIGH 1.0e10        // unassigned cell potential
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <costmap_2d/costmap_2d.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/Point.h>

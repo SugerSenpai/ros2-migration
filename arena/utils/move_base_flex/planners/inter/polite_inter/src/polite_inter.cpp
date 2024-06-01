@@ -1,5 +1,5 @@
-#include "../include/polite_inter.h"
-#include "../../inter_util/include/inter_util.h"
+#include "../include/polite_inter.hpp"
+#include "../../inter_util/include/inter_util.hpp"
 
 #include <thread>
 #include <std_msgs/Int32.h>
@@ -7,7 +7,7 @@
 #include <pluginlib/class_list_macros.hpp>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <tf2/LinearMath/Quaternion.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <ros/master.h>
 #include <geometry_msgs/Point32.h>
 #include <sensor_msgs/point_cloud2_iterator.h>

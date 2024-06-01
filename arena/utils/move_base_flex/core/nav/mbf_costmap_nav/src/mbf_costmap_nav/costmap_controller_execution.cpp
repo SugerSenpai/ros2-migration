@@ -37,7 +37,7 @@
  *    Jorge Santos Simón <santos@magazino.eu>
  *
  */
-#include "mbf_costmap_nav/costmap_controller_execution.h"
+#include "mbf_costmap_nav/costmap_controller_execution.hpp"
 
 namespace mbf_costmap_nav
 {

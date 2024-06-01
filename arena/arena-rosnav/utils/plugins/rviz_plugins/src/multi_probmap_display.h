@@ -40,7 +40,7 @@
 #include <nav_msgs/OccupancyGrid.h>
 #include <multi_map_server/MultiOccupancyGrid.h>
 
-#include "rviz/display.h"
+#include "rviz/display.hpp"
 
 namespace Ogre
 {

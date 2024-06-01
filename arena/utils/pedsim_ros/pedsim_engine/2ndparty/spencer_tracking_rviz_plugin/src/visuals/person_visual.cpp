@@ -45,7 +45,7 @@
 #include <OgreTechnique.h>
 #include <OgreAnimation.h>
 
-#include "person_visual.h"
+#include "person_visual.hpp"
 
 
 namespace fs = boost::filesystem;

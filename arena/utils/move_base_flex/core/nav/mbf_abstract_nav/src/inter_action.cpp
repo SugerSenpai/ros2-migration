@@ -40,7 +40,7 @@
 
 #include <sstream>
 
-#include "mbf_abstract_nav/inter_action.h"
+#include "mbf_abstract_nav/inter_action.hpp"
 
 namespace mbf_abstract_nav
 {

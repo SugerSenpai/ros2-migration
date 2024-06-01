@@ -8,9 +8,9 @@ Created on Mon Dec  2
 #include <gazebo/physics/physics.hh>
 #include <gazebo/util/system.hh>
 
-#include "rclcpp/rclcpp.h"
-#include "ros/callback_queue.h"
-#include "ros/subscribe_options.h"
+#include "rclcpp/rclcpp.hpp"
+#include "ros/callback_queue.hpp"
+#include "ros/subscribe_options.hpp"
 #include <thread>
 
 #include<pedsim_msgs/TrackedPersons.h>

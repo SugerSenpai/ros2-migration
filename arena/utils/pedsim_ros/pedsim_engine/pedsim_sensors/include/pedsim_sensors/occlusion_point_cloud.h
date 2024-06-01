@@ -37,7 +37,7 @@
 
 #include <pedsim_msgs/Walls.h>
 #include <pedsim_msgs/AgentStates.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <sensor_msgs/PointCloud.h>
 #include <sensor_msgs/PointCloud2.h>
 #include <sensor_msgs/point_cloud_conversion.h>

@@ -44,11 +44,11 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "flatland_server/debug_visualization.h"
+#include "flatland_server/debug_visualization.hpp"
 #include <Box2D/Box2D.h>
 #include <flatland_server/timekeeper.h>
 #include <gtest/gtest.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <visualization_msgs/MarkerArray.h>
 #include <cmath>
 

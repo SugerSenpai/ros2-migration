@@ -42,7 +42,7 @@
 #define MBF_COSTMAP_NAV__WRAPPER_GLOBAL_PLANNER_H_
 
 #include <nav_core/base_global_planner.h>
-#include "mbf_costmap_core/costmap_planner.h"
+#include "mbf_costmap_core/costmap_planner.hpp"
 
 namespace mbf_nav_core_wrapper {
   /**

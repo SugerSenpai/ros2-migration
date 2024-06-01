@@ -3,16 +3,16 @@
 // Copyright (c) 2003 - 2012 by Christian Gloor
 //
 
-#include "ped_scene.h"
-#include "ped_agent.h"
-#include "ped_obstacle.h"
-#include "ped_tree.h"
-#include "ped_waypoint.h"
+#include "ped_scene.hpp"
+#include "ped_agent.hpp"
+#include "ped_obstacle.hpp"
+#include "ped_tree.hpp"
+#include "ped_waypoint.hpp"
 
 #include <algorithm>
 #include <cstddef>
 #include <stack>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 using namespace std;
 

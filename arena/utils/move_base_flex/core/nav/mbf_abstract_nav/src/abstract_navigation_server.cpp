@@ -40,7 +40,7 @@
 
 #include <nav_msgs/Path.h>
 
-#include "mbf_abstract_nav/abstract_navigation_server.h"
+#include "mbf_abstract_nav/abstract_navigation_server.hpp"
 
 namespace mbf_abstract_nav
 {

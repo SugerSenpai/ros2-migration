@@ -4,13 +4,13 @@
 #ifndef WAVEGENERATOR_H
 #define WAVEGENERATOR_H
 
-#include "common/mathTypes.h"
-#include "common/timeMarker.h"
-#include "common/enumClass.h"
+#include "common/mathTypes.hpp"
+#include "common/timeMarker.hpp"
+#include "common/enumClass.hpp"
 #include <unistd.h>
 
 #ifdef COMPILE_DEBUG
-#include "common/PyPlot.h"
+#include "common/PyPlot.hpp"
 #endif  // COMPILE_DEBUG
 
 /*generate linear wave, [0, 1]*/

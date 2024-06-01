@@ -49,14 +49,14 @@
 
 #include <Box2D/Box2D.h>
 #include <flatland_msgs/DebugTopicList.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <visualization_msgs/MarkerArray.h>
 #include <map>
 #include <string>
 #include <vector>
 
-#include "flatland_server/body.h"
-#include "flatland_server/timekeeper.h"
+#include "flatland_server/body.hpp"
+#include "flatland_server/timekeeper.hpp"
 
 namespace flatland_server {
 struct DebugTopic {

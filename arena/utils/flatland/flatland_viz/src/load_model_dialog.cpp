@@ -72,10 +72,10 @@
 
 #include <boost/filesystem.hpp>
 
-#include "flatland_viz/load_model_dialog.h"
-#include "flatland_viz/spawn_model_tool.h"
-// #include "load_model_dialog.h"
-// #include "spawn_model_tool.h"
+#include "flatland_viz/load_model_dialog.hpp"
+#include "flatland_viz/spawn_model_tool.hpp"
+// #include "load_model_dialog.hpp"
+// #include "spawn_model_tool.hpp"
 
 QString LoadModelDialog::path_to_model_file;
 int LoadModelDialog::count;

@@ -44,8 +44,8 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "flatland_server/yaml_preprocessor.h"
-#include "rclcpp/rclcpp.h"
+#include "flatland_server/yaml_preprocessor.hpp"
+#include "rclcpp/rclcpp.hpp"
 #include <boost/algorithm/string/trim.hpp>
 #include <boost/lexical_cast.hpp>
 

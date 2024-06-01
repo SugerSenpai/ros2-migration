@@ -1,4 +1,4 @@
-#include "../include/shortsighted_inter.h"
+#include "../include/shortsighted_inter.hpp"
 #include <pluginlib/class_list_macros.hpp>
 
 PLUGINLIB_EXPORT_CLASS(shortsighted_inter::ShortsightedInter, mbf_costmap_core::CostmapInter)

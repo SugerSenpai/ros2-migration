@@ -31,8 +31,8 @@
 
 #include <stdexcept> // for std::runtime_error
 #include <gtest/gtest.h>
-#include "map_server/image_loader.h"
-#include "test_constants.h"
+#include "map_server/image_loader.hpp"
+#include "test_constants.hpp"
 
 /* Try to load a valid PNG file.  Succeeds if no exception is thrown, and if
  * the loaded image matches the known dimensions and content of the file.

@@ -28,7 +28,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-#include "amcl/sensors/amcl_sensor.h"
+#include "amcl/sensors/amcl_sensor.hpp"
 
 using namespace amcl;
 

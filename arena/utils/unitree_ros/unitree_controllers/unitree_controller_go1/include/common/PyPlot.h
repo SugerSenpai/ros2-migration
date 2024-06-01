@@ -10,8 +10,8 @@
 #include <string>
 #include <eigen3/Eigen/Dense>
 #include <iostream>
-#include "thirdParty/matplotlibcpp.h"
-#include "common/timeMarker.h"
+#include "thirdParty/matplotlibcpp.hpp"
+#include "common/timeMarker.hpp"
 
 namespace plt = matplotlibcpp;
 

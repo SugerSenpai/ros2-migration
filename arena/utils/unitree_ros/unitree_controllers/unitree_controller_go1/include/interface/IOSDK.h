@@ -4,11 +4,11 @@
 #ifndef IOSDK_H
 #define IOSDK_H
 
-#include "interface/IOInterface.h"
-#include "unitree_legged_sdk/unitree_legged_sdk.h"
+#include "interface/IOInterface.hpp"
+#include "unitree_legged_sdk/unitree_legged_sdk.hpp"
 
 #ifdef COMPILE_WITH_MOVE_BASE
-    #include "rclcpp/rclcpp.h"
+    #include "rclcpp/rclcpp.hpp"
     #include <ros/time.h>
     #include <sensor_msgs/JointState.h>
 #endif  // COMPILE_WITH_MOVE_BASE

@@ -35,7 +35,7 @@
  * Author: TKruse
  *********************************************************************/
 
-#include "mbf_costmap_nav/footprint_helper.h"
+#include "mbf_costmap_nav/footprint_helper.hpp"
 
 namespace mbf_costmap_nav
 {

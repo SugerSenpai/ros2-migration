@@ -38,7 +38,7 @@
  *
  */
 
-#include "mbf_simple_nav/simple_navigation_server.h"
+#include "mbf_simple_nav/simple_navigation_server.hpp"
 
 namespace mbf_simple_nav
 {

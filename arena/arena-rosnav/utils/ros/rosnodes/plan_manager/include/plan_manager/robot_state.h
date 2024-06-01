@@ -8,7 +8,7 @@
 #include <tf2/LinearMath/Matrix3x3.h>
 #include <tf2/LinearMath/Quaternion.h>
 #include <geometry_msgs/Quaternion.h>
-#include "tf/transform_datatypes.h"
+#include "tf/transform_datatypes.hpp"
 
 #include <plan_msgs/RobotStateStamped.h>
 #include <plan_msgs/RobotState.h>

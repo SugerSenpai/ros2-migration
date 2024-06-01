@@ -1,4 +1,4 @@
-#include "traj_planner/bspline_optimizer_esdf.h"
+#include "traj_planner/bspline_optimizer_esdf.hpp"
 #include <nlopt.hpp>
 
 

@@ -3,7 +3,7 @@
 // Copyright (c) 2003 - 2012 by Christian Gloor
 //
 
-#include "ped_angle.h"
+#include "ped_angle.hpp"
 
 bool Ped::Tangle::operator==(const Ped::Tangle& otherIn) const {
   return value == otherIn.value;

@@ -34,8 +34,8 @@
 #include <vector>
 #include <functional>
 
-#include "tweentraits.h"
-#include "tweenpoint.h"
+#include "tweentraits.hpp"
+#include "tweenpoint.hpp"
 
 namespace tweeny {
     /**

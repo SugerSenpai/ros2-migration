@@ -4,9 +4,9 @@
 #ifndef IOINTERFACE_H
 #define IOINTERFACE_H
 
-#include "message/LowlevelCmd.h"
-#include "message/LowlevelState.h"
-#include "interface/CmdPanel.h"
+#include "message/LowlevelCmd.hpp"
+#include "message/LowlevelState.hpp"
+#include "interface/CmdPanel.hpp"
 #include <string>
 
 class IOInterface{

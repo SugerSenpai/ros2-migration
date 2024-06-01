@@ -39,7 +39,7 @@
  */
 
 #include <mbf_msgs/RecoveryResult.h>
-#include "nav_core_wrapper/wrapper_recovery_behavior.h"
+#include "nav_core_wrapper/wrapper_recovery_behavior.hpp"
 
 namespace mbf_nav_core_wrapper
 {

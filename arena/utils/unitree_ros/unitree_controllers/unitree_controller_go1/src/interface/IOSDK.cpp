@@ -3,8 +3,8 @@
 ***********************************************************************/
 #ifdef COMPILE_WITH_REAL_ROBOT
 
-#include "interface/IOSDK.h"
-#include "interface/WirelessHandle.h"
+#include "interface/IOSDK.hpp"
+#include "interface/WirelessHandle.hpp"
 #include <stdio.h>
 
 #ifdef ROBOT_TYPE_Go1

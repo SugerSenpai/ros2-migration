@@ -12,11 +12,11 @@
 #define LIBEXPORT
 #endif
 
-#include "types.h"
+#include "types.hpp"
 #include <stdio.h>
 #include <cmath>
 #include <string>
-#include "ped_angle.h"
+#include "ped_angle.hpp"
 
 namespace Ped {
 /// Vector helper class. This is basically a struct with some related functions

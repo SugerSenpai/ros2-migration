@@ -50,7 +50,7 @@
 #include <flatland_server/geometry.h>
 #include <flatland_server/layer.h>
 #include <flatland_server/yaml_reader.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <yaml-cpp/yaml.h>
 #include <boost/algorithm/string/join.hpp>
 #include <boost/filesystem.hpp>

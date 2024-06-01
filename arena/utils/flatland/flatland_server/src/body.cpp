@@ -45,7 +45,7 @@
  */
 
 #include <flatland_server/body.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 namespace flatland_server {
 

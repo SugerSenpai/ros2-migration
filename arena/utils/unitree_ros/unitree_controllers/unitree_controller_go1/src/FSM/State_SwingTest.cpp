@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "FSM/State_SwingTest.h"
+#include "FSM/State_SwingTest.hpp"
 
 State_SwingTest::State_SwingTest(CtrlComponents *ctrlComp)
                 :FSMState(ctrlComp, FSMStateName::SWINGTEST, "swingTest"){

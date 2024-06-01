@@ -2,7 +2,7 @@
 #include <plan_manager/plan_collector.h>
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 
 bool generate_global_plan(ros::ServiceClient global_plan_client){

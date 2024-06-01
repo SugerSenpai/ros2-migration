@@ -1,7 +1,7 @@
 /**********************************************************************
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
-#include "FSM/FSM.h"
+#include "FSM/FSM.hpp"
 #include <iostream>
 
 FSM::FSM(CtrlComponents *ctrlComp)

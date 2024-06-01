@@ -5,10 +5,10 @@
 #define LOWLEVELSTATE_HPP
 
 #include <iostream>
-#include "common/mathTypes.h"
-#include "common/mathTools.h"
-#include "interface/CmdPanel.h"
-#include "common/enumClass.h"
+#include "common/mathTypes.hpp"
+#include "common/mathTools.hpp"
+#include "interface/CmdPanel.hpp"
+#include "common/enumClass.hpp"
 
 struct MotorState
 {

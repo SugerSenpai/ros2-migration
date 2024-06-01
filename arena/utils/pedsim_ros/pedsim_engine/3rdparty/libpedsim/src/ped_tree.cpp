@@ -3,9 +3,9 @@
 // Copyright (c) 2003 - 2004 by Christian Gloor
 //
 
-#include "ped_tree.h"
-#include "ped_agent.h"
-#include "ped_scene.h"
+#include "ped_tree.hpp"
+#include "ped_agent.hpp"
+#include "ped_scene.hpp"
 
 #include <cassert>
 #include <cstddef>

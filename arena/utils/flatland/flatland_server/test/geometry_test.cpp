@@ -44,7 +44,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "flatland_server/geometry.h"
+#include "flatland_server/geometry.hpp"
 #include <gtest/gtest.h>
 #include <cmath>
 

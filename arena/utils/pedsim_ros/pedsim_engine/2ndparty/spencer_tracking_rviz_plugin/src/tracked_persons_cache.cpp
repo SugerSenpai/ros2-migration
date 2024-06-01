@@ -28,7 +28,7 @@
 *  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-#include "tracked_persons_cache.h"
+#include "tracked_persons_cache.hpp"
 
 #ifndef Q_MOC_RUN
 #include <sstream>

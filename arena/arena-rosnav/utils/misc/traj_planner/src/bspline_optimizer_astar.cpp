@@ -1,4 +1,4 @@
-#include "traj_planner/bspline_optimizer_astar.h"
+#include "traj_planner/bspline_optimizer_astar.hpp"
 
 using namespace std;
 

@@ -50,7 +50,7 @@
 #include <flatland_server/model_plugin.h>
 #include <geometry_msgs/TransformStamped.h>
 #include <pluginlib/class_list_macros.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <tf/tf.h>
 
 namespace flatland_plugins {

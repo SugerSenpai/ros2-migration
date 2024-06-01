@@ -46,7 +46,7 @@
 
 #include <flatland_server/exceptions.h>
 #include <flatland_server/joint.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
 namespace flatland_server {
 

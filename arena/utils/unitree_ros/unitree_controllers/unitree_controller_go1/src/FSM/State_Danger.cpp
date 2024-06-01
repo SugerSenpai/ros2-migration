@@ -2,7 +2,7 @@
  Copyright (c) 2020-2023, Unitree Robotics.Co.Ltd. All rights reserved.
 ***********************************************************************/
 
-#include "FSM/State_Danger.h"
+#include "FSM/State_Danger.hpp"
 
 State_Danger::State_Danger(CtrlComponents *ctrlComp)
                 :FSMState(ctrlComp, FSMStateName::DANGER, "danger"){}

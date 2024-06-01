@@ -53,12 +53,12 @@
 #include <nav_core/base_local_planner.h>
 #include <nav_core/recovery_behavior.h>
 
-#include "mbf_costmap_nav/MoveBaseFlexConfig.h"
-#include "mbf_costmap_nav/costmap_planner_execution.h"
-#include "mbf_costmap_nav/costmap_inter_execution.h"
-#include "mbf_costmap_nav/costmap_controller_execution.h"
-#include "mbf_costmap_nav/costmap_recovery_execution.h"
-#include "mbf_costmap_nav/costmap_wrapper.h"
+#include "mbf_costmap_nav/MoveBaseFlexConfig.hpp"
+#include "mbf_costmap_nav/costmap_planner_execution.hpp"
+#include "mbf_costmap_nav/costmap_inter_execution.hpp"
+#include "mbf_costmap_nav/costmap_controller_execution.hpp"
+#include "mbf_costmap_nav/costmap_recovery_execution.hpp"
+#include "mbf_costmap_nav/costmap_wrapper.hpp"
 
 // Change this to std::unordered_map, once we move to C++11.
 #include <boost/unordered_map.hpp>

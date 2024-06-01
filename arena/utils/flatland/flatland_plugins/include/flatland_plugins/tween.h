@@ -53,7 +53,7 @@
 #include <geometry_msgs/Twist.h>
 #include <nav_msgs/Odometry.h>
 #include <std_msgs/Bool.h>
-#include "tweeny.h"
+#include "tweeny.hpp"
 
 #ifndef FLATLAND_PLUGINS_TWEEN_H
 #define FLATLAND_PLUGINS_TWEEN_H

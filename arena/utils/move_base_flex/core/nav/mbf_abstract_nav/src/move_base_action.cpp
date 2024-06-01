@@ -42,8 +42,8 @@
 
 #include <mbf_utility/navigation_utility.h>
 
-#include "mbf_abstract_nav/MoveBaseFlexConfig.h"
-#include "mbf_abstract_nav/move_base_action.h"
+#include "mbf_abstract_nav/MoveBaseFlexConfig.hpp"
+#include "mbf_abstract_nav/move_base_action.hpp"
 
 namespace mbf_abstract_nav
 {

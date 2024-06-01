@@ -50,7 +50,7 @@
 #include <flatland_server/yaml_reader.h>
 #include <gtest/gtest.h>
 #include <pluginlib/class_loader.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <yaml-cpp/yaml.h>
 
 using namespace flatland_server;

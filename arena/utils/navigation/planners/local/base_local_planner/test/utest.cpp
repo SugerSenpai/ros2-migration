@@ -47,7 +47,7 @@
 #include <geometry_msgs/Point.h>
 #include <base_local_planner/Position2DInt.h>
 
-#include "wavefront_map_accessor.h"
+#include "wavefront_map_accessor.hpp"
 
 using namespace std;
 

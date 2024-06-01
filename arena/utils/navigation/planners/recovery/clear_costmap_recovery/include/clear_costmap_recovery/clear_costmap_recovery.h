@@ -38,7 +38,7 @@
 #define CLEAR_COSTMAP_RECOVERY_H_
 #include <nav_core/recovery_behavior.h>
 #include <costmap_2d/costmap_2d_ros.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <costmap_2d/costmap_layer.h>
 
 namespace clear_costmap_recovery{

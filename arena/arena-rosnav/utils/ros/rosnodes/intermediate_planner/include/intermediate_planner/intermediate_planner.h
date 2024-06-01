@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <ros/console.h>
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 #include <string.h>
 
 #include <geometry_msgs/PoseStamped.h>
@@ -12,23 +12,23 @@
 #include <nav_msgs/Path.h>
 
 // mapping
-#include "mapping/mapping.h"
+#include "mapping/mapping.hpp"
 // path search
-#include "path_search/astar.h"
-#include "path_search/kinodynamic_astar.h"
+#include "path_search/astar.hpp"
+#include "path_search/kinodynamic_astar.hpp"
 
 // b-spline
-#include "traj_planner/bspline_optimizer_esdf.h"
+#include "traj_planner/bspline_optimizer_esdf.hpp"
 
-#include "traj_planner/uniform_bspline.h"
-#include "traj_planner/bspline_optimizer_astar.h"
-#include "traj_planner/polynomial_traj.h"
+#include "traj_planner/uniform_bspline.hpp"
+#include "traj_planner/bspline_optimizer_astar.hpp"
+#include "traj_planner/polynomial_traj.hpp"
 
 // plan container
 #include "intermediate_planner/plan_container_mid.hpp"
 
 // visulization
-#include "plan_visualization/planning_visualization.h"
+#include "plan_visualization/planning_visualization.hpp"
 
 // arena plan msg
 #include <plan_msgs/MakeGlobalPlan.h>
