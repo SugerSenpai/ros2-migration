@@ -340,7 +340,7 @@ void GlobalPlanner::publishPlan(const std::vector<geometry_msgs::PoseStamped>& p
         gui_path.poses[i] = path[i];
     }
 
-    plan_pub_.publish(gui_path);
+    plan_pub_->publish(gui_path);
 }
 
 bool GlobalPlanner::getPlanFromPotential(double start_x, double start_y, double goal_x, double goal_y,
@@ -432,7 +432,7 @@ void GlobalPlanner::publishPotential(float* potential)
             }
         }
     }
-    potential_pub_.publish(grid);
+    potential_pub_->publish(grid);
 }
 
 } //end namespace global_planner

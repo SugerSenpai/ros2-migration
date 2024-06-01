@@ -71,7 +71,7 @@ namespace base_local_planner {
       gui_path.poses[i] = path[i];
     }
 
-    pub.publish(gui_path);
+    pub->publish(gui_path);
   }
 
   void prunePlan(const geometry_msgs::PoseStamped& global_pose, std::vector<geometry_msgs::PoseStamped>& plan, std::vector<geometry_msgs::PoseStamped>& global_plan){

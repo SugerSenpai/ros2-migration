@@ -5,3 +5,5 @@ ros-humble-play-motion2-msgs
 ros-humble-gazebo-ros-pkgs
 ros-humble-realtime-tools
 ros-humble-message-generation
+sudo apt install ros-humble-rmw-cyclonedds-cpp
+sudo apt install ros-humble-rosidl-generator-dds-idl

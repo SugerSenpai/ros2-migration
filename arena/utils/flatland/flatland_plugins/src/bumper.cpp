@@ -182,7 +182,7 @@ void Bumper::AfterPhysicsStep(const Timekeeper &timekeeper) {
     collisions.collisions.push_back(collision);
   }
 
-  collisions_publisher_.publish(collisions);
+  collisions_publisher_->publish(collisions);
 }
 
 void Bumper::BeginContact(b2Contact *contact) {

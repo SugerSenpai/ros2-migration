@@ -63,7 +63,7 @@ void Timekeeper::StepTime() {
 void Timekeeper::UpdateRosClock() const {
   rosgraph_msgs::Clock clock;
   clock.clock = time_;
-  clock_pub_.publish(clock);
+  clock_pub_->publish(clock);
 }
 
 void Timekeeper::SetMaxStepSize(double step_size) {

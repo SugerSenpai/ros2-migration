@@ -96,7 +96,7 @@ void FreePoseSearchViz::deleteMarkers()
   marker_array.markers.push_back(marker);
   marker.ns = SOLUTION_NS;
   marker_array.markers.push_back(marker);
-  marker_pub_.publish(marker_array);
+  marker_pub_->publish(marker_array);
 }
 
 void FreePoseSearchViz::addBlocked(const geometry_msgs::Pose2D& pose_2d,
@@ -119,7 +119,7 @@ void FreePoseSearchViz::addSolution(const geometry_msgs::Pose2D& pose_2d,
 
 void FreePoseSearchViz::publish()
 {
-  marker_pub_.publish(marker_array_);
+  marker_pub_->publish(marker_array_);
   ROS_DEBUG("Published %zu markers", marker_array_.markers.size());
   marker_array_.markers.clear();
   marker_id_ = 0;

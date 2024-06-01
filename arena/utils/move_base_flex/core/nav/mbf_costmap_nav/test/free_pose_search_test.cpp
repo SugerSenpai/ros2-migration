@@ -316,7 +316,7 @@ TEST_F(SearchHelperTest, search)
   addObstacle(cm, 5.5, 5.5);
   map.header.stamp = ros::Time::now();
   map.data[cm.getCostmap()->getIndex(5, 5)] = 100;
-  map_pub.publish(map);
+  map_pub->publish(map);
 
   /*
   y/x   0.5  1.5  2.5   3.5   4.5   5.5  6.5   7.5   8.5   9.5
@@ -345,7 +345,7 @@ TEST_F(SearchHelperTest, search)
   addObstacle(cm, 6.5, 4.5);
   map.header.stamp = ros::Time::now();
   map.data[cm.getCostmap()->getIndex(6, 4)] = 100;
-  map_pub.publish(map);
+  map_pub->publish(map);
 
   /*
   y/x   0.5  1.5  2.5   3.5   4.5   5.5  6.5   7.5   8.5   9.5
@@ -371,7 +371,7 @@ TEST_F(SearchHelperTest, search)
   addObstacle(cm, 5.5, 7.5);
   map.header.stamp = ros::Time::now();
   map.data[cm.getCostmap()->getIndex(5, 7)] = 100;
-  map_pub.publish(map);
+  map_pub->publish(map);
 
   /*
   y/x   0.5  1.5  2.5   3.5   4.5   5.5  6.5   7.5   8.5   9.5
@@ -397,7 +397,7 @@ TEST_F(SearchHelperTest, search)
   addObstacle(cm, 3.5, 4.5);
   map.header.stamp = ros::Time::now();
   map.data[cm.getCostmap()->getIndex(3, 4)] = 100;
-  map_pub.publish(map);
+  map_pub->publish(map);
 
   /*
   y/x   0.5  1.5  2.5   3.5   4.5   5.5  6.5   7.5   8.5   9.5
@@ -564,7 +564,7 @@ TEST_F(SearchHelperTest, goal_not_centered)
 
   printMap(*(cm.getCostmap()));
   map.header.stamp = ros::Time::now();
-  map_pub.publish(map);
+  map_pub->publish(map);
 
   /*
   y/x   0.5  1.5  2.5   3.5   4.5   5.5  6.5   7.5   8.5   9.5
@@ -599,7 +599,7 @@ TEST_F(SearchHelperTest, goal_not_centered_small_tolerance)
 
   printMap(*(cm.getCostmap()));
   map.header.stamp = ros::Time::now();
-  map_pub.publish(map);
+  map_pub->publish(map);
 
   /*
   y/x   0.5  1.5  2.5   3.5   4.5   5.5  6.5   7.5   8.5   9.5

@@ -350,7 +350,7 @@ void Simulator::publishRobotPosition()
   robot_location.twist.twist.linear.x = robot_->getvx();
   robot_location.twist.twist.linear.y = robot_->getvy();
 
-  pub_robot_position_.publish(robot_location);
+  pub_robot_position_->publish(robot_location);
 }
 
 pedsim_msgs::AgentStates Simulator::getAgentStates()
@@ -441,7 +441,7 @@ pedsim_msgs::AgentStates Simulator::getAgentStates()
 }
 
 void Simulator::publishAgents(pedsim_msgs::AgentStates agents){
-  pub_agent_states_.publish(agents);
+  pub_agent_states_->publish(agents);
 }
 
 void Simulator::publishGroups()
@@ -479,7 +479,7 @@ void Simulator::publishGroups()
     }
     sim_groups.groups.emplace_back(group);
   }
-  pub_agent_groups_.publish(sim_groups);
+  pub_agent_groups_->publish(sim_groups);
 }
 
 bool is_normal(float value)
@@ -531,12 +531,12 @@ pedsim_msgs::Obstacles Simulator::getObstacles(){
 
 void Simulator::publishWalls(pedsim_msgs::Walls walls)
 {
-  pub_walls_.publish(walls);
+  pub_walls_->publish(walls);
 }
 
 void Simulator::publishObstacles(pedsim_msgs::Obstacles obstacles)
 {
-  pub_obstacles_.publish(obstacles);
+  pub_obstacles_->publish(obstacles);
 }
 
 pedsim_msgs::Waypoints Simulator::getWaypoints(){
@@ -559,7 +559,7 @@ pedsim_msgs::Waypoints Simulator::getWaypoints(){
 
 void Simulator::publishWaypoints(pedsim_msgs::Waypoints waypoints)
 {
-  pub_waypoints_.publish(waypoints);
+  pub_waypoints_->publish(waypoints);
 }
 
 std::string Simulator::agentStateToActivity(
@@ -606,7 +606,7 @@ void Simulator::publishPedsimAgents(
   dataframe.walls = walls.walls;
   dataframe.obstacles = obstacles.obstacles;
 
-  pub_pedsim_agents_.publish(dataframe);
+  pub_pedsim_agents_->publish(dataframe);
 }
 
 void Simulator::onPedsimAgents(pedsim_msgs::AgentFeedbacks agents){

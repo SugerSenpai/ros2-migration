@@ -725,7 +725,7 @@ void AmclNode::runFromBag(const std::string &in_bag_fn, bool trigger_global_loca
     tf2_msgs::TFMessage::ConstPtr tf_msg = msg.instantiate<tf2_msgs::TFMessage>();
     if (tf_msg != NULL)
     {
-      tf_pub.publish(msg);
+      tf_pub->publish(msg);
       for (size_t ii=0; ii<tf_msg->transforms.size(); ++ii)
       {
         tf_->setTransform(tf_msg->transforms[ii], "rosbag_authority");
@@ -736,7 +736,7 @@ void AmclNode::runFromBag(const std::string &in_bag_fn, bool trigger_global_loca
     sensor_msgs::LaserScan::ConstPtr base_scan = msg.instantiate<sensor_msgs::LaserScan>();
     if (base_scan != NULL)
     {
-      laser_pub.publish(msg);
+      laser_pub->publish(msg);
       laser_scan_filter_->add(base_scan);
       if (bag_scan_period_ > ros::WallDuration(0))
       {
@@ -1359,7 +1359,7 @@ AmclNode::laserReceived(const sensor_msgs::LaserScanConstPtr& laser_scan)
         q.setRPY(0, 0, set->samples[i].pose.v[2]);
         tf2::convert(q, cloud_msg.poses[i].orientation);
       }
-      particlecloud_pub_.publish(cloud_msg);
+      particlecloud_pub_->publish(cloud_msg);
     }
   }
 
@@ -1444,7 +1444,7 @@ AmclNode::laserReceived(const sensor_msgs::LaserScanConstPtr& laser_scan)
          }
        */
 
-      pose_pub_.publish(p);
+      pose_pub_->publish(p);
       last_published_pose = p;
 
       ROS_DEBUG("New pose: %6.3f %6.3f %6.3f",

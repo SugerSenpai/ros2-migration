@@ -359,7 +359,7 @@ namespace dwa_local_planner {
                 ++iter_x;
             }
         }
-        traj_cloud_pub_.publish(traj_cloud);
+        traj_cloud_pub_->publish(traj_cloud);
     }
 
     // verbose publishing of point clouds

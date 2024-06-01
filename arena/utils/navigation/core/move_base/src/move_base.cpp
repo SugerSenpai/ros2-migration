@@ -278,7 +278,7 @@ namespace move_base {
     action_goal.header.stamp = ros::Time::now();
     action_goal.goal.target_pose = *goal;
 
-    action_goal_pub_.publish(action_goal);
+    action_goal_pub_->publish(action_goal);
   }
 
   void MoveBase::clearCostmapWindows(double size_x, double size_y){
@@ -506,7 +506,7 @@ namespace move_base {
     cmd_vel.linear.x = 0.0;
     cmd_vel.linear.y = 0.0;
     cmd_vel.angular.z = 0.0;
-    vel_pub_.publish(cmd_vel);
+    vel_pub_->publish(cmd_vel);
   }
 
   bool MoveBase::isQuaternionValid(const geometry_msgs::Quaternion& q){
@@ -665,7 +665,7 @@ namespace move_base {
     planner_cond_.notify_one();
     lock.unlock();
 
-    current_goal_pub_.publish(goal);
+    current_goal_pub_->publish(goal);
 
     ros::Rate r(controller_frequency_);
     if(shutdown_costmaps_){
@@ -715,7 +715,7 @@ namespace move_base {
 
           //publish the goal point to the visualizer
           ROS_DEBUG_NAMED("move_base","move_base has received a goal of x: %.2f, y: %.2f", goal.pose.position.x, goal.pose.position.y);
-          current_goal_pub_.publish(goal);
+          current_goal_pub_->publish(goal);
 
           //make sure to reset our timeouts and counters
           last_valid_control_ = ros::Time::now();
@@ -753,7 +753,7 @@ namespace move_base {
 
         //publish the goal point to the visualizer
         ROS_DEBUG_NAMED("move_base","The global frame for move_base has changed, new frame: %s, new goal position x: %.2f, y: %.2f", goal.header.frame_id.c_str(), goal.pose.position.x, goal.pose.position.y);
-        current_goal_pub_.publish(goal);
+        current_goal_pub_->publish(goal);
 
         //make sure to reset our timeouts and counters
         last_valid_control_ = ros::Time::now();
@@ -914,7 +914,7 @@ namespace move_base {
                            cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.angular.z );
           last_valid_control_ = ros::Time::now();
           //make sure that we send the velocity command to the base
-          vel_pub_.publish(cmd_vel);
+          vel_pub_->publish(cmd_vel);
           if(recovery_trigger_ == CONTROLLING_R)
             recovery_index_ = 0;
         }
@@ -960,7 +960,7 @@ namespace move_base {
           msg.total_number_of_recoveries = recovery_behaviors_.size();
           msg.recovery_behavior_name =  recovery_behavior_names_[recovery_index_];
 
-          recovery_status_pub_.publish(msg);
+          recovery_status_pub_->publish(msg);
 
           recovery_behaviors_[recovery_index_]->runBehavior();
 

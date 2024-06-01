@@ -1214,7 +1214,7 @@ void GridMap::publishMap() {
   sensor_msgs::msg::PointCloud2 cloud_msg;
 
   pcl::toROSMsg(cloud, cloud_msg);
-  map_pub_.publish(cloud_msg);
+  map_pub_->publish(cloud_msg);
   
 }
 
@@ -1245,7 +1245,7 @@ void GridMap::publishStaticMap(){
   sensor_msgs::msg::PointCloud2 cloud_msg;
 
   pcl::toROSMsg(cloud, cloud_msg);
-  static_map_pub_.publish(cloud_msg);
+  static_map_pub_->publish(cloud_msg);
 }
 
 void GridMap::publishDynamicMap(){
@@ -1275,7 +1275,7 @@ void GridMap::publishDynamicMap(){
     sensor_msgs::msg::PointCloud2 cloud_msg;
 
     pcl::toROSMsg(cloud, cloud_msg);
-    dynamic_map_pub_.publish(cloud_msg);
+    dynamic_map_pub_->publish(cloud_msg);
 }
 
 void GridMap::publishESDF() {
@@ -1316,7 +1316,7 @@ void GridMap::publishESDF() {
   sensor_msgs::msg::PointCloud2 cloud_msg;
   pcl::toROSMsg(cloud, cloud_msg);
 
-  esdf_pub_.publish(cloud_msg);
+  esdf_pub_->publish(cloud_msg);
 
   // RCLCPP_INFO(rclcpp::get_logger("Mapping"), "pub esdf");
 }
@@ -1359,7 +1359,7 @@ void GridMap::publishStaticESDF(){
   sensor_msgs::msg::PointCloud2 cloud_msg;
   pcl::toROSMsg(cloud, cloud_msg);
 
-  esdf_static_pub_.publish(cloud_msg);
+  esdf_static_pub_->publish(cloud_msg);
 
 }
 
@@ -1382,7 +1382,7 @@ void GridMap::publishDepth() {
 
   sensor_msgs::msg::PointCloud2 cloud_msg;
   pcl::toROSMsg(cloud, cloud_msg);
-  depth_pub_.publish(cloud_msg);
+  depth_pub_->publish(cloud_msg);
   
 }
 
@@ -1395,7 +1395,7 @@ void GridMap::publishUpdateRange() {
   cube_pos = 0.5 * (esdf_min_pos + esdf_max_pos);
   cube_scale = esdf_max_pos - esdf_min_pos;
   mk.header.frame_id = mp_.frame_id_;
-  mk.header.stamp = rclcpp::Time::now();
+  mk.header.stamp = this->now();
   mk.type = visualization_msgs::msg::Marker::CUBE;
   mk.action = visualization_msgs::msg::Marker::ADD;
   mk.id = 0;
@@ -1418,7 +1418,7 @@ void GridMap::publishUpdateRange() {
   mk.pose.orientation.y = 0.0;
   mk.pose.orientation.z = 0.0;
 
-  update_range_pub_.publish(mk);
+  update_range_pub_->publish(mk);
 }
 
 void GridMap::publishUnknown() {
@@ -1454,7 +1454,7 @@ void GridMap::publishUnknown() {
 
   sensor_msgs::msg::PointCloud2 cloud_msg;
   pcl::toROSMsg(cloud, cloud_msg);
-  unknown_pub_.publish(cloud_msg);
+  unknown_pub_->publish(cloud_msg);
 }
 
 void GridMap::visCallback(const rclcpp::TimerEvent& /*event*/) {

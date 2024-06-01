@@ -302,7 +302,7 @@ void AbstractInterExecution::run()
           return;
         }
 
-        global_goal_pub_.publish(global_plan.back());
+        global_goal_pub_->publish(global_plan.back());
       }
 
       if (cancel_)

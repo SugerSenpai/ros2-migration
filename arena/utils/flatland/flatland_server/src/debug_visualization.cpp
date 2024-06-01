@@ -237,7 +237,7 @@ void DebugVisualization::Publish(const Timekeeper& timekeeper) {
       for (unsigned int i = 0; i < topic.second.markers.markers.size(); i++) {
         topic.second.markers.markers[i].header.stamp = timekeeper.GetSimTime();
       }
-      topic.second.publisher.publish(topic.second.markers);
+      topic.second.publisher->publish(topic.second.markers);
       topic.second.needs_publishing = false;
     }
   }
@@ -360,6 +360,6 @@ void DebugVisualization::PublishTopicList() {
   flatland_msgs::DebugTopicList topic_list;
   for (auto const& topic_pair : topics_)
     topic_list.topics.push_back(topic_pair.first);
-  topic_list_publisher_.publish(topic_list);
+  topic_list_publisher_->publish(topic_list);
 }
 };  // namespace flatland_server

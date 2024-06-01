@@ -124,10 +124,10 @@ void PeoplePointCloud::broadcast() {
   }
 
   if (pcd_local.channels[0].values.size() > 1) {
-    pub_signals_local_.publish(pcd_local);
+    pub_signals_local_->publish(pcd_local);
   }
   if (pcd_global.channels[0].values.size() > 1) {
-    pub_signals_global_.publish(pcd_global);
+    pub_signals_global_->publish(pcd_global);
   }
 
   q_agents_.pop();

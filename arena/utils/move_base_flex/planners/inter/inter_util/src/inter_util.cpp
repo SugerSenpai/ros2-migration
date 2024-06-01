@@ -43,7 +43,7 @@ namespace inter_util
     {
         std_msgs::String msg;
         msg.data = "SIGNAL";
-        publisher.publish(msg);
+        publisher->publish(msg);
     }
 
     void InterUtil::checkDanger(ros::Publisher& publisher, const std::vector<double>& terms, double threshold)

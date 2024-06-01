@@ -150,7 +150,7 @@ void voxelCallback(const ros::Publisher& pub_marked, const ros::Publisher& pub_u
       cval = *reinterpret_cast<float*>(&col);
     }
 
-    pub_marked.publish(cloud);
+    pub_marked->publish(cloud);
   }
 
   {
@@ -182,7 +182,7 @@ void voxelCallback(const ros::Publisher& pub_marked, const ros::Publisher& pub_u
       cval = *reinterpret_cast<float*>(&col);
     }
 
-    pub_unknown.publish(cloud);
+    pub_unknown->publish(cloud);
   }
 
   ros::WallTime end = ros::WallTime::now();

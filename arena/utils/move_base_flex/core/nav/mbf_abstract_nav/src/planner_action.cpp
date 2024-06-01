@@ -67,7 +67,7 @@ void PlannerAction::runImpl(GoalHandle &goal_handle, AbstractPlannerExecution &e
 
   double tolerance = goal.tolerance;
   bool use_start_pose = goal.use_start_pose;
-  current_goal_pub_.publish(goal.target_pose);
+  current_goal_pub_->publish(goal.target_pose);
 
   bool planner_active = true;
 
