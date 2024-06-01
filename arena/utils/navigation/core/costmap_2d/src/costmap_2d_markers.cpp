@@ -132,7 +132,7 @@ void voxelCallback(const ros::Publisher& pub, const costmap_2d::VoxelGridConstPt
     p.z = c.z;
   }
 
-  pub.publish(m);
+  pub->publish(m);
 
   ros::WallTime end = ros::WallTime::now();
   ROS_DEBUG("Published %d markers in %f seconds", num_markers, (end - start).toSec());

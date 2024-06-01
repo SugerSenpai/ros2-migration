@@ -66,7 +66,7 @@ void InterAction::runImpl(GoalHandle &goal_handle, AbstractInterExecution &execu
   result.path.header.frame_id = robot_info_.getGlobalFrame();
 
   bool use_start_pose = goal.use_start_pose;
-  current_goal_pub_.publish(goal.target_pose);
+  current_goal_pub_->publish(goal.target_pose);
 
   bool inter_active = true;
 

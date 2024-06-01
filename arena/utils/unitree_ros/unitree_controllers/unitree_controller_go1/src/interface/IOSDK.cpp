@@ -87,7 +87,7 @@ void IOSDK::sendRecv(const LowlevelCmd *cmd, LowlevelState *state){
         _joint_state.effort[i]   = state->motorState[i].tauEst;
     }
 
-    _pub.publish(_joint_state);
+    _pub->publish(_joint_state);
 #endif  // COMPILE_WITH_MOVE_BASE
 }
 

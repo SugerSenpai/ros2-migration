@@ -137,7 +137,7 @@ void Laser::AfterPhysicsStep(const Timekeeper &timekeeper) {
   if (scan_publisher_.getNumSubscribers() > 0) {
     ComputeLaserRanges();
     laser_scan_.header.stamp = timekeeper.GetSimTime();
-    scan_publisher_.publish(laser_scan_);
+    scan_publisher_->publish(laser_scan_);
   }
 
   if (broadcast_tf_) {

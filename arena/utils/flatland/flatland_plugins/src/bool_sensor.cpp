@@ -109,7 +109,7 @@ void BoolSensor::AfterPhysicsStep(const Timekeeper &timekeeper) {
       msg.data = false;
     }
   }
-  publisher_.publish(msg);
+  publisher_->publish(msg);
 }
 
 void BoolSensor::BeginContact(b2Contact *contact) {

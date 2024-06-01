@@ -29,7 +29,7 @@ void Gps::BeforePhysicsStep(const Timekeeper &timekeeper) {
   if (fix_publisher_.getNumSubscribers() > 0) {
     UpdateFix();
     gps_fix_.header.stamp = timekeeper.GetSimTime();
-    fix_publisher_.publish(gps_fix_);
+    fix_publisher_->publish(gps_fix_);
   }
 
   if (broadcast_tf_) {

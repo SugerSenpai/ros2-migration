@@ -12,8 +12,8 @@ def replace_code_snippets(root_dir):
                 # Replace rclcpp::Time::now() with this->now()
                 new_content = re.sub(r'rclcpp::Time::now\(\)', r'this->now()', file_content)
 
-                # Replace .publish(mk) with .publish(mk)
-                new_content = re.sub(r'\.publish\((.*?)\)', r'.publish(\1)', new_content)
+                # Replace .publish(mk) with ->publish(mk)
+                new_content = re.sub(r'\.publish\((.*?)\)', r'->publish(\1)', new_content)
 
                 # Write the new content back to the file if changes were made
                 if new_content != file_content:

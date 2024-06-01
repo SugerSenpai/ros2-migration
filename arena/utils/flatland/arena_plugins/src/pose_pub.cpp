@@ -201,8 +201,8 @@ void PosePub::AfterPhysicsStep(const Timekeeper& timekeeper) {
     odom_msg_.twist.twist.angular.z += noise_gen_[5](rng_);
 
     if (enable_odom_pub_) {
-      ground_truth_pub_.publish(ground_truth_msg_);
-      // odom_pub_.publish(odom_msg_);
+      ground_truth_pub_->publish(ground_truth_msg_);
+      // odom_pub_->publish(odom_msg_);
     }
   }
 }

@@ -201,8 +201,8 @@ void DiffDrive::AfterPhysicsStep(const Timekeeper& timekeeper) {
     odom_msg_.twist.twist.angular.z += noise_gen_[5](rng_);
 
     if (enable_odom_pub_) {
-      ground_truth_pub_.publish(ground_truth_msg_);
-      odom_pub_.publish(odom_msg_);
+      ground_truth_pub_->publish(ground_truth_msg_);
+      odom_pub_->publish(odom_msg_);
     }
 
     if (enable_twist_pub_) {
@@ -219,7 +219,7 @@ void DiffDrive::AfterPhysicsStep(const Timekeeper& timekeeper) {
 
       // Angular velocity in twist.angular.z
       twist_pub_msg.twist.angular.z = angular_vel + noise_gen_[5](rng_);
-      twist_pub_.publish(twist_pub_msg);
+      twist_pub_->publish(twist_pub_msg);
     }
 
     // publish odom tf

@@ -331,7 +331,7 @@ namespace navfn {
           ++iter_x;
         }
       }
-      potarr_pub_.publish(cloud);
+      potarr_pub_->publish(cloud);
     }
 
     //publish the plan for visualization purposes
@@ -364,7 +364,7 @@ namespace navfn {
       gui_path.poses[i] = path[i];
     }
 
-    plan_pub_.publish(gui_path);
+    plan_pub_->publish(gui_path);
   }
 
   bool NavfnROS::getPlanFromPotential(const geometry_msgs::PoseStamped& goal, std::vector<geometry_msgs::PoseStamped>& plan){

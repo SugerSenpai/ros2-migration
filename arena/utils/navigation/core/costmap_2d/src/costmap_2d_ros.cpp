@@ -470,7 +470,7 @@ void Costmap2DROS::updateMap()
       footprint.header.frame_id = global_frame_;
       footprint.header.stamp = ros::Time::now();
       transformFootprint(x, y, yaw, padded_footprint_, footprint);
-      footprint_pub_.publish(footprint);
+      footprint_pub_->publish(footprint);
 
       initialized_ = true;
     }

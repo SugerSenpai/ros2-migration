@@ -375,7 +375,7 @@ void AbstractControllerExecution::run()
           condition_.notify_all();
           return;
         }
-        current_goal_pub_.publish(plan.back());
+        current_goal_pub_->publish(plan.back());
       }
 
       // compute robot pose and store it in robot_pose_
@@ -422,7 +422,7 @@ void AbstractControllerExecution::run()
         if (outcome_ < 10)
         {
           setState(GOT_LOCAL_CMD);
-          vel_pub_.publish(cmd_vel_stamped.twist);
+          vel_pub_->publish(cmd_vel_stamped.twist);
           last_valid_cmd_time_ = ros::Time::now();
           retries = 0;
           // check if robot is ignoring velocity command
@@ -468,7 +468,7 @@ void AbstractControllerExecution::run()
           {
             // we are retrying compute velocity commands; we keep sending the command calculated by the plugin
             // with the expectation that it's a sensible one (e.g. slow down while respecting acceleration limits)
-            vel_pub_.publish(cmd_vel_stamped.twist);
+            vel_pub_->publish(cmd_vel_stamped.twist);
           }
         }
 
@@ -521,7 +521,7 @@ void AbstractControllerExecution::publishZeroVelocity()
   cmd_vel.angular.x = 0;
   cmd_vel.angular.y = 0;
   cmd_vel.angular.z = 0;
-  vel_pub_.publish(cmd_vel);
+  vel_pub_->publish(cmd_vel);
 }
 
 } /* namespace mbf_abstract_nav */

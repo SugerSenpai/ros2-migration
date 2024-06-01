@@ -163,8 +163,8 @@ class MapServer
       meta_data_message_ = map_resp_.map.info;
 
       //Publish latched topics
-      metadata_pub_.publish( meta_data_message_ );
-      map_pub_.publish( map_resp_.map );
+      metadata_pub_->publish( meta_data_message_ );
+      map_pub_->publish( map_resp_.map );
       return true;
     }
 
@@ -290,7 +290,7 @@ class MapServer
     /*
     void metadataSubscriptionCallback(const ros::SingleSubscriberPublisher& pub)
     {
-      pub.publish( meta_data_message_ );
+      pub->publish( meta_data_message_ );
     }
     */
 

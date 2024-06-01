@@ -228,7 +228,7 @@ void Estimator::run(){
             _odomMsg.twist.covariance = _odom_twist_covariance;
 
             if(_lowState->imu.quaternion[0] != 0 && !std::isnan(_xhat(2)) )
-                _pub.publish(_odomMsg);
+                _pub->publish(_odomMsg);
 
             _count = 1;
         }

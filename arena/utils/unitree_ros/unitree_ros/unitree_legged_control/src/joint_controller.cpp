@@ -188,7 +188,7 @@ namespace unitree_legged_control
         // lastState.tauEst = sensor_torque;
         lastState.tauEst = joint.getEffort();
 
-        // pub_state.publish(lastState);
+        // pub_state->publish(lastState);
         // publish state
         if (controller_state_publisher_ && controller_state_publisher_->trylock()) {
             controller_state_publisher_->msg_.q = lastState.q;

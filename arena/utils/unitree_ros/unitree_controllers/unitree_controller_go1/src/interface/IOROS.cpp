@@ -75,7 +75,7 @@ void IOROS::sendCmd(const LowlevelCmd *lowCmd){
             std::isnan(_lowCmd.motorCmd[m].Kd)  ||
             std::isnan(_lowCmd.motorCmd[m].Kp) 
         )){
-            _servo_pub[m].publish(_lowCmd.motorCmd[m]);
+            _servo_pub[m]->publish(_lowCmd.motorCmd[m]);
         }
     }
     ros::spinOnce();

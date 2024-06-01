@@ -192,8 +192,8 @@ namespace pedsim
       tracked_people.tracks.push_back(person);
     }
 
-    pub_person_visuals_.publish(tracked_people);
-    pub_forces_.publish(forces_markers);
+    pub_person_visuals_->publish(tracked_people);
+    pub_forces_->publish(forces_markers);
     q_people_.reset();
   }
 
@@ -223,7 +223,7 @@ namespace pedsim
       tracked_groups.groups.emplace_back(group);
     }
 
-    pub_group_visuals_.publish(tracked_groups);
+    pub_group_visuals_->publish(tracked_groups);
     q_groups_.reset();
   }
 
@@ -271,7 +271,7 @@ namespace pedsim
 
       walls_marker.header = current_walls->header;
       
-      pub_walls_visuals_.publish(walls_marker);
+      pub_walls_visuals_->publish(walls_marker);
 
       walls_marker.points.clear();
     }
@@ -355,7 +355,7 @@ namespace pedsim
       wp_marker.pose.position.z = 0.005;
       waypoint_markers.markers.push_back(wp_marker);
     }
-    pub_waypoints_.publish(waypoint_markers);
+    pub_waypoints_->publish(waypoint_markers);
 
     q_waypoints_.reset();
   }

@@ -326,8 +326,8 @@ void TricycleDrive::BeforePhysicsStep(const Timekeeper& timekeeper) {
     odom_msg_.twist.twist.linear.y += noise_gen_[4](rng_);
     odom_msg_.twist.twist.angular.z += noise_gen_[5](rng_);
 
-    ground_truth_pub_.publish(ground_truth_msg_);
-    odom_pub_.publish(odom_msg_);
+    ground_truth_pub_->publish(ground_truth_msg_);
+    odom_pub_->publish(odom_msg_);
   }
 
   // 2. Update the tricycle physics based on the twist command

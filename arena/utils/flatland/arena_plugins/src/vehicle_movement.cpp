@@ -207,7 +207,7 @@ void VehicleMovement::AfterPhysicsStep(const Timekeeper& timekeeper) {
     // get the state of the body and publish the data
     // publish agent state for every human
     //publish the agent state 
-    agent_state_pub_.publish(person);
+    agent_state_pub_->publish(person);
   }
 }
 

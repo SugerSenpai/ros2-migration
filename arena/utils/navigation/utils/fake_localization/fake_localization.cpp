@@ -227,12 +227,12 @@ class FakeOdomNode
       m_currentPos.pose.pose.position.x = current_msg.translation.x;
       m_currentPos.pose.pose.position.y = current_msg.translation.y;
       m_currentPos.pose.pose.position.z = current_msg.translation.z;
-      m_posePub.publish(m_currentPos);
+      m_posePub->publish(m_currentPos);
 
       // The particle cloud is the current position. Quite convenient.
       m_particleCloud.header = m_currentPos.header;
       m_particleCloud.poses[0] = m_currentPos.pose.pose;
-      m_particlecloudPub.publish(m_particleCloud);
+      m_particlecloudPub->publish(m_particleCloud);
     }
 
     void initPoseReceived(const geometry_msgs::PoseWithCovarianceStampedConstPtr& msg){

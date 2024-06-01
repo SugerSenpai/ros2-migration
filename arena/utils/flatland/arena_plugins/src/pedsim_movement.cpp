@@ -535,7 +535,7 @@ void PedsimMovement::AfterPhysicsStep(const Timekeeper& timekeeper) {
     // publish agent state for every human
     //publish the agent state 
     // ROS_WARN("puplishing humnan agent state with %d", int(person.id));
-    agent_state_pub_.publish(person);
+    agent_state_pub_->publish(person);
   }
 }
 };

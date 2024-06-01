@@ -208,7 +208,7 @@ void VoxelLayer::updateBounds(double robot_x, double robot_y, double robot_yaw, 
     grid_msg.resolutions.z = z_resolution_;
     grid_msg.header.frame_id = global_frame_;
     grid_msg.header.stamp = ros::Time::now();
-    voxel_pub_.publish(grid_msg);
+    voxel_pub_->publish(grid_msg);
   }
 
   updateFootprint(robot_x, robot_y, robot_yaw, min_x, min_y, max_x, max_y);
@@ -385,7 +385,7 @@ void VoxelLayer::raytraceFreespace(const Observation& clearing_observation, doub
     clearing_endpoints_.header.stamp = clearing_observation.cloud_->header.stamp;
     clearing_endpoints_.header.seq = clearing_observation.cloud_->header.seq;
 
-    clearing_endpoints_pub_.publish(clearing_endpoints_);
+    clearing_endpoints_pub_->publish(clearing_endpoints_);
   }
 }
 

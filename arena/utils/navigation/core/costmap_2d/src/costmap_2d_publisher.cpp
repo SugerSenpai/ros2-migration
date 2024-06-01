@@ -85,7 +85,7 @@ Costmap2DPublisher::~Costmap2DPublisher()
 void Costmap2DPublisher::onNewSubscription(const ros::SingleSubscriberPublisher& pub)
 {
   prepareGrid();
-  pub.publish(grid_);
+  pub->publish(grid_);
 }
 
 // prepare grid_ message for publication.
@@ -137,7 +137,7 @@ void Costmap2DPublisher::publishCostmap()
       saved_origin_y_ != costmap_->getOriginY())
   {
     prepareGrid();
-    costmap_pub_.publish(grid_);
+    costmap_pub_->publish(grid_);
   }
   else if (x0_ < xn_)
   {
@@ -160,7 +160,7 @@ void Costmap2DPublisher::publishCostmap()
         update.data[i++] = cost_translation_table_[ cost ];
       }
     }
-    costmap_update_pub_.publish(update);
+    costmap_update_pub_->publish(update);
   }
 
   xn_ = yn_ = 0;
