@@ -68,7 +68,7 @@ class MapServer
       int negate;
       double occ_th, free_th;
       MapMode mode = TRINARY;
-      ros::NodeHandle private_nh("~");
+      auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
       private_nh.param("frame_id", frame_id_, std::string("map"));
 
       //When called this service returns a copy of the current map
@@ -98,7 +98,7 @@ class MapServer
     }
 
   private:
-    ros::NodeHandle nh_;
+    auto nh_ = std::make_shared<rclcpp::Node>("nh_");;
     ros::Publisher map_pub_;
     ros::Publisher metadata_pub_;
     ros::ServiceServer get_map_service_;
@@ -153,9 +153,9 @@ class MapServer
 
       // To make sure get a consistent time in simulation
       ros::Time::waitForValid();
-      map_resp_.map.info.map_load_time = ros::Time::now();
+      map_resp_.map.info.map_load_time = node->now();
       map_resp_.map.header.frame_id = frame_id_;
-      map_resp_.map.header.stamp = ros::Time::now();
+      map_resp_.map.header.stamp = node->now();
       ROS_INFO("Read a %d X %d map @ %.3lf m/cell",
                map_resp_.map.info.width,
                map_resp_.map.info.height,
@@ -172,7 +172,7 @@ class MapServer
      */
     bool loadMapFromParams(std::string map_file_name, double resolution)
     {
-      ros::NodeHandle private_nh("~");
+      auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
       int negate;
       double occ_th;
       double free_th;
@@ -298,8 +298,8 @@ class MapServer
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "map_server", ros::init_options::AnonymousName);
-  ros::NodeHandle nh("~");
+  rclcpp::init(argc, argv, "map_server", ros::init_options::AnonymousName);
+  auto nh = std::make_shared<rclcpp::Node>("nh");"~");
   if(argc != 3 && argc != 2)
   {
     ROS_ERROR("%s", USAGE);
@@ -314,7 +314,7 @@ int main(int argc, char **argv)
   try
   {
     MapServer ms(fname, res);
-    ros::spin();
+    rclcpp::spin(node);
   }
   catch(std::runtime_error& e)
   {

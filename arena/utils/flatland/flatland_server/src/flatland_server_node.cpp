@@ -75,8 +75,8 @@ void SigintHandler(int sig) {
  * @brief       Entrypoint for Flatland Server ros node
  */
 int main(int argc, char **argv) {
-  ros::init(argc, argv, "flatland", ros::init_options::NoSigintHandler);
-  ros::NodeHandle node_handle("~");
+  rclcpp::init(argc, argv, "flatland", ros::init_options::NoSigintHandler);
+  auto node_handle = std::make_shared<rclcpp::Node>("node_handle");"~");
 
   // Load parameters
   std::string world_path;  // The file path to the world.yaml file
@@ -86,25 +86,25 @@ int main(int argc, char **argv) {
     return 1;
   }
   std::string map_layer_path;
-  node_handle.getParam("/map_layer_path", map_layer_path);
+  map_layer_path = node_handle->declare_parameter("/map_layer_path", map_layer_path);
 
   std::string map_file;
-  node_handle.getParam("/map_file", map_file);
+  map_file = node_handle->declare_parameter("/map_file", map_file);
 
   float update_rate = 200.0;  // The physics update rate (Hz)
-  node_handle.getParam("/update_rate", update_rate);
+  update_rate = node_handle->declare_parameter("/update_rate", update_rate);
 
   float step_size = 1 / 200.0;
-  node_handle.getParam("/step_size", step_size);
+  step_size = node_handle->declare_parameter("/step_size", step_size);
 
   bool show_viz = false;
-  node_handle.getParam("/show_viz", show_viz);
+  show_viz = node_handle->declare_parameter("/show_viz", show_viz);
 
   float viz_pub_rate = 30.0;
-  node_handle.getParam("/viz_pub_rate", viz_pub_rate);
+  viz_pub_rate = node_handle->declare_parameter("/viz_pub_rate", viz_pub_rate);
 
   bool train_mode = false;
-  node_handle.getParam("/train_mode", train_mode);
+  train_mode = node_handle->declare_parameter("/train_mode", train_mode);
 
   // Create simulation manager object
   simulation_manager = new flatland_server::SimulationManager(

@@ -12,6 +12,26 @@ def update_cpp_file(file_path):
         print(f"Error: Unable to read file {file_path}")
         return
 
+    # Additional ROS1 to ROS2 message header mappings
+    additional_msg_replacements = [
+        (r'#include\s*<std_msgs/Header.h>', r'#include "std_msgs/msg/header.hpp"'),
+        (r'#include\s*<std_msgs/String.h>', r'#include "std_msgs/msg/string.hpp"'),
+        (r'#include\s*<std_msgs/Float32.h>', r'#include "std_msgs/msg/float32.hpp"'),
+        (r'#include\s*<std_msgs/Int32.h>', r'#include "std_msgs/msg/int32.hpp"'),
+        (r'#include\s*<geometry_msgs/PoseStamped.h>', r'#include "geometry_msgs/msg/pose_stamped.hpp"'),
+        (r'#include\s*<geometry_msgs/Twist.h>', r'#include "geometry_msgs/msg/twist.hpp"'),
+        (r'#include\s*<geometry_msgs/TwistStamped.h>', r'#include "geometry_msgs/msg/twist_stamped.hpp"'),
+        (r'#include\s*<geometry_msgs/Point.h>', r'#include "geometry_msgs/msg/point.hpp"'),
+        (r'#include\s*<geometry_msgs/Pose.h>', r'#include "geometry_msgs/msg/pose.hpp"'),
+        (r'#include\s*<geometry_msgs/Quaternion.h>', r'#include "geometry_msgs/msg/quaternion.hpp"'),
+        (r'#include\s*<sensor_msgs/LaserScan.h>', r'#include "sensor_msgs/msg/laser_scan.hpp"'),
+        (r'#include\s*<sensor_msgs/Image.h>', r'#include "sensor_msgs/msg/image.hpp"'),
+        (r'#include\s*<sensor_msgs/PointCloud2.h>', r'#include "sensor_msgs/msg/point_cloud2.hpp"'),
+        (r'#include\s*<nav_msgs/Odometry.h>', r'#include "nav_msgs/msg/odometry.hpp"'),
+        (r'#include\s*<nav_msgs/Path.h>', r'#include "nav_msgs/msg/path.hpp"'),
+        (r'#include\s*<observations/Observation.h>', r'#include "observations/msg/observation.hpp"')
+    ]
+
     # ROS1 to ROS2 message header mappings
     msg_replacements = [
         (r'#include\s*<(\w+)/(\w+)\.h>', r'#include "\1/msg/\2.hpp"'),
@@ -36,9 +56,8 @@ def update_cpp_file(file_path):
 
     new_content = []
     for line in content:
-        if not line.strip().startswith('#'):
-            for old, new in msg_replacements + api_replacements:
-                line = re.sub(old, new, line, flags=re.IGNORECASE)
+        for old, new in additional_msg_replacements + msg_replacements + api_replacements:
+            line = re.sub(old, new, line, flags=re.IGNORECASE)
         new_content.append(line)
 
     try:
@@ -58,52 +77,51 @@ def update_cmakelists(file_path):
     replacements = [
         (r'cmake_minimum_required\(VERSION [0-9.]+\)', 'cmake_minimum_required(VERSION 3.5)'),
         (r'find_package\(catkin REQUIRED COMPONENTS[^)]+\)', 
-         'find_package(ament_cmake REQUIRED)\n'
-         'find_package(rclcpp REQUIRED)\n'
-         'find_package(rcutils REQUIRED)\n'
-         'find_package(std_msgs REQUIRED)\n'
-         'find_package(sensor_msgs REQUIRED)\n'
-         'find_package(geometry_msgs REQUIRED)\n'
-         'find_package(rosidl_default_generators REQUIRED)'),
+        'find_package(ament_cmake REQUIRED)\n'
+        'find_package(rclcpp REQUIRED)\n'
+        'find_package(rcutils REQUIRED)\n'
+        'find_package(std_msgs REQUIRED)\n'
+        'find_package(sensor_msgs REQUIRED)\n'
+        'find_package(geometry_msgs REQUIRED)\n'
+        'find_package(rosidl_default_generators REQUIRED)'),
         (r'catkin_package\([^)]+\)', 
-         'ament_export_dependencies(\n'
-         '  rclcpp rcutils std_msgs sensor_msgs geometry_msgs\n'
-         ')\n'
-         'ament_export_include_directories(include)\n'
-         'ament_package()'),
+        'ament_export_dependencies(\n'
+        '  rclcpp rcutils std_msgs sensor_msgs geometry_msgs\n'
+        ')\n'
+        'ament_export_include_directories(include)\n'
+        'ament_package()'),
         (r'add_message_files\(\s*FILES\s*([^)]+)\)', 
-         'rosidl_generate_interfaces(${PROJECT_NAME}\n'
-         '  \1\n'
-         '  DEPENDENCIES\n'
-         '  sensor_msgs\n'
-         '  geometry_msgs\n'
-         '  std_msgs\n'
-         ')'),
+        'rosidl_generate_interfaces(${PROJECT_NAME}\n'
+        '  \1\n'
+        '  DEPENDENCIES\n'
+        '  sensor_msgs\n'
+        '  geometry_msgs\n'
+        '  std_msgs\n'
+        ')'),
         (r'generate_messages[^)]+\)', ''),
         (r'include_directories\([^)]+\)', 
-         'target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC\n'
-         '  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>\n'
-         '  ${CMAKE_CURRENT_SOURCE_DIR}\n'
-         '  ./\n'
-         ')'),
+        'target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC\n'
+        '  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>\n'
+        '  ${CMAKE_CURRENT_SOURCE_DIR}\n'
+        '  ./\n'
+        ')'),
         (r'target_link_libraries\((\w+)[^)]+\)', 
-         'target_link_libraries(\\1\n'
-         '  ${cpp_typesupport_target}\n'
-         '  # ${SDL2_LIBRARIES}\n'
-         '  # ${OPENGL_LIBRARIES}\n'
-         ')'),
+        'target_link_libraries(\\1\n'
+        '  ${cpp_typesupport_target}\n'
+        '  # ${SDL2_LIBRARIES}\n'
+        '  # ${OPENGL_LIBRARIES}\n'
+        ')'),
         (r'install\(\s*TARGETS[^)]+\)', 
-         'install(TARGETS\n'
-         '  ${target}\n'
-         '  DESTINATION lib/${PROJECT_NAME}\n'
-         ')'),
+        'install(TARGETS\n'
+        '  ${target}\n'
+        '  DESTINATION lib/${PROJECT_NAME}\n'
+        ')'),
     ]
 
     new_content = []
     for line in content:
-        if not line.strip().startswith('#'):
-            for old, new in replacements:
-                line = re.sub(old, new, line, flags=re.IGNORECASE)
+        for old, new in replacements:
+            line = re.sub(old, new, line, flags=re.MULTILINE | re.DOTALL | re.IGNORECASE)
         new_content.append(line)
 
     try:

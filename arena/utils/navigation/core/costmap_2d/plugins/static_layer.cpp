@@ -61,7 +61,7 @@ StaticLayer::~StaticLayer()
 
 void StaticLayer::onInitialize()
 {
-  ros::NodeHandle nh("~/" + name_), g_nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");"~/" + name_), g_nh;
   current_ = true;
 
   global_frame_ = layered_costmap_->getGlobalFrameID();
@@ -91,7 +91,7 @@ void StaticLayer::onInitialize()
     map_received_ = false;
     has_updated_data_ = false;
 
-    ros::Rate r(10);
+    rclcpp::Rate r(10);
     while (!map_received_ && g_nh.ok())
     {
       ros::spinOnce();

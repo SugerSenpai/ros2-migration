@@ -39,8 +39,8 @@
 #include <nav_core/parameter_magic.h>
 #include <tf2/utils.h>
 #include "rclcpp/rclcpp.h"
-#include <geometry_msgs/Twist.h>
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/twist.hpp"
+#include "geometry_msgs/msg/point.hpp"
 #include <angles/angles.h>
 #include <algorithm>
 #include <string>
@@ -63,8 +63,8 @@ void RotateRecovery::initialize(std::string name, tf2_ros::Buffer*,
     local_costmap_ = local_costmap;
 
     // get some parameters from the parameter server
-    ros::NodeHandle private_nh("~/" + name);
-    ros::NodeHandle blp_nh("~/TrajectoryPlannerROS");
+    auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name);
+    auto blp_nh = std::make_shared<rclcpp::Node>("blp_nh");"~/TrajectoryPlannerROS");
 
     // we'll simulate every degree by default
     private_nh.param("sim_granularity", sim_granularity_, 0.017);
@@ -106,8 +106,8 @@ void RotateRecovery::runBehavior()
   ROS_WARN("Rotate recovery behavior started.");
 
   ros::Rate r(frequency_);
-  ros::NodeHandle n;
-  ros::Publisher vel_pub = n.advertise<geometry_msgs::Twist>("cmd_vel", 10);
+  auto n = std::make_shared<rclcpp::Node>("n");;
+  auto vel_pub = n->create_publisher<geometry_msgs::Twist>("cmd_vel", 10);
 
   geometry_msgs::PoseStamped global_pose;
   local_costmap_->getRobotPose(global_pose);

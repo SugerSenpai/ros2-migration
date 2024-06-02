@@ -139,7 +139,7 @@ void MoveBaseAction::start(GoalHandle &goal_handle)
 
   ros::Duration connection_timeout(1.0);
 
-  last_oscillation_reset_ = ros::Time::now();
+  last_oscillation_reset_ = node->now();
 
   // start recovering with the first behavior, use the recovery behaviors from the action request, if specified,
   // otherwise, use all loaded behaviors.
@@ -207,7 +207,7 @@ void MoveBaseAction::actionExePathFeedback(
     // moved more than the minimum oscillation distance
     if (mbf_utility::distance(robot_pose_, last_oscillation_pose_) >= oscillation_distance_)
     {
-      last_oscillation_reset_ = ros::Time::now();
+      last_oscillation_reset_ = node->now();
       last_oscillation_pose_ = robot_pose_;
 
       if (recovery_trigger_ == OSCILLATING)
@@ -217,10 +217,10 @@ void MoveBaseAction::actionExePathFeedback(
         recovery_trigger_ = NONE;
       }
     }
-    else if (last_oscillation_reset_ + oscillation_timeout_ < ros::Time::now())
+    else if (last_oscillation_reset_ + oscillation_timeout_ < node->now())
     {
       std::stringstream oscillation_msgs;
-      oscillation_msgs << "Robot is oscillating for " << (ros::Time::now() - last_oscillation_reset_).toSec() << "s!";
+      oscillation_msgs << "Robot is oscillating for " << (node->now() - last_oscillation_reset_).toSec() << "s!";
       ROS_WARN_STREAM_NAMED("move_base", oscillation_msgs.str());
       action_client_exe_path_.cancelGoal();
 
@@ -548,7 +548,7 @@ void MoveBaseAction::actionRecoveryDone(
     const mbf_msgs::RecoveryResultConstPtr &result_ptr)
 {
   // give the robot some time to stop oscillating after executing the recovery behavior
-  last_oscillation_reset_ = ros::Time::now();
+  last_oscillation_reset_ = node->now();
 
   const mbf_msgs::RecoveryResult& recovery_result = *result_ptr;
   mbf_msgs::MoveBaseResult move_base_result;
@@ -646,12 +646,12 @@ void MoveBaseAction::replanningThread()
           update_period.sleep();
           continue;
         }
-        else if (ros::Time::now() - last_replan_time >= replanning_period_)
+        else if (node->now() - last_replan_time >= replanning_period_)
         {
           ROS_DEBUG_STREAM_NAMED("move_base", "Next replanning cycle, using the \"get_path\" action!");
           action_client_get_path_.sendGoal(get_path_goal_);
           action_state_ = GET_PATH;
-          last_replan_time = ros::Time::now();
+          last_replan_time = node->now();
           sm++;
         }
         else
@@ -794,11 +794,11 @@ void MoveBaseAction::replanningThread()
   //   {
   //     update_period.sleep();
   //   }
-  //   else if (ros::Time::now() - last_replan_time >= replanning_period_)
+  //   else if (node->now() - last_replan_time >= replanning_period_)
   //   {
   //     ROS_DEBUG_STREAM_NAMED("move_base", "Next replanning cycle, using the \"get_path\" action!");
   //     action_client_get_path_.sendGoal(get_path_goal_);
-  //     last_replan_time = ros::Time::now();
+  //     last_replan_time = node->now();
   //   }
   // }
 }

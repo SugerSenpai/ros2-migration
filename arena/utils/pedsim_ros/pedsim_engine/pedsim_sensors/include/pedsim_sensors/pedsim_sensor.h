@@ -35,7 +35,7 @@
 
 #include "rclcpp/rclcpp.h"
 
-#include <nav_msgs/Odometry.h>
+#include "nav_msgs/msg/odometry.hpp"
 
 namespace pedsim_ros {
 
@@ -92,7 +92,7 @@ class PedsimSensor {
   }
 
  protected:
-  ros::NodeHandle nh_;
+  auto nh_ = std::make_shared<rclcpp::Node>("nh_");;
   double rate_ = 25.;
   FoVPtr fov_ = nullptr;
   nav_msgs::Odometry robot_odom_;

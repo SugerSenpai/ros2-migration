@@ -51,7 +51,7 @@ CostmapPlannerExecution::CostmapPlannerExecution(const std::string& planner_name
                                                  const MoveBaseFlexConfig& config)
   : AbstractPlannerExecution(planner_name, planner_ptr, robot_info, toAbstract(config)), costmap_ptr_(costmap_ptr)
 {
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
   private_nh.param("planner_lock_costmap", lock_costmap_, true);
 }
 

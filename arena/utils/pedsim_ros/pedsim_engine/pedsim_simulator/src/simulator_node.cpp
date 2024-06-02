@@ -37,8 +37,8 @@
 //   QApplication app(argc, argv);
 
 //   // initialize resources
-//   ros::init(argc, argv, "pedsim_simulator");
-//   ros::NodeHandle node("~");
+//   rclcpp::init(argc, argv, "pedsim_simulator");
+//   auto node = std::make_shared<rclcpp::Node>("node");"~");
 //   Simulator sm(node);
 
 //   // use default SIGINT handler so CTRL+C works
@@ -65,8 +65,8 @@ int main(int argc, char** argv) {
   QApplication app(argc, argv);
 
   // initialize resources
-  ros::init(argc, argv, "pedsim_simulator");
-  ros::NodeHandle node("~");
+  rclcpp::init(argc, argv, "pedsim_simulator");
+  auto node = std::make_shared<rclcpp::Node>("node");"~");
   Simulator sm(node);
   // ROS_INFO("SceneServices");
   SceneServices s;

@@ -45,7 +45,7 @@
 #include <string>
 #include <vector>
 
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
 
 #include <mbf_abstract_core/abstract_inter.h>
 

@@ -32,8 +32,8 @@
 #ifndef COSTMAP_2D_OBSERVATION_H_
 #define COSTMAP_2D_OBSERVATION_H_
 
-#include <geometry_msgs/Point.h>
-#include <sensor_msgs/PointCloud2.h>
+#include "geometry_msgs/msg/point.hpp"
+#include "sensor_msgs/msg/point_cloud2.hpp"
 
 namespace costmap_2d
 {

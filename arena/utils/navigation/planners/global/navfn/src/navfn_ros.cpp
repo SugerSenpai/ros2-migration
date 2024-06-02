@@ -66,7 +66,7 @@ namespace navfn {
       global_frame_ = global_frame;
       planner_ = boost::shared_ptr<NavFn>(new NavFn(costmap_->getSizeInCellsX(), costmap_->getSizeInCellsY()));
 
-      ros::NodeHandle private_nh("~/" + name);
+      auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name);
 
       plan_pub_ = private_nh.advertise<nav_msgs::Path>("plan", 1);
 
@@ -179,7 +179,7 @@ namespace navfn {
   bool NavfnROS::makePlanService(nav_msgs::GetPlan::Request& req, nav_msgs::GetPlan::Response& resp){
     makePlan(req.start, req.goal, resp.plan.poses);
 
-    resp.plan.header.stamp = ros::Time::now();
+    resp.plan.header.stamp = node->now();
     resp.plan.header.frame_id = global_frame_;
 
     return true;
@@ -206,7 +206,7 @@ namespace navfn {
     //clear the plan, just in case
     plan.clear();
 
-    ros::NodeHandle n;
+    auto n = std::make_shared<rclcpp::Node>("n");;
 
     //until tf can handle transforming things that are way in the past... we'll require the goal to be in our global frame
     if(goal.header.frame_id != global_frame_){
@@ -292,7 +292,7 @@ namespace navfn {
       if(getPlanFromPotential(best_pose, plan)){
         //make sure the goal we push on has the same timestamp as the rest of the plan
         geometry_msgs::PoseStamped goal_copy = best_pose;
-        goal_copy.header.stamp = ros::Time::now();
+        goal_copy.header.stamp = node->now();
         plan.push_back(goal_copy);
       }
       else{
@@ -306,7 +306,7 @@ namespace navfn {
       sensor_msgs::PointCloud2 cloud;
       cloud.width = 0;
       cloud.height = 0;
-      cloud.header.stamp = ros::Time::now();
+      cloud.header.stamp = node->now();
       cloud.header.frame_id = global_frame_;
       sensor_msgs::PointCloud2Modifier cloud_mod(cloud);
       cloud_mod.setPointCloud2Fields(4, "x", 1, sensor_msgs::PointField::FLOAT32,
@@ -353,7 +353,7 @@ namespace navfn {
     if(path.empty()) {
       //still set a valid frame so visualization won't hit transform issues
     	gui_path.header.frame_id = global_frame_;
-      gui_path.header.stamp = ros::Time::now();
+      gui_path.header.stamp = node->now();
     } else { 
       gui_path.header.frame_id = path[0].header.frame_id;
       gui_path.header.stamp = path[0].header.stamp;
@@ -405,7 +405,7 @@ namespace navfn {
     float *x = planner_->getPathX();
     float *y = planner_->getPathY();
     int len = planner_->getPathLen();
-    ros::Time plan_time = ros::Time::now();
+    ros::Time plan_time = node->now();
 
     for(int i = len - 1; i >= 0; --i){
       //convert the plan to world coordinates

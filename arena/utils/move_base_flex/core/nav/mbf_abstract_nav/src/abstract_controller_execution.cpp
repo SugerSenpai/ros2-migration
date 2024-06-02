@@ -59,8 +59,8 @@ AbstractControllerExecution::AbstractControllerExecution(
     state_(INITIALIZED), moving_(false), max_retries_(0), patience_(0), vel_pub_(vel_pub), current_goal_pub_(goal_pub),
     loop_rate_(DEFAULT_CONTROLLER_FREQUENCY)
 {
-  ros::NodeHandle nh;
-  ros::NodeHandle private_nh("~");
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
 
   // non-dynamically reconfigurable parameters
   private_nh.param("robot_frame", robot_frame_, std::string("base_link"));
@@ -180,7 +180,7 @@ void AbstractControllerExecution::setVelocityCmd(const geometry_msgs::TwistStamp
   boost::lock_guard<boost::mutex> guard(vel_cmd_mtx_);
   vel_cmd_stamped_ = vel_cmd;
   if (vel_cmd_stamped_.header.stamp.isZero())
-    vel_cmd_stamped_.header.stamp = ros::Time::now();
+    vel_cmd_stamped_.header.stamp = node->now();
   // TODO what happen with frame id?
   // TODO Add a queue here for handling the outcome, message and cmd_vel values bundled,
   // TODO so there should be no loss of information in the feedback stream
@@ -212,10 +212,10 @@ bool AbstractControllerExecution::checkCmdVelIgnored(const geometry_msgs::Twist&
   if (first_ignored_time_.is_zero())
   {
     // set first_ignored_time_ to now if it was zero
-    first_ignored_time_ = ros::Time::now();
+    first_ignored_time_ = node->now();
   }
 
-  const double ignored_duration = (ros::Time::now() - first_ignored_time_).toSec();
+  const double ignored_duration = (node->now() - first_ignored_time_).toSec();
 
   if (ignored_duration > cmd_vel_ignored_tolerance_)
   {
@@ -248,14 +248,14 @@ ros::Time AbstractControllerExecution::getLastPluginCallTime() const
 bool AbstractControllerExecution::isPatienceExceeded() const
 {
   boost::lock_guard<boost::mutex> guard(lct_mtx_);
-  if(!patience_.isZero() && ros::Time::now() - start_time_ > patience_) // not zero -> activated, start_time handles init case
+  if(!patience_.isZero() && node->now() - start_time_ > patience_) // not zero -> activated, start_time handles init case
   {
-    if(ros::Time::now() - last_call_time_ > patience_)
+    if(node->now() - last_call_time_ > patience_)
     {
       ROS_WARN_STREAM_THROTTLE(3, "The controller plugin \"" << name_ << "\" needs more time to compute in one run than the patience time!");
       return true;
     }
-    if(ros::Time::now() - last_valid_cmd_time_ > patience_)
+    if(node->now() - last_valid_cmd_time_ > patience_)
     {
       ROS_DEBUG_STREAM("The controller plugin \"" << name_ << "\" does not return a success state (outcome < 10) for more than the patience time in multiple runs!");
       return true;
@@ -312,7 +312,7 @@ bool AbstractControllerExecution::cancel()
 
 void AbstractControllerExecution::run()
 {
-  start_time_ = ros::Time::now();
+  start_time_ = node->now();
 
   // init plan
   std::vector<geometry_msgs::PoseStamped> plan;
@@ -410,7 +410,7 @@ void AbstractControllerExecution::run()
 
         // save time and call the plugin
         lct_mtx_.lock();
-        last_call_time_ = ros::Time::now();
+        last_call_time_ = node->now();
         lct_mtx_.unlock();
 
         // call plugin to compute the next velocity command
@@ -423,7 +423,7 @@ void AbstractControllerExecution::run()
         {
           setState(GOT_LOCAL_CMD);
           vel_pub_->publish(cmd_vel_stamped.twist);
-          last_valid_cmd_time_ = ros::Time::now();
+          last_valid_cmd_time_ = node->now();
           retries = 0;
           // check if robot is ignoring velocity command
           if (checkCmdVelIgnored(cmd_vel_stamped.twist))

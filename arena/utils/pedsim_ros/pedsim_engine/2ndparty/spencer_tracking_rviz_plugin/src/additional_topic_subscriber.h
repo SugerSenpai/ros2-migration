@@ -209,7 +209,7 @@ private:
     bool m_enabled;
     Display* m_display;
     DisplayContext* m_context;
-    ros::NodeHandle m_updateNodeHandle;
+    auto m_updateNodeHandle = std::make_shared<rclcpp::Node>("m_updateNodeHandle");;
     message_filters::Subscriber<MessageType> m_subscriber;
     uint32_t m_messagesReceived;
 

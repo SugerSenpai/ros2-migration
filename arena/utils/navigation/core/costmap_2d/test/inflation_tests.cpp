@@ -63,8 +63,8 @@ std::vector<Point> setRadii(LayeredCostmap& layers, double length, double width,
   polygon.push_back(p);
   layers.setFootprint(polygon);
 
-  ros::NodeHandle nh;
-  nh.setParam("/inflation_tests/inflation/inflation_radius", inflation_radius);
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
+  nh->set_parameter(rclcpp::Parameter("/inflation_tests/inflation/inflation_radius", inflation_radius));
 
   return polygon;
 }
@@ -411,7 +411,7 @@ TEST(costmap, testInflation3){
 
 
 int main(int argc, char** argv){
-  ros::init(argc, argv, "inflation_tests");
+  rclcpp::init(argc, argv, "inflation_tests");
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

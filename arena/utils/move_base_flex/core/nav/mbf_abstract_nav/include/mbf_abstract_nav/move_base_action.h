@@ -154,7 +154,7 @@ class MoveBaseAction
   //! current goal pose; used to compute remaining distance and angle
   geometry_msgs::PoseStamped goal_pose_;
 
-  ros::NodeHandle private_nh_;
+  auto private_nh_ = std::make_shared<rclcpp::Node>("private_nh_");;
 
   //! Action client used by the move_base action
   ActionClientExePath action_client_exe_path_;

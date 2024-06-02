@@ -31,8 +31,8 @@
 #include <pedsim_visualizer/sim_visualizer.h>
 
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "pedsim_visualizer");
-  ros::NodeHandle node("~");
+  rclcpp::init(argc, argv, "pedsim_visualizer");
+  auto node = std::make_shared<rclcpp::Node>("node");"~");
 
   pedsim::SimVisualizer viz(node);
   viz.run();

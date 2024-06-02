@@ -59,7 +59,7 @@ class FlatlandPlugin {
   enum class PluginType { Invalid, Model, World };  // Different plugin Types
   std::string type_;                                ///< type of the plugin
   std::string name_;                                ///< name of the plugin
-  ros::NodeHandle nh_;                              // ROS node handle
+  auto nh_ = std::make_shared<rclcpp::Node>("nh_");;                              // ROS node handle
   PluginType plugin_type_;
 
   /*

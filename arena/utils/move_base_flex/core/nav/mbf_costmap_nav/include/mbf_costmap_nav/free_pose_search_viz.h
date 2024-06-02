@@ -42,7 +42,7 @@
 
 // ros
 #include "rclcpp/rclcpp.h"
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 #include <geometry_msgs/Pose2D.h>
 #include <std_msgs/ColorRGBA.h>
 #include <visualization_msgs/MarkerArray.h>

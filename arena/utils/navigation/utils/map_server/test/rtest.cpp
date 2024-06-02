@@ -51,7 +51,7 @@ class MapClientTest : public testing::Test
 
     MapClientTest()
     {
-      ros::init(g_argc, g_argv, "map_client_test");
+      rclcpp::init(g_argc, g_argv, "map_client_test");
       n_ = new ros::NodeHandle();
       got_map_ = false;
       got_map_metadata_ = false;

@@ -56,7 +56,7 @@ namespace costmap_2d
 
 void ObstacleLayer::onInitialize()
 {
-  ros::NodeHandle nh("~/" + name_), g_nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");"~/" + name_), g_nh;
   rolling_window_ = layered_costmap_->isRolling();
 
   bool track_unknown_space;
@@ -84,7 +84,7 @@ void ObstacleLayer::onInitialize()
   std::string source;
   while (ss >> source)
   {
-    ros::NodeHandle source_node(nh, source);
+    auto source_node = std::make_shared<rclcpp::Node>("source_node");nh, source);
 
     // get the parameters for the specific topic
     double observation_keep_time, expected_update_rate, min_obstacle_height, max_obstacle_height;

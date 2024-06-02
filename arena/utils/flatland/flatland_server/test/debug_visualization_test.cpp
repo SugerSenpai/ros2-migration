@@ -399,7 +399,7 @@ struct MarkerArraySubscriptionHelper {
    * @return true if successful
    */
   bool waitForMessageCount(int count) {
-    ros::Rate rate(10);  // throttle check to 10Hz
+    rclcpp::Rate rate(10);  // throttle check to 10Hz
     for (unsigned int i = 0; i < 20; i++) {
       ros::spinOnce();
       if (count_ >= count) return true;
@@ -436,7 +436,7 @@ TEST(DebugVizTest, testPublishMarkers) {
   b2Joint* joint = world.CreateJoint(&joint_def);
 
   // Set up helper class subscribing to rostopic
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   MarkerArraySubscriptionHelper helper;
   ros::Subscriber sub =
       nh.subscribe("/debug_visualization_test/debug/example", 0,
@@ -504,7 +504,7 @@ TEST(DebugVizTest, testPublishMarkers) {
 
 // Run all the tests that were declared with TEST()
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "debug_visualization_test");
+  rclcpp::init(argc, argv, "debug_visualization_test");
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

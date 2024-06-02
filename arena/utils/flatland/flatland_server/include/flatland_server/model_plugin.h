@@ -66,7 +66,7 @@ class ModelPlugin : public FlatlandPlugin {
   Model *model_;  ///< model this plugin is tied to
 
  public:
-  ros::NodeHandle nh_;  ///< ROS node handle
+  auto nh_ = std::make_shared<rclcpp::Node>("nh_");;  ///< ROS node handle
 
   /**
    * @brief Get model

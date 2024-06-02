@@ -572,7 +572,7 @@ std::string Simulator::agentStateToActivity(
 std_msgs::Header Simulator::createMsgHeader() const
 {
   std_msgs::Header msg_header;
-  msg_header.stamp = ros::Time::now();
+  msg_header.stamp = node->now();
   msg_header.frame_id = frame_id_;
   return msg_header;
 }

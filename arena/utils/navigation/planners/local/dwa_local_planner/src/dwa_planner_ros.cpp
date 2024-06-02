@@ -44,7 +44,7 @@
 #include <pluginlib/class_list_macros.hpp>
 
 #include <base_local_planner/goal_functions.h>
-#include <nav_msgs/Path.h>
+#include "nav_msgs/msg/path.hpp"
 #include <tf2/utils.h>
 
 #include <nav_core/parameter_magic.h>
@@ -100,7 +100,7 @@ namespace dwa_local_planner {
       costmap_2d::Costmap2DROS* costmap_ros) {
     if (! isInitialized()) {
 
-      ros::NodeHandle private_nh("~/" + name);
+      auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name);
       g_plan_pub_ = private_nh.advertise<nav_msgs::Path>("global_plan", 1);
       l_plan_pub_ = private_nh.advertise<nav_msgs::Path>("local_plan", 1);
       tf_ = tf;
@@ -242,7 +242,7 @@ namespace dwa_local_planner {
 
       geometry_msgs::PoseStamped p;
       p.header.frame_id = costmap_ros_->getGlobalFrameID();
-      p.header.stamp = ros::Time::now();
+      p.header.stamp = node->now();
       p.pose.position.x = p_x;
       p.pose.position.y = p_y;
       p.pose.position.z = 0.0;

@@ -37,8 +37,8 @@
 #ifndef NAV_CORE_BASE_LOCAL_PLANNER_H
 #define NAV_CORE_BASE_LOCAL_PLANNER_H
 
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/Twist.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
+#include "geometry_msgs/msg/twist.hpp"
 #include <costmap_2d/costmap_2d_ros.h>
 #include <tf2_ros/buffer.h>
 

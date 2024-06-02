@@ -55,7 +55,7 @@ namespace costmap_2d
 void VoxelLayer::onInitialize()
 {
   ObstacleLayer::onInitialize();
-  ros::NodeHandle private_nh("~/" + name_);
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name_);
 
   private_nh.param("publish_voxel_map", publish_voxel_, false);
   if (publish_voxel_)
@@ -207,7 +207,7 @@ void VoxelLayer::updateBounds(double robot_x, double robot_y, double robot_yaw, 
     grid_msg.resolutions.y = resolution_;
     grid_msg.resolutions.z = z_resolution_;
     grid_msg.header.frame_id = global_frame_;
-    grid_msg.header.stamp = ros::Time::now();
+    grid_msg.header.stamp = node->now();
     voxel_pub_->publish(grid_msg);
   }
 

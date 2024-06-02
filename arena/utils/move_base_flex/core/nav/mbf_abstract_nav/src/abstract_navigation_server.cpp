@@ -38,7 +38,7 @@
  *
  */
 
-#include <nav_msgs/Path.h>
+#include "nav_msgs/msg/path.hpp"
 
 #include "mbf_abstract_nav/abstract_navigation_server.h"
 
@@ -70,7 +70,7 @@ AbstractNavigationServer::AbstractNavigationServer(const TFPtr &tf_listener_ptr)
       recovery_action_(name_action_recovery, robot_info_),
       move_base_action_(name_action_move_base, robot_info_, recovery_plugin_manager_.getLoadedNames())
 {
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
 
   goal_pub_ = nh.advertise<geometry_msgs::PoseStamped>("current_goal", 1);
   subgoal_pub_ = nh.advertise<geometry_msgs::PoseStamped>("current_subgoal", 1);

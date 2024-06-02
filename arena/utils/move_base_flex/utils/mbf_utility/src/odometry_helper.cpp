@@ -52,7 +52,7 @@ void OdometryHelper::odomCallback(const nav_msgs::Odometry::ConstPtr& msg)
   boost::mutex::scoped_lock lock(odom_mutex_);
   base_odom_ = *msg;
   if (base_odom_.header.stamp.isZero())
-    base_odom_.header.stamp = ros::Time::now();
+    base_odom_.header.stamp = node->now();
 }
 
 void OdometryHelper::getOdom(nav_msgs::Odometry& base_odom) const
@@ -69,7 +69,7 @@ void OdometryHelper::setOdomTopic(const std::string& odom_topic)
 
     if (!odom_topic_.empty())
     {
-      ros::NodeHandle gn;
+      auto gn = std::make_shared<rclcpp::Node>("gn");;
       odom_sub_ =
           gn.subscribe<nav_msgs::Odometry>(odom_topic_, 1, boost::bind(&OdometryHelper::odomCallback, this, _1));
     }

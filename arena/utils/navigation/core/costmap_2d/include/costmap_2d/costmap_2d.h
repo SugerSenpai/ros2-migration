@@ -40,7 +40,7 @@
 
 #include <vector>
 #include <queue>
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 #include <boost/thread.hpp>
 
 namespace costmap_2d

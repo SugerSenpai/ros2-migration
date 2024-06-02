@@ -57,7 +57,7 @@ namespace move_slow_and_clear
     global_costmap_ = global_costmap;
     local_costmap_ = local_costmap;
 
-    ros::NodeHandle private_nh_("~/" + n);
+    auto private_nh_ = std::make_shared<rclcpp::Node>("private_nh_");"~/" + n);
     private_nh_.param("clearing_distance", clearing_distance_, 0.5);
     private_nh_.param("limited_trans_speed", limited_trans_speed_, 0.25);
     private_nh_.param("limited_rot_speed", limited_rot_speed_, 0.45);

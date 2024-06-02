@@ -47,7 +47,7 @@ class MapGenerator
     MapGenerator(const std::string& mapname, int threshold_occupied, int threshold_free)
       : mapname_(mapname), saved_map_(false), threshold_occupied_(threshold_occupied), threshold_free_(threshold_free)
     {
-      ros::NodeHandle n;
+      auto n = std::make_shared<rclcpp::Node>("n");;
       ROS_INFO("Waiting for the map");
       map_sub_ = n.subscribe("map", 1, &MapGenerator::mapCallback, this);
     }
@@ -135,7 +135,7 @@ free_thresh: 0.196
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "map_saver");
+  rclcpp::init(argc, argv, "map_saver");
   std::string mapname = "map";
   int threshold_occupied = 65;
   int threshold_free = 25;

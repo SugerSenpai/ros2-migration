@@ -42,7 +42,7 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/thread.hpp>
 
-#include <geometry_msgs/Twist.h>
+#include "geometry_msgs/msg/twist.hpp"
 
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 
@@ -60,8 +60,8 @@ namespace move_base {
 
     as_ = new MoveBaseActionServer(ros::NodeHandle(), "move_base", [this](auto& goal){ executeCb(goal); }, false);
 
-    ros::NodeHandle private_nh("~");
-    ros::NodeHandle nh;
+    auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
+    auto nh = std::make_shared<rclcpp::Node>("nh");;
 
     recovery_trigger_ = PLANNING_R;
 
@@ -96,14 +96,14 @@ namespace move_base {
     vel_pub_ = nh.advertise<geometry_msgs::Twist>("cmd_vel", 1);
     current_goal_pub_ = private_nh.advertise<geometry_msgs::PoseStamped>("current_goal", 0 );
 
-    ros::NodeHandle action_nh("move_base");
+    auto action_nh = std::make_shared<rclcpp::Node>("action_nh");"move_base");
     action_goal_pub_ = action_nh.advertise<move_base_msgs::MoveBaseActionGoal>("goal", 1);
     recovery_status_pub_= action_nh.advertise<move_base_msgs::RecoveryStatus>("recovery_status", 1);
 
     //we'll provide a mechanism for some people to send goals as PoseStamped messages over a topic
     //they won't get any useful information back about its status, but this is useful for tools
     //like nav_view and rviz
-    ros::NodeHandle simple_nh("move_base_simple");
+    auto simple_nh = std::make_shared<rclcpp::Node>("simple_nh");"move_base_simple");
     goal_sub_ = simple_nh.subscribe<geometry_msgs::PoseStamped>("goal", 1, [this](auto& goal){ goalCB(goal); });
 
     //we'll assume the radius of the robot to be consistent with what's specified for the costmaps
@@ -275,7 +275,7 @@ namespace move_base {
   void MoveBase::goalCB(const geometry_msgs::PoseStamped::ConstPtr& goal){
     ROS_DEBUG_NAMED("move_base","In ROS goal callback, wrapping the PoseStamped in the action message and re-sending to the server.");
     move_base_msgs::MoveBaseActionGoal action_goal;
-    action_goal.header.stamp = ros::Time::now();
+    action_goal.header.stamp = node->now();
     action_goal.goal.target_pose = *goal;
 
     action_goal_pub_->publish(action_goal);
@@ -568,7 +568,7 @@ namespace move_base {
 
   void MoveBase::planThread(){
     ROS_DEBUG_NAMED("move_base_plan_thread","Starting planner thread...");
-    ros::NodeHandle n;
+    auto n = std::make_shared<rclcpp::Node>("n");;
     ros::Timer timer;
     bool wait_for_wake = false;
     boost::unique_lock<boost::recursive_mutex> lock(planner_mutex_);
@@ -580,7 +580,7 @@ namespace move_base {
         planner_cond_.wait(lock);
         wait_for_wake = false;
       }
-      ros::Time start_time = ros::Time::now();
+      ros::Time start_time = node->now();
 
       //time to plan! get a copy of the goal and unlock the mutex
       geometry_msgs::PoseStamped temp_goal = planner_goal_;
@@ -599,7 +599,7 @@ namespace move_base {
         lock.lock();
         planner_plan_ = latest_plan_;
         latest_plan_ = temp_plan;
-        last_valid_plan_ = ros::Time::now();
+        last_valid_plan_ = node->now();
         planning_retries_ = 0;
         new_global_plan_ = true;
 
@@ -623,7 +623,7 @@ namespace move_base {
         lock.lock();
         planning_retries_++;
         if(runPlanner_ &&
-           (ros::Time::now() > attempt_end || planning_retries_ > uint32_t(max_planning_retries_))){
+           (node->now() > attempt_end || planning_retries_ > uint32_t(max_planning_retries_))){
           //we'll move into our obstacle clearing mode
           state_ = CLEARING;
           runPlanner_ = false;  // proper solution for issue #523
@@ -639,7 +639,7 @@ namespace move_base {
 
       //setup sleep interface if needed
       if(planner_frequency_ > 0){
-        ros::Duration sleep_time = (start_time + ros::Duration(1.0/planner_frequency_)) - ros::Time::now();
+        ros::Duration sleep_time = (start_time + ros::Duration(1.0/planner_frequency_)) - node->now();
         if (sleep_time > ros::Duration(0.0)){
           wait_for_wake = true;
           timer = n.createTimer(sleep_time, &MoveBase::wakePlanner, this);
@@ -675,12 +675,12 @@ namespace move_base {
     }
 
     //we want to make sure that we reset the last time we had a valid plan and control
-    last_valid_control_ = ros::Time::now();
-    last_valid_plan_ = ros::Time::now();
-    last_oscillation_reset_ = ros::Time::now();
+    last_valid_control_ = node->now();
+    last_valid_plan_ = node->now();
+    last_oscillation_reset_ = node->now();
     planning_retries_ = 0;
 
-    ros::NodeHandle n;
+    auto n = std::make_shared<rclcpp::Node>("n");;
     while(n.ok())
     {
       if(c_freq_change_)
@@ -718,9 +718,9 @@ namespace move_base {
           current_goal_pub_->publish(goal);
 
           //make sure to reset our timeouts and counters
-          last_valid_control_ = ros::Time::now();
-          last_valid_plan_ = ros::Time::now();
-          last_oscillation_reset_ = ros::Time::now();
+          last_valid_control_ = node->now();
+          last_valid_plan_ = node->now();
+          last_oscillation_reset_ = node->now();
           planning_retries_ = 0;
         }
         else {
@@ -756,9 +756,9 @@ namespace move_base {
         current_goal_pub_->publish(goal);
 
         //make sure to reset our timeouts and counters
-        last_valid_control_ = ros::Time::now();
-        last_valid_plan_ = ros::Time::now();
-        last_oscillation_reset_ = ros::Time::now();
+        last_valid_control_ = node->now();
+        last_valid_plan_ = node->now();
+        last_oscillation_reset_ = node->now();
         planning_retries_ = 0;
       }
 
@@ -817,7 +817,7 @@ namespace move_base {
     //check to see if we've moved far enough to reset our oscillation timeout
     if(distance(current_position, oscillation_pose_) >= oscillation_distance_)
     {
-      last_oscillation_reset_ = ros::Time::now();
+      last_oscillation_reset_ = node->now();
       oscillation_pose_ = current_position;
 
       //if our last recovery was caused by oscillation, we want to reset the recovery index
@@ -899,7 +899,7 @@ namespace move_base {
 
         //check for an oscillation condition
         if(oscillation_timeout_ > 0.0 &&
-            last_oscillation_reset_ + ros::Duration(oscillation_timeout_) < ros::Time::now())
+            last_oscillation_reset_ + ros::Duration(oscillation_timeout_) < node->now())
         {
           publishZeroVelocity();
           state_ = CLEARING;
@@ -912,7 +912,7 @@ namespace move_base {
         if(tc_->computeVelocityCommands(cmd_vel)){
           ROS_DEBUG_NAMED( "move_base", "Got a valid command from the local planner: %.3lf, %.3lf, %.3lf",
                            cmd_vel.linear.x, cmd_vel.linear.y, cmd_vel.angular.z );
-          last_valid_control_ = ros::Time::now();
+          last_valid_control_ = node->now();
           //make sure that we send the velocity command to the base
           vel_pub_->publish(cmd_vel);
           if(recovery_trigger_ == CONTROLLING_R)
@@ -923,7 +923,7 @@ namespace move_base {
           ros::Time attempt_end = last_valid_control_ + ros::Duration(controller_patience_);
 
           //check if we've tried to find a valid control for longer than our time limit
-          if(ros::Time::now() > attempt_end){
+          if(node->now() > attempt_end){
             //we'll move into our obstacle clearing mode
             publishZeroVelocity();
             state_ = CLEARING;
@@ -931,7 +931,7 @@ namespace move_base {
           }
           else{
             //otherwise, if we can't find a valid control, we'll go back to planning
-            last_valid_plan_ = ros::Time::now();
+            last_valid_plan_ = node->now();
             planning_retries_ = 0;
             state_ = PLANNING;
             publishZeroVelocity();
@@ -965,11 +965,11 @@ namespace move_base {
           recovery_behaviors_[recovery_index_]->runBehavior();
 
           //we at least want to give the robot some time to stop oscillating after executing the behavior
-          last_oscillation_reset_ = ros::Time::now();
+          last_oscillation_reset_ = node->now();
 
           //we'll check if the recovery behavior actually worked
           ROS_DEBUG_NAMED("move_base_recovery","Going back to planning state");
-          last_valid_plan_ = ros::Time::now();
+          last_valid_plan_ = node->now();
           planning_retries_ = 0;
           state_ = PLANNING;
 
@@ -1016,7 +1016,7 @@ namespace move_base {
     return false;
   }
 
-  bool MoveBase::loadRecoveryBehaviors(ros::NodeHandle node){
+  bool MoveBase::loadRecoveryBehaviors(auto node = std::make_shared<rclcpp::Node>("node");){
     XmlRpc::XmlRpcValue behavior_list;
     if(node.getParam("recovery_behaviors", behavior_list)){
       if(behavior_list.getType() == XmlRpc::XmlRpcValue::TypeArray){
@@ -1106,9 +1106,9 @@ namespace move_base {
     recovery_behaviors_.clear();
     try{
       //we need to set some parameters based on what's been passed in to us to maintain backwards compatibility
-      ros::NodeHandle n("~");
-      n.setParam("conservative_reset/reset_distance", conservative_reset_dist_);
-      n.setParam("aggressive_reset/reset_distance", circumscribed_radius_ * 4);
+      auto n = std::make_shared<rclcpp::Node>("n");"~");
+      n->set_parameter(rclcpp::Parameter("conservative_reset/reset_distance", conservative_reset_dist_));
+      n->set_parameter(rclcpp::Parameter("aggressive_reset/reset_distance", circumscribed_radius_ * 4));
 
       //first, we'll load a recovery behavior to clear the costmap
       boost::shared_ptr<nav_core::RecoveryBehavior> cons_clear(recovery_loader_.createInstance("clear_costmap_recovery/ClearCostmapRecovery"));
@@ -1170,7 +1170,7 @@ namespace move_base {
     tf2::toMsg(tf2::Transform::getIdentity(), robot_pose.pose);
     robot_pose.header.frame_id = robot_base_frame_;
     robot_pose.header.stamp = ros::Time(); // latest available
-    ros::Time current_time = ros::Time::now();  // save time for checking tf delay later
+    ros::Time current_time = node->now();  // save time for checking tf delay later
 
     // get robot pose on the given costmap frame
     try

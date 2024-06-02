@@ -37,7 +37,7 @@
 #include <functional>
 #include <boost/circular_buffer.hpp>
 #include <spencer_tracking_msgs/TrackedPersons.h>
-#include <geometry_msgs/Twist.h>
+#include "geometry_msgs/msg/twist.hpp"
 #include <rviz/message_filter_display.h>
 
 #include <OGRE/OgreSceneNode.h>

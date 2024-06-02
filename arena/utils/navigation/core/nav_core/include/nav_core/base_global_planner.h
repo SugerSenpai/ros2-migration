@@ -37,7 +37,7 @@
 #ifndef NAV_CORE_BASE_GLOBAL_PLANNER_H
 #define NAV_CORE_BASE_GLOBAL_PLANNER_H
 
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
 #include <costmap_2d/costmap_2d_ros.h>
 
 namespace nav_core {

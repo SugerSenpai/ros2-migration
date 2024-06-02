@@ -39,8 +39,8 @@
 #include <QRectF>
 
 #include <pedsim_simulator/utilities.h>
-#include <geometry_msgs/Point.h>
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/point.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
 #include "rclcpp/rclcpp.h"
 
 #include <pedsim_simulator/element/obstacle.h>
@@ -78,7 +78,7 @@ class Scene : public QObject, protected Ped::Tscene {
 #define SCENE Scene::getInstance()
  protected:
   static Scene* instance;
-  ros::NodeHandle nh_;
+  auto nh_ = std::make_shared<rclcpp::Node>("nh_");;
 
  public:
   static Scene& getInstance();

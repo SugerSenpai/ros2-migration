@@ -47,7 +47,7 @@
 
 #include <angles/angles.h>
 
-#include <nav_msgs/Odometry.h>
+#include "nav_msgs/msg/odometry.hpp"
 
 #include <costmap_2d/costmap_2d_ros.h>
 #include <nav_core/base_local_planner.h>

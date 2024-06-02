@@ -62,7 +62,7 @@ void FreePoseSearchViz::addMarker(const geometry_msgs::Pose2D& pose_2d,
 
   visualization_msgs::Marker marker;
   marker.header.frame_id = frame_id_;
-  marker.header.stamp = ros::Time::now();
+  marker.header.stamp = node->now();
   marker.ns = ns;
   marker.id = marker_id_++;
   marker.type = visualization_msgs::Marker::LINE_STRIP;

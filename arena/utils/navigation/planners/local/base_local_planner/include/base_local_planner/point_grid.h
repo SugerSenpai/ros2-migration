@@ -39,11 +39,11 @@
 #include <vector>
 #include <list>
 #include <cfloat>
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 #include <costmap_2d/observation.h>
 #include <base_local_planner/world_model.h>
 
-#include <sensor_msgs/PointCloud2.h>
+#include "sensor_msgs/msg/point_cloud2.hpp"
 
 namespace base_local_planner {
   /**

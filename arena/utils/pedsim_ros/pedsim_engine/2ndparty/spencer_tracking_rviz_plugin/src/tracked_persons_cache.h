@@ -63,7 +63,7 @@ namespace spencer_tracking_rviz_plugin
         ~TrackedPersonsCache();
 
         /// Create TrackedPersons subscriber and setup RViz properties.
-        void initialize(rviz::Display* display, rviz::DisplayContext* context, ros::NodeHandle update_nh);
+        void initialize(rviz::Display* display, rviz::DisplayContext* context, auto update_nh = std::make_shared<rclcpp::Node>("update_nh"););
 
         /// Clear internal state, including all cached track positions.
         void reset();

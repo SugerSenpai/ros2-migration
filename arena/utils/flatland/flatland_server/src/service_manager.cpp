@@ -52,7 +52,7 @@ namespace flatland_server {
 
 ServiceManager::ServiceManager(SimulationManager *sim_man, World *world)
     : world_(world), sim_man_(sim_man) {
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
 
   spawn_model_service_ =
       nh.advertiseService("spawn_model", &ServiceManager::SpawnModel, this);

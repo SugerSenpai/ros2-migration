@@ -45,7 +45,7 @@
 
 #include "rclcpp/rclcpp.h"
 #include <tf2/utils.h>
-#include <sensor_msgs/PointCloud2.h>
+#include "sensor_msgs/msg/point_cloud2.hpp"
 #include <sensor_msgs/point_cloud2_iterator.h>
 
 namespace dwa_local_planner {
@@ -123,7 +123,7 @@ namespace dwa_local_planner {
       goal_front_costs_(planner_util->getCostmap(), 0.0, 0.0, true),
       alignment_costs_(planner_util->getCostmap())
   {
-    ros::NodeHandle private_nh("~/" + name);
+    auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name);
 
     goal_front_costs_.setStopOnFailure( false );
     alignment_costs_.setStopOnFailure( false );
@@ -324,7 +324,7 @@ namespace dwa_local_planner {
     {
         sensor_msgs::PointCloud2 traj_cloud;
         traj_cloud.header.frame_id = frame_id_;
-        traj_cloud.header.stamp = ros::Time::now();
+        traj_cloud.header.stamp = node->now();
 
         sensor_msgs::PointCloud2Modifier cloud_mod(traj_cloud);
         cloud_mod.setPointCloud2Fields(5, "x", 1, sensor_msgs::PointField::FLOAT32,

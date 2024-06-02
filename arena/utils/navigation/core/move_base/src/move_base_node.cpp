@@ -31,14 +31,14 @@
 #include <tf2_ros/transform_listener.h>
 
 int main(int argc, char** argv){
-  ros::init(argc, argv, "move_base_node");
+  rclcpp::init(argc, argv, "move_base_node");
   tf2_ros::Buffer buffer(ros::Duration(10));
   tf2_ros::TransformListener tf(buffer);
 
   move_base::MoveBase move_base( buffer );
 
   //ros::MultiThreadedSpinner s;
-  ros::spin();
+  rclcpp::spin(node);
 
   return(0);
 }

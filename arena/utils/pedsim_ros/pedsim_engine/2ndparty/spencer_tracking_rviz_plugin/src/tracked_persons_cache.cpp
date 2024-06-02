@@ -46,7 +46,7 @@ TrackedPersonsCache::~TrackedPersonsCache()
     delete m_tracked_person_subscriber;
 }
 
-void TrackedPersonsCache::initialize(rviz::Display* display, rviz::DisplayContext* context, ros::NodeHandle update_nh)
+void TrackedPersonsCache::initialize(rviz::Display* display, rviz::DisplayContext* context, auto update_nh = std::make_shared<rclcpp::Node>("update_nh");)
 {
     m_display = display;
     m_context = context;

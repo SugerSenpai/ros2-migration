@@ -104,8 +104,8 @@ bool AbstractRecoveryExecution::isPatienceExceeded()
 {
   boost::lock_guard<boost::mutex> guard1(conf_mtx_);
   boost::lock_guard<boost::mutex> guard2(time_mtx_);
-  ROS_DEBUG_STREAM("Patience: " << patience_ << ", start time: " << start_time_ << " now: " << ros::Time::now());
-  return !patience_.isZero() && (ros::Time::now() - start_time_ > patience_);
+  ROS_DEBUG_STREAM("Patience: " << patience_ << ", start time: " << start_time_ << " now: " << node->now());
+  return !patience_.isZero() && (node->now() - start_time_ > patience_);
 }
 
 void AbstractRecoveryExecution::run()
@@ -113,7 +113,7 @@ void AbstractRecoveryExecution::run()
   cancel_ = false; // reset the canceled state
 
   time_mtx_.lock();
-  start_time_ = ros::Time::now();
+  start_time_ = node->now();
   time_mtx_.unlock();
   setState(RECOVERING);
   try

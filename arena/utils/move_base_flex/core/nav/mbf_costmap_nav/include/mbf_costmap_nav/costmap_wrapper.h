@@ -105,7 +105,7 @@ private:
   void deactivate(const ros::TimerEvent &event);
 
   //! Private node handle
-  ros::NodeHandle private_nh_;
+  auto private_nh_ = std::make_shared<rclcpp::Node>("private_nh_");;
 
   boost::mutex check_costmap_mutex_;     //!< Start/stop costmap mutex; concurrent calls to start can lead to segfault
   bool shutdown_costmap_;                //!< don't update costmap when not using it

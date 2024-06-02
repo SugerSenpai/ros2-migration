@@ -60,7 +60,7 @@
 #include <base_local_planner/twirling_cost_function.h>
 #include <base_local_planner/simple_scored_sampling_planner.h>
 
-#include <nav_msgs/Path.h>
+#include "nav_msgs/msg/path.hpp"
 
 namespace dwa_local_planner {
   /**

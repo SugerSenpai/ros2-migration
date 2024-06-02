@@ -53,7 +53,7 @@
 #include <flatland_server/world.h>
 #include "rclcpp/rclcpp.h"
 #include <nav_msgs/OccupancyGrid.h>
-#include <std_msgs/String.h>
+#include "std_msgs/msg/string.hpp"
 #include <std_srvs/Empty.h>
 
 #include <exception>
@@ -118,13 +118,13 @@ void SimulationManager::Main() {
 
   // advertise: step world service server
   // if (train_mode_) {
-  //   ros::NodeHandle nh;
+  //   auto nh = std::make_shared<rclcpp::Node>("nh");;
   //   step_world_service_ = nh.advertiseService(
   //       "step_world", &SimulationManager::callback_StepWorld, this);
   // }
 
   // loading layers whenever /map is published, but callback only running when train mode on AND random map used as map_file
-  ros::NodeHandle n;
+  auto n = std::make_shared<rclcpp::Node>("n");;
   ros::Subscriber goal_sub = n.subscribe("/map", 1, &SimulationManager::callback, this);
   ros::Subscriber step_world = n.subscribe("step_world", 1, &SimulationManager::callback_StepWorld, this);
 

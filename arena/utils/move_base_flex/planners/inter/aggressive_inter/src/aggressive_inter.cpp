@@ -106,7 +106,7 @@ namespace aggressive_inter
 
     void AggressiveInter::setMaxVelocityThread()
     {
-        ros::Rate rate(1); // Adjust the rate as needed
+        rclcpp::Rate rate(1); // Adjust the rate as needed
         while (ros::ok())
         {
             // Lock to access shared variables

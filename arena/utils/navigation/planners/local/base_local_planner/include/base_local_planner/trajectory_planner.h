@@ -51,8 +51,8 @@
 #include <base_local_planner/BaseLocalPlannerConfig.h>
 
 //we'll take in a path as a vector of poses
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
+#include "geometry_msgs/msg/point.hpp"
 
 //for creating a local cost grid
 #include <base_local_planner/map_cell.h>

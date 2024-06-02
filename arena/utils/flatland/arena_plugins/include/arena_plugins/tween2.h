@@ -1,7 +1,7 @@
 #ifndef ARENA_PLUGINS_TWEEN2
 #define ARENA_PLUGINS_TWEEN2
 #include <flatland_plugins/tween.h>
-#include <nav_msgs/Odometry.h>
+#include "nav_msgs/msg/odometry.hpp"
 #include "rclcpp/rclcpp.h"
 #include <std_msgs/Empty.h>
 using namespace flatland_server;

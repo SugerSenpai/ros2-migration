@@ -64,7 +64,7 @@ namespace carrot_planner {
       costmap_ros_ = costmap_ros;
       costmap_ = costmap_ros_->getCostmap();
 
-      ros::NodeHandle private_nh("~/" + name);
+      auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name);
       private_nh.param("step_size", step_size_, costmap_->getResolution());
       private_nh.param("min_dist_from_robot", min_dist_from_robot_, 0.10);
       world_model_ = new base_local_planner::CostmapModel(*costmap_); 

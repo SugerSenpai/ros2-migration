@@ -6,9 +6,9 @@
 #include <mbf_abstract_nav/MoveBaseFlexConfig.h>
 #include <mbf_abstract_nav/abstract_controller_execution.h>
 
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/TwistStamped.h>
-#include <geometry_msgs/Twist.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
+#include "geometry_msgs/msg/twist_stamped.hpp"
+#include "geometry_msgs/msg/twist.hpp"
 #include <tf/transform_datatypes.h>
 #include <geometry_msgs/TransformStamped.h>
 
@@ -153,10 +153,10 @@ struct ComputeRobotPoseFixture : public AbstractControllerExecutionFixture
     StampedTransform transform;
     transform.child_frame_id_ = robot_frame_;
     transform.frame_id_ = global_frame_;
-    transform.stamp_ = ros::Time::now();
+    transform.stamp_ = node->now();
 #else
     TransformStamped transform;
-    transform.header.stamp = ros::Time::now();
+    transform.header.stamp = node->now();
     transform.header.frame_id = global_frame_;
     transform.child_frame_id = robot_frame_;
     transform.transform.rotation.w = 1;
@@ -294,8 +294,8 @@ TEST_F(FailureFixture, patExceeded)
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "read_types");
-  ros::NodeHandle nh;
+  rclcpp::init(argc, argv, "read_types");
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   // setup the pubs as global objects
   VEL_PUB = nh.advertise<Twist>("vel", 1);
   GOAL_PUB = nh.advertise<PoseStamped>("pose", 1);

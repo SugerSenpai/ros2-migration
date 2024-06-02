@@ -34,8 +34,8 @@
 #include <string>
 
 #include "rclcpp/rclcpp.h"
-#include <nav_msgs/Odometry.h>
-#include <geometry_msgs/Pose.h>
+#include "nav_msgs/msg/odometry.hpp"
+#include "geometry_msgs/msg/pose.hpp"
 
 #include <pedsim_simulator/element/scenarioelement.h>
 #include <pedsim_msgs/RobotState.h>
@@ -51,7 +51,7 @@ class Robot : public ScenarioElement
 
     // Constructor and Destructor
 public:
-    Robot(pedsim::id name, std::string topicOdom, ros::NodeHandle nh);
+    Robot(pedsim::id name, std::string topicOdom, auto nh = std::make_shared<rclcpp::Node>("nh"););
     virtual ~Robot();
 
     // methods

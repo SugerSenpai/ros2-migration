@@ -85,14 +85,14 @@ Agent::Agent() {
   requestingGuideProbability = 0.1;
   requestingFollowerProbability = 0.1;
 
-  lastStartTalkingCheck = ros::Time::now();
-  lastTellStoryCheck = ros::Time::now();
-  lastGroupTalkingCheck = ros::Time::now();
-  lastStartTalkingAndWalkingCheck = ros::Time::now();
-  lastSwitchRunningWalkingCheck = ros::Time::now();
-  lastRequestingServiceCheck = ros::Time::now();
-  lastRequestingGuideCheck = ros::Time::now();
-  lastRequestingFollowerCheck = ros::Time::now();
+  lastStartTalkingCheck = node->now();
+  lastTellStoryCheck = node->now();
+  lastGroupTalkingCheck = node->now();
+  lastStartTalkingAndWalkingCheck = node->now();
+  lastSwitchRunningWalkingCheck = node->now();
+  lastRequestingServiceCheck = node->now();
+  lastRequestingGuideCheck = node->now();
+  lastRequestingFollowerCheck = node->now();
 
   stateWorkingBaseTime = 30.0;
   stateLiftingForksBaseTime = 3.0;
@@ -105,8 +105,8 @@ Agent::Agent() {
   stateRequestingServiceBaseTime = 30.0;
   stateReceivingServiceBaseTime = 30.0;
 
-  lastIsStuckCheck = ros::Time::now();
-  lastRecordedVelocityTime = ros::Time::now();
+  lastIsStuckCheck = node->now();
+  lastRecordedVelocityTime = node->now();
   recordedVelocitiesIndex = 0;
   velocitiesRecorded = 0;
 
@@ -119,11 +119,11 @@ Agent::Agent() {
   disableForce("KeepDistance");
   disableForce("Robot");
 
-  lastVarySpeed = ros::Time::now();
+  lastVarySpeed = node->now();
 
   startUpMode = StartUpMode::DEFAULT;
   waitTime = 0;
-  waitTimer = ros::Time::now();
+  waitTimer = node->now();
   triggerZoneRadius = 0;
 }
 
@@ -272,7 +272,7 @@ void Agent::reset() {
 
   // reset state
   if (startUpMode == Agent::StartUpMode::WAITTIMER) {
-    waitTimer = ros::Time::now();
+    waitTimer = node->now();
     stateMachine->activateState(AgentStateMachine::AgentState::StateWaitForTimer);
   } else if (startUpMode == Agent::StartUpMode::TRIGGERZONE) {
     stateMachine->activateState(AgentStateMachine::AgentState::StateWaitForTrigger);
@@ -391,15 +391,15 @@ double Agent::rotate(double current_angle, double target_angle, double time_step
 
 bool Agent::completedMoveList() {
   auto last_move = moveList.back();
-  return ros::Time::now() > last_move.timestamp;
+  return node->now() > last_move.timestamp;
 }
 
 void Agent::moveByMoveList() {
   // TODO this can be sped up by projecting the current time onto the range between start time and end time to find the right move index
-  auto now = ros::Time::now();
+  auto now = node->now();
   double min_time_diff = INFINITY;
   AgentPoseStamped new_pose;
-  // find pose in move list that is closest to ros::Time::now()
+  // find pose in move list that is closest to node->now()
   for (auto pose : moveList) {
     double time_diff = abs((now - pose.timestamp).toSec());
     if (time_diff < min_time_diff) {
@@ -417,7 +417,7 @@ std::vector<AgentPoseStamped> Agent::createMoveListStateReachedShelf() {
   double angular_v = 0.5;
   double temp_direction = facingDirection;
   Ped::Tvector temp_pos = p;
-  ros::Time temp_time = ros::Time::now() + ros::Duration(1.0);
+  ros::Time temp_time = node->now() + ros::Duration(1.0);
 
   // do rotation
   // while not reached target angle
@@ -454,7 +454,7 @@ std::vector<AgentPoseStamped> Agent::createMoveListStateBackUp() {
   double angular_v = 0.5;
   double temp_direction = facingDirection;
   Ped::Tvector temp_pos = p;
-  ros::Time temp_time = ros::Time::now() + ros::Duration(1.0);
+  ros::Time temp_time = node->now() + ros::Duration(1.0);
 
   // move backwards
   Ped::Tvector target_pos = temp_pos + Ped::Tvector::fromPolar(Ped::Tangle::fromRadian(temp_direction + M_PI), 1.0);  // 1.0m backwards in the current direction
@@ -764,11 +764,11 @@ bool Agent::isListeningToIndividual() {
 }
 
 bool Agent::tellStory() {
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   // only do the probability check again after some time has passed
   if ((now - lastTellStoryCheck).toSec() > 0.5) {
     // reset timer
-    lastTellStoryCheck = ros::Time::now();
+    lastTellStoryCheck = node->now();
 
     auto potentialChatters = getAgentsInRange(maxTalkingDistance);
     // only tell story if there are multiple people around
@@ -794,11 +794,11 @@ bool Agent::tellStory() {
 
 
 bool Agent::startGroupTalking() {
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   // only do the probability check again after some time has passed
   if ((now - lastGroupTalkingCheck).toSec() > 0.5) {
     // reset timer
-    lastGroupTalkingCheck = ros::Time::now();
+    lastGroupTalkingCheck = node->now();
 
     QList<const Agent*> potentialChatters = getPotentialListeners(maxTalkingDistance);
     // only group talk if there are multiple people around
@@ -827,10 +827,10 @@ bool Agent::startGroupTalking() {
 
 bool Agent::startTalking(){
   // only do the probability check again after some time has passed
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   if ((now - lastStartTalkingCheck).toSec() > 0.5) {
     // reset timer
-    lastStartTalkingCheck = ros::Time::now();
+    lastStartTalkingCheck = node->now();
 
     // start talking sometimes when there is someone near
     QList<const Agent*> potentialChatters = getPotentialListeners(maxTalkingDistance);
@@ -854,10 +854,10 @@ bool Agent::startTalking(){
 
 bool Agent::startTalkingAndWalking(){
   // only do the probability check again after some time has passed
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   if ((now - lastStartTalkingAndWalkingCheck).toSec() > 0.5) {
     // reset timer
-    lastStartTalkingAndWalkingCheck = ros::Time::now();
+    lastStartTalkingAndWalkingCheck = node->now();
 
     // start talking sometimes when there is someone near
     QList<const Agent*> potentialChatters = getPotentialListeners(maxTalkingDistance);
@@ -880,10 +880,10 @@ bool Agent::startTalkingAndWalking(){
 bool Agent::startRequestingService() {
   if (SCENE.serviceRobotExists) {
     // only do the probability check again after some time has passed
-    ros::Time now = ros::Time::now();
+    ros::Time now = node->now();
     if ((now - lastRequestingServiceCheck).toSec() > 0.5) {
       // reset timer
-      lastRequestingServiceCheck = ros::Time::now();
+      lastRequestingServiceCheck = node->now();
 
       // roll a die
       uniform_real_distribution<double> Distribution(0, 1);
@@ -899,10 +899,10 @@ bool Agent::startRequestingService() {
 
 bool Agent::startRequestingGuide() {
   // only do the probability check again after some time has passed
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   if ((now - lastRequestingGuideCheck).toSec() > 0.5) {
     // reset timer
-    lastRequestingGuideCheck = ros::Time::now();
+    lastRequestingGuideCheck = node->now();
 
     // only enter the state if no other guide interaction is going on
     if (!SCENE.guideActive) {
@@ -920,10 +920,10 @@ bool Agent::startRequestingGuide() {
 
 bool Agent::startRequestingFollower() {
   // only do the probability check again after some time has passed
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   if ((now - lastRequestingFollowerCheck).toSec() > 0.5) {
     // reset timer
-    lastRequestingFollowerCheck = ros::Time::now();
+    lastRequestingFollowerCheck = node->now();
 
     // only enter the state if no other follower interaction is going on
     if (!SCENE.followerActive && !hasRequestedFollower) {
@@ -941,10 +941,10 @@ bool Agent::startRequestingFollower() {
 
 bool Agent::switchRunningWalking(){
   // only do the probability check again after some time has passed
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   if ((now - lastSwitchRunningWalkingCheck).toSec() > 0.5) {
     // reset timer
-    lastSwitchRunningWalkingCheck = ros::Time::now();
+    lastSwitchRunningWalkingCheck = node->now();
 
     // roll a dice
     uniform_real_distribution<double> Distribution(0, 1);
@@ -1003,10 +1003,10 @@ bool Agent::someoneIsRequestingService() {
 
 void Agent::recordVelocity() {
   // record velocities at a fixed time interval
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   if ((now - lastRecordedVelocityTime).toSec() > 1.5) {
     // reset timer
-    lastRecordedVelocityTime = ros::Time::now();
+    lastRecordedVelocityTime = node->now();
 
     recordedVelocitiesIndex = (recordedVelocitiesIndex + 1) % numRecordedVelocities;
     recordedVelocities[recordedVelocitiesIndex] = v.lengthSquared();
@@ -1015,10 +1015,10 @@ void Agent::recordVelocity() {
 }
 
 bool Agent::isStuck() {
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   if ((now - lastIsStuckCheck).toSec() > 1.5) {
     // reset timer
-    lastIsStuckCheck = ros::Time::now();
+    lastIsStuckCheck = node->now();
 
     if (velocitiesRecorded > numRecordedVelocities) {  // make sure array is filled
       // get mean velocity
@@ -1191,10 +1191,10 @@ QString Agent::toString() const {
 }
 
 void Agent::varySpeed() {
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   if ((now - lastVarySpeed).toSec() > 0.5) {
     // reset timer and don't vary again for 5 seconds
-    lastVarySpeed = ros::Time::now() + ros::Duration(5.0);
+    lastVarySpeed = node->now() + ros::Duration(5.0);
 
     uniform_real_distribution<double> distribution_activate(0, 1);
     double roll = distribution_activate(RNG());
@@ -1211,7 +1211,7 @@ void Agent::varySpeed() {
 }
 
 bool Agent::waitTimeExpired() {
-  ros::Time now = ros::Time::now();
+  ros::Time now = node->now();
   if ((now - waitTimer).toSec() > waitTime) {
     return true;
   }

@@ -126,11 +126,11 @@ void testCallback(const ros::TimerEvent& e){
 }
 
 int main(int argc, char** argv){
-  ros::init(argc, argv, "costmap_tester_node");
+  rclcpp::init(argc, argv, "costmap_tester_node");
   testing::InitGoogleTest(&argc, argv);
 
-  ros::NodeHandle n;
-  ros::NodeHandle private_nh("~");
+  auto n = std::make_shared<rclcpp::Node>("n");;
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
 
   tf2_ros::Buffer tf(ros::Duration(10));
   tf2_ros::TransformListener tfl(tf);
@@ -140,7 +140,7 @@ int main(int argc, char** argv){
   private_nh.param("wait_time", wait_time, 30.0);
   ros::Timer timer = n.createTimer(ros::Duration(wait_time), testCallback);
 
-  ros::spin();
+  rclcpp::spin(node);
 
   return(0);
 }

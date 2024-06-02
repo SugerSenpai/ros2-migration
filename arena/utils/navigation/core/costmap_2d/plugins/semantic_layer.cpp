@@ -51,7 +51,7 @@ namespace costmap_2d
 
 void SemanticLayer::onInitialize()
 {
-  ros::NodeHandle nh("~/" + name_), g_nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");"~/" + name_), g_nh;
   rolling_window_ = layered_costmap_->isRolling();
 
   default_value_ = FREE_SPACE;
@@ -73,7 +73,7 @@ void SemanticLayer::onInitialize()
   std::string source;
   while (ss >> source)
   {
-    ros::NodeHandle source_node(nh, source);
+    auto source_node = std::make_shared<rclcpp::Node>("source_node");nh, source);
 
     // get the parameters for the specific topic
     std::string topic;

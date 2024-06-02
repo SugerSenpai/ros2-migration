@@ -78,25 +78,25 @@ Costmap2DROS::Costmap2DROS(const std::string& name, tf2_ros::Buffer& tf) :
     footprint_padding_(0.0)
 {
 
-  ros::NodeHandle private_nh("~/" + name);
-  ros::NodeHandle g_nh;
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name);
+  auto g_nh = std::make_shared<rclcpp::Node>("g_nh");;
 
   // get global and robot base frame names
   private_nh.param("global_frame", global_frame_, std::string("map"));
   private_nh.param("robot_base_frame", robot_base_frame_, std::string("base_link"));
 
-  ros::Time last_error = ros::Time::now();
+  ros::Time last_error = node->now();
   std::string tf_error;
   // we need to make sure that the transform between the robot base frame and the global frame is available
   while (ros::ok()
       && !tf_.canTransform(global_frame_, robot_base_frame_, ros::Time(), ros::Duration(0.1), &tf_error))
   {
     ros::spinOnce();
-    if (last_error + ros::Duration(5.0) < ros::Time::now())
+    if (last_error + ros::Duration(5.0) < node->now())
     {
       ROS_WARN("Timed out waiting for transform from %s to %s to become available before running costmap, tf error: %s",
                robot_base_frame_.c_str(), global_frame_.c_str(), tf_error.c_str());
-      last_error = ros::Time::now();
+      last_error = node->now();
     }
     // The error string will accumulate and errors will typically be the same, so the last
     // will do for the warning above. Reset the string here to avoid accumulation.
@@ -121,7 +121,7 @@ Costmap2DROS::Costmap2DROS(const std::string& name, tf2_ros::Buffer& tf) :
   if (private_nh.hasParam("plugins"))
   {
     XmlRpc::XmlRpcValue my_list;
-    private_nh.getParam("plugins", my_list);
+    my_list = private_nh->declare_parameter("plugins", my_list);
     for (int32_t i = 0; i < my_list.size(); ++i)
     {
       std::string pname = static_cast<std::string>(my_list[i]["name"]);
@@ -207,14 +207,14 @@ void Costmap2DROS::loadOldParameters(ros::NodeHandle& nh)
     super_map.setStruct(&map);
     plugins.push_back(super_map);
 
-    ros::NodeHandle map_layer(nh, "static_layer");
+    auto map_layer = std::make_shared<rclcpp::Node>("map_layer");nh, "static_layer");
     move_parameter(nh, map_layer, "map_topic");
     move_parameter(nh, map_layer, "unknown_cost_value");
     move_parameter(nh, map_layer, "lethal_cost_threshold");
     move_parameter(nh, map_layer, "track_unknown_space", false);
   }
 
-  ros::NodeHandle obstacles(nh, "obstacle_layer");
+  auto obstacles = std::make_shared<rclcpp::Node>("obstacles");nh, "obstacle_layer");
   if (nh.getParam("map_type", s) && s == "voxel")
   {
     map["name"] = XmlRpc::XmlRpcValue("obstacle_layer");
@@ -250,7 +250,7 @@ void Costmap2DROS::loadOldParameters(ros::NodeHandle& nh)
   }
   move_parameter(nh, obstacles, "observation_sources");
 
-  ros::NodeHandle inflation(nh, "inflation_layer");
+  auto inflation = std::make_shared<rclcpp::Node>("inflation");nh, "inflation_layer");
   move_parameter(nh, inflation, "cost_scaling_factor");
   move_parameter(nh, inflation, "inflation_radius");
   map["name"] = XmlRpc::XmlRpcValue("inflation_layer");
@@ -259,12 +259,12 @@ void Costmap2DROS::loadOldParameters(ros::NodeHandle& nh)
   plugins.push_back(super_map);
 
   super_array.setArray(&plugins);
-  nh.setParam("plugins", super_array);
+  nh->set_parameter(rclcpp::Parameter("plugins", super_array));
 }
 
 void Costmap2DROS::copyParentParameters(const std::string& plugin_name, const std::string& plugin_type, ros::NodeHandle& nh)
 {
-  ros::NodeHandle target_layer(nh, plugin_name);
+  auto target_layer = std::make_shared<rclcpp::Node>("target_layer");nh, plugin_name);
 
   if(plugin_type == "costmap_2d::StaticLayer")
   {
@@ -411,7 +411,7 @@ void Costmap2DROS::movementCB(const ros::TimerEvent &event)
 
 void Costmap2DROS::mapUpdateLoop(double frequency)
 {
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   ros::Rate r(frequency);
   while (nh.ok() && !map_update_thread_shutdown_)
   {
@@ -437,7 +437,7 @@ void Costmap2DROS::mapUpdateLoop(double frequency)
       layered_costmap_->getBounds(&x0, &xn, &y0, &yn);
       publisher_->updateBounds(x0, xn, y0, yn);
 
-      ros::Time now = ros::Time::now();
+      ros::Time now = node->now();
       if (last_publish_ + publish_cycle < now)
       {
         publisher_->publishCostmap();
@@ -468,7 +468,7 @@ void Costmap2DROS::updateMap()
 
       geometry_msgs::PolygonStamped footprint;
       footprint.header.frame_id = global_frame_;
-      footprint.header.stamp = ros::Time::now();
+      footprint.header.stamp = node->now();
       transformFootprint(x, y, yaw, padded_footprint_, footprint);
       footprint_pub_->publish(footprint);
 
@@ -550,7 +550,7 @@ bool Costmap2DROS::getRobotPose(geometry_msgs::PoseStamped& global_pose) const
   tf2::toMsg(tf2::Transform::getIdentity(), robot_pose.pose);
   robot_pose.header.frame_id = robot_base_frame_;
   robot_pose.header.stamp = ros::Time();
-  ros::Time current_time = ros::Time::now();  // save time for checking tf delay later
+  ros::Time current_time = node->now();  // save time for checking tf delay later
 
   // get the global pose of the robot
   try

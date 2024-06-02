@@ -36,7 +36,7 @@
  *********************************************************************/
 #ifndef GLOBAL_PLANNER_ORIENTATION_FILTER_H
 #define GLOBAL_PLANNER_ORIENTATION_FILTER_H
-#include <nav_msgs/Path.h>
+#include "nav_msgs/msg/path.hpp"
 
 namespace global_planner {
 

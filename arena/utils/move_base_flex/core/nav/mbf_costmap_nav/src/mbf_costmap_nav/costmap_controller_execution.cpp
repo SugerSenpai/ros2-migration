@@ -53,7 +53,7 @@ CostmapControllerExecution::CostmapControllerExecution(
       : AbstractControllerExecution(controller_name, controller_ptr, robot_info, vel_pub, goal_pub, toAbstract(config)),
         costmap_ptr_(costmap_ptr)
 {
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
   private_nh.param("controller_lock_costmap", lock_costmap_, true);
 }
 

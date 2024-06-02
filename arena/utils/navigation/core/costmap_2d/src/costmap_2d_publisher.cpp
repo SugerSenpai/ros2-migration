@@ -95,7 +95,7 @@ void Costmap2DPublisher::prepareGrid()
   double resolution = costmap_->getResolution();
 
   grid_.header.frame_id = global_frame_;
-  grid_.header.stamp = ros::Time::now();
+  grid_.header.stamp = node->now();
   grid_.info.resolution = resolution;
 
   grid_.info.width = costmap_->getSizeInCellsX();
@@ -143,7 +143,7 @@ void Costmap2DPublisher::publishCostmap()
   {
     // Publish Just an Update
     map_msgs::OccupancyGridUpdate update;
-    update.header.stamp = ros::Time::now();
+    update.header.stamp = node->now();
     update.header.frame_id = global_frame_;
     update.x = x0_;
     update.y = y0_;
@@ -170,7 +170,7 @@ void Costmap2DPublisher::publishCostmap()
 
 bool Costmap2DPublisher::cb_getDump(costmap_2d::GetDump::Request& req, costmap_2d::GetDump::Response& res){
   
-  res.header.stamp = ros::Time::now();
+  res.header.stamp = node->now();
   res.header.frame_id = global_frame_;
 
   prepareGrid();

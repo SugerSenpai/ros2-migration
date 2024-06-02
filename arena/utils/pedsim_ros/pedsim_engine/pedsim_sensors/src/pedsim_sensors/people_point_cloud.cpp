@@ -64,7 +64,7 @@ void PeoplePointCloud::broadcast() {
   std::uniform_real_distribution<float> width_distribution(-0.18, 0.18);
 
   sensor_msgs::PointCloud pcd_global;
-  pcd_global.header.stamp = ros::Time::now();
+  pcd_global.header.stamp = node->now();
   pcd_global.header.frame_id = people_signal->header.frame_id;
   pcd_global.points.resize(num_points);
   pcd_global.channels.resize(1);
@@ -72,7 +72,7 @@ void PeoplePointCloud::broadcast() {
   pcd_global.channels[0].values.resize(num_points);
 
   sensor_msgs::PointCloud pcd_local;
-  pcd_local.header.stamp = ros::Time::now();
+  pcd_local.header.stamp = node->now();
   pcd_local.header.frame_id = robot_odom_.header.frame_id;
   pcd_local.points.resize(num_points);
   pcd_local.channels.resize(1);
@@ -154,8 +154,8 @@ void PeoplePointCloud::agentStatesCallBack(
 // --------------------------------------------------------------
 
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "pedsim_people_sensor");
-  ros::NodeHandle node("~");
+  rclcpp::init(argc, argv, "pedsim_people_sensor");
+  auto node = std::make_shared<rclcpp::Node>("node");"~");
 
   double init_x = 0.0, init_y = 0.0, fov_range = 0.0;
   node.param<double>("pose_initial_x", init_x, 0.0);

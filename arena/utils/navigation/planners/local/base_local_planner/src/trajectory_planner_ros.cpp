@@ -51,7 +51,7 @@
 #include <pluginlib/class_list_macros.hpp>
 
 #include <base_local_planner/goal_functions.h>
-#include <nav_msgs/Path.h>
+#include "nav_msgs/msg/path.hpp"
 
 #include <nav_core/parameter_magic.h>
 #include <tf2/utils.h>
@@ -91,7 +91,7 @@ namespace base_local_planner {
       costmap_2d::Costmap2DROS* costmap_ros){
     if (! isInitialized()) {
 
-      ros::NodeHandle private_nh("~/" + name);
+      auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name);
       g_plan_pub_ = private_nh.advertise<nav_msgs::Path>("global_plan", 1);
       l_plan_pub_ = private_nh.advertise<nav_msgs::Path>("local_plan", 1);
 
@@ -178,11 +178,11 @@ namespace base_local_planner {
       // of defined for dynamic reconfigure will override them otherwise.
       if (private_nh.hasParam("pdist_scale") & !private_nh.hasParam("path_distance_bias"))
       {
-        private_nh.setParam("path_distance_bias", path_distance_bias);
+        private_nh->set_parameter(rclcpp::Parameter("path_distance_bias", path_distance_bias));
       }
       if (private_nh.hasParam("gdist_scale") & !private_nh.hasParam("goal_distance_bias"))
       {
-        private_nh.setParam("goal_distance_bias", goal_distance_bias);
+        private_nh->set_parameter(rclcpp::Parameter("goal_distance_bias", goal_distance_bias));
       }
 
       private_nh.param("occdist_scale", occdist_scale, 0.01);
@@ -225,7 +225,7 @@ namespace base_local_planner {
         ROS_WARN("The backup_vel parameter has been deprecated in favor of the escape_vel parameter. To switch, just change the parameter name in your configuration files.");
 
       //if both backup_vel and escape_vel are set... we'll use escape_vel
-      private_nh.getParam("escape_vel", backup_vel);
+      backup_vel = private_nh->declare_parameter("escape_vel", backup_vel);
 
       if(backup_vel >= 0.0)
         ROS_WARN("You've specified a positive escape velocity. This is probably not what you want and will cause the robot to move forward instead of backward. You should probably change your escape_vel parameter to be negative");
@@ -272,7 +272,7 @@ namespace base_local_planner {
     }
   }
 
-  std::vector<double> TrajectoryPlannerROS::loadYVels(ros::NodeHandle node){
+  std::vector<double> TrajectoryPlannerROS::loadYVels(auto node = std::make_shared<rclcpp::Node>("node");){
     std::vector<double> y_vels;
 
     std::string y_vel_list;
@@ -536,7 +536,7 @@ namespace base_local_planner {
       path.getPoint(i, p_x, p_y, p_th);
       geometry_msgs::PoseStamped pose;
       pose.header.frame_id = global_frame_;
-      pose.header.stamp = ros::Time::now();
+      pose.header.stamp = node->now();
       pose.pose.position.x = p_x;
       pose.pose.position.y = p_y;
       pose.pose.position.z = 0.0;

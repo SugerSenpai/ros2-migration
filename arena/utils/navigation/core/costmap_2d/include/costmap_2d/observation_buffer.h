@@ -44,7 +44,7 @@
 #include <costmap_2d/observation.h>
 #include <tf2_ros/buffer.h>
 
-#include <sensor_msgs/PointCloud2.h>
+#include "sensor_msgs/msg/point_cloud2.hpp"
 
 // Thread support
 #include <boost/thread.hpp>

@@ -14,7 +14,7 @@
 #include <pedsim_simulator/element/areawaypoint.h>
 #include <pedsim_simulator/element/wall.h>
 #include <pedsim_simulator/scene_services.h>
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 #include <std_srvs/SetBool.h>
 #include <flatland_msgs/SpawnModels.h>
 #include <flatland_msgs/DeleteModels.h>

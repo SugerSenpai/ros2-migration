@@ -75,7 +75,7 @@ void InflationLayer::onInitialize()
 {
   {
     boost::unique_lock < boost::recursive_mutex > lock(*inflation_access_);
-    ros::NodeHandle nh("~/" + name_), g_nh;
+    auto nh = std::make_shared<rclcpp::Node>("nh");"~/" + name_), g_nh;
     current_ = true;
     if (seen_)
       delete[] seen_;
