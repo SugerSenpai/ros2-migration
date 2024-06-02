@@ -245,7 +245,7 @@ TEST(costmap, testMultipleAdditions){
 
 
 int main(int argc, char** argv){
-  ros::init(argc, argv, "obstacle_tests");
+  rclcpp::init(argc, argv, "obstacle_tests");
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

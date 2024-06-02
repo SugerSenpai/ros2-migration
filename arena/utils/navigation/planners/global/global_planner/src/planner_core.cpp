@@ -95,7 +95,7 @@ void GlobalPlanner::initialize(std::string name, costmap_2d::Costmap2DROS* costm
 
 void GlobalPlanner::initialize(std::string name, costmap_2d::Costmap2D* costmap, std::string frame_id) {
     if (!initialized_) {
-        ros::NodeHandle private_nh("~/" + name);
+        auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name);
         costmap_ = costmap;
         frame_id_ = frame_id;
 
@@ -183,7 +183,7 @@ void GlobalPlanner::clearRobotCell(const geometry_msgs::PoseStamped& global_pose
 bool GlobalPlanner::makePlanService(nav_msgs::GetPlan::Request& req, nav_msgs::GetPlan::Response& resp) {
     makePlan(req.start, req.goal, resp.plan.poses);
 
-    resp.plan.header.stamp = ros::Time::now();
+    resp.plan.header.stamp = node->now();
     resp.plan.header.frame_id = frame_id_;
 
     return true;
@@ -227,7 +227,7 @@ bool GlobalPlanner::makePlan(const geometry_msgs::PoseStamped& start, const geom
     //clear the plan, just in case
     plan.clear();
 
-    ros::NodeHandle n;
+    auto n = std::make_shared<rclcpp::Node>("n");;
     std::string global_frame = frame_id_;
 
     //until tf can handle transforming things that are way in the past... we'll require the goal to be in our global frame
@@ -303,7 +303,7 @@ bool GlobalPlanner::makePlan(const geometry_msgs::PoseStamped& start, const geom
         if (getPlanFromPotential(start_x, start_y, goal_x, goal_y, goal, plan)) {
             //make sure the goal we push on has the same timestamp as the rest of the plan
             geometry_msgs::PoseStamped goal_copy = goal;
-            goal_copy.header.stamp = ros::Time::now();
+            goal_copy.header.stamp = node->now();
             plan.push_back(goal_copy);
         } else {
             ROS_ERROR("Failed to get a plan from potential when a legal potential was found. This shouldn't happen.");
@@ -333,7 +333,7 @@ void GlobalPlanner::publishPlan(const std::vector<geometry_msgs::PoseStamped>& p
     gui_path.poses.resize(path.size());
 
     gui_path.header.frame_id = frame_id_;
-    gui_path.header.stamp = ros::Time::now();
+    gui_path.header.stamp = node->now();
 
     // Extract the plan in world co-ordinates, we assume the path is all in the same frame
     for (unsigned int i = 0; i < path.size(); i++) {
@@ -364,7 +364,7 @@ bool GlobalPlanner::getPlanFromPotential(double start_x, double start_y, double 
         return false;
     }
 
-    ros::Time plan_time = ros::Time::now();
+    ros::Time plan_time = node->now();
     for (int i = path.size() -1; i>=0; i--) {
         std::pair<float, float> point = path[i];
         //convert the plan to world coordinates
@@ -396,7 +396,7 @@ void GlobalPlanner::publishPotential(float* potential)
     nav_msgs::OccupancyGrid grid;
     // Publish Whole Grid
     grid.header.frame_id = frame_id_;
-    grid.header.stamp = ros::Time::now();
+    grid.header.stamp = node->now();
     grid.info.resolution = resolution;
 
     grid.info.width = nx;

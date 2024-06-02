@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(flatland_server)
 
 # Ensure we're using c++11
@@ -191,7 +191,11 @@ if(CATKIN_ENABLE_TESTING)
     flatland_lib)
 
   add_rostest_gtest(model_test test/model_test.test test/model_test.cpp)
-  target_link_libraries(model_test flatland_lib)
+  target_link_libraries(model_test
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   catkin_add_gtest(geometry_test test/geometry_test.cpp)
   target_link_libraries(geometry_test

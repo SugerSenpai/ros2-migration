@@ -189,7 +189,7 @@ TEST_F(BumperPluginTest, collision_test) {
   timekeeper.SetMaxStepSize(0.01);
   w = World::MakeWorld(world_yaml.string());
 
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   ros::Subscriber sub_1, sub_2, sub_3;
   BumperPluginTest* obj = dynamic_cast<BumperPluginTest*>(this);
   sub_1 = nh.subscribe("collisions", 1, &BumperPluginTest::CollisionCb_A, obj);
@@ -277,7 +277,7 @@ TEST_F(BumperPluginTest, collision_test) {
                           "layer_1", "layer_1", 1, {-1, 0}));
   // w->DebugVisualize();
   // DebugVisualization::Get().Publish();
-  // ros::spin();
+  // rclcpp::spin(node);
 }
 
 /**
@@ -305,7 +305,7 @@ TEST_F(BumperPluginTest, invalid_A) {
 
 // Run all the tests that were declared with TEST()
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "bumper_test");
+  rclcpp::init(argc, argv, "bumper_test");
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

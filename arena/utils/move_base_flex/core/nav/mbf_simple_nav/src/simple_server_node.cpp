@@ -44,12 +44,12 @@
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "mbf_simple_server");
+  rclcpp::init(argc, argv, "mbf_simple_server");
 
   typedef boost::shared_ptr<mbf_simple_nav::SimpleNavigationServer> SimpleNavigationServerPtr;
 
-  ros::NodeHandle nh;
-  ros::NodeHandle private_nh("~");
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
 
   double cache_time;
   private_nh.param("tf_cache_time", cache_time, 10.0);
@@ -64,6 +64,6 @@ int main(int argc, char **argv)
   SimpleNavigationServerPtr controller_ptr(
       new mbf_simple_nav::SimpleNavigationServer(tf_listener_ptr));
 
-  ros::spin();
+  rclcpp::spin(node);
   return EXIT_SUCCESS;
 }

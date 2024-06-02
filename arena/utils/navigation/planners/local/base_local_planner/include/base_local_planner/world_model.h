@@ -40,7 +40,7 @@
 #include <vector>
 #include <costmap_2d/observation.h>
 #include <costmap_2d/footprint.h>
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 #include <base_local_planner/planar_laser_scan.h>
 
 namespace base_local_planner {

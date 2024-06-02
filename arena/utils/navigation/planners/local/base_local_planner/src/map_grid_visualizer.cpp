@@ -35,7 +35,7 @@
 #include <base_local_planner/map_cell.h>
 #include <vector>
 
-#include <sensor_msgs/PointCloud2.h>
+#include "sensor_msgs/msg/point_cloud2.hpp"
 #include <sensor_msgs/point_cloud2_iterator.h>
 
 namespace base_local_planner {
@@ -54,7 +54,7 @@ namespace base_local_planner {
   void MapGridVisualizer::publishCostCloud(const costmap_2d::Costmap2D* costmap_p_) {
     sensor_msgs::PointCloud2 cost_cloud;
     cost_cloud.header.frame_id = frame_id_;
-    cost_cloud.header.stamp = ros::Time::now();
+    cost_cloud.header.stamp = node->now();
 
     sensor_msgs::PointCloud2Modifier cloud_mod(cost_cloud);
     cloud_mod.setPointCloud2Fields(7, "x", 1, sensor_msgs::PointField::FLOAT32,

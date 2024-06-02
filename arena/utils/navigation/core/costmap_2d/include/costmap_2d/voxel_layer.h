@@ -44,10 +44,10 @@
 #include <costmap_2d/observation_buffer.h>
 #include <costmap_2d/VoxelGrid.h>
 #include <nav_msgs/OccupancyGrid.h>
-#include <sensor_msgs/LaserScan.h>
+#include "sensor_msgs/msg/laser_scan.hpp"
 #include <laser_geometry/laser_geometry.h>
 #include <sensor_msgs/PointCloud.h>
-#include <sensor_msgs/PointCloud2.h>
+#include "sensor_msgs/msg/point_cloud2.hpp"
 #include <sensor_msgs/point_cloud_conversion.h>
 #include <message_filters/subscriber.h>
 #include <dynamic_reconfigure/server.h>

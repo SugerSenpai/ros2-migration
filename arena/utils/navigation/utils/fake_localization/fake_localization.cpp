@@ -73,7 +73,7 @@
 #include "rclcpp/rclcpp.h"
 #include <ros/time.h>
 
-#include <nav_msgs/Odometry.h>
+#include "nav_msgs/msg/odometry.hpp"
 #include <geometry_msgs/PoseArray.h>
 #include <geometry_msgs/PoseWithCovarianceStamped.h>
 
@@ -103,7 +103,7 @@ class FakeOdomNode
 
       m_base_pos_received = false;
 
-      ros::NodeHandle private_nh("~");
+      auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
       private_nh.param("odom_frame_id", odom_frame_id_, std::string("odom"));
       private_nh.param("base_frame_id", base_frame_id_, std::string("base_link")); 
       private_nh.param("global_frame_id", global_frame_id_, std::string("map"));
@@ -111,10 +111,10 @@ class FakeOdomNode
       private_nh.param("delta_y", delta_y_, 0.0);
       private_nh.param("delta_yaw", delta_yaw_, 0.0);      
       private_nh.param("transform_tolerance", transform_tolerance_, 0.1);      
-      m_particleCloud.header.stamp = ros::Time::now();
+      m_particleCloud.header.stamp = node->now();
       m_particleCloud.header.frame_id = global_frame_id_;
       m_particleCloud.poses.resize(1);
-      ros::NodeHandle nh;
+      auto nh = std::make_shared<rclcpp::Node>("nh");;
 
       tf2::Quaternion q;
       q.setRPY(0.0, 0.0, -delta_yaw_);
@@ -143,7 +143,7 @@ class FakeOdomNode
 
 
   private:
-    ros::NodeHandle m_nh;
+    auto m_nh = std::make_shared<rclcpp::Node>("m_nh");;
     ros::Publisher m_posePub;
     ros::Publisher m_particlecloudPub;
     message_filters::Subscriber<geometry_msgs::PoseWithCovarianceStamped>* m_initPoseSub;
@@ -263,11 +263,11 @@ class FakeOdomNode
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "fake_localization");
+  rclcpp::init(argc, argv, "fake_localization");
 
   FakeOdomNode odom;
 
-  ros::spin();
+  rclcpp::spin(node);
 
   return 0;
 }

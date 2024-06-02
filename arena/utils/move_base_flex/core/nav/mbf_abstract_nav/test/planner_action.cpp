@@ -99,7 +99,7 @@ struct PlannerActionFixture : public Test
   mbf_utility::RobotInformation robot_info;
 
   PlannerAction planner_action;
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
 
   MockedActionServer action_server;
 
@@ -272,8 +272,8 @@ TEST_F(PlannerActionFixture, patExceeded)
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "read_types");
-  ros::NodeHandle nh;
+  rclcpp::init(argc, argv, "read_types");
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

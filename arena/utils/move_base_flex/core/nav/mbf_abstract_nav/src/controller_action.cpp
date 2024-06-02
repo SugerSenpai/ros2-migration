@@ -113,7 +113,7 @@ void ControllerAction::runImpl(GoalHandle &goal_handle, AbstractControllerExecut
   goal_pose_ = geometry_msgs::PoseStamped();
   robot_pose_ = geometry_msgs::PoseStamped();
 
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
 
   double oscillation_timeout_tmp;
   private_nh.param("oscillation_timeout", oscillation_timeout_tmp, 0.0);
@@ -159,7 +159,7 @@ void ControllerAction::runImpl(GoalHandle &goal_handle, AbstractControllerExecut
 
 
   geometry_msgs::PoseStamped oscillation_pose;
-  ros::Time last_oscillation_reset = ros::Time::now();
+  ros::Time last_oscillation_reset = node->now();
 
   bool first_cycle = true;
 
@@ -282,13 +282,13 @@ void ControllerAction::runImpl(GoalHandle &goal_handle, AbstractControllerExecut
           if (mbf_utility::distance(robot_pose_, oscillation_pose) >= oscillation_distance ||
               mbf_utility::angle(robot_pose_, oscillation_pose) >= oscillation_angle)
           {
-            last_oscillation_reset = ros::Time::now();
+            last_oscillation_reset = node->now();
             oscillation_pose = robot_pose_;
           }
-          else if (last_oscillation_reset + oscillation_timeout < ros::Time::now())
+          else if (last_oscillation_reset + oscillation_timeout < node->now())
           {
             ROS_WARN_STREAM_NAMED(name_, "The controller is oscillating for "
-                << (ros::Time::now() - last_oscillation_reset).toSec() << "s");
+                << (node->now() - last_oscillation_reset).toSec() << "s");
 
             execution.cancel();
             controller_active = false;
@@ -365,7 +365,7 @@ void ControllerAction::publishExePathFeedback(
 
   feedback.last_cmd_vel = current_twist;
   if (feedback.last_cmd_vel.header.stamp.isZero())
-    feedback.last_cmd_vel.header.stamp = ros::Time::now();
+    feedback.last_cmd_vel.header.stamp = node->now();
 
   feedback.current_pose = robot_pose_;
   feedback.dist_to_goal = static_cast<float>(mbf_utility::distance(robot_pose_, goal_pose_));

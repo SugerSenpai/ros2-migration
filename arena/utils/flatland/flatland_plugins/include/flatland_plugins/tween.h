@@ -50,8 +50,8 @@
 #include <flatland_server/model_plugin.h>
 #include <flatland_server/timekeeper.h>
 #include <flatland_server/types.h>
-#include <geometry_msgs/Twist.h>
-#include <nav_msgs/Odometry.h>
+#include "geometry_msgs/msg/twist.hpp"
+#include "nav_msgs/msg/odometry.hpp"
 #include <std_msgs/Bool.h>
 #include "tweeny.h"
 

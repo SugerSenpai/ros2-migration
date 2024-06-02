@@ -15,7 +15,7 @@ namespace flatland_plugins {
 
     
     double TriangleProfile::get_speed_multiplier(double body_speed){
-        double now = ros::Time::now().toSec();
+        double now = node->now().toSec();
         double max_vel = 4 * body_speed;
         double m = max_vel / (step_time_ * 0.5);
         double leg_vel = -max_vel;

@@ -82,8 +82,8 @@ TEST_F(AbstractActionBaseFixture, cancelAll)
 int main(int argc, char **argv)
 {
   // we need this only for kinetic and lunar distros
-  ros::init(argc, argv, "abstract_action_base");
-  ros::NodeHandle nh;
+  rclcpp::init(argc, argv, "abstract_action_base");
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

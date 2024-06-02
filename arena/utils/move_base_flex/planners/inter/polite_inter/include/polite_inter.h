@@ -6,9 +6,9 @@
 #include <boost/thread/mutex.hpp>
 #include <dynamic_reconfigure/server.h>
 #include <laser_geometry/laser_geometry.h>
-#include <sensor_msgs/PointCloud2.h>
+#include "sensor_msgs/msg/point_cloud2.hpp"
 #include <sensor_msgs/PointCloud.h>
-#include <sensor_msgs/LaserScan.h>
+#include "sensor_msgs/msg/laser_scan.hpp"
 #include <sensor_msgs/point_cloud_conversion.h>
 #include <polite_inter/PoliteInterConfig.h>
 
@@ -86,7 +86,7 @@ namespace polite_inter
         std::string node_namespace_;
         double robot_radius_;
 
-        ros::NodeHandle nh_;
+        auto nh_ = std::make_shared<rclcpp::Node>("nh_");;
 
         // default values
         // change in PoliteInter.cfg to your preference

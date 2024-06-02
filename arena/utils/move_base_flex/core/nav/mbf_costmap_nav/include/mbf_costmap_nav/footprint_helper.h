@@ -41,7 +41,7 @@
 #include <vector>
 
 #include <costmap_2d/costmap_2d.h>
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 
 namespace mbf_costmap_nav
 {

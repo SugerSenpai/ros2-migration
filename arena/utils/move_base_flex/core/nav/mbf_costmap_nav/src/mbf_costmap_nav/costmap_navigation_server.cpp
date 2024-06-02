@@ -39,7 +39,7 @@
  */
 
 #include <tf/tf.h>
-#include <nav_msgs/Path.h>
+#include "nav_msgs/msg/path.hpp"
 #include <geometry_msgs/PoseArray.h>
 #include <mbf_msgs/MoveBaseAction.h>
 #include <mbf_abstract_nav/MoveBaseFlexConfig.h>
@@ -933,7 +933,7 @@ bool CostmapNavigationServer::callServiceFindValidPose(mbf_msgs::FindValidPose::
   goal.y = request.pose.pose.position.y;
   goal.theta = tf::getYaw(request.pose.pose.orientation);
 
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
   // using 5 degrees as increment
   const SearchConfig config{ ANGLE_INCREMENT,        request.angle_tolerance,
                              request.dist_tolerance, static_cast<bool>(request.use_padded_fp),
@@ -966,7 +966,7 @@ bool CostmapNavigationServer::callServiceFindValidPose(mbf_msgs::FindValidPose::
   }
 
   response.pose.header.frame_id = costmap_frame;
-  response.pose.header.stamp = ros::Time::now();
+  response.pose.header.stamp = node->now();
   response.state = sol.search_state.state;
   response.cost = sol.search_state.cost;
   return true;

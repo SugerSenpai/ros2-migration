@@ -50,10 +50,10 @@
 
 #include <base_local_planner/planar_laser_scan.h>
 
-#include <nav_msgs/Odometry.h>
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/Twist.h>
-#include <geometry_msgs/Point.h>
+#include "nav_msgs/msg/odometry.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
+#include "geometry_msgs/msg/twist.hpp"
+#include "geometry_msgs/msg/point.hpp"
 
 #include <tf2_ros/buffer.h>
 
@@ -185,7 +185,7 @@ namespace base_local_planner {
        */
       bool stopWithAccLimits(const geometry_msgs::PoseStamped& global_pose, const geometry_msgs::PoseStamped& robot_vel, geometry_msgs::Twist& cmd_vel);
 
-      std::vector<double> loadYVels(ros::NodeHandle node);
+      std::vector<double> loadYVels(auto node = std::make_shared<rclcpp::Node>("node"););
 
       double sign(double x){
         return x < 0.0 ? -1.0 : 1.0;

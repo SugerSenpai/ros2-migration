@@ -40,8 +40,8 @@
 #define MBF_UTILITY__ROBOT_INFORMATION_H_
 
 #include <boost/shared_ptr.hpp>
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/TwistStamped.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
+#include "geometry_msgs/msg/twist_stamped.hpp"
 #include <ros/duration.h>
 #include <string>
 

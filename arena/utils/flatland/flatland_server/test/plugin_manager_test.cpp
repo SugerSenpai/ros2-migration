@@ -295,7 +295,7 @@ TEST_F(PluginManagerTest, collision_test) {
 
   // w->DebugVisualize();
   // DebugVisualization::Get().Publish();
-  // ros::spin();
+  // rclcpp::spin(node);
 }
 
 TEST_F(PluginManagerTest, load_dummy_test) {
@@ -398,7 +398,7 @@ TEST_F(PluginManagerTest, duplicate_plugin) {
 
 // Run all the tests that were declared with TEST()
 int main(int argc, char **argv) {
-  ros::init(argc, argv, "plugin_manager_test");
+  rclcpp::init(argc, argv, "plugin_manager_test");
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

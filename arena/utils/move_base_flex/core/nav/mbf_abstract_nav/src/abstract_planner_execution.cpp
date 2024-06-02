@@ -55,7 +55,7 @@ AbstractPlannerExecution::AbstractPlannerExecution(const std::string& name,
   , has_new_start_(false)
   , has_new_goal_(false)
 {
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
 
   // non-dynamically reconfigurable parameters
   private_nh.param("robot_frame", robot_frame_, std::string("base_footprint"));
@@ -142,7 +142,7 @@ ros::Time AbstractPlannerExecution::getLastValidPlanTime() const
 
 bool AbstractPlannerExecution::isPatienceExceeded() const
 {
-  return !patience_.isZero() && (ros::Time::now() - last_call_start_time_ > patience_);
+  return !patience_.isZero() && (node->now() - last_call_start_time_ > patience_);
 }
 
 
@@ -242,8 +242,8 @@ void AbstractPlannerExecution::run()
   geometry_msgs::PoseStamped current_goal = goal_;
   double current_tolerance = tolerance_;
 
-  last_call_start_time_ = ros::Time::now();
-  last_valid_plan_time_ = ros::Time::now();
+  last_call_start_time_ = node->now();
+  last_valid_plan_time_ = node->now();
 
   try
   {
@@ -306,7 +306,7 @@ void AbstractPlannerExecution::run()
           if (cost_ == 0)
             cost_ = sumDistance(plan_.begin(), plan_.end());
 
-          last_valid_plan_time_ = ros::Time::now();
+          last_valid_plan_time_ = node->now();
           setState(FOUND_PLAN, true);
         }
         else if (max_retries_ > 0 && ++retries > max_retries_)

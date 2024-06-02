@@ -53,12 +53,12 @@
 #include <pedsim_msgs/AgentFeedback.h>
 #include <pedsim_msgs/AgentFeedbacks.h>
 
-#include <geometry_msgs/Point.h>
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/point.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
 #include <geometry_msgs/PoseWithCovariance.h>
 #include <geometry_msgs/TwistWithCovariance.h>
-#include <nav_msgs/Odometry.h>
-#include <std_msgs/Header.h>
+#include "nav_msgs/msg/odometry.hpp"
+#include "std_msgs/msg/header.hpp"
 #include <std_srvs/Empty.h>
 
 #include <pedsim_simulator/agentstatemachine.h>
@@ -126,7 +126,7 @@ class Simulator {
   );
 
  private:
-  ros::NodeHandle nh_;
+  auto nh_ = std::make_shared<rclcpp::Node>("nh_");;
   bool paused_;
   ros::Timer spawn_timer_;
 

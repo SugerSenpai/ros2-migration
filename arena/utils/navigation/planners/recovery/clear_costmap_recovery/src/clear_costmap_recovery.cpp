@@ -57,7 +57,7 @@ void ClearCostmapRecovery::initialize(std::string name, tf2_ros::Buffer* tf,
     local_costmap_ = local_costmap;
 
     //get some parameters from the parameter server
-    ros::NodeHandle private_nh("~/" + name_);
+    auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name_);
 
     private_nh.param("reset_distance", reset_distance_, 3.0);
     private_nh.param("invert_area_to_clear", invert_area_to_clear_, false);

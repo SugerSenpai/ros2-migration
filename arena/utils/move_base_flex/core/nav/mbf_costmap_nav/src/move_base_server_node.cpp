@@ -58,10 +58,10 @@ void sigintHandler(int sig)
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "mbf_2d_nav_server", ros::init_options::NoSigintHandler);
+  rclcpp::init(argc, argv, "mbf_2d_nav_server", ros::init_options::NoSigintHandler);
 
-  ros::NodeHandle nh;
-  ros::NodeHandle private_nh("~");
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
 
   double cache_time;
   private_nh.param("tf_cache_time", cache_time, 10.0);
@@ -74,7 +74,7 @@ int main(int argc, char **argv)
   tf2_ros::TransformListener tf_listener(*tf_listener_ptr);
 #endif
   costmap_nav_srv_ptr = boost::make_shared<mbf_costmap_nav::CostmapNavigationServer>(tf_listener_ptr);
-  ros::spin();
+  rclcpp::spin(node);
 
   // explicitly call destructor here, otherwise costmap_nav_srv_ptr will be
   // destructed after tearing down internally allocated static variables

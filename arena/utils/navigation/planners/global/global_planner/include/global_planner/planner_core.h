@@ -40,9 +40,9 @@
 #define POT_HIGH 1.0e10        // unassigned cell potential
 #include "rclcpp/rclcpp.h"
 #include <costmap_2d/costmap_2d.h>
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/Point.h>
-#include <nav_msgs/Path.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
+#include "geometry_msgs/msg/point.hpp"
+#include "nav_msgs/msg/path.hpp"
 #include <vector>
 #include <nav_core/base_global_planner.h>
 #include <nav_msgs/GetPlan.h>

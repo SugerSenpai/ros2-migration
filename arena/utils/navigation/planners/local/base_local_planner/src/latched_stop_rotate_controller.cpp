@@ -12,7 +12,7 @@
 #include <Eigen/Core>
 
 #include <angles/angles.h>
-#include <nav_msgs/Odometry.h>
+#include "nav_msgs/msg/odometry.hpp"
 
 #include <base_local_planner/goal_functions.h>
 #include <base_local_planner/local_planner_limits.h>
@@ -22,7 +22,7 @@
 namespace base_local_planner {
 
 LatchedStopRotateController::LatchedStopRotateController(const std::string& name) {
-  ros::NodeHandle private_nh("~/" + name);
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~/" + name);
   private_nh.param("latch_xy_goal_tolerance", latch_xy_goal_tolerance_, false);
 
   rotating_to_goal_ = false;

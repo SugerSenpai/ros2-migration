@@ -50,7 +50,7 @@ InterAction::InterAction(
     const mbf_utility::RobotInformation &robot_info)
   : AbstractActionBase(name, robot_info), path_seq_count_(0)
 {
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
   // informative topics: current navigation goal
   current_goal_pub_ = private_nh.advertise<geometry_msgs::PoseStamped>("current_subgoal", 1);
 }
@@ -137,7 +137,7 @@ void InterAction::runImpl(GoalHandle &goal_handle, AbstractInterExecution &execu
       case AbstractInterExecution::CANCELED:
         ROS_DEBUG_STREAM_NAMED(name_, "inter state: canceled");
         ROS_DEBUG_STREAM_NAMED(name_, "Inter has been canceled successfully");
-        result.path.header.stamp = ros::Time::now();
+        result.path.header.stamp = node->now();
         result.outcome = mbf_msgs::GetInterPathResult::CANCELED;
         result.message = "Inter has been canceled!";
         goal_handle.setCanceled(result, result.message);
@@ -160,7 +160,7 @@ void InterAction::runImpl(GoalHandle &goal_handle, AbstractInterExecution &execu
         // found a new plan
       case AbstractInterExecution::FOUND_PLAN:
         // set time stamp to now
-        result.path.header.stamp = ros::Time::now();
+        result.path.header.stamp = node->now();
         plan = execution.getPlan();
 
         ROS_DEBUG_STREAM_NAMED(name_, "inter state: found plan with cost: " << execution.getCost());

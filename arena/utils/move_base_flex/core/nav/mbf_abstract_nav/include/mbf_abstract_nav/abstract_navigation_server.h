@@ -48,7 +48,7 @@
 
 #include <actionlib/server/action_server.h>
 #include <dynamic_reconfigure/server.h>
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
 
 #include <mbf_utility/navigation_utility.h>
 
@@ -340,7 +340,7 @@ typedef boost::shared_ptr<dynamic_reconfigure::Server<mbf_abstract_nav::MoveBase
     virtual void reconfigure(mbf_abstract_nav::MoveBaseFlexConfig &config, uint32_t level);
 
     //! Private node handle
-    ros::NodeHandle private_nh_;
+    auto private_nh_ = std::make_shared<rclcpp::Node>("private_nh_");;
 
     AbstractPluginManager<mbf_abstract_core::AbstractPlanner> planner_plugin_manager_;
     AbstractPluginManager<mbf_abstract_core::AbstractInter> inter_plugin_manager_;

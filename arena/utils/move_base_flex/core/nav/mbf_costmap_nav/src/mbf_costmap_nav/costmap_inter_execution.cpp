@@ -52,7 +52,7 @@ CostmapInterExecution::CostmapInterExecution(const std::string& inter_name,
                                                  const MoveBaseFlexConfig& config)
   : AbstractInterExecution(inter_name, inter_ptr, robot_info, goal_pub, toAbstract(config)), global_costmap_ptr_(global_costmap_ptr), local_costmap_ptr_(local_costmap_ptr)
 {
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
   private_nh.param("inter_lock_costmap", lock_costmap_, true);
 }
 

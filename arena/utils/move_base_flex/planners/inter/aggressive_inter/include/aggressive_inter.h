@@ -79,7 +79,7 @@ namespace aggressive_inter
         std::string name;
         std::string node_namespace_; 
 
-        ros::NodeHandle nh_;  
+        auto nh_ = std::make_shared<rclcpp::Node>("nh_");;  
 
         // default values 
         // change in AggressiveInter.cfg to your preference

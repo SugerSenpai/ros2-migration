@@ -64,7 +64,7 @@ class ServiceManagerTest : public ::testing::Test {
   boost::filesystem::path world_yaml;
   boost::filesystem::path robot_yaml;
   Timekeeper timekeeper;
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   ros::ServiceClient client;
   std::thread simulation_thread;
 
@@ -282,7 +282,7 @@ TEST_F(ServiceManagerTest, delete_nonexistent_model) {
 
 // Run all the tests that were declared with TEST()
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "service_manager_test");
+  rclcpp::init(argc, argv, "service_manager_test");
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

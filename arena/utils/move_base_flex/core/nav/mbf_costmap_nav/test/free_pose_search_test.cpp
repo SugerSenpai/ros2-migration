@@ -72,7 +72,7 @@ protected:
 
   void SetUp() override
   {
-    if (!tf_buffer_ptr->canTransform("base_link", "map", ros::Time::now(), ros::Duration(5.0)))
+    if (!tf_buffer_ptr->canTransform("base_link", "map", node->now(), ros::Duration(5.0)))
     {
       FAIL() << "Cannot transform from base_link to map";
     }
@@ -308,13 +308,13 @@ TEST_F(SearchHelperTest, findValidOrientation)
 
 TEST_F(SearchHelperTest, search)
 {
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   costmap_2d::Costmap2DROS cm("search/global", *tf_buffer_ptr);
   FreePoseSearchViz viz(nh, cm.getGlobalFrameID());
 
   printMap(*(cm.getCostmap()));
   addObstacle(cm, 5.5, 5.5);
-  map.header.stamp = ros::Time::now();
+  map.header.stamp = node->now();
   map.data[cm.getCostmap()->getIndex(5, 5)] = 100;
   map_pub->publish(map);
 
@@ -343,7 +343,7 @@ TEST_F(SearchHelperTest, search)
   EXPECT_NEAR(sol.pose.theta, -M_PI_4, 1e-6);
 
   addObstacle(cm, 6.5, 4.5);
-  map.header.stamp = ros::Time::now();
+  map.header.stamp = node->now();
   map.data[cm.getCostmap()->getIndex(6, 4)] = 100;
   map_pub->publish(map);
 
@@ -369,7 +369,7 @@ TEST_F(SearchHelperTest, search)
   EXPECT_NEAR(sol.pose.theta, M_PI_4, 1e-6);
 
   addObstacle(cm, 5.5, 7.5);
-  map.header.stamp = ros::Time::now();
+  map.header.stamp = node->now();
   map.data[cm.getCostmap()->getIndex(5, 7)] = 100;
   map_pub->publish(map);
 
@@ -395,7 +395,7 @@ TEST_F(SearchHelperTest, search)
   EXPECT_NEAR(sol.pose.theta, 3 * M_PI_4, 1e-6);
 
   addObstacle(cm, 3.5, 4.5);
-  map.header.stamp = ros::Time::now();
+  map.header.stamp = node->now();
   map.data[cm.getCostmap()->getIndex(3, 4)] = 100;
   map_pub->publish(map);
 
@@ -443,7 +443,7 @@ TEST_F(SearchHelperTest, service_test)
   req.use_padded_fp = false;
   req.costmap = mbf_msgs::FindValidPose::Request::GLOBAL_COSTMAP;
   req.pose.header.frame_id = "map";
-  req.pose.header.stamp = ros::Time::now();
+  req.pose.header.stamp = node->now();
   req.pose.pose.position.x = 1.525;
   req.pose.pose.position.y = 4.525;
   req.pose.pose.position.z = 0.0;
@@ -459,7 +459,7 @@ TEST_F(SearchHelperTest, service_test)
 
 TEST_F(SearchHelperTest, enforce_bounds_no_tolerance)
 {
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   costmap_2d::Costmap2DROS cm("search/global", *tf_buffer_ptr);
   FreePoseSearchViz viz(nh, cm.getGlobalFrameID());
 
@@ -489,7 +489,7 @@ TEST_F(SearchHelperTest, enforce_bounds_no_tolerance)
 
 TEST_F(SearchHelperTest, enforce_bounds)
 {
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   costmap_2d::Costmap2DROS cm("search/global", *tf_buffer_ptr);
   FreePoseSearchViz viz(nh, cm.getGlobalFrameID());
 
@@ -522,7 +522,7 @@ TEST_F(SearchHelperTest, enforce_bounds)
 
 TEST_F(SearchHelperTest, enforce_bounds_within_tolerance)
 {
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   costmap_2d::Costmap2DROS cm("search/global", *tf_buffer_ptr);
   FreePoseSearchViz viz(nh, cm.getGlobalFrameID());
 
@@ -558,12 +558,12 @@ TEST_F(SearchHelperTest, enforce_bounds_within_tolerance)
 
 TEST_F(SearchHelperTest, goal_not_centered)
 {
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   costmap_2d::Costmap2DROS cm("search/global", *tf_buffer_ptr);
   FreePoseSearchViz viz(nh, cm.getGlobalFrameID());
 
   printMap(*(cm.getCostmap()));
-  map.header.stamp = ros::Time::now();
+  map.header.stamp = node->now();
   map_pub->publish(map);
 
   /*
@@ -593,12 +593,12 @@ TEST_F(SearchHelperTest, goal_not_centered)
 
 TEST_F(SearchHelperTest, goal_not_centered_small_tolerance)
 {
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   costmap_2d::Costmap2DROS cm("search/global", *tf_buffer_ptr);
   FreePoseSearchViz viz(nh, cm.getGlobalFrameID());
 
   printMap(*(cm.getCostmap()));
-  map.header.stamp = ros::Time::now();
+  map.header.stamp = node->now();
   map_pub->publish(map);
 
   /*
@@ -638,7 +638,7 @@ TEST_F(SearchHelperTest, service_zero_tolerance_test)
   req.use_padded_fp = false;
   req.costmap = mbf_msgs::FindValidPose::Request::GLOBAL_COSTMAP;
   req.pose.header.frame_id = "map";
-  req.pose.header.stamp = ros::Time::now();
+  req.pose.header.stamp = node->now();
   req.pose.pose.position.x = 1.5345;
   req.pose.pose.position.y = 4.666;
   req.pose.pose.orientation = tf::createQuaternionMsgFromYaw(0.001);
@@ -654,7 +654,7 @@ TEST_F(SearchHelperTest, service_zero_tolerance_test)
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "search_helper_test");
+  rclcpp::init(argc, argv, "search_helper_test");
   // enable debug logging for tests
   if (ros::console::set_logger_level(ROSCONSOLE_DEFAULT_NAME, ros::console::levels::Debug))
     ros::console::notifyLoggerLevelsChanged();

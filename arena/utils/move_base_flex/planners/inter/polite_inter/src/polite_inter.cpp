@@ -2,7 +2,7 @@
 #include "../../inter_util/include/inter_util.h"
 
 #include <thread>
-#include <std_msgs/Int32.h>
+#include "std_msgs/msg/int32.hpp"
 
 #include <pluginlib/class_list_macros.hpp>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
@@ -235,7 +235,7 @@ namespace polite_inter
 
     void PoliteInter::setMaxVelocityThread()
     {
-        ros::Rate rate(1); // Adjust the rate as needed
+        rclcpp::Rate rate(1); // Adjust the rate as needed
         while (ros::ok())
         {
             // Lock to access shared variables

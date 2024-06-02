@@ -41,7 +41,7 @@
 #include <math.h>
 #include <algorithm>
 #include <vector>
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 
 /** @brief Return -1 if x < 0, +1 otherwise. */
 inline double sign(double x)

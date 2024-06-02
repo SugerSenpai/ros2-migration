@@ -38,10 +38,10 @@
 #ifndef ODOMETRY_HELPER_H_
 #define ODOMETRY_HELPER_H_
 
-#include <nav_msgs/Odometry.h>
+#include "nav_msgs/msg/odometry.hpp"
 #include "rclcpp/rclcpp.h"
 #include <boost/thread.hpp>
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
 
 namespace mbf_utility
 {

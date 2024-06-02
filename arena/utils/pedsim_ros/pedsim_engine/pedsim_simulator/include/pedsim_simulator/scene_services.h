@@ -116,7 +116,7 @@ public:
                           pedsim_srvs::RegisterRobot::Response &response);
 
 protected:
-  ros::NodeHandle nh_;
+  auto nh_ = std::make_shared<rclcpp::Node>("nh_");;
 
 private:
   std::vector<pedsim::id> removePedsInPedsim();

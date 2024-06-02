@@ -201,7 +201,7 @@ TEST_F(TweenPluginTest, loop_test) {
 
 // Run all the tests that were declared with TEST()
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "tween_test");
+  rclcpp::init(argc, argv, "tween_test");
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

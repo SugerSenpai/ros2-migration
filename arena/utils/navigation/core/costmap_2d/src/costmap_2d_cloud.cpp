@@ -191,8 +191,8 @@ void voxelCallback(const ros::Publisher& pub_marked, const ros::Publisher& pub_u
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "costmap_2d_cloud");
-  ros::NodeHandle n;
+  rclcpp::init(argc, argv, "costmap_2d_cloud");
+  auto n = std::make_shared<rclcpp::Node>("n");;
 
   ROS_DEBUG("Startup");
 
@@ -201,7 +201,7 @@ int main(int argc, char** argv)
   ros::Subscriber sub = n.subscribe < costmap_2d::VoxelGrid
       > ("voxel_grid", 1, [&pub_marked,&pub_unknown](auto& msg){ voxelCallback(pub_marked, pub_unknown, msg); });
 
-  ros::spin();
+  rclcpp::spin(node);
 
   return 0;
 }

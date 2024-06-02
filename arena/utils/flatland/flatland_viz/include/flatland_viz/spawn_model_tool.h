@@ -161,7 +161,7 @@ class SpawnModelTool : public rviz::Tool {
 
  protected:
   rviz::Arrow *arrow_;        // Rviz 3d arrow to show axis of rotation
-  ros::NodeHandle nh;         // ros service node handle
+  auto nh = std::make_shared<rclcpp::Node>("nh");;         // ros service node handle
   ros::ServiceClient client;  // ros service client
   std::vector<std::shared_ptr<rviz::BillboardLine>> lines_list_;
 };

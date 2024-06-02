@@ -246,8 +246,8 @@ class AmclNode
     //basically defines how long a map->odom transform is good for
     ros::Duration transform_tolerance_;
 
-    ros::NodeHandle nh_;
-    ros::NodeHandle private_nh_;
+    auto nh_ = std::make_shared<rclcpp::Node>("nh_");;
+    auto private_nh_ = std::make_shared<rclcpp::Node>("private_nh_");;
     ros::Publisher pose_pub_;
     ros::Publisher particlecloud_pub_;
     ros::ServiceServer global_loc_srv_;
@@ -313,8 +313,8 @@ void sigintHandler(int sig)
 int
 main(int argc, char** argv)
 {
-  ros::init(argc, argv, "amcl");
-  ros::NodeHandle nh;
+  rclcpp::init(argc, argv, "amcl");
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
 
   // Override default sigint handler
   signal(SIGINT, sigintHandler);
@@ -325,7 +325,7 @@ main(int argc, char** argv)
   if (argc == 1)
   {
     // run using ROS input
-    ros::spin();
+    rclcpp::spin(node);
   }
   else if ((argc >= 3) && (std::string(argv[1]) == "--run-from-bag"))
   {
@@ -683,8 +683,8 @@ void AmclNode::runFromBag(const std::string &in_bag_fn, bool trigger_global_loca
   topics.push_back(scan_topic_name);
   rosbag::View view(bag, rosbag::TopicQuery(topics));
 
-  ros::Publisher laser_pub = nh_.advertise<sensor_msgs::LaserScan>(scan_topic_name, 100);
-  ros::Publisher tf_pub = nh_.advertise<tf2_msgs::TFMessage>("/tf", 100);
+  auto laser_pub = nh_->create_publisher<sensor_msgs::LaserScan>(scan_topic_name, 100);
+  auto tf_pub = nh_->create_publisher<tf2_msgs::TFMessage>("/tf", 100);
 
   // Sleep for a second to let all subscribers connect
   ros::WallDuration(1.0).sleep();
@@ -781,13 +781,10 @@ void AmclNode::savePoseToServer()
 
   private_nh_.setParam("initial_pose_x", map_pose.getOrigin().x());
   private_nh_.setParam("initial_pose_y", map_pose.getOrigin().y());
-  private_nh_.setParam("initial_pose_a", yaw);
-  private_nh_.setParam("initial_cov_xx", 
-                                  last_published_pose.pose.covariance[6*0+0]);
-  private_nh_.setParam("initial_cov_yy", 
-                                  last_published_pose.pose.covariance[6*1+1]);
-  private_nh_.setParam("initial_cov_aa", 
-                                  last_published_pose.pose.covariance[6*5+5]);
+  private_nh_->set_parameter(rclcpp::Parameter("initial_pose_a", yaw));
+  private_nh_->set_parameter(rclcpp::Parameter("initial_cov_xx", last_published_pose.pose.covariance[6*0+0]));
+  private_nh_->set_parameter(rclcpp::Parameter("initial_cov_yy", last_published_pose.pose.covariance[6*1+1]));
+  private_nh_->set_parameter(rclcpp::Parameter("initial_cov_aa", last_published_pose.pose.covariance[6*5+5]));
 }
 
 void AmclNode::updatePoseFromServer()
@@ -835,7 +832,7 @@ void AmclNode::updatePoseFromServer()
 void 
 AmclNode::checkLaserReceived(const ros::TimerEvent& event)
 {
-  ros::Duration d = ros::Time::now() - last_laser_received_ts_;
+  ros::Duration d = node->now() - last_laser_received_ts_;
   if(d > laser_check_interval_)
   {
     ROS_WARN("No laser scan received (and thus no pose updates have been published) for %f seconds.  Verify that data is being published on the %s topic.",
@@ -1129,7 +1126,7 @@ void
 AmclNode::laserReceived(const sensor_msgs::LaserScanConstPtr& laser_scan)
 {
   std::string laser_scan_frame_id = stripSlash(laser_scan->header.frame_id);
-  last_laser_received_ts_ = ros::Time::now();
+  last_laser_received_ts_ = node->now();
   if( map_ == NULL ) {
     return;
   }
@@ -1347,7 +1344,7 @@ AmclNode::laserReceived(const sensor_msgs::LaserScanConstPtr& laser_scan)
     if (!m_force_update)
     {
       geometry_msgs::PoseArray cloud_msg;
-      cloud_msg.header.stamp = ros::Time::now();
+      cloud_msg.header.stamp = node->now();
       cloud_msg.header.frame_id = global_frame_id_;
       cloud_msg.poses.resize(set->sample_count);
       for(int i=0;i<set->sample_count;i++)
@@ -1516,7 +1513,7 @@ AmclNode::laserReceived(const sensor_msgs::LaserScanConstPtr& laser_scan)
     }
 
     // Is it time to save our last pose to the param server
-    ros::Time now = ros::Time::now();
+    ros::Time now = node->now();
     if((save_pose_period.toSec() > 0.0) &&
        (now - save_pose_last_time) >= save_pose_period)
     {
@@ -1563,7 +1560,7 @@ AmclNode::handleInitialPoseMessage(const geometry_msgs::PoseWithCovarianceStampe
   {
     // wait a little for the latest tf to become available
     tx_odom = tf_->lookupTransform(base_frame_id_, msg.header.stamp,
-                                   base_frame_id_, ros::Time::now(),
+                                   base_frame_id_, node->now(),
                                    odom_frame_id_, ros::Duration(0.5));
   }
   catch(const tf2::TransformException& e)
@@ -1586,7 +1583,7 @@ AmclNode::handleInitialPoseMessage(const geometry_msgs::PoseWithCovarianceStampe
   // Transform into the global frame
 
   ROS_INFO("Setting pose (%.6f): %.3f %.3f %.3f",
-           ros::Time::now().toSec(),
+           node->now().toSec(),
            pose_new.getOrigin().x(),
            pose_new.getOrigin().y(),
            tf2::getYaw(pose_new.getRotation()));

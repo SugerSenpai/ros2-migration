@@ -41,7 +41,7 @@
 #ifndef MBF_UTILITY__NAVIGATION_UTILITY_H_
 #define MBF_UTILITY__NAVIGATION_UTILITY_H_
 
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
 #include <ros/duration.h>
 #include <ros/time.h>
 #include <string>

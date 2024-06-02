@@ -42,7 +42,7 @@
 
 #include <base_local_planner/map_cell.h>
 #include <costmap_2d/costmap_2d.h>
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
 
 namespace base_local_planner{
   /**

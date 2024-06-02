@@ -66,7 +66,7 @@ namespace move_slow_and_clear
 
       void removeSpeedLimit();
 
-      ros::NodeHandle private_nh_, planner_nh_;
+      auto private_nh_ = std::make_shared<rclcpp::Node>("private_nh_");, planner_nh_;
       costmap_2d::Costmap2DROS* global_costmap_;
       costmap_2d::Costmap2DROS* local_costmap_;
       bool initialized_;

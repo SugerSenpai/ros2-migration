@@ -41,12 +41,12 @@
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "costmap_node");
+  rclcpp::init(argc, argv, "costmap_node");
   tf2_ros::Buffer buffer(ros::Duration(10));
   tf2_ros::TransformListener tf(buffer);
   costmap_2d::Costmap2DROS lcr("costmap", buffer);
 
-  ros::spin();
+  rclcpp::spin(node);
 
   return (0);
 }

@@ -57,7 +57,7 @@ AbstractInterExecution::AbstractInterExecution(const std::string& name,
   , has_new_goal_(false)
   , global_goal_pub_(goal_pub)
 {
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
 
   // non-dynamically reconfigurable parameters
   private_nh.param("robot_frame", robot_frame_, std::string("base_footprint"));
@@ -144,7 +144,7 @@ ros::Time AbstractInterExecution::getLastValidPlanTime() const
 
 bool AbstractInterExecution::isPatienceExceeded() const
 {
-  return !patience_.isZero() && (ros::Time::now() - last_call_start_time_ > patience_);
+  return !patience_.isZero() && (node->now() - last_call_start_time_ > patience_);
 }
 
 
@@ -246,8 +246,8 @@ void AbstractInterExecution::run()
     ROS_ERROR("robot navigation moving has no plan!");
   }
 
-  last_call_start_time_ = ros::Time::now();
-  last_valid_plan_time_ = ros::Time::now();
+  last_call_start_time_ = node->now();
+  last_valid_plan_time_ = node->now();
 
   try
   {
@@ -335,7 +335,7 @@ void AbstractInterExecution::run()
           if (cost_ == 0)
             cost_ = sumDistance(inter_plan_.begin(), inter_plan_.end());
 
-          last_valid_plan_time_ = ros::Time::now();
+          last_valid_plan_time_ = node->now();
           setState(FOUND_PLAN, true);
         }
         else if (max_retries_ > 0 && ++retries > max_retries_)

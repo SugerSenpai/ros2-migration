@@ -16,7 +16,11 @@ find_package(std_msgs REQUIRED)
 set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${PkgConfig_INCLUDE_DIRS}
   ${rosidl_default_generators_INCLUDE_DIRS} ${geometry_msgs_INCLUDE_DIRS}
   ${REQUIRED_INCLUDE_DIRS} ${std_msgs_INCLUDE_DIRS})
-include_directories(${INCLUDE_DIRS})
+target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  ./
+)
 set(LIBRARY_DIRS ${ament_cmake_LIBRARIES} ${PkgConfig_LIBRARIES}
   ${rosidl_default_generators_LIBRARIES} ${geometry_msgs_LIBRARIES}
   ${REQUIRED_LIBRARIES} ${std_msgs_LIBRARIES})
@@ -51,6 +55,10 @@ ament_export_dependencies(PkgConfig)
 ament_export_dependencies(rosidl_default_generators)
 ament_export_dependencies(geometry_msgs)
 ament_export_dependencies(std_msgs)
-ament_export_include_directories(${INCLUDE_DIRS})
+ament_export_target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  ./
+)
 
 ament_package()

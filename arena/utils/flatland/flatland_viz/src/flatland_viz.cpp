@@ -156,7 +156,7 @@ FlatlandViz::FlatlandViz(FlatlandWindow* parent) : QWidget((QWidget*)parent) {
       ->setValue("/interactive_model_markers/update");
 
   // Subscribe to debug topics topic
-  ros::NodeHandle n;
+  auto n = std::make_shared<rclcpp::Node>("n");;
   debug_topic_subscriber_ = n.subscribe("/flatland_server/debug/topics", 0,
                                         &FlatlandViz::RecieveDebugTopics, this);
 }

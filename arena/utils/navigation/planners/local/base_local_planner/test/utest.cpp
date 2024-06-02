@@ -44,7 +44,7 @@
 #include <costmap_2d/costmap_2d.h>
 #include <math.h>
 
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 #include <base_local_planner/Position2DInt.h>
 
 #include "wavefront_map_accessor.h"

@@ -5,7 +5,7 @@
 #include "rclcpp/rclcpp.h"
 #include <string>
 #include <vector>
-#include <std_msgs/String.h>
+#include "std_msgs/msg/string.hpp"
 
 namespace inter_util
 {

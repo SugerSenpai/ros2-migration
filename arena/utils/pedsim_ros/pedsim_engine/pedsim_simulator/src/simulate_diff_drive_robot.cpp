@@ -1,4 +1,4 @@
-#include <geometry_msgs/Twist.h>
+#include "geometry_msgs/msg/twist.hpp"
 #include "rclcpp/rclcpp.h"
 
 #include <tf/transform_broadcaster.h>
@@ -49,7 +49,7 @@ void updateLoop() {
 
     // Broadcast transform
     g_transformBroadcaster->sendTransform(tf::StampedTransform(
-        g_currentPose, ros::Time::now(), g_worldFrame, g_robotFrame));
+        g_currentPose, node->now(), g_worldFrame, g_robotFrame));
 
     rate.sleep();
   }
@@ -61,9 +61,9 @@ void onTwistReceived(const geometry_msgs::Twist::ConstPtr& twist) {
 }
 
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "simulate_diff_drive_robot");
-  ros::NodeHandle nodeHandle("");
-  ros::NodeHandle privateHandle("~");
+  rclcpp::init(argc, argv, "simulate_diff_drive_robot");
+  auto nodeHandle = std::make_shared<rclcpp::Node>("nodeHandle");"");
+  auto privateHandle = std::make_shared<rclcpp::Node>("privateHandle");"~");
 
   // Process parameters
   privateHandle.param<std::string>("world_frame", g_worldFrame, "odom");
@@ -85,10 +85,9 @@ int main(int argc, char** argv) {
 
   // Create ROS subscriber and TF broadcaster
   g_transformBroadcaster.reset(new tf::TransformBroadcaster());
-  ros::Subscriber twistSubscriber =
-      nodeHandle.subscribe<geometry_msgs::Twist>("cmd_vel", 3, onTwistReceived);
+  auto twistSubscriber = nodeHandle->create_subscription<geometry_msgs::Twist>("cmd_vel", 3, std::bind(onTwistReceived, std::placeholders::_1));
 
   // Run
   boost::thread updateThread(updateLoop);
-  ros::spin();
+  rclcpp::spin(node);
 }

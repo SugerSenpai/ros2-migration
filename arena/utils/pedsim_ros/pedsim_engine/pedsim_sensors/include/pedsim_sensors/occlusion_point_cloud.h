@@ -39,7 +39,7 @@
 #include <pedsim_msgs/AgentStates.h>
 #include "rclcpp/rclcpp.h"
 #include <sensor_msgs/PointCloud.h>
-#include <sensor_msgs/PointCloud2.h>
+#include "sensor_msgs/msg/point_cloud2.hpp"
 #include <sensor_msgs/point_cloud_conversion.h>
 
 namespace pedsim_ros {

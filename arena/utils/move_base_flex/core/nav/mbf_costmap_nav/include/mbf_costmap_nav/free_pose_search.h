@@ -50,7 +50,7 @@
 #include <string_view>
 
 // ros
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 #include <geometry_msgs/Pose2D.h>
 #include <costmap_2d/costmap_2d_ros.h>
 #include <std_msgs/ColorRGBA.h>

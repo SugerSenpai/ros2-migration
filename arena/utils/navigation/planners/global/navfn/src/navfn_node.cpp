@@ -91,7 +91,7 @@ void NavfnWithCostmap::poseCallback(const rm::PoseStamped::ConstPtr& goal) {
 NavfnWithCostmap::NavfnWithCostmap(string name, Costmap2DROS* cmap) : 
   NavfnROS(name, cmap)
 {
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
   cmap_ = cmap;
   make_plan_service_ = private_nh.advertiseService("make_plan", &NavfnWithCostmap::makePlanService, this);
   pose_sub_ = private_nh.subscribe<rm::PoseStamped>("goal", 1, &NavfnWithCostmap::poseCallback, this);
@@ -101,7 +101,7 @@ NavfnWithCostmap::NavfnWithCostmap(string name, Costmap2DROS* cmap) :
 
 int main (int argc, char** argv)
 {
-  ros::init(argc, argv, "global_planner");
+  rclcpp::init(argc, argv, "global_planner");
 
   tf2_ros::Buffer buffer(ros::Duration(10));
   tf2_ros::TransformListener tf(buffer);
@@ -110,7 +110,7 @@ int main (int argc, char** argv)
 
   navfn::NavfnWithCostmap navfn("navfn_planner", &lcr);
 
-  ros::spin();
+  rclcpp::spin(node);
   return 0;
 }
 

@@ -41,7 +41,7 @@
 #include "rclcpp/rclcpp.h"
 #include <geometry_msgs/Polygon.h>
 #include <geometry_msgs/PolygonStamped.h>
-#include <geometry_msgs/Point.h>
+#include "geometry_msgs/msg/point.hpp"
 #include <geometry_msgs/Point32.h>
 
 namespace costmap_2d

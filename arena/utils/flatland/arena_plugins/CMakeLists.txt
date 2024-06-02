@@ -28,7 +28,11 @@ set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${flatland_plugins_INCLUDE_DIRS}
   ${pluginlib_INCLUDE_DIRS} ${Eigen3_INCLUDE_DIRS} ${rclcpp_INCLUDE_DIRS}
   ${flatland_msgs_INCLUDE_DIRS} ${REQUIRED_INCLUDE_DIRS} ${std_msgs_INCLUDE_DIRS}
   ${tf2_INCLUDE_DIRS} ${rostest_INCLUDE_DIRS})
-include_directories(${INCLUDE_DIRS})
+target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  ./
+)
 set(LIBRARY_DIRS ${ament_cmake_LIBRARIES} ${flatland_plugins_LIBRARIES}
   ${cmake_modules_LIBRARIES} ${PkgConfig_LIBRARIES} ${nav_msgs_LIBRARIES}
   ${flatland_server_LIBRARIES} ${pedsim_msgs_LIBRARIES} ${pluginlib_LIBRARIES}
@@ -151,7 +155,11 @@ ament_export_dependencies(flatland_msgs)
 ament_export_dependencies(std_msgs)
 ament_export_dependencies(tf2)
 ament_export_dependencies(rostest)
-ament_export_include_directories(${INCLUDE_DIRS})
+ament_export_target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  ./
+)
 ament_export_libraries(arena_plugins_lib ${LIBS})
 
 ament_package()

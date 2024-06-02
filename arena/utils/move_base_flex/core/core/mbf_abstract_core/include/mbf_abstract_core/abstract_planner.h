@@ -43,7 +43,7 @@
 #include <string>
 #include <stdint.h>
 #include <boost/shared_ptr.hpp>
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/pose_stamped.hpp"
 
 namespace mbf_abstract_core
 {

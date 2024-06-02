@@ -287,8 +287,8 @@ TEST_F(AbstractPlannerExecutionFixture, exception)
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "read_types");
-  ros::NodeHandle nh;
+  rclcpp::init(argc, argv, "read_types");
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
 
   // setup the tf-publisher and robot info as a global objects
   TF_PTR.reset(new TF());

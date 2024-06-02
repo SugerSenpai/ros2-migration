@@ -38,11 +38,11 @@
 #define BASE_LOCAL_PLANNER_GOAL_FUNCTIONS_H_
 
 #include "rclcpp/rclcpp.h"
-#include <nav_msgs/Odometry.h>
-#include <nav_msgs/Path.h>
-#include <geometry_msgs/PoseStamped.h>
-#include <geometry_msgs/Twist.h>
-#include <geometry_msgs/Point.h>
+#include "nav_msgs/msg/odometry.hpp"
+#include "nav_msgs/msg/path.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
+#include "geometry_msgs/msg/twist.hpp"
+#include "geometry_msgs/msg/point.hpp"
 #include <tf2_ros/buffer.h>
 
 #include <string>

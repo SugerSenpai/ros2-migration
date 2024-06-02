@@ -54,7 +54,7 @@
 #include <flatland_msgs/StepWorld.h>
 #include <string>
 #include <nav_msgs/OccupancyGrid.h>
-#include <std_msgs/String.h>
+#include "std_msgs/msg/string.hpp"
 #include <std_srvs/Empty.h>
 
 namespace flatland_server {

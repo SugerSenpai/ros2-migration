@@ -50,7 +50,7 @@ PlannerAction::PlannerAction(
     const mbf_utility::RobotInformation &robot_info)
   : AbstractActionBase(name, robot_info), path_seq_count_(0)
 {
-  ros::NodeHandle private_nh("~");
+  auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
   // informative topics: current navigation goal
   current_goal_pub_ = private_nh.advertise<geometry_msgs::PoseStamped>("current_goal", 1);
 }
@@ -135,7 +135,7 @@ void PlannerAction::runImpl(GoalHandle &goal_handle, AbstractPlannerExecution &e
       case AbstractPlannerExecution::CANCELED:
         ROS_DEBUG_STREAM_NAMED(name_, "planner state: canceled");
         ROS_DEBUG_STREAM_NAMED(name_, "Global planner has been canceled successfully");
-        result.path.header.stamp = ros::Time::now();
+        result.path.header.stamp = node->now();
         result.outcome = mbf_msgs::GetPathResult::CANCELED;
         result.message = "Global planner has been canceled!";
         goal_handle.setCanceled(result, result.message);
@@ -158,7 +158,7 @@ void PlannerAction::runImpl(GoalHandle &goal_handle, AbstractPlannerExecution &e
         // found a new plan
       case AbstractPlannerExecution::FOUND_PLAN:
         // set time stamp to now
-        result.path.header.stamp = ros::Time::now();
+        result.path.header.stamp = node->now();
         plan = execution.getPlan();
 
         ROS_DEBUG_STREAM_NAMED(name_, "planner state: found plan with cost: " << execution.getCost());

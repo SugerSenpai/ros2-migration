@@ -59,14 +59,14 @@
 #include <pedsim_msgs/TrackedPerson.h>
 #include <pedsim_msgs/TrackedPersons.h>
 
-#include <geometry_msgs/Point.h>
-#include <geometry_msgs/PoseStamped.h>
+#include "geometry_msgs/msg/point.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
 #include <geometry_msgs/PoseWithCovariance.h>
 #include <geometry_msgs/TwistWithCovariance.h>
 #include <nav_msgs/GridCells.h>
-#include <nav_msgs/Odometry.h>
+#include "nav_msgs/msg/odometry.hpp"
 #include <std_msgs/ColorRGBA.h>
-#include <std_msgs/Header.h>
+#include "std_msgs/msg/header.hpp"
 #include <std_srvs/Empty.h>
 #include <visualization_msgs/Marker.h>
 #include <visualization_msgs/MarkerArray.h>
@@ -124,7 +124,7 @@ class SimVisualizer {
  private:
   void setupPublishersAndSubscribers();
 
-  ros::NodeHandle nh_;
+  auto nh_ = std::make_shared<rclcpp::Node>("nh_");;
   double hz_;
 
   /// publishers

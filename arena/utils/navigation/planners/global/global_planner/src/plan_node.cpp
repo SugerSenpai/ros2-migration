@@ -87,7 +87,7 @@ void PlannerWithCostmap::poseCallback(const rm::PoseStamped::ConstPtr& goal) {
 
 PlannerWithCostmap::PlannerWithCostmap(string name, Costmap2DROS* cmap) :
         GlobalPlanner(name, cmap->getCostmap(), cmap->getGlobalFrameID()) {
-    ros::NodeHandle private_nh("~");
+    auto private_nh = std::make_shared<rclcpp::Node>("private_nh");"~");
     cmap_ = cmap;
     make_plan_service_ = private_nh.advertiseService("make_plan", &PlannerWithCostmap::makePlanService, this);
     pose_sub_ = private_nh.subscribe<rm::PoseStamped>("goal", 1, &PlannerWithCostmap::poseCallback, this);
@@ -96,7 +96,7 @@ PlannerWithCostmap::PlannerWithCostmap(string name, Costmap2DROS* cmap) :
 } // namespace
 
 int main(int argc, char** argv) {
-    ros::init(argc, argv, "global_planner");
+    rclcpp::init(argc, argv, "global_planner");
 
     tf2_ros::Buffer buffer(ros::Duration(10));
     tf2_ros::TransformListener tf(buffer);
@@ -105,7 +105,7 @@ int main(int argc, char** argv) {
 
     global_planner::PlannerWithCostmap pppp("planner", &lcr);
 
-    ros::spin();
+    rclcpp::spin(node);
     return 0;
 }
 

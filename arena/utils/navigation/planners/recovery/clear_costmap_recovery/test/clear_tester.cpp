@@ -18,8 +18,8 @@ void testClearBehavior(std::string name,
                        costmap_2d::Costmap2DROS* local_costmap){
     clear_costmap_recovery::ClearCostmapRecovery clear = clear_costmap_recovery::ClearCostmapRecovery();
     
-    ros::NodeHandle clr("~/" + name);
-    clr.setParam("reset_distance", distance);
+    auto clr = std::make_shared<rclcpp::Node>("clr");"~/" + name);
+    clr->set_parameter(rclcpp::Parameter("reset_distance", distance));
     
     std::vector<std::string> clearable_layers;
     if(obstacles)
@@ -27,7 +27,7 @@ void testClearBehavior(std::string name,
     if(static_map)
         clearable_layers.push_back( std::string("static_map") );
         
-    clr.setParam("layer_names", clearable_layers);
+    clr->set_parameter(rclcpp::Parameter("layer_names", clearable_layers));
     
     clear.initialize(name, transformer, global_costmap, local_costmap);
     
@@ -87,7 +87,7 @@ TEST(ClearTester, clearBothTest2){
 
 
 int main(int argc, char** argv){
-  ros::init(argc, argv, "clear_tests");
+  rclcpp::init(argc, argv, "clear_tests");
   testing::InitGoogleTest(&argc, argv);
   transformer = new tf2_ros::Buffer(ros::Duration(10));
   tfl = new tf2_ros::TransformListener(*transformer);

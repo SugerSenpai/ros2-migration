@@ -72,7 +72,7 @@ class DebugVisualization {
 
  public:
   std::map<std::string, DebugTopic> topics_;
-  ros::NodeHandle node_;
+  auto node_ = std::make_shared<rclcpp::Node>("node_");;
   ros::Publisher topic_list_publisher_;
 
   /**

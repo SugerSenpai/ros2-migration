@@ -55,7 +55,7 @@ namespace flatland_server {
 class Timekeeper {
  public:
   ros::Publisher clock_pub_;       ///< the topic to publish the clock
-  ros::NodeHandle nh_;             ///< ROS Node handle
+  auto nh_ = std::make_shared<rclcpp::Node>("nh_");;             ///< ROS Node handle
   ros::Time time_;                 ///< simulation time
   double max_step_size_;           ///< maximum step size
   const std::string clock_topic_;  ///< the name of the clock topic

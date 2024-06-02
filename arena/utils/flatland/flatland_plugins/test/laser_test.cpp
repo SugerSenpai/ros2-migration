@@ -50,7 +50,7 @@
 #include <flatland_server/timekeeper.h>
 #include <flatland_server/world.h>
 #include <gtest/gtest.h>
-#include <sensor_msgs/LaserScan.h>
+#include "sensor_msgs/msg/laser_scan.hpp"
 #include <regex>
 
 namespace fs = boost::filesystem;
@@ -172,7 +172,7 @@ TEST_F(LaserPluginTest, range_test) {
   timekeeper.SetMaxStepSize(1.0);
   w = World::MakeWorld(world_yaml.string());
 
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   ros::Subscriber sub_1, sub_2, sub_3;
   LaserPluginTest* obj = dynamic_cast<LaserPluginTest*>(this);
   sub_1 = nh.subscribe("r/scan", 1, &LaserPluginTest::ScanFrontCb, obj);
@@ -219,7 +219,7 @@ TEST_F(LaserPluginTest, intensity_test) {
   timekeeper.SetMaxStepSize(1.0);
   w = World::MakeWorld(world_yaml.string());
 
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   ros::Subscriber sub_1, sub_2, sub_3;
   LaserPluginTest* obj = dynamic_cast<LaserPluginTest*>(this);
   sub_1 = nh.subscribe("r/scan", 1, &LaserPluginTest::ScanFrontCb, obj);
@@ -307,7 +307,7 @@ TEST_F(LaserPluginTest, invalid_B) {
 
 // Run all the tests that were declared with TEST()
 int main(int argc, char** argv) {
-  ros::init(argc, argv, "laser_test");
+  rclcpp::init(argc, argv, "laser_test");
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }

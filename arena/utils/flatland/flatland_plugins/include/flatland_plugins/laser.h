@@ -49,7 +49,7 @@
 #include <flatland_server/timekeeper.h>
 #include <flatland_server/types.h>
 #include "rclcpp/rclcpp.h"
-#include <sensor_msgs/LaserScan.h>
+#include "sensor_msgs/msg/laser_scan.hpp"
 #include <tf/transform_broadcaster.h>
 #include <thirdparty/ThreadPool.h>
 #include <visualization_msgs/Marker.h>

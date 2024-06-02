@@ -59,7 +59,7 @@ typedef std::vector<crowdsim_msgs::SemanticDatum> SemanticObservation;
 
 class SemanticBuffer{
 public:
-  SemanticBuffer(ros::NodeHandle _nh, std::string _topic){
+  SemanticBuffer(auto _nh = std::make_shared<rclcpp::Node>("_nh");, std::string _topic){
     nh = _nh;
     stamp = ros::Time(0);
     topic = _topic;
@@ -96,7 +96,7 @@ private:
     type = semanticData->type;
   }
 
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   std::string topic;
   
   ros::Time stamp;
