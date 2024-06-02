@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(map_server)
 
 find_package(catkin REQUIRED
@@ -94,7 +94,11 @@ if(CATKIN_ENABLE_TESTING)
   )
 
   find_package(roslib REQUIRED)
-  include_directories(${roslib_INCLUDE_DIRS})
+  target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  ./
+)
   add_executable(rtest test/rtest.cpp test/test_constants.cpp)
   add_dependencies(rtest ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
   add_dependencies(tests rtest)

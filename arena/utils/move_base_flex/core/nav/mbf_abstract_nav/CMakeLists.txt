@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(mbf_abstract_nav)
 
 find_package(catkin REQUIRED
@@ -100,20 +100,36 @@ if(CATKIN_ENABLE_TESTING)
   add_rostest_gmock(abstract_action_base_test
     test/abstract_action_base.launch
     test/abstract_action_base.cpp)
-  target_link_libraries(abstract_action_base_test ${MBF_ABSTRACT_SERVER_LIB})
+  target_link_libraries(abstract_action_base_test
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   add_rostest_gmock(abstract_controller_execution_test
     test/abstract_controller_execution.launch
     test/abstract_controller_execution.cpp)
-  target_link_libraries(abstract_controller_execution_test ${MBF_ABSTRACT_SERVER_LIB})
+  target_link_libraries(abstract_controller_execution_test
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   add_rostest_gmock(abstract_planner_execution_test
     test/abstract_planner_execution.launch
     test/abstract_planner_execution.cpp)
-  target_link_libraries(abstract_planner_execution_test ${MBF_ABSTRACT_SERVER_LIB})
+  target_link_libraries(abstract_planner_execution_test
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   add_rostest_gmock(planner_action_test
     test/planner_action.launch
     test/planner_action.cpp)
-  target_link_libraries(planner_action_test ${MBF_ABSTRACT_SERVER_LIB})
+  target_link_libraries(planner_action_test
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 endif()

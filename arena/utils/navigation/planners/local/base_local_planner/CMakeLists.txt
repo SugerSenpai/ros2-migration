@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(base_local_planner)
 
 include(CheckIncludeFile)
@@ -111,8 +111,8 @@ add_library(base_local_planner
 	src/twirling_cost_function.cpp
 	src/voxel_grid_model.cpp)
 add_dependencies(base_local_planner base_local_planner_gencfg)
-add_dependencies(base_local_planner base_local_planner_generate_messages_cpp)
-add_dependencies(base_local_planner nav_msgs_generate_messages_cpp)
+add_dependencies(base_local_planner base_local_planner_
+add_dependencies(base_local_planner nav_msgs_
 target_link_libraries(base_local_planner
     ${catkin_LIBRARIES}
     ${Boost_LIBRARIES}
@@ -128,7 +128,11 @@ target_link_libraries(trajectory_planner_ros
 
 add_executable(point_grid src/point_grid_node.cpp)
 add_dependencies(point_grid ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(point_grid ${catkin_LIBRARIES} base_local_planner)
+target_link_libraries(point_grid
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
 install(TARGETS
             base_local_planner

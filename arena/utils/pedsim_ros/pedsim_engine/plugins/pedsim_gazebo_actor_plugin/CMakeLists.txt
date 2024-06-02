@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(pedsim_gazebo_actor_plugin)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -59,7 +59,11 @@ include_directories(
 
 
 add_library(PedsimGazeboActorPlugin SHARED src/PedsimGazeboActorPlugin.cc)
-target_link_libraries(PedsimGazeboActorPlugin ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+target_link_libraries(PedsimGazeboActorPlugin
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 add_dependencies(PedsimGazeboActorPlugin ${catkin_EXPORTED_TARGETS})
 
 #############

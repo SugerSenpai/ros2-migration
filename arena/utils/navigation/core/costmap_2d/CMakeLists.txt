@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5)
 project(costmap_2d)
 
 find_package(catkin REQUIRED
@@ -156,28 +156,52 @@ if(CATKIN_ENABLE_TESTING)
   find_package(rostest REQUIRED)
 
   # Add the test folder to the include directories
-  include_directories(test)
+  target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  ./
+)
 
   # Create targets for test executables
   add_executable(costmap_tester EXCLUDE_FROM_ALL test/costmap_tester.cpp)
   add_dependencies(tests costmap_tester)
-  target_link_libraries(costmap_tester costmap_2d ${GTEST_LIBRARIES})
+  target_link_libraries(costmap_tester
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   add_executable(footprint_tests EXCLUDE_FROM_ALL test/footprint_tests.cpp)
   add_dependencies(tests footprint_tests)
-  target_link_libraries(footprint_tests costmap_2d ${GTEST_LIBRARIES})
+  target_link_libraries(footprint_tests
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   add_executable(obstacle_tests EXCLUDE_FROM_ALL test/obstacle_tests.cpp)
   add_dependencies(tests obstacle_tests)
-  target_link_libraries(obstacle_tests costmap_2d layers ${GTEST_LIBRARIES})
+  target_link_libraries(obstacle_tests
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   add_executable(static_tests EXCLUDE_FROM_ALL test/static_tests.cpp)
   add_dependencies(tests static_tests)
-  target_link_libraries(static_tests costmap_2d layers ${GTEST_LIBRARIES})
+  target_link_libraries(static_tests
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   add_executable(inflation_tests EXCLUDE_FROM_ALL test/inflation_tests.cpp)
   add_dependencies(tests inflation_tests)
-  target_link_libraries(inflation_tests costmap_2d layers ${GTEST_LIBRARIES})
+  target_link_libraries(inflation_tests
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   catkin_download_test_data(${PROJECT_NAME}_simple_driving_test_indexed.bag
     http://download.ros.org/data/costmap_2d/simple_driving_test_indexed.bag
@@ -195,10 +219,18 @@ if(CATKIN_ENABLE_TESTING)
   add_rostest(test/static_tests.launch)
 
   catkin_add_gtest(array_parser_test test/array_parser_test.cpp)
-  target_link_libraries(array_parser_test costmap_2d)
+  target_link_libraries(array_parser_test
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 
   catkin_add_gtest(coordinates_test test/coordinates_test.cpp)
-  target_link_libraries(coordinates_test costmap_2d)
+  target_link_libraries(coordinates_test
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 endif()
 
 install( TARGETS

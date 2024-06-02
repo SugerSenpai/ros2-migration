@@ -37,7 +37,7 @@ class PauseSimTool : public rviz::Tool {
    */
   virtual void deactivate();
 
-  ros::NodeHandle nh_;  ///< NodeHandle to call the pause toggle service
+  auto nh_ = std::make_shared<rclcpp::Node>("nh_");;  ///< NodeHandle to call the pause toggle service
   ros::ServiceClient
       pause_service_;  ///< ServiceClient that calls the pause toggle service
 };

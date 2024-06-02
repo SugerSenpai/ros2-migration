@@ -102,13 +102,21 @@ set(INCLUDE_DIRS ${ament_cmake_INCLUDE_DIRS} ${QtCore_INCLUDE_DIRS}
   ${QtGui_INCLUDE_DIRS} ${Core_INCLUDE_DIRS} ${rostest_INCLUDE_DIRS}
   ${Widgets_INCLUDE_DIRS} ${rclcpp_INCLUDE_DIRS} ${flatland_msgs_INCLUDE_DIRS}
   ${EXACT_INCLUDE_DIRS} ${PkgConfig_INCLUDE_DIRS})
-include_directories(${INCLUDE_DIRS})
+target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  ./
+)
 set(LIBRARY_DIRS ${ament_cmake_LIBRARIES} ${QtCore_LIBRARIES} ${rviz_LIBRARIES}
   ${Qt5_LIBRARIES} ${flatland_server_LIBRARIES} ${${rviz_QT_VERSION}_LIBRARIES}
   ${Qt4_LIBRARIES} ${REQUIRED_LIBRARIES} ${QtGui_LIBRARIES} ${Core_LIBRARIES}
   ${rostest_LIBRARIES} ${Widgets_LIBRARIES} ${rclcpp_LIBRARIES}
   ${flatland_msgs_LIBRARIES} ${EXACT_LIBRARIES} ${PkgConfig_LIBRARIES})
-target_link_libraries(flatland_viz ${LIBRARY_DIRS})
+target_link_libraries(flatland_viz
+  ${cpp_typesupport_target}
+  # ${SDL2_LIBRARIES}
+  # ${OPENGL_LIBRARIES}
+)
 set(LIBS ${ament_cmake_LIBRARIES} ${QtCore_LIBRARIES} ${rviz_LIBRARIES}
   ${Qt5_LIBRARIES} ${flatland_server_LIBRARIES} ${${rviz_QT_VERSION}_LIBRARIES}
   ${Qt4_LIBRARIES} ${REQUIRED_LIBRARIES} ${QtGui_LIBRARIES} ${Core_LIBRARIES}
@@ -164,7 +172,11 @@ ament_export_dependencies(rclcpp)
 ament_export_dependencies(flatland_msgs)
 ament_export_dependencies(EXACT)
 ament_export_dependencies(PkgConfig)
-ament_export_include_directories(${INCLUDE_DIRS})
+ament_export_target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp>
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  ./
+)
 ament_export_libraries(flatland_viz_plugins ${LIBS})
 
 ament_package()

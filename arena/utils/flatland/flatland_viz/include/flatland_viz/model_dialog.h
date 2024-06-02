@@ -124,7 +124,7 @@ class ModelDialog : public QDialog {
 
  protected:
   boost::filesystem::path this_file_dir;
-  ros::NodeHandle nh;
+  auto nh = std::make_shared<rclcpp::Node>("nh");;
   ros::ServiceClient client;
   flatland_msgs::SpawnModel srv;
   World* w;
