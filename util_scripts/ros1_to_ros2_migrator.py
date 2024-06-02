@@ -3,15 +3,18 @@
 import os
 import re
 import argparse
-from pathlib import Path
 
 def update_cpp_file(file_path):
-    with open(file_path, 'r') as file:
-        content = file.read()
+    try:
+        with open(file_path, 'r') as file:
+            content = file.readlines()
+    except IOError:
+        print(f"Error: Unable to read file {file_path}")
+        return
 
     # ROS1 to ROS2 message header mappings
     msg_replacements = [
-        (r'#include\s*<(\w+)/(\w+)\.h>', r'#include "\1/msg/\L\2.hpp"'),
+        (r'#include\s*<(\w+)/(\w+)\.h>', r'#include "\1/msg/\2.hpp"'),
         (r'#include\s*<([^/]+)/([^/.]+)\.h>', r'#include "\1/msg/\2.hpp"'),
     ]
 
@@ -31,15 +34,26 @@ def update_cpp_file(file_path):
         (r'(\w+)\.setParam\("([^"]+)",\s*([^)]+)\);', r'\1->set_parameter(rclcpp::Parameter("\2", \3));'),
     ]
 
-    for old, new in msg_replacements + api_replacements:
-        content = re.sub(old, new, content, flags=re.MULTILINE | re.IGNORECASE)
+    new_content = []
+    for line in content:
+        if not line.strip().startswith('#'):
+            for old, new in msg_replacements + api_replacements:
+                line = re.sub(old, new, line, flags=re.IGNORECASE)
+        new_content.append(line)
 
-    with open(file_path, 'w') as file:
-        file.write(content)
+    try:
+        with open(file_path, 'w') as file:
+            file.writelines(new_content)
+    except IOError:
+        print(f"Error: Unable to write to file {file_path}")
 
 def update_cmakelists(file_path):
-    with open(file_path, 'r') as file:
-        content = file.read()
+    try:
+        with open(file_path, 'r') as file:
+            content = file.read()
+    except IOError:
+        print(f"Error: Unable to read file {file_path}")
+        return
 
     replacements = [
         (r'cmake_minimum_required\(VERSION [0-9.]+\)', 'cmake_minimum_required(VERSION 3.5)'),
@@ -88,8 +102,11 @@ def update_cmakelists(file_path):
     for old, new in replacements:
         content = re.sub(old, new, content, flags=re.MULTILINE | re.DOTALL | re.IGNORECASE)
 
-    with open(file_path, 'w') as file:
-        file.write(content)
+    try:
+        with open(file_path, 'w') as file:
+            file.write(content)
+    except IOError:
+        print(f"Error: Unable to write to file {file_path}")
 
 def is_ros1_package(directory):
     cmakelists_path = os.path.join(directory, 'CMakeLists.txt')
@@ -125,7 +142,6 @@ def main():
     parser = argparse.ArgumentParser(description='Migrate ROS1 C++ and CMake files to ROS2 in a directory tree.')
     parser.add_argument('root_dir', type=str, help='Root directory to crawl for ROS1 packages')
     args = parser.parse_args()
-
     root_dir = args.root_dir
     if not os.path.isdir(root_dir):
         print(f"Error: {root_dir} is not a valid directory.")
@@ -137,3 +153,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
