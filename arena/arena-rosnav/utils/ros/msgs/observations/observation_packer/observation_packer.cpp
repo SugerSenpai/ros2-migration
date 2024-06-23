@@ -43,7 +43,7 @@ void setAbsoluteGoal(const zVector2D &new_pos)
 	relative_goal_transform.toLocalOf(odom_transform);
 }
 
-void quaternionFromMsg(tf2::Quaternion &q, const geometry_msgs::Quaternion &q_msg)
+void quaternionFromMsg(tf2::Quaternion &q, const geometry_msgs::msg::Quaternion &q_msg)
 {
 	q[0] = q_msg.x;
 	q[1] = q_msg.y;
@@ -62,7 +62,7 @@ void updateAbsoluteGoal()
 	absolute_goal_transform = odom_transform.getLocalTranslate(relative_goal_transform.position);
 }
 
-void goal_callback(const geometry_msgs::PoseStampedPtr &msg)
+void goal_callback(const std::shared_ptr<geometry_msgs::msg::PoseStamped> &msg)
 {
 	float x = msg->pose.position.x - odom_transform.position.x;
 	float y = msg->pose.position.y - odom_transform.position.y;
@@ -91,7 +91,7 @@ void goal_callback(const geometry_msgs::PoseStampedPtr &msg)
 	// goal.set(msg->pose.position.x, msg->pose.position.y, 0);
 }
 
-void laser_callback(const sensor_msgs::LaserScan::ConstPtr &msg)
+void laser_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
 {
 	for (int i = 0; i < msg->ranges.size(); i++)
 	{
@@ -117,14 +117,14 @@ void updateRelativeWithAbsoluteGoal()
 	relative_goal_transform = absolute_goal_transform.getToLocalOf(odom_transform);
 }
 
-void odom_callback(const nav_msgs::Odometry::ConstPtr &msg)
+void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
 {
 	odom_transform.setFromMsg(msg->pose.pose);
 	robot_state.setFromMsg(msg->pose.pose);
 	odom_callback_called = true;
 }
 
-void amcl_callback(const geometry_msgs::PoseWithCovarianceStampedPtr &msg)
+void amcl_callback(const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg)
 {
 	odom_transform.setFromMsg(msg->pose.pose);
 	robot_state.setFromMsg(msg->pose.pose);
@@ -152,7 +152,7 @@ float cal_angle_to_goal()
 	return tmp - robot_state.theta + 4 * M_PI;
 }
 
-void packMsg(observations::Observation &obs)
+void packMsg(observations::msg::Observation &obs)
 {
 	// obs.observation[0] = distance_to_goal;
 	// obs.observation[1] = angle_to_goal;
